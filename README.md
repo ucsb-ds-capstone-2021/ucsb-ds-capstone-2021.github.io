@@ -2,34 +2,18 @@
 
 This book contains work from UCSB's Data Science Capstone Project Class sequence.
 
-## Usage
+## Building locally for development
 
-### Building the book
+If you'd like to develop on and build the UCSB Data Science Capstone Projects 2021 book, you need to setup your environment:
 
-If you'd like to develop on and build the UCSB Data Science Capstone Projects 2021 book, you should:
+- [Install Anaconda](https://docs.anaconda.com/anaconda/install/)
+- Create a virtual environment. Let's call it `jb`:  
+	```bash
+    conda create -n jb python=3.8
+    conda activate jb
+    pip install -r requirements.txt     ## install python dependencies
+    conda activate jb                   ## makes newly installed packages available
+    jupyter-book build ./ucsb_ds_capstone_projects_2021
+    ```
+- Rendered HTML version of the book will be in `./ucsb_ds_capstone_projects_2021/_build/html/`.
 
-- Clone this repository and run
-- Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
-- (Recommended) Remove the existing `UCSB Data Science Capstone Projects 2021/_build/` directory
-- Run `jupyter-book build UCSB Data Science Capstone Projects 2021/`
-
-A fully-rendered HTML version of the book will be built in `UCSB Data Science Capstone Projects 2021/_build/html/`.
-
-### Hosting the book
-
-The html version of the book is hosted on the `gh-pages` branch of this repo. A GitHub actions workflow has been created that automatically builds and pushes the book to this branch on a push or pull request to main.
-
-If you wish to disable this automation, you may remove the GitHub actions workflow and build the book manually by:
-
-- Navigating to your local build; and running,
-- `ghp-import -n -p -f UCSB Data Science Capstone Projects 2021/_build/html`
-
-This will automatically push your build to the `gh-pages` branch. More information on this hosting process can be found [here](https://jupyterbook.org/publish/gh-pages.html#manually-host-your-book-with-github-pages).
-
-## Contributors
-
-We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/ucsb-ds-capstone-2021/ucsb_ds_capstone_projects_2021/graphs/contributors).
-
-## Credits
-
-This project is created using the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).

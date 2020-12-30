@@ -1,6 +1,9 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 - file: intro
+  sections:
+    - file: getting-started
+    - file: markdown
 - file: content
   sections:
     - file: markdown
