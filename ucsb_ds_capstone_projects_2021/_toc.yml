@@ -1,11 +1,12 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
 - file: welcome
-- file: intro
-  sections:
+
+- part: Class Logistics
+  chapters:
+    - file: syllabus
     - file: getting-started
-    - file: markdown
-- file: content
-  sections:
-    - file: markdown
-    - file: notebooks
+
+- part: Projects
+  chapters:
+    - file: mentors
