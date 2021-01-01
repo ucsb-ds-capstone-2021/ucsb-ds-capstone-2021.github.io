@@ -30,6 +30,12 @@ jobs:
     - name: Build the book
       run: |
         jupyter-book build ucsb_ds_capstone_projects_2021
+        
+    # Add slides from 
+    - name: Copy slides
+      run: |
+        git clone -b gh-pages https://github.com/ucsb-ds-capstone-2021/slides.git
+        mv slides/output ucsb_ds_capstone_projects_2021/_build/html/slides
 
     # Deploy the book's HTML to gh-pages branch
     - name: GitHub Pages action
