@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teams and Contacts &#8212; Data Science Capstone 2021</title>
+    
+  <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Project Management" href="getting-started.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Data Science Capstone 2021</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="welcome.html">
+   Welcome to Data Science Capstone
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Class Logistics
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="syllabus.html">
+   Course Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="getting-started.html">
+   Project Management
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Teams and Contacts
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/mentors.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#directory">
+   Directory
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-sponsors-and-organizations">
+   Project Sponsors and Organizations
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="teams-and-contacts">
+<h1>Teams and Contacts<a class="headerlink" href="#teams-and-contacts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="directory">
+<h2>Directory<a class="headerlink" href="#directory" title="Permalink to this headline">¶</a></h2>
+<div class="tabbed-set docutils">
+<input checked="checked" id="485c29cb-a098-4e58-b4c6-d256d27393e9" name="f75beea7-5e40-447e-bb49-23180b694c29" type="radio">
+</input><label class="tabbed-label" for="485c29cb-a098-4e58-b4c6-d256d27393e9">
+AppFolio</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Email address</p></th>
+<th class="head"><p>Membership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Lai, Peng-Yuan</p></td>
+<td><p>peng-yuan.lai&#64;appfolio.com</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Thust, Soeren</p></td>
+<td><p>soeren.thust&#64;appfolio.com</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-even"><td><p>Singh, Ambuj</p></td>
+<td><p>ambuj&#64;ucsb.edu</p></td>
+<td><p>Faculty</p></td>
+</tr>
+<tr class="row-odd"><td><p>Banerjee, Priyanka</p></td>
+<td><p>pbanerjee&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Kanenobu, Shaka</p></td>
+<td><p>shakakanenobu&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pasupathy, Vikram</p></td>
+<td><p>vpasupathy&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Polakof, Ari</p></td>
+<td><p>a_polakof&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="7ee5fe3e-3ba7-41fa-bac1-48ef420b62a6" name="f75beea7-5e40-447e-bb49-23180b694c29" type="radio">
+</input><label class="tabbed-label" for="7ee5fe3e-3ba7-41fa-bac1-48ef420b62a6">
+CalCOFI1</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Email address</p></th>
+<th class="head"><p>Membership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Satterthwaite, Erin</p></td>
+<td><p>esatterthwaite&#64;ucsd.edu</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Oh, Sang-Yun</p></td>
+<td><p>syoh&#64;ucsb.edu</p></td>
+<td><p>Faculty</p></td>
+</tr>
+<tr class="row-even"><td><p>Reznikov, Leron</p></td>
+<td><p>lreznikov&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rupprecht, Andie</p></td>
+<td><p>andierupprecht&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Tieng, Gavin</p></td>
+<td><p>got&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vong, Meng</p></td>
+<td><p>mvong&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="7f31a70b-ec78-42a1-87b4-17f5f77c101e" name="f75beea7-5e40-447e-bb49-23180b694c29" type="radio">
+</input><label class="tabbed-label" for="7f31a70b-ec78-42a1-87b4-17f5f77c101e">
+CalCOFI2</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Email address</p></th>
+<th class="head"><p>Membership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Satterthwaite, Erin</p></td>
+<td><p>esatterthwaite&#64;ucsd.edu</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Oh, Sang-Yun</p></td>
+<td><p>syoh&#64;ucsb.edu</p></td>
+<td><p>Faculty</p></td>
+</tr>
+<tr class="row-even"><td><p>Hollingsworth, Robin</p></td>
+<td><p>rhollingsworth&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lee, Karsyn</p></td>
+<td><p>karsyn&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Patwardhan, Jay</p></td>
+<td><p>jaypatwardhan&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Razo, Cristian</p></td>
+<td><p>crazo&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="623a0bc6-ac85-46e4-aa34-8b95dbc8cf7f" name="f75beea7-5e40-447e-bb49-23180b694c29" type="radio">
+</input><label class="tabbed-label" for="623a0bc6-ac85-46e4-aa34-8b95dbc8cf7f">
+Carpe Data</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Email address</p></th>
+<th class="head"><p>Membership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Zhang, Crystal Shuijing</p></td>
+<td><p>crystal.zhang&#64;carpe.io</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ludkovski, Michael</p></td>
+<td><p>ludkovski&#64;pstat.ucsb.edu</p></td>
+<td><p>Faculty</p></td>
+</tr>
+<tr class="row-even"><td><p>Nguyen, Andrew</p></td>
+<td><p>ahn00&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sheridan, Sam</p></td>
+<td><p>samuelsheridan&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Xu, Matthew</p></td>
+<td><p>matthewxu&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Yu, Jason</p></td>
+<td><p>jason_yu&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="1f9b9ce9-b3bc-47db-9e79-1b17d448b14a" name="f75beea7-5e40-447e-bb49-23180b694c29" type="radio">
+</input><label class="tabbed-label" for="1f9b9ce9-b3bc-47db-9e79-1b17d448b14a">
+CCBER</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Email address</p></th>
+<th class="head"><p>Membership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Lee, Michelle</p></td>
+<td><p>michellejlee&#64;ucsb.edu</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kharitonova, Kate</p></td>
+<td><p>ykk&#64;cs.ucsb.edu</p></td>
+<td><p>Faculty</p></td>
+</tr>
+<tr class="row-even"><td><p>Bachelder, Nick</p></td>
+<td><p>nbachelder&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Chen, Angel</p></td>
+<td><p>angelchen&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Fang, Zoe</p></td>
+<td><p>sfang&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rapaport, Mitchell</p></td>
+<td><p>mrapaport&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Solomon, Samantha</p></td>
+<td><p>samanthajsolomon&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="db33db40-17c7-40a8-bfb8-323331633c61" name="f75beea7-5e40-447e-bb49-23180b694c29" type="radio">
+</input><label class="tabbed-label" for="db33db40-17c7-40a8-bfb8-323331633c61">
+CSEP</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Email address</p></th>
+<th class="head"><p>Membership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Lenaburg, Lubi</p></td>
+<td><p>lubi&#64;ucsb.edu</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Franks, Alex</p></td>
+<td><p>afranks&#64;pstat.ucsb.edu</p></td>
+<td><p>Faculty</p></td>
+</tr>
+<tr class="row-even"><td><p>Anez, Andrea</p></td>
+<td><p>anez&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Benipal, Karanveer</p></td>
+<td><p>ksbenipal&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Medrano, Manny</p></td>
+<td><p>manny&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Toranji, Romtin</p></td>
+<td><p>rtoranji&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="823df888-154f-4832-90ec-079d845ea71f" name="f75beea7-5e40-447e-bb49-23180b694c29" type="radio">
+</input><label class="tabbed-label" for="823df888-154f-4832-90ec-079d845ea71f">
+Evidation</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Email address</p></th>
+<th class="head"><p>Membership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Daza, Eric</p></td>
+<td><p>edaza&#64;evidation.com</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Franks, Alex</p></td>
+<td><p>afranks&#64;pstat.ucsb.edu</p></td>
+<td><p>Faculty</p></td>
+</tr>
+<tr class="row-even"><td><p>Bayerle, Peter</p></td>
+<td><p>pbayerle&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Coleman, Matthew</p></td>
+<td><p>matthewbcoleman&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Kim, Joanna</p></td>
+<td><p>joannakim&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Varma, Achyuth</p></td>
+<td><p>achyuth&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="8005e70e-35af-4d08-b3ca-19ebe154180f" name="f75beea7-5e40-447e-bb49-23180b694c29" type="radio">
+</input><label class="tabbed-label" for="8005e70e-35af-4d08-b3ca-19ebe154180f">
+FLIR</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Email address</p></th>
+<th class="head"><p>Membership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Tremblay, Louis</p></td>
+<td><p>Louis.Tremblay&#64;flir.com</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Oh, Sang-Yun</p></td>
+<td><p>syoh&#64;ucsb.edu</p></td>
+<td><p>Faculty</p></td>
+</tr>
+<tr class="row-even"><td><p>Muttukuru, Sairisheek</p></td>
+<td><p>sairisheek&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nunes, Nicholas</p></td>
+<td><p>nnunes&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Sadhukhan, Neil</p></td>
+<td><p>neil_sadhukhan&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zhang, Bill</p></td>
+<td><p>bill_zhang&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="17d0d5ec-87d7-4486-9482-be7ad5e824c3" name="f75beea7-5e40-447e-bb49-23180b694c29" type="radio">
+</input><label class="tabbed-label" for="17d0d5ec-87d7-4486-9482-be7ad5e824c3">
+Invoca</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Email address</p></th>
+<th class="head"><p>Membership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Lawrence, Mike</p></td>
+<td><p>mlawrence&#64;invoca.com</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Singh, Ambuj</p></td>
+<td><p>ambuj&#64;ucsb.edu</p></td>
+<td><p>Faculty</p></td>
+</tr>
+<tr class="row-even"><td><p>Cho, Amy</p></td>
+<td><p>s_cho&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>de la Fuente, Anton</p></td>
+<td><p>cadelafuente&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Kathika, Sai</p></td>
+<td><p>saiprem&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Quinn, Austin</p></td>
+<td><p>austinquinn&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Tang, Shuyun</p></td>
+<td><p>shuyun&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="c0b4d6fb-b690-436c-b0b2-99298e9ae37c" name="f75beea7-5e40-447e-bb49-23180b694c29" type="radio">
+</input><label class="tabbed-label" for="c0b4d6fb-b690-436c-b0b2-99298e9ae37c">
+NCEAS</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Email address</p></th>
+<th class="head"><p>Membership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Brun, Julien</p></td>
+<td><p>brun&#64;nceas.ucsb.edu</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Horst, Allison</p></td>
+<td><p>ahorst&#64;bren.ucsb.edu</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-even"><td><p>Oh, Sang-Yun</p></td>
+<td><p>syoh&#64;ucsb.edu</p></td>
+<td><p>Faculty</p></td>
+</tr>
+<tr class="row-odd"><td><p>Guo, Sam</p></td>
+<td><p>samuelzguo&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Logan, Adhitya</p></td>
+<td><p>adhitya&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ran, Lia</p></td>
+<td><p>ran275&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Sternberg, Sophia</p></td>
+<td><p>sophiasternberg&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zhao, Karen</p></td>
+<td><p>karenezhao&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="9f4133bb-5bfb-4b9d-a3b5-7a0ec7c7dacb" name="f75beea7-5e40-447e-bb49-23180b694c29" type="radio">
+</input><label class="tabbed-label" for="9f4133bb-5bfb-4b9d-a3b5-7a0ec7c7dacb">
+NRI</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Email address</p></th>
+<th class="head"><p>Membership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Uribe, Juliana Acosta</p></td>
+<td><p>acostauribe&#64;ucsb.edu</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Franks, Alex</p></td>
+<td><p>afranks&#64;pstat.ucsb.edu</p></td>
+<td><p>Faculty</p></td>
+</tr>
+<tr class="row-even"><td><p>Huang, Helen</p></td>
+<td><p>ziyihuang&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Misra, Shivam</p></td>
+<td><p>shivammisra&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Padmanabhan, Priya</p></td>
+<td><p>priyapadmanabhan&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pugal, Surya</p></td>
+<td><p>spugal&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Yue, Rey</p></td>
+<td><p>yixiaoyue&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<input id="6255d662-62eb-4f2c-9e7d-144f08dee7d7" name="f75beea7-5e40-447e-bb49-23180b694c29" type="radio">
+</input><label class="tabbed-label" for="6255d662-62eb-4f2c-9e7d-144f08dee7d7">
+Sansum</label><div class="tabbed-content docutils">
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Email address</p></th>
+<th class="head"><p>Membership</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Glantz, Namino</p></td>
+<td><p>nglantz&#64;sansum.org</p></td>
+<td><p>Sponsor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Franks, Alex</p></td>
+<td><p>afranks&#64;pstat.ucsb.edu</p></td>
+<td><p>Faculty</p></td>
+</tr>
+<tr class="row-even"><td><p>Holzer, Zoe</p></td>
+<td><p>zmholzer&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>Lin, Lawrence</p></td>
+<td><p>lawrencedlin&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Salgado Zavaleta, Vanessa</p></td>
+<td><p>vsalgadozavaleta&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-odd"><td><p>San Juan, Emily</p></td>
+<td><p>emilysanjuan&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+<tr class="row-even"><td><p>Simon, Jake</p></td>
+<td><p>jakesimon&#64;ucsb.edu</p></td>
+<td><p>Student</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="project-sponsors-and-organizations">
+<h2>Project Sponsors and Organizations<a class="headerlink" href="#project-sponsors-and-organizations" title="Permalink to this headline">¶</a></h2>
+<p>Projects are co-advised by their respective project sponsors and faculty mentors (alphabetical order).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Organization</p></th>
+<th class="head"><p>Sponsor</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Appfolio</p></td>
+<td><p>Peng-Yuan Lai and Soeren Thust</p></td>
+</tr>
+<tr class="row-odd"><td><p>CalCOFI, California Sea Grant, Scripps Institution of Oceanography, UCSD</p></td>
+<td><p>Erin Satterthwaite</p></td>
+</tr>
+<tr class="row-even"><td><p>Carpe Data</p></td>
+<td><p>Crystal Shuijing Zhang</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cheadle Center for Biodiversity and Ecological Restoration (CCBER)</p></td>
+<td><p>Michelle Lee</p></td>
+</tr>
+<tr class="row-even"><td><p>Center for Science and Engineering Partnerships (CSEP)</p></td>
+<td><p>Lubi Lenaburg</p></td>
+</tr>
+<tr class="row-odd"><td><p>Evidation Health</p></td>
+<td><p>Eric Daza</p></td>
+</tr>
+<tr class="row-even"><td><p>FLIR</p></td>
+<td><p>Louis Tremblay</p></td>
+</tr>
+<tr class="row-odd"><td><p>Invoca</p></td>
+<td><p>Mike Lawrence</p></td>
+</tr>
+<tr class="row-even"><td><p>National Center for Ecological Analysis and Synthesis (NCEAS)</p></td>
+<td><p>Julien Brun and Allison Horst</p></td>
+</tr>
+<tr class="row-odd"><td><p>Neuroscience Research Institute (NRI)</p></td>
+<td><p>Juliana Acosta Uribe</p></td>
+</tr>
+<tr class="row-even"><td><p>Sansum Diabetes Institute</p></td>
+<td><p>Namino Glantz</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="getting-started.html" title="previous page">Project Management</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By UCSB DS Capstone Class<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+  </body>
+</html>
