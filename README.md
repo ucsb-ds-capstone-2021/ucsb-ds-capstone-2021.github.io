@@ -1,6 +1,6 @@
 # UCSB Data Science Capstone Projects 2021
 
-This book contains work from UCSB's Data Science Capstone Project Class sequence.
+This Jupyter book contains work from UCSB's Data Science Capstone Project Class sequence: https://ucsb-ds-capstone-2021.github.io/
 
 ## Building locally for development
 

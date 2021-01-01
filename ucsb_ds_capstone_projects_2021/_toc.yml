@@ -4,9 +4,11 @@
 
 - part: Class Logistics
   chapters:
-    - file: syllabus
-    - file: getting-started
+    - file: class/syllabus
+      sections: 
+        - file: class/syllabus_readings
+        - file: class/syllabus_participation
+        - file: class/syllabus_deliverables
+    - file: class/contacts
+    - file: class/software-tools
 
-- part: Projects
-  chapters:
-    - file: mentors
