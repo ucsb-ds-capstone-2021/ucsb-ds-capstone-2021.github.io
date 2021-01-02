@@ -2,22 +2,42 @@
 
 Here are recommended software tools for collaboration and project management.
 
-* **Git**: version control  
-    Not just for your code, but also for your documents (markdown is recommended)
-* **GitHub**: project board  
-    Project board-style management tool integrated with GitHub issues
-* **GitHub**: discussion forum  
-    Forum style discussion with thread
-* **Gitter**: instant messaging  
-    _Advantage_: Free and open source. GitHub integration is built-in
+* **Git**: version control software  
+    Keep history of changes in code and documents
+* **GitHub**: collaboration and project management platform  
+    ````{margin}
+    ```{tip}
+    _"Issues are a great way to keep track of tasks, enhancements, and bugs for your projects."_
+    ```
+    ````
+    "[Issue](https://guides.github.com/features/issues/)" tracking, discussion forum, project management board 
+* **Gitter** ([Capstone Gitter Community](https://gitter.im/ucsb-ds-capstone-2021/community)): instant messaging  
+    Free and open source. GitHub integration is built-in
 
-## Videos
+## Learning Resources
 
-Helpful tutorial video for tools above:
+There is a plethora of books and learning resources about Git and GitHub. Here are some I found useful.
 
-```{div} tools-tutorial-video
-<iframe src="https://ucsb-ds-capstone-2021.github.io/slides/output/getting-started.html#9", style="width: 100%; height: 456px; border: 1px black solid;">
-</iframe>
-```
+### Git and GitHub for version control
 
+* [Git and GitHub for Poets](https://youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV) (video tutorial):  
+    Gentle introduction to both Git and GitHub. I like that the presenter uses GitHub's web interface.
+* Git Lab interactive courses (interactive exercises):  
+    * [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github)
+    * [GitHub Pages](https://lab.github.com/githubtraining/github-pages)  
+        ````{margin}
+        ```{tip}
+        This jupyter book is hosted with GitHub Pages!
+        ```
+        ````
+    * [Communicating using Markdown](https://lab.github.com/githubtraining/communicating-using-markdown)
+    * [Reviewing pull requests](https://lab.github.com/githubtraining/reviewing-pull-requests)
+    * [Managing merge conflicts](https://lab.github.com/githubtraining/managing-merge-conflicts)
+* [Git](https://www.youtube.com/playlist?list=PLnBmnPde1L9dsZV1cR2DFYNLNKrO56mjy) (video tutorial): More detailed Git tutorials
 
+### GitHub for collaboration
+
+* Project management board: 
+    * [Overview](https://youtu.be/nI5VdsVl0FM), [Short Demo](https://youtu.be/ff5cBkPg-bQ?t=40), [In-depth](https://youtube.com/playlist?list=PLiO7XHcmTslc5hGrbnnmHIb0SeJLTpOEu)
+    * [Tasks, Labels & Milestone](https://youtu.be/ukYSRu4k0gs)
+    * [Discussions](https://youtu.be/BnnevOZx7g0)
