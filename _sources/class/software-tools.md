@@ -15,7 +15,7 @@ Here are recommended software tools for collaboration and project management.
 
 Helpful tutorial video for tools above:
 
-```{div} my-class
+```{div} tools-tutorial-video
 <iframe src="https://ucsb-ds-capstone-2021.github.io/slides/output/getting-started.html#9", style="width: 100%; height: 456px; border: 1px black solid;">
 </iframe>
 ```
