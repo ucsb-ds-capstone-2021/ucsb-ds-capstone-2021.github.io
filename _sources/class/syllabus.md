@@ -26,7 +26,8 @@ Message us on [UCSB DS Capstone 2021 Gitter](https://gitter.im/ucsb-ds-capstone-
 You are expected to fully engage with your project groups. While you will be assigned a letter grade, the evaluation is based on your participation and group work. The following will be the grading criteria.
 
 * **Meetings/Participation (individual)**: 40%  
-    Attendance in group meetings and lecture time sessions
+    - Attendance in group meetings and lecture time sessions
+    - Completed readings and participated in discussion
 * **Deliverables (group)**:
     (More details to be added)
     * **Progress updates**: 30%  
