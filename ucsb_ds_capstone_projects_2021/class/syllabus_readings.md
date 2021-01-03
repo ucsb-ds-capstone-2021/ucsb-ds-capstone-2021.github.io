@@ -9,7 +9,12 @@ Because you will be collaborating with your team, structuring your communication
 
 Read chapters 1 - 2 to help you get in the mindset of working on projects.
 
-* [Login using UCSB NetID](http://uclibs.org/PID/432785)
+* [Login using UCSB NetID](http://uclibs.org/PID/432785)  
+	````{margin}
+	```{tip}
+	If you have trouble seeing the book, use a private browsing mode
+	```
+	````
 * Then go to the [book link](https://learning.oreilly.com/library/view/think-like-a/9781633430273/)
 
 ## Team work and collaboration 
