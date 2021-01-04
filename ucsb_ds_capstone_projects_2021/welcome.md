@@ -4,7 +4,12 @@ We are excited to have you as students in the first capstone project course offe
 
 This [jupyter book](https://jupyterbook.org) will be the central place to find all course material for the course as well as host your project progress in the future.
 
-## Course Calendar
+```{note}
+Class Links:
+* [DS Capstone GitHub org](https://github.com/ucsb-ds-capstone-2021)
+* [DS Capstone Gitter community](https://gitter.im/ucsb-ds-capstone-2021)
+* [DS Capstone Google Drive](https://drive.google.com/drive/u/0/folders/0AOYLmJQK0I4IUk9PVA)
+```
 
 ````{margin}
 ```{warning}
