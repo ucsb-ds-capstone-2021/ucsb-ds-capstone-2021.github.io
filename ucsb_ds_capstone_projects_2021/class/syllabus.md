@@ -8,6 +8,11 @@ The project portion of the capstone sequence is cross-listed:
 In addition to each project having sponsors and faculty mentors, the class logistics will be handled by the teaching staff.
 
 **Instructors**
+````{margin}
+```{note}
+Message us on [UCSB DS Capstone 2021 Gitter](https://gitter.im/ucsb-ds-capstone-2021/community) instead of emails. ([Install Gitter](https://gitter.im/apps))
+```
+````
 
 * Alex Franks
 * Sang-Yun Oh
@@ -16,10 +21,6 @@ In addition to each project having sponsors and faculty mentors, the class logis
 
 * Joshua Bang
 * Chau Tran
-
-```{note}
-Message us on [UCSB DS Capstone 2021 Gitter](https://gitter.im/ucsb-ds-capstone-2021/community) instead of emails. ([Install Gitter](https://gitter.im/apps))
-```
 
 ## Grading
 
