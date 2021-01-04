@@ -7,7 +7,10 @@ Because you will be collaborating with your team, structuring your communication
 ```
 ## Think like a data scientist
 
-Read chapters 1 - 2 to help you get in the mindset of working on projects.
+You will be reading and making comments on the text via google docs:
+* [Google doc copy of textbook](https://docs.google.com/document/d/10iyEB0-yZmUX5wu3jrISu1GqQm90uKBSoy2zDmvu8oI/edit?usp=sharing)
+
+You can access the publisher copy of the text by following these instructions:
 
 * [Login using UCSB NetID](http://uclibs.org/PID/432785)  
 	````{margin}
