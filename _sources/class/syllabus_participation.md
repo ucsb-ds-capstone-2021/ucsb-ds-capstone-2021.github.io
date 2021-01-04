@@ -6,7 +6,7 @@ Each team will collectively keep track of attendance in a [shared Google sheet](
 
 We will discuss topics of interest for the whole class during lecture times (MW 5-6:15 pm PST). Students are expected to attend. 
 
-Lectures can be accessed at this [zoom link](https://ucsb.zoom.us/j/87093664522?pwd=bzlwQWZFdmJ2bnk0c3JOS1hqakxpUT09).
+The lecture zoom link can be accessed from the calendar on the [welcome page](https://ucsb-ds-capstone-2021.github.io/welcome.html)
 
 ```{note}
 We don't expect to meet every session, and class Google calendar will reflect any cancellations.
