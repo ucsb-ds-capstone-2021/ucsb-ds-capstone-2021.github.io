@@ -27,7 +27,7 @@ You are expected to fully engage with your project groups. While you will be ass
 
 * **Meetings/Participation (individual)**: 20%  
     - Attendance in group meetings and lecture time sessions
-* **Assigned Readings
+* **Assigned Reading**: 20%
     - Must make at least one comment (question, answer, thought etc) on assigned readings
 * **Deliverables (group)**:
     (More details to be added)
