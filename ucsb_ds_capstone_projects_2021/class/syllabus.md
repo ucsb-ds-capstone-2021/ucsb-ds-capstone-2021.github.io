@@ -20,7 +20,7 @@ Message us on [UCSB DS Capstone 2021 Gitter](https://gitter.im/ucsb-ds-capstone-
 **Teaching Assistants**
 
 * Joshua Bang
-* Chau Tran
+* Chau B. Tran
 
 ## Grading
 
