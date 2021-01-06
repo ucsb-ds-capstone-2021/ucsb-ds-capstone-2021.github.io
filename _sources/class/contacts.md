@@ -12,7 +12,7 @@
 | Kanenobu, Shaka           | shakakanenobu@ucsb.edu     | Student    |
 | Pasupathy, Vikram         | vpasupathy@ucsb.edu        | Student    |
 | Polakof, Ari              | a_polakof@ucsb.edu         | Student    |
-| Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
+| Lin, Sikun                | sikun@ucsb.edu             | TA         |
 ```
 
 ```{tabbed} CalCOFI1
@@ -110,7 +110,7 @@
 | Kathika, Sai              | saiprem@ucsb.edu           | Student    |
 | Quinn, Austin             | austinquinn@ucsb.edu       | Student    |
 | Tang, Shuyun              | shuyun@ucsb.edu            | Student    |
-| Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
+| Lin, Sikun                | sikun@ucsb.edu             | TA         |
 ```
 
 ```{tabbed} NCEAS
