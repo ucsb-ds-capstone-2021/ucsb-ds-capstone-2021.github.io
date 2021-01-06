@@ -6,7 +6,7 @@ This [jupyter book](https://jupyterbook.org) will be the central place to find a
 
 ```{note}
 * [DS Capstone GitHub org](https://github.com/ucsb-ds-capstone-2021)
-* [DS Capstone Gitter community](https://gitter.im/ucsb-ds-capstone-2021/community) (Use your GitHub account)
+* [DS Capstone Gitter community](https://gitter.im/ucsb-ds-capstone-2021/community) [[demo screencast video](https://youtu.be/w088-RaZwEo)]
 * [DS Capstone Google Drive](https://drive.google.com/drive/u/0/folders/0AOYLmJQK0I4IUk9PVA)
 ```
 
