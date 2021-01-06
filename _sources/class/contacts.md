@@ -55,6 +55,7 @@
 | Name                      | Email address              | Membership |
 |---------------------------|----------------------------|------------|
 | Lee, Michelle             | michellejlee@ucsb.edu      | Sponsor    |
+| Seltmann, Katja           | seltmann@ccber.ucsb.edu    | Sponsor    |
 | Kharitonova, Kate         | ykk@cs.ucsb.edu            | Faculty    |
 | Bachelder, Nick           | nbachelder@ucsb.edu        | Student    |
 | Chen, Angel               | angelchen@ucsb.edu         | Student    |
