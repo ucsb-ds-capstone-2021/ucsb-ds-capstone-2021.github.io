@@ -145,6 +145,7 @@
 | Name                      | Email address              | Membership |
 |---------------------------|----------------------------|------------|
 | Glantz, Namino            | nglantz@sansum.org         | Sponsor    |
+| Kerr, David               | dkerr@sansum.org           | Sponsor    |
 | Franks, Alex              | afranks@pstat.ucsb.edu     | Faculty    |
 | Holzer, Zoe               | zmholzer@ucsb.edu          | Student    |
 | Lin, Lawrence             | lawrencedlin@ucsb.edu      | Student    |
