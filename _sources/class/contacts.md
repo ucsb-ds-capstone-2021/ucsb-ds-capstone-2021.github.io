@@ -12,6 +12,7 @@
 | Kanenobu, Shaka           | shakakanenobu@ucsb.edu     | Student    |
 | Pasupathy, Vikram         | vpasupathy@ucsb.edu        | Student    |
 | Polakof, Ari              | a_polakof@ucsb.edu         | Student    |
+| Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
 ```
 
 ```{tabbed} CalCOFI1
@@ -23,6 +24,7 @@
 | Rupprecht, Andie          | andierupprecht@ucsb.edu    | Student    |
 | Tieng, Gavin              | got@ucsb.edu               | Student    |
 | Vong, Meng                | mvong@ucsb.edu             | Student    |
+| Tran, Chau                | chautran@ucsb.edu          | TA         |
 ```
 
 ```{tabbed} CalCOFI2
@@ -34,6 +36,7 @@
 | Lee, Karsyn               | karsyn@ucsb.edu            | Student    |
 | Patwardhan, Jay           | jaypatwardhan@ucsb.edu     | Student    |
 | Razo, Cristian            | crazo@ucsb.edu             | Student    |
+| Tran, Chau                | chautran@ucsb.edu          | TA         |
 ```
 
 ```{tabbed} Carpe Data
@@ -45,6 +48,7 @@
 | Sheridan, Sam             | samuelsheridan@ucsb.edu    | Student    |
 | Xu, Matthew               | matthewxu@ucsb.edu         | Student    |
 | Yu, Jason                 | jason_yu@ucsb.edu          | Student    |
+| Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
 ```
 
 ```{tabbed} CCBER
@@ -57,6 +61,7 @@
 | Fang, Zoe                 | sfang@ucsb.edu             | Student    |
 | Rapaport, Mitchell        | mrapaport@ucsb.edu         | Student    |
 | Solomon, Samantha         | samanthajsolomon@ucsb.edu  | Student    |
+| Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
 ```
 
 ```{tabbed} CSEP
@@ -68,6 +73,7 @@
 | Benipal, Karanveer        | ksbenipal@ucsb.edu         | Student    |
 | Medrano, Manny            | manny@ucsb.edu             | Student    |
 | Toranji, Romtin           | rtoranji@ucsb.edu          | Student    |
+| Zheng, Jiajing            | jiajing_zheng@ucsb.edu     | TA         |
 ```
 
 ```{tabbed} Evidation
@@ -79,6 +85,7 @@
 | Coleman, Matthew          | matthewbcoleman@ucsb.edu   | Student    |
 | Kim, Joanna               | joannakim@ucsb.edu         | Student    |
 | Varma, Achyuth            | achyuth@ucsb.edu           | Student    |
+| Zheng, Jiajing            | jiajing_zheng@ucsb.edu     | TA         |
 ```
 
 ```{tabbed} FLIR
@@ -90,6 +97,7 @@
 | Nunes, Nicholas           | nnunes@ucsb.edu            | Student    |
 | Sadhukhan, Neil           | neil_sadhukhan@ucsb.edu    | Student    |
 | Zhang, Bill               | bill_zhang@ucsb.edu        | Student    |
+| Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
 ```
 
 ```{tabbed} Invoca
@@ -102,6 +110,7 @@
 | Kathika, Sai              | saiprem@ucsb.edu           | Student    |
 | Quinn, Austin             | austinquinn@ucsb.edu       | Student    |
 | Tang, Shuyun              | shuyun@ucsb.edu            | Student    |
+| Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
 ```
 
 ```{tabbed} NCEAS
@@ -115,6 +124,7 @@
 | Ran, Lia                  | ran275@ucsb.edu            | Student    |
 | Sternberg, Sophia         | sophiasternberg@ucsb.edu   | Student    |
 | Zhao, Karen               | karenezhao@ucsb.edu        | Student    |
+| Tran, Chau                | chautran@ucsb.edu          | TA         |
 ```
 
 ```{tabbed} NRI
@@ -127,6 +137,7 @@
 | Padmanabhan, Priya        | priyapadmanabhan@ucsb.edu  | Student    |
 | Pugal, Surya              | spugal@ucsb.edu            | Student    |
 | Yue, Rey                  | yixiaoyue@ucsb.edu         | Student    |
+| Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
 ```
 
 ```{tabbed} Sansum
@@ -139,6 +150,7 @@
 | Salgado Zavaleta, Vanessa | vsalgadozavaleta@ucsb.edu  | Student    |
 | San Juan, Emily           | emilysanjuan@ucsb.edu      | Student    |
 | Simon, Jake               | jakesimon@ucsb.edu         | Student    |
+| Zheng, Jiajing            | jiajing_zheng@ucsb.edu     | TA         |
 ```
 
 
