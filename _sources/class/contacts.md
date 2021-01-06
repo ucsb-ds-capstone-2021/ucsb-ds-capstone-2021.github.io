@@ -73,7 +73,7 @@
 | Benipal, Karanveer        | ksbenipal@ucsb.edu         | Student    |
 | Medrano, Manny            | manny@ucsb.edu             | Student    |
 | Toranji, Romtin           | rtoranji@ucsb.edu          | Student    |
-| Zheng, Jiajing            | jiajing_zheng@ucsb.edu     | TA         |
+| Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
 ```
 
 ```{tabbed} Evidation
