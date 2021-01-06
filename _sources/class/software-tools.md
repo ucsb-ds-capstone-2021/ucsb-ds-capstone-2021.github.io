@@ -11,8 +11,8 @@ Here are recommended software tools for collaboration and project management.
     ```
     ````
     "[Issue](https://guides.github.com/features/issues/)" tracking, discussion forum, project management board 
-* **Gitter** ([Capstone Gitter Community](https://gitter.im/ucsb-ds-capstone-2021/community)): instant messaging  
-    Free and open source. GitHub integration is built-in
+* **Gitter**: instant messaging 
+    Free and open source. GitHub integration is built-in  
 
 ## Learning Resources
 
