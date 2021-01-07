@@ -131,6 +131,7 @@
 ```{tabbed} NRI
 | Name                      | Email address              | Membership |
 |---------------------------|----------------------------|------------|
+| Kosik, Ken                | kosik@ucsb.edu             | Sponsor    |
 | Uribe, Juliana Acosta     | acostauribe@ucsb.edu       | Sponsor    |
 | Franks, Alex              | afranks@pstat.ucsb.edu     | Faculty    |
 | Huang, Helen              | ziyihuang@ucsb.edu         | Student    |
