@@ -85,7 +85,6 @@
 | Coleman, Matthew          | matthewbcoleman@ucsb.edu   | Student    |
 | Kim, Joanna               | joannakim@ucsb.edu         | Student    |
 | Lee, Karsyn               | karsyn@ucsb.edu            | Student    |
-| Varma, Achyuth            | achyuth@ucsb.edu           | Student    |
 | Zheng, Jiajing            | jiajing_zheng@ucsb.edu     | TA         |
 ```
 
