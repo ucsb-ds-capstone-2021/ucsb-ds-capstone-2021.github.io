@@ -161,18 +161,18 @@
 
 Projects are co-advised by their respective project sponsors and faculty mentors (alphabetical order).
 
-| Organization                                                             | Sponsor                        |
-|--------------------------------------------------------------------------|--------------------------------|
-| Appfolio                                                                 | Peng-Yuan Lai and Soeren Thust |
-| CalCOFI, California Sea Grant, Scripps Institution of Oceanography, UCSD | Erin Satterthwaite             |
-| Carpe Data                                                               | Crystal Shuijing Zhang         |
-| Cheadle Center for Biodiversity and Ecological Restoration (CCBER)       | Michelle Lee                   |
-| Center for Science and Engineering Partnerships (CSEP)                   | Lubi Lenaburg                  |
-| Evidation Health                                                         | Eric Daza                      |
-| FLIR                                                                     | Louis Tremblay                 |
-| Invoca                                                                   | Mike Lawrence                  |
-| National Center for Ecological Analysis and Synthesis (NCEAS)            | Julien Brun and Allison Horst  |
-| Neuroscience Research Institute (NRI)                                    | Juliana Acosta Uribe           |
-| Sansum Diabetes Institute                                                | Namino Glantz                  |
+| Organization                                                             | Sponsor                            |
+|--------------------------------------------------------------------------|------------------------------------|
+| Appfolio                                                                 | Peng-Yuan Lai and Soeren Thust     |
+| CalCOFI, California Sea Grant, Scripps Institution of Oceanography, UCSD | Erin Satterthwaite                 |
+| Carpe Data                                                               | Crystal Shuijing Zhang             |
+| Cheadle Center for Biodiversity and Ecological Restoration (CCBER)       | Michelle Lee                       |
+| Center for Science and Engineering Partnerships (CSEP)                   | Lubi Lenaburg                      |
+| Evidation Health                                                         | Eric Daza                          |
+| FLIR                                                                     | Louis Tremblay                     |
+| Invoca                                                                   | Mike Lawrence                      |
+| National Center for Ecological Analysis and Synthesis (NCEAS)            | Julien Brun and Allison Horst      |
+| Neuroscience Research Institute (NRI)                                    | Juliana Acosta-Uribe and Ken Kosik |
+| Sansum Diabetes Institute                                                | Namino Glantz                      |
 
 
