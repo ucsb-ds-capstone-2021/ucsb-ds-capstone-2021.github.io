@@ -33,7 +33,6 @@
 | Satterthwaite, Erin       | esatterthwaite@ucsd.edu    | Sponsor    |
 | Oh, Sang-Yun              | syoh@ucsb.edu              | Faculty    |
 | Hollingsworth, Robin      | rhollingsworth@ucsb.edu    | Student    |
-| Lee, Karsyn               | karsyn@ucsb.edu            | Student    |
 | Patwardhan, Jay           | jaypatwardhan@ucsb.edu     | Student    |
 | Razo, Cristian            | crazo@ucsb.edu             | Student    |
 | Tran, Chau                | chautran@ucsb.edu          | TA         |
@@ -85,6 +84,7 @@
 | Bayerle, Peter            | pbayerle@ucsb.edu          | Student    |
 | Coleman, Matthew          | matthewbcoleman@ucsb.edu   | Student    |
 | Kim, Joanna               | joannakim@ucsb.edu         | Student    |
+| Lee, Karsyn               | karsyn@ucsb.edu            | Student    |
 | Varma, Achyuth            | achyuth@ucsb.edu           | Student    |
 | Zheng, Jiajing            | jiajing_zheng@ucsb.edu     | TA         |
 ```
