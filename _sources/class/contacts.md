@@ -172,6 +172,6 @@ Projects are co-advised by their respective project sponsors and faculty mentors
 | Invoca                                                                   | Mike Lawrence                      |
 | National Center for Ecological Analysis and Synthesis (NCEAS)            | Julien Brun and Allison Horst      |
 | Neuroscience Research Institute (NRI)                                    | Juliana Acosta-Uribe and Ken Kosik |
-| Sansum Diabetes Research Institute                                       | Namino Glantz                      |
+| Sansum Diabetes Research Institute                                       | Namino Glantz and David Kerr       |
 
 
