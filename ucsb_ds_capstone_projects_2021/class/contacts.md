@@ -33,7 +33,6 @@
 | Satterthwaite, Erin       | esatterthwaite@ucsd.edu    | Sponsor    |
 | Oh, Sang-Yun              | syoh@ucsb.edu              | Faculty    |
 | Hollingsworth, Robin      | rhollingsworth@ucsb.edu    | Student    |
-| Lee, Karsyn               | karsyn@ucsb.edu            | Student    |
 | Patwardhan, Jay           | jaypatwardhan@ucsb.edu     | Student    |
 | Razo, Cristian            | crazo@ucsb.edu             | Student    |
 | Tran, Chau                | chautran@ucsb.edu          | TA         |
@@ -55,6 +54,7 @@
 | Name                      | Email address              | Membership |
 |---------------------------|----------------------------|------------|
 | Lee, Michelle             | michellejlee@ucsb.edu      | Sponsor    |
+| Seltmann, Katja           | seltmann@ccber.ucsb.edu    | Sponsor    |
 | Kharitonova, Kate         | ykk@cs.ucsb.edu            | Faculty    |
 | Bachelder, Nick           | nbachelder@ucsb.edu        | Student    |
 | Chen, Angel               | angelchen@ucsb.edu         | Student    |
@@ -84,7 +84,7 @@
 | Bayerle, Peter            | pbayerle@ucsb.edu          | Student    |
 | Coleman, Matthew          | matthewbcoleman@ucsb.edu   | Student    |
 | Kim, Joanna               | joannakim@ucsb.edu         | Student    |
-| Varma, Achyuth            | achyuth@ucsb.edu           | Student    |
+| Lee, Karsyn               | karsyn@ucsb.edu            | Student    |
 | Zheng, Jiajing            | jiajing_zheng@ucsb.edu     | TA         |
 ```
 
@@ -130,7 +130,8 @@
 ```{tabbed} NRI
 | Name                      | Email address              | Membership |
 |---------------------------|----------------------------|------------|
-| Uribe, Juliana Acosta     | acostauribe@ucsb.edu       | Sponsor    |
+| Acosta-Uribe, Juliana     | acostauribe@ucsb.edu       | Sponsor    |
+| Kosik, Ken                | kosik@ucsb.edu             | Sponsor    |
 | Franks, Alex              | afranks@pstat.ucsb.edu     | Faculty    |
 | Huang, Helen              | ziyihuang@ucsb.edu         | Student    |
 | Misra, Shivam             | shivammisra@ucsb.edu       | Student    |
@@ -144,6 +145,7 @@
 | Name                      | Email address              | Membership |
 |---------------------------|----------------------------|------------|
 | Glantz, Namino            | nglantz@sansum.org         | Sponsor    |
+| Kerr, David               | dkerr@sansum.org           | Sponsor    |
 | Franks, Alex              | afranks@pstat.ucsb.edu     | Faculty    |
 | Holzer, Zoe               | zmholzer@ucsb.edu          | Student    |
 | Lin, Lawrence             | lawrencedlin@ucsb.edu      | Student    |
@@ -158,18 +160,18 @@
 
 Projects are co-advised by their respective project sponsors and faculty mentors (alphabetical order).
 
-| Organization                                                             | Sponsor                        |
-|--------------------------------------------------------------------------|--------------------------------|
-| Appfolio                                                                 | Peng-Yuan Lai and Soeren Thust |
-| CalCOFI, California Sea Grant, Scripps Institution of Oceanography, UCSD | Erin Satterthwaite             |
-| Carpe Data                                                               | Crystal Shuijing Zhang         |
-| Cheadle Center for Biodiversity and Ecological Restoration (CCBER)       | Michelle Lee                   |
-| Center for Science and Engineering Partnerships (CSEP)                   | Lubi Lenaburg                  |
-| Evidation Health                                                         | Eric Daza                      |
-| FLIR                                                                     | Louis Tremblay                 |
-| Invoca                                                                   | Mike Lawrence                  |
-| National Center for Ecological Analysis and Synthesis (NCEAS)            | Julien Brun and Allison Horst  |
-| Neuroscience Research Institute (NRI)                                    | Juliana Acosta Uribe           |
-| Sansum Diabetes Institute                                                | Namino Glantz                  |
+| Organization                                                             | Sponsor                            |
+|--------------------------------------------------------------------------|------------------------------------|
+| Appfolio                                                                 | Peng-Yuan Lai and Soeren Thust     |
+| CalCOFI, California Sea Grant, Scripps Institution of Oceanography, UCSD | Erin Satterthwaite                 |
+| Carpe Data                                                               | Crystal Shuijing Zhang             |
+| Cheadle Center for Biodiversity and Ecological Restoration (CCBER)       | Michelle Lee and Katja Seltmann    |
+| Center for Science and Engineering Partnerships (CSEP)                   | Lubi Lenaburg                      |
+| Evidation Health                                                         | Eric Daza                          |
+| FLIR                                                                     | Louis Tremblay                     |
+| Invoca                                                                   | Mike Lawrence                      |
+| National Center for Ecological Analysis and Synthesis (NCEAS)            | Julien Brun and Allison Horst      |
+| Neuroscience Research Institute (NRI)                                    | Juliana Acosta-Uribe and Ken Kosik |
+| Sansum Diabetes Research Institute                                       | Namino Glantz and David Kerr       |
 
 
