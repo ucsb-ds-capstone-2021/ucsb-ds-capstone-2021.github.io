@@ -12,3 +12,42 @@
     - file: class/contacts
     - file: class/software-tools
 
+- part: Projects
+  chapters:
+    - file: projects/appfolio/description
+      sections:
+        - file: projects/appfolio/update1
+    - file: projects/calcofi1/description
+      sections:
+        - file: projects/calcofi1/update1
+    - file: projects/calcofi2/description
+      sections:
+        - file: projects/calcofi2/update1
+    - file: projects/carpedata/description
+      sections:
+        - file: projects/carpedata/update1
+    - file: projects/ccber/description
+      sections:
+        - file: projects/ccber/update1
+    - file: projects/csep/description
+      sections:
+        - file: projects/csep/update1
+    - file: projects/evidation/description
+      sections:
+        - file: projects/evidation/update1
+    - file: projects/flir/description
+      sections:
+        - file: projects/flir/update1
+    - file: projects/invoca/description
+      sections:
+        - file: projects/invoca/update1
+    - file: projects/nceas/description
+      sections:
+        - file: projects/nceas/update1
+    - file: projects/nri/description
+      sections:
+        - file: projects/nri/update1
+    - file: projects/sansum/description
+      sections:
+        - file: projects/sansum/update1
+
