@@ -1,8 +1,11 @@
-# Update Github Pages
+# Create Project Update Pages
 
 Here are steps to create your versions of class website, make updates, and create a pull request to class github repo.
 
-[**Demo screencast video**](https://drive.google.com/file/d/1oIbLbgnPfvFCHAZiegXYZ8QnUCd9Z-aE/view?usp=sharing)
+```{tip}
+[**Demo screencast video**](https://drive.google.com/file/d/1oIbLbgnPfvFCHAZiegXYZ8QnUCd9Z-aE/view?usp=sharing) of
+(Log in with your UCSB NetID)
+```
 
 ## Step 1. Fork class github Repository
 You need to fork the class github repo [here](https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io) to your own github.
@@ -30,12 +33,11 @@ To publib github pages:
 ## Step 3. Update team project
 Now you have your own github pages to test run updates that you make for your teams, we are ready to make some changes.
 To update your project:
-1. From your forked repo, go to ucsb_ds_capstone_projects_2021/projects/["your team name"]
-2. Choose the file that you need to update.
-3. Update the file and commit changes.
+1. From your forked repo, the directory for your team is `ucsb_ds_capstone_projects_2021/projects/["your team name"]`
+2. Choose the file that you need to update. You can create directories for additional files such as images.
+3. Update the file ([using Jupyter book MyST Markdown](https://jupyterbook.org/content/myst.html)) and commit changes.
 4. Wait until you see the green tick in **Actions**, which means your github pages is rebuilt.
 5. View your changes on the website by go to github pages link in step 2, check if it is ready to be publish on the class main website.
 6. If changes you made are ready to be publish on class website, go to your repo. Choose pull request. Create a pull request to the main repo.
 
-After you create a pull request, course staffs will check your request for conflicts. If your request is accepted to the main repo, your update will be seen on
-the class website.
+After you create a pull request, course staff will check your request for conflicts. If your request is accepted to the main repo, your update will be seen on the class website.

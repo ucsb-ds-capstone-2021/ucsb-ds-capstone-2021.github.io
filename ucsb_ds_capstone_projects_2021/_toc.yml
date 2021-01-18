@@ -12,7 +12,7 @@
     - file: class/contacts
     - file: class/software-tools
       sections: 
-        - file: class/update_gh_pages
+        - file: class/software-tools_create-update-pages
 
 - part: Projects
   chapters:
