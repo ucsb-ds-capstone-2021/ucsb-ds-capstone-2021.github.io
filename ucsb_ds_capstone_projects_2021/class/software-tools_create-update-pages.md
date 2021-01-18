@@ -3,8 +3,7 @@
 Here are steps to create your versions of class website, make updates, and create a pull request to class github repo.
 
 ```{tip}
-[**Demo screencast video**](https://drive.google.com/file/d/1oIbLbgnPfvFCHAZiegXYZ8QnUCd9Z-aE/view?usp=sharing) of
-(Log in with your UCSB NetID)
+[**Demo screencast video**](https://drive.google.com/file/d/1oIbLbgnPfvFCHAZiegXYZ8QnUCd9Z-aE/view?usp=sharing) (Log in with your UCSB NetID)
 ```
 
 ## Step 1. Fork class github Repository
