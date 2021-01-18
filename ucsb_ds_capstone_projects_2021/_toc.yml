@@ -11,7 +11,7 @@
         - file: class/syllabus_deliverables
     - file: class/contacts
     - file: class/software-tools
-       sections: 
+      sections: 
         - file: class/update_gh_pages
 
 - part: Projects
