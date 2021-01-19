@@ -11,6 +11,8 @@
         - file: class/syllabus_deliverables
     - file: class/contacts
     - file: class/software-tools
+      sections: 
+        - file: class/software-tools_create-update-pages
 
 - part: Projects
   chapters:

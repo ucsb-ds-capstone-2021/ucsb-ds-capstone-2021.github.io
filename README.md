@@ -31,7 +31,8 @@ If you'd like to develop on and build the UCSB Data Science Capstone Projects 20
     # cd ucsb-ds-capstone-2021.github.io/ucsb_ds_capstone_projects_2021
     mkdir -p _static && \
         wget -nc -O _static/live.js https://livejs.com/live.js
-    python -m http.server --directory _build/html 2>/dev/null &
+    jb build . && \
+        python -m http.server --directory _build/html 2>/dev/null &
     while inotifywait -re modify --exclude='_build' .
     do 
         jb build .
