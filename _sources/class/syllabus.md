@@ -19,8 +19,10 @@ Message us on [UCSB DS Capstone 2021 Gitter](https://gitter.im/ucsb-ds-capstone-
 
 **Teaching Assistants**
 
-* Joshua Bang
-* Chau Tran
+* Joshua Bang (class, Carpe Data, CCBER, CSEP, FLIR, NRI)
+* Chau Tran (class, CalCOFI1, CalCOFI2, NCEAS)
+* Jiajing Zheng (Evidation, Sansum)
+* Sikun Lin (AppFolio, Invoca)
 
 ## Grading
 
