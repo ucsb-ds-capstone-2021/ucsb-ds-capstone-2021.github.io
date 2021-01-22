@@ -16,15 +16,16 @@
 ```
 
 ```{tabbed} CalCOFI1
-| Name                      | Email address              | Membership |
-|---------------------------|----------------------------|------------|
-| Satterthwaite, Erin       | esatterthwaite@ucsd.edu    | Sponsor    |
-| Oh, Sang-Yun              | syoh@ucsb.edu              | Faculty    |
-| Reznikov, Leron           | lreznikov@ucsb.edu         | Student    |
-| Rupprecht, Andie          | andierupprecht@ucsb.edu    | Student    |
-| Tieng, Gavin              | got@ucsb.edu               | Student    |
-| Vong, Meng                | mvong@ucsb.edu             | Student    |
-| Tran, Chau                | chautran@ucsb.edu          | TA         |
+| Name                      | Email address                | Membership |
+|---------------------------|------------------------------|------------|
+| Coates, Julia             | Julia.Coates@wildlife.ca.gov | Sponsor    |
+| Satterthwaite, Erin       | esatterthwaite@ucsd.edu      | Sponsor    |
+| Oh, Sang-Yun              | syoh@ucsb.edu                | Faculty    |
+| Reznikov, Leron           | lreznikov@ucsb.edu           | Student    |
+| Rupprecht, Andie          | andierupprecht@ucsb.edu      | Student    |
+| Tieng, Gavin              | got@ucsb.edu                 | Student    |
+| Vong, Meng                | mvong@ucsb.edu               | Student    |
+| Tran, Chau                | chautran@ucsb.edu            | TA         |
 ```
 
 ```{tabbed} CalCOFI2
@@ -164,6 +165,7 @@ Projects are co-advised by their respective project sponsors and faculty mentors
 |--------------------------------------------------------------------------|------------------------------------|
 | Appfolio                                                                 | Peng-Yuan Lai and Soeren Thust     |
 | CalCOFI, California Sea Grant, Scripps Institution of Oceanography, UCSD | Erin Satterthwaite                 |
+| California Department of Fish and Wildlife, Marine Region                | Julia Coates                       |
 | Carpe Data                                                               | Crystal Shuijing Zhang             |
 | Cheadle Center for Biodiversity and Ecological Restoration (CCBER)       | Michelle Lee and Katja Seltmann    |
 | Center for Science and Engineering Partnerships (CSEP)                   | Lubi Lenaburg                      |
