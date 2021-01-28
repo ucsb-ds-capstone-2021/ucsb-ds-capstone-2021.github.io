@@ -19,7 +19,7 @@ the LTER Network contaisns hundreds of research projects and thousands of intere
 - each of us have different level of experience in these tools
 - our sponsors, Julien and Allison, did a mini lesson, 
 - learned the workflow we will be using
-- we partnered up and practiced (creating Rproj, branches, pull, push, code review, merge, etc)
+- we partnered up and practiced (creating rmarkdown, branches, pull, push, code review, merge, etc)
 - used tidyverse package for data wrangling and visualization for data from the palmerpenguins package
 - plot relationship penguin body mass versus flipper length 
 - plot bill depth versus bill length for Adelie penguins
