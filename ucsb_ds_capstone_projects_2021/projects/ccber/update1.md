@@ -19,7 +19,7 @@ The goals after this meeting were to take some time to explore the raw dataset, 
 
 ## Week 3
 We discussed the attributes and qualities of the raw data. Also, we explored different options for querying and subsetting the data in more detail. Our sponsors provided more insight on variations in the interactions data. Some of this variation includes: size, coloration, foraging behavior, and sociality of bees. There is significant diversity in the Apidae bee family. Classification and taxonomy can be used to filter some of this variation. 
-![](https://www.google.com/imgres?imgurl=https%3A%2F%2Fars.els-cdn.com%2Fcontent%2Fimage%2F1-s2.0-S1055790318304317-ga1.jpg&imgrefurl=https%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticle%2Fpii%2FS1055790318304317&tbnid=FYm25HOwuaRoeM&vet=12ahUKEwiDqqr8xcLuAhWEkp4KHRJiARgQMygCegUIARDRAQ..i&docid=JkZXkiYfOyZt7M&w=267&h=245&q=apidae&ved=2ahUKEwiDqqr8xcLuAhWEkp4KHRJiARgQMygCegUIARDRAQ)
+![](https://github.com/angelchen7/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/different_bees.png?raw=true "variation in Apidae")
 
 Another topic for consideration was visualization. We learned of different methods to visualize network data. Some of our options included igraph & bipartite for R packages; NetworkX, Plotly, Dash for Python packages. By visulizing this data, we would gain more insight on the network structure and attributes of the data.
 
