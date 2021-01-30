@@ -25,3 +25,16 @@ We discussed the attributes and qualities of the raw data. Also, we explored dif
 Another topic for consideration was visualization. We learned of different methods to visualize network data. Some of our options included igraph & bipartite for R packages; NetworkX, Plotly, Dash for Python packages. By visulizing this data, we would gain more insight on the network structure and attributes of the data.
 
 ![](https://github.com/angelchen7/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Rplot04.png?raw=true)
+
+
+## Week 4
+
+This week we focused on the specific bee family melittidae to create interaction networks. Our python group had some difficulty with creating the network visualizations. We tried using NetworkX and Plotly but there was a pretty steep learning curve when it came to the syntax involved. One issue we had was that the specific plotly module we were using required numerical values so we would have to assign values to the different melittidae interactions in our data. We were able to get some networks plotted but they were in no way presentable or useful. 
+
+In R, we spent time cleaning data in a way that would be useful in coding various visualization methods. In particular, building ways to filter data by various genus, species, and family levels took a good amount of time. To accomplish this, and also to use the information to identify the unique interactions between interesting bees and various types of plants, we utilized the dplyr and tidyr quite a bit. Finally, using these data, we were able to assign occurrence quantities to these interactions, inspiring the use of ggplot and its heat map feature to give us more useful results. 
+
+In meeting, we discussed ideas for various filtering methods and their respective uses, and also discussed future possibilities for use of such data.
+
+![](https://github.com/mitchellrapaport/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-01-30%20at%205.10.01%20PM.png)
+
+![](https://github.com/mitchellrapaport/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-01-27%20at%202.16.23%20PM.png)
