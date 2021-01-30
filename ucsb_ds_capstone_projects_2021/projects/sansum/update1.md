@@ -33,7 +33,7 @@ The Sansum Diabetes Research Institute is located in Santa Barbara, California. 
 
 The vision of the Mil Familias Program is to reduce dramatically the burden of diabetes, heart disease, and stroke among Latino families in the United States. Bilingual, specially trained community health workers who are knowledgeable about type 2 diabetes (Especialistas) have interacted with families to collect data, answer questions, and connect families to the appropriate resources. Every year for 10 years, more than 100 variables will be measured for each family member using surveys, physical exams, lab tests, and wearable activity monitors. The information that families contribute are then placed in a database about Latino health, behavior, lifestyle, and environment. Based on the data, Mil Familias then plans to intervene in the areas of education, prevention, technology, policy, treatment, and more.
 
-- [Understanding the impact of five major determinants of health (genetics, biology, behavior, psychology, society/environment) on type 2 diabetes in U.S. Hispanic/Latino families: Mil Familias - a cohort study](https://doi.org/10.1186/s12902-019-0483-z)
+- [](https://doi.org/10.1186/s12902-019-0483-z)
 
 
 
