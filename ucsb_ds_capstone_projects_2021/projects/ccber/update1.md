@@ -1,9 +1,10 @@
 # Update 1
 ## Week 1
-The first week is about gaining some domain knowledge of our research interest and exploring the [Global Biotic Interactions (GloBI)](https://www.globalbioticinteractions.org/about) dataset.\
+We spent the first week leraning about our research interest ([bees](https://www.wikiwand.com/en/Bee)) and exploring the [Global Biotic Interactions (GloBI)](https://www.globalbioticinteractions.org/about) dataset.\
 
 <img src="http://clipart-library.com/images/yTk4eXgTE.png" width="200" />\
-We studied the 
+During our weekly meeting with the sponsors, we gained substantial knowledge about bees, especially the vital role it plays in global biotic interactions. In particular, we want to focus our research on the interactions between bees and plants.\
+There are 
 
 ## Week 2
 
