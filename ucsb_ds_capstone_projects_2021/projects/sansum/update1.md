@@ -12,13 +12,13 @@ jupyter:
     name: python3
 ---
 
-# Progress Update #1: Sansum 
+# Update 1
 ![](https://www.sansum.org/wp-content/uploads/2020/05/SDRI_logo_72.png)
 
-### Capstone members:
+### Capstone members
 - Lawrence Lin, Zoe Holzer, Emily San Juan, Jake Simon, Vanessa Salgado
 
-### Faculty:
+### Faculty
 - Alexander Franks, Jiajin Zheng, Dr. Namino Glantz, Dr. David Kerr
 
 
@@ -27,7 +27,7 @@ The Sansum Diabetes Research Institute is located in Santa Barbara, California. 
 
 
 
-### Mil Familias Research Program: 
+### Mil Familias Research Program
 
 ![](https://milfamilias.sansum.org/wp-content/uploads/sites/2/2018/01/mil-familias-990-720h1.jpg)
 
@@ -42,7 +42,7 @@ Almost 1 in 2 Latino adults are at risk of type 2 diabetes. Recent data from the
 
 
 
-### Road Map:
+### Road Map
 Initial Data Analysis
 
 1. Build data infrastructure for research using RedCap
@@ -55,12 +55,12 @@ Advanced Data Analysis:
 
 
 
-### Research Question: 
+### Research Question
 Which factor out of biology, behavior, psychology, society/environment are causing the highest amount of disproportionate burden in the Latino/Latina community of type 2 diabetes in mild (>7%) and severe (>9%) cases respectively?
 ![](https://www.diabetes.org/sites/default/files/inline-images/A1C_Scale%402x.png)
 
 
-### Tools:
+### Tools
 - Excel
 - R 
 - Python
