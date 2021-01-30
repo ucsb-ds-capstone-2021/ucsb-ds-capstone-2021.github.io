@@ -44,6 +44,9 @@ Almost 1 in 2 Latino adults are at risk of type 2 diabetes. Recent data from the
 ### Road Map
 Initial Data Analysis
 
+<img src = "visuals\Age.png" width = 300px height = 200px>
+<img src = "visuals\Education-Insulin Bar Chart.png" width = 300px height = 200px>
+
 1. Build data infrastructure for research using RedCap
 2. Sorting data by qualities using scoring measures
 
