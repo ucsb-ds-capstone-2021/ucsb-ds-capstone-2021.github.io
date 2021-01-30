@@ -44,8 +44,8 @@ Almost 1 in 2 Latino adults are at risk of type 2 diabetes. Recent data from the
 ### Road Map
 Initial Data Analysis
 
-<img src = "https://github.com/lawrencedlin/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/sansum/visuals/Age.png" width = 300px height = 200px>
-<img src = "https://github.com/lawrencedlin/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/sansum/visuals/Education-Insulin%20Bar%20Chart.png" width = 300px height = 200px>
+<img src = "https://raw.githubusercontent.com/lawrencedlin/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/sansum/visuals/Age.png" width = 300px height = 200px>
+<img src = "https://raw.githubusercontent.com/lawrencedlin/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/sansum/visuals/Education-Insulin%20Bar%20Chart.png" width = 300px height = 200px>
 
 1. Build data infrastructure for research using RedCap
 2. Sorting data by qualities using scoring measures
