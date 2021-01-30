@@ -7,4 +7,7 @@ One area of focus in our research was the RHR-Diff algorithm cited in Mishra et 
 
 The researchers of [Mishra et al.](https://www.nature.com/articles/s41551-020-00640-6) created a metric, Heart Rate Over Steps (HROS), and then used the same anomaly detection algorithm used for the RHR diff. (I can go more in depth but I figured RHR diff might cover the same things, Ill come back to this after everyone writes down their stuff) 
 
+# Visualizations
+Here we’ve visualized the number of days between an individual’s symptom onset day and recovery day. Participants with missing values were excluded from this visualization.
+<img src="symptom_date_aligned.png" alt="symptom duration visualization">
 
