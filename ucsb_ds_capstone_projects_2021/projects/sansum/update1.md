@@ -19,7 +19,7 @@ jupyter:
 - Lawrence Lin, Zoe Holzer, Emily San Juan, Jake Simon, Vanessa Salgado
 
 ### Faculty
-- Alexander Franks, Jiajin Zheng, Dr. Namino Glantz, Dr. David Kerr
+- Alexander Franks, Jiajing Zheng, Dr. Namino Glantz, Dr. David Kerr
 
 
 ### Company: Sansum Diabetes Research Institute (SDRI) 
@@ -38,6 +38,7 @@ The vision of the Mil Familias Program is to reduce dramatically the burden of d
 
 
 ### Why is this important?
+
 Almost 1 in 2 Latino adults are at risk of type 2 diabetes. Recent data from the CDC shows that diabetes rates are twice as high for Latinos of Mexican heritage compared with Whites.
 
 
@@ -48,7 +49,7 @@ Initial Data Analysis
 1. Build data infrastructure for research using RedCap
 2. Sorting data by qualities using scoring measures
 
-Advanced Data Analysis: 
+Advanced Data Analysis 
 
 3. Association between the 5 major health determinants of health(genetics, biology, behavior, psychology, society/environment) 
 4. Use HBA1C level markers of type 2 diabetes in mild (>7) and severe (>9) cases to identify causal relationships
@@ -56,7 +57,9 @@ Advanced Data Analysis:
 
 
 ### Research Question
+
 Which factor out of biology, behavior, psychology, society/environment are causing the highest amount of disproportionate burden in the Latino/Latina community of type 2 diabetes in mild (>7%) and severe (>9%) cases respectively?
+
 ![](https://www.diabetes.org/sites/default/files/inline-images/A1C_Scale%402x.png)
 
 
