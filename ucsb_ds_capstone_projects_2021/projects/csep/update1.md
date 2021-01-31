@@ -10,7 +10,8 @@ CSEP does not have any specific goals when it comes to using their data. Here ar
     * By Major
     * By Admit Status
     * By career choice
-5. Freshmen vs. Transfer Admit Outcomes  
+5. Freshmen vs. Transfer Admit Outcomes
+6. Greek life vs Non-Greek life Students
 
 While these are our goals, we have made some progress working towards some of these, yet this is only the beginning.
 
