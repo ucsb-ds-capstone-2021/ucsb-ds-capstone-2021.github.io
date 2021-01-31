@@ -13,6 +13,13 @@ One area of focus in our research was the RHR-Diff algorithm cited in Mishra et 
 
 The HROS-AD is a method of anomaly detection cited in Mishra et al. created to develop a method of pre-detecting covid before the symptom occurrences. This method examines when heart rate is abnormally increased, which is highly suspected to be a giveaway to contracting covid. The HROS-AD method consists of an algorithm based on heart rate divided by steps. There are two major components to the detection process. The first being the pre-processing step.  This step combines the steps and heart rate data, eliminates the possibility of divide by zero errors, creates moving averages with a 400 hour window, downsamples, and commits a z-score transformation that allows for comparison of different scores. The next step is the anomaly detection step. This labels outliers (the anomalies) and inliers. This form of detection was created to become a method to pre-determine covid contraction before symptom of test result confirmation. This was created to be a method which early exposure notifications and precautionary measures can be acted upon swiftly counteract unnecessary exposures. 
 
+## Sleep
+From the Mishra et al paper, we have determined that sleep duration increases greatly after the onset of the outlying RHR-Diff signal.
+
+## Association between Heart Rate Signals and Symptoms
+In this limited sample, we did not detect any obvious association between the magnitude of RHR differences during alarm periods and symptom type or number, illness length or temperature.
+
+
 ## Ethical Implications 
 Our in class conversations about our ethical duties as data scientists sparked some concerning questions about the analysis which we intend to do for the greater good of the population in these unprecedented times. A major concern that was brought to our attention is the population which this analysis would assist. Our research is being conducted on individuals who have produced smart watch data. The problem with this is that only a certain fraction of the population owns a smart watch- those who can afford to buy a smart watch. If this analysis is as successful as we hope, we are assisting a small, wealthier, proportion of the population who will have early warning to covid exposure and be the first to fill hospital beds and consume covid contraction resources. These are important ethical topics we need to keep in mind as we pursue the rest of our research to assure our findings are not doing more harm than good. 
 
