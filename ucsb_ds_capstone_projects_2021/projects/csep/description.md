@@ -2,7 +2,8 @@
 Project description
 
 ```{eval-rst}
-..DANGER::
+.. DANGER::
+
     You are entering an amazing project workspace
 ```
 
