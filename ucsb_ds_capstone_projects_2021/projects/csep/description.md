@@ -1,6 +1,6 @@
 # CSEP
 
-## Project description: Center for Science and Engineering Partnerships (CSEP)
+## Center for Science and Engineering Partnerships (CSEP) Project Description:
 
 ```{eval-rst}
 .. DANGER::
