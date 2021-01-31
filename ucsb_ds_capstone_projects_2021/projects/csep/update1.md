@@ -3,7 +3,7 @@ Project updates
 ## CSEP Center for Science and Engineering Partnerships  
 ### Introduction  
 The CSEP Alumni Tracking Project tracks students graduating from  XXXX - XXXX from the University of California, Santa Barbara. The overall goal of tracking students is monitoring opportunites UCSB provides and the impact on student outcomes. The data comes from a mix of sources: online - LinkedIn, personal websites, and professional organizations - and UCSB's own information about students. The organization providing the data does not have an overall goal for the outcome of the data: the CSEP group is free to explore any possible avenue for the data within reason.  
-###Goals
+### Goals
 As stated above CSEP does not have any specific goals when it comes to using their data. Here are some possible avenues we can explore:  
 1. Outcomes by Major  
 2. Graduate Schools UCSB students attend
