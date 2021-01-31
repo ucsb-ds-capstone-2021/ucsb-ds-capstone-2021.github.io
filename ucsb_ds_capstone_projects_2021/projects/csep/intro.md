@@ -1,18 +1,6 @@
 ```{note}
-Here is a note (directive)
+Here is a note
 ```
-
-```{eval-rst}
-.. note::
-
-    A note written in reStructuredText.
-```
-
-````{margin}
-```{note}
-Here's my note!
-```
-````
 
 ```python
 print("Hello World")
