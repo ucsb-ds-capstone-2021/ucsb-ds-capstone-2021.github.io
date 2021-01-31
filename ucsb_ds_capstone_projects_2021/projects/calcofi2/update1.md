@@ -16,6 +16,6 @@ The next challenge that arises is effectively splitting the time series data int
 
 We currently are focusing on tackling the challenges of effectively splitting the time series data in the best and most helpful/effective ways possible to help us make forecasts, as well as focusing on extrapolating out the water data into the past so we can correlate it with the fish data. 
 
-### Water Data
+### Water Dataset
 
 We are finding that the most effective ways to split up the water data time series are by certain groupings regarding location and depth. Having tried multiple splits, we are now finding splits that are effective in grouping correctly the different trends and seasonalities that might be occuring in the ocean due to location and depth. Due to these seasonalities and trends being evident now, we are trying to use time series forecasting algorithms to see if we can make backwards forecasts that are accurate, in order to fill in the missing timestep values from the past (pre 2008). We are focusing on being able to accurately predict what the water Tempretures and Salinity would have been, as these might influence all the other characteristics.
