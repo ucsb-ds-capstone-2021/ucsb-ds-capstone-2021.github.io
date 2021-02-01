@@ -2,6 +2,7 @@
 
 
 ## Overview
+<img src="images/fish.png" width="200">
 
 Given various water characteristics over many geographic regions, we would like to correlate this to the makeup of marine life so that in the future observing the water around California's coast can give effective insight over how the makeup of marine life should be. This can be vital to preserving the environment, helping endangered marine species, and ensuring the well health of our oceans in general as well.
 
@@ -17,6 +18,9 @@ The next challenge that arises is effectively splitting the time series data int
 ## Data Exploration
 
 We currently are focusing on tackling the challenges of effectively splitting the time series data in the best and most helpful/effective ways possible to help us make forecasts, as well as focusing on extrapolating out the water data into the past so we can correlate it with the fish data. 
+
+<img src="images/gth.png" width="200">     <img src="images/gth2.png" width="300">
+
 
 ### Water Dataset
 
