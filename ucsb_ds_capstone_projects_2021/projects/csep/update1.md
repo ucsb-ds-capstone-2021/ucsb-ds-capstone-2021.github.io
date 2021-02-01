@@ -12,6 +12,11 @@ CSEP does not have any specific goals when it comes to using their data. Here ar
     * By career choice
 5. Freshmen vs. Transfer Admit Outcomes
 6. Greek life vs Non-Greek life Students
+7. Career outcomes for athletes 
+    * Female athletes in leadership roles 
+8. Students from low-income high schools 
+    * Distribution by undergradute major 
+    * Career outcomes and future earnings 
 
 While these are our goals, we have made some progress working towards some of these, yet this is only the beginning.
 
@@ -48,10 +53,5 @@ Finally, Freshmen admits also seem to work more in similar institutions with the
 
     Institutions: Freshman vs Transfer
 ```
-
-### Greek life vs Non-Greek life Students
-A talking point, before the pandemic, for high-school seniors before choosing UCSB has frequently been Greek Life. I remember when I barely knew of UCSB academics, I was well informed of the Greek Life culture that has accumluated here. Some times that culture can be an incentive to come here and for others not so much. It is for these reasons we decided to look into the data around Greek life. 
-
-In the data set, it was found that there is quite a substantial difference in the amount of data for those who did Greek Life compared to those who didn't. For every student who participated in Greek Life, there is data for 6 students who did not partake during their time at UCSB. 
-
-Out of students who did partake in Greek Life at UCSB, it was found that 45.73 % of those individuals are still currently employed. Looking at the individuals who didn't participate in Greek Life at UCSB, it was found that around 41.32 % of those individuals are still currently employed. While the Greek Life students have a higher percentage of individuals who are still employed, we have to still consider that there is a much larger dataset for those who didn't partake.  
+### Undergradute Students from Low-Income High Schools 
+High schools throughout California are far from equal in terms of how they prepare students for college. Additionally, most high shcools serving underprivlaged students lack stong STEM programs and few offer computer science classes. [A study by the Kapor Center](https://www.kaporcenter.org/wp-content/uploads/2019/06/Computer-Science-in-California-Schools.pdf)    found that high schools where most students are black, Latino and Native America, only 39 percent offer computer science courses, compared with 72 percent of schools where white or Asian students make up the majority. Additionally, Computer science courses are more often offered at high-income schools (55 percent) than at low-income schools (35 percent.) Do students who atteneded high-income highshcools have an advantage when it comes to being admitted to UCSB's College of Engieering ? Are students from low-income high shcools being served eqaully by UCSB's STEM programs?
