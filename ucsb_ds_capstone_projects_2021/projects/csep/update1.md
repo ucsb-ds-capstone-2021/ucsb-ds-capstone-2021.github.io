@@ -51,5 +51,7 @@ Finally, Freshmen admits also seem to work more in similar institutions with the
 
 ### Greek life vs Non-Greek life Students
 A talking point, before the pandemic, for high-school seniors before choosing UCSB has frequently been Greek Life. I remember when I barely knew of UCSB academics, I was well informed of the Greek Life culture that has accumluated here. Some times that culture can be an incentive to come here and for others not so much. It is for these reasons we decided to look into the data around Greek life. 
+
 In the data set, it was found that there is quite a substantial difference in the amount of data for those who did Greek Life compared to those who didn't. For every student who participated in Greek Life, there is data for 6 students who did not partake during their time at UCSB. 
+
 Out of students who did partake in Greek Life at UCSB, it was found that 45.73 % of those individuals are still currently employed. Looking at the individuals who didn't participate in Greek Life at UCSB, it was found that around 41.32 % of those individuals are still currently employed. While the Greek Life students have a higher percentage of individuals who are still employed, we have to still consider that there is a much larger dataset for those who didn't partake.  
