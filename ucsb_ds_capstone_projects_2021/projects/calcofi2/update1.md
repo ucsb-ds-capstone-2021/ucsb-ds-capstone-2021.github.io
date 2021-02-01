@@ -1,5 +1,6 @@
 # Update 1
 
+<img src="images/intro.png" width="800">
 
 ## Overview
 <img src="images/fish.png" width="200">
@@ -21,6 +22,8 @@ The next challenge that arises is effectively splitting the time series data int
 ## Data Exploration
 
 We currently are focusing on tackling the challenges of effectively splitting the time series data in the best and most helpful/effective ways possible to help us make forecasts, as well as focusing on extrapolating out the water data into the past so we can correlate it with the fish data. 
+
+The data is collected from the areas viusualized below mainly in the coasts of california. The image of the ship below is how they collected data in the ocean for CalColfi in each station of the visualization given below.  
 
 <img src="images/gth.png" width="400">     <img src="images/gth2.png" width="500">
 
