@@ -1,6 +1,7 @@
 # Update 1
 
 <img src="images/intro.png" width="800">
+<img src="images/intro.png" class="img-responsive" alt=""> </div>
 
 ## Overview
 <img src="images/fish.png" width="200">
