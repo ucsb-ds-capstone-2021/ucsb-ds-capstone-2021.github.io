@@ -15,7 +15,7 @@
     - Species are in common, rather than scientific, names so need to be converted
     - Also column for total price and pounds caught of fish
         - However, because of data privacy, much of the price/pounds are redacted (if there were very few cruises that month).
-        - We are investigating whether we can aggregate the data by using less fine location information in order to get more accurate catch information
+        - We are investigating whether we can aggregate the data by using coarser spatial resolution in order to get more accurate catch information
 
 
 
@@ -23,7 +23,7 @@
 
 <img src="https://raw.githubusercontent.com/reznikovl/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/fishcount_2.png" alt="drawing" style="width:700px;"/>
 
- - First, we took a very general look and looked at the count of species by year. The data appears to be somewhat random, with possible correlations betwen certain species. There appears to be a general downward trend from 2000-2012.
+ - First, we took a very general look at the count of species by year. The data appears to be somewhat random, with possible correlations betwen certain species. There appears to be a general downward trend from 2000-2012.
 
 <img src="https://github.com/reznikovl/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/distribution%20of%20fish%20species%201969-2020.png?raw=true" alt="drawing" style="width:700px;"/>
 
@@ -45,5 +45,5 @@
 
 <img src="https://github.com/reznikovl/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/Screen%20Shot%202021-01-28%20at%2011.09.50%20PM.png?raw=true" alt="drawing" style="width:500px;"/>
 
-- Finally, we looked at a visualization of all Yellowtail larvae identified in 2016 (purple) compared to all locations Yellowtail were caught in the years 2017-2019 (yellow blocks). The time lag was picked to give enough time for recruitment to happen, so the larvae identified in 2016 could possibly be the same fish caught in the later years. All the larvae and almost all of the catches occurred within the Southern California bight.
+- Finally, we looked at a visualization of all Yellowtail larvae identified in 2016 (purple) compared to all locations Yellowtail were caught in the years 2017-2019 (yellow blocks). The time lag was picked to give enough time for recruitment to happen, so the larvae identified in 2016 could possibly be the same fish caught in the later years. All the larvae and almost all of the catches occurred within the Southern California bight which might suggest some spatial relations.
 
