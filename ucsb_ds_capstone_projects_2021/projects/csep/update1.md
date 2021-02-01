@@ -1,5 +1,5 @@
 # Update 1
-## CSEP Project Update ANDREA 
+## CSEP Project Update
 ### Goals
 CSEP does not have any specific goals when it comes to using their data. Here are some possible avenues we can explore:  
 1. Outcomes by Major  
