@@ -7,7 +7,7 @@ Team Invoca decided to meet on Fridays at 4pm. Smaller meetings are sometimes ca
 Dataset:
 We're using the open-source Google Taskmaster-1 dataset, which consists of 13,215 task-based dialogs created between a customer and an agent having a conversation recorded in text about one of the following six topics: ordering pizza, creating auto repair appointments, setting up ride service, ordering movie tickets, ordering coffee drinks, and making restaurant reservations.
 
-![alt text](https://github.com/[UCSB]/[ucsb-ds-capstone-2021.github.io]/ucsb_ds_capstone_projects_2021/projects/invoca/Dataset.png)
+![alt text](https://github.com/austinquinn/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/invoca/Dataset.png)
 
 Project Ideas:
 As a group, we decided on two broad ideas: making a "notetaking" app that collects and displays the key elements in a conversation or making a "categorizing" app that can classify the general labels associated with a conversation, which can then be extended to a chatbot later on. Regardless of which we end up choosing, we need to have machine learning models to learn from the data and a chat client hooked up to a server to send new data to the database and demo our models.
