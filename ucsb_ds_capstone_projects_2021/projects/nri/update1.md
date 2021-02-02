@@ -40,6 +40,27 @@ Listed below are the terminology and biology concepts that are fundamental to ou
 * SAM (Sequence Alignment Mapping) - Align the results to the reference genome
 * VCF (Variant Call Format) - Get rid of all the identical parts and keep the variants info only
 
+**Global IBD**
+* Coefficient of Relatedness
+  * For a pair of individuals separated by m meiosis, the average portion of the genome shared identical by descent (IBD) owing to that shared ancestry is 2^(-m)
+* Portion IBD
+  * Parent-Offspring (OP): 1st degree, 50%
+  * Full siblings: 1st degree, 50%
+  * Half siblings: 2nd degree, 25%
+  * Avuncular: 2nd degree, 25%
+  * Cousins: 3rd degree, 12.5%
+
+**Local IBD**
+* IBD0: shared 0 allele
+* IBD1: shared 1 allele
+* IBD2: shared 2 alleles
+* The length of the shared IBD segments is approximately exponentially distributed with a mean of 100 m^(-1) cM
+
+**Trio Phasing (Haplotype)**
+* Problem - We do not have genomes from both parents of every individual of interest
+* Solutions
+  - Option 1: Add more relatives into the phasing algorithm
+  - Option 2: Use known haplotypes from human populations and change your approach to a supervised method
 
 ## Data Files
 
