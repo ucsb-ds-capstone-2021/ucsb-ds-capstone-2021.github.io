@@ -7,12 +7,12 @@ Team Invoca decided to meet on Fridays at 4pm. Smaller meetings are sometimes ca
 Dataset:
 We're using the open-source Google Taskmaster-1 dataset, which consists of 13,215 task-based dialogs created between a customer and an agent having a conversation recorded in text about one of the following six topics: ordering pizza, creating auto repair appointments, setting up ride service, ordering movie tickets, ordering coffee drinks, and making restaurant reservations.
 
-![alt text](https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/invoca/Dataset.png)
+![alt text](https://github.com/austinquinn/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/invoca/Dataset.png)
 
 Project Ideas:
 As a group, we decided on two broad ideas: making a "notetaking" app that collects and displays the key elements in a conversation or making a "categorizing" app that can classify the general labels associated with a conversation, which can then be extended to a chatbot later on. Regardless of which we end up choosing, we need to have machine learning models to learn from the data and a chat client hooked up to a server to send new data to the database and demo our models.
 
-![alt text](https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/invoca/ProjectConcept.png)
+![alt text](https://github.com/austinquinn/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/invoca/ProjectConcept.png)
 
 Model Progress:
 Once we saw that traditional ML methods like SVC, NB, RF, and Logistic Regression yielded high accuracy, (around 98%) we decided to pursue these models and begin generating datasets of labeled lines, in order to generate predictions based only on individual lines. Our procedure was to use the less fine grained, conversation level labels of our data and to generate a dataframe where each row contains a line with the corresponding conversation label. This was a simple naive approach to get some initial results, and as expected the accuracy of these models was not very high. In order to get improved results we plan on generating a new dataframe, this time using the less fine grained annotations from inside the conversation. Because not every line has an annotation associated with it, we are going to use null labels for those lines.
