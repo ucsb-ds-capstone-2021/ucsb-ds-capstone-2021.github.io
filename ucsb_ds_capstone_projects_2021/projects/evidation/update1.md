@@ -38,5 +38,7 @@ Throughout all of these goals, we are not only looking to replicate the studies 
 
 ## Visualizations
 Here we’ve visualized the number of days between an individual’s symptom onset day and recovery day. Participants with missing values were excluded from this visualization.
+
+![Image](symptom_date_aligned.png)
 <img src="symptom_date_aligned.png" alt="symptom duration visualization">
 
