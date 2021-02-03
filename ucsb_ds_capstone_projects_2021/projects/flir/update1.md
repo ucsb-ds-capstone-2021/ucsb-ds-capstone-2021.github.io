@@ -2,6 +2,14 @@
 
 In the FLIR team we're working on real time object detection models with a primary use for autonomous driving cars. Much of the current technology is centered around RGB cameras as seen in figure one. 
 
+```{figure} 1*QOGcvHbrDZiCqTG6THIQ_w.png
+---
+height: 150px
+name: directive-fig
+---
+Here is my figure caption!
+```
+
 <p float="left">
   Figure 1
   <img src="https://github.com/N-Nunes/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/flir/1*QOGcvHbrDZiCqTG6THIQ_w.png" width="350", height = "200">
