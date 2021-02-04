@@ -1,13 +1,13 @@
 # Update 1
-## Center for Science and Engineering Partnerships (CSEP) Project Description:
+## Center for Science and Engineering Partnerships (CSEP) Project:
 ```{eval-rst}
 .. figure:: csepLogo.png
     :scale: 90% 
 ```
 ## Capstone Members:
-    * Manny Medrano, Andrea Anez, Romtin Toranji, Karanveer Benipal
+* Manny Medrano, Andrea Anez, Romtin Toranji, Karanveer Benipal
 ## Faculty:
-    * Alexander Franks, Lubi Lenaburg, Joshua Bang
+* Alexander Franks, Lubi Lenaburg, Joshua Bang
 
 ### Introduction
 
@@ -87,6 +87,6 @@ Finally, Freshmen admits also seem to work more in similar institutions with the
 
 
 ### Software Used
-    * Python
-    * SCRE
-    * Excel
+* Python
+* SCRE
+* Excel
