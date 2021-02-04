@@ -19,7 +19,7 @@ The organization providing the data does not have an overall goal for the outcom
 ### Accessing the Secure Research Compute Environment (SCRE)
 SCRE is a way for the team to access the data without having any breaches in the security of the data itself. Because the data we are using is of actual past UCSB alumni, we don't want to expose any sensitive information of each individual. While on SCRE, we're not only able to access this information, but we're also able to play around with it in python code on our virtual machines! 
 
-More specifically, each capstone member is assigned a specific Virtual Machine (VM) that allows the designated user to access the data through that VM. An important thing to note is that while we have the large existing data in the UCSB alumni dataset, it is not all that is allocated to us, as a way of added security with respect to the alumni. 
+More specifically, each capstone member is assigned a specific Virtual Machine (VM) that allows the designated user to access the data through that VM. An important aspect to note is that while UCSB maintains a complete and thorough alumni dataset, not all of it is allocated to our team. The Family Educational Rights and Privacy Act (FERPA) restricts the alumni and student information that institutions such as UCSB can release. For this reason, our team only works with a portion of the alumni dataset in a secure environment as a means to respect the privacy of UCSB alumni and students.
 
 ### Goals
 Here are some possible avenues we can explore:  
@@ -57,6 +57,36 @@ We can see there exists a drop off in the beginning of the plot because there ha
 
 ### Undergraduate Students from Low-Income High Schools 
 High schools throughout California are far from equal in terms of how they prepare students for college. Additionally, most high schools serving underprivileged students lack strong STEM programs and few offer computer science classes. [A study by the Kapor Center](https://www.kaporcenter.org/wp-content/uploads/2019/06/Computer-Science-in-California-Schools.pdf)    found that high schools where most students are black, Latino and Native America, only 39 percent offer computer science courses, compared with 72 percent of schools where white or Asian students make up the majority. Additionally, Computer science courses are more often offered at high-income schools (55 percent) than at low-income schools (35 percent.) Do students who attended high-income highs schools have an advantage when it comes to being admitted to UCSB's College of Engineering? Are students from low-income high schools being served equally by UCSB's STEM programs?
+
+
+## Socioeconomic Background of Freshmen Admits at UCSB by Major 
+
+```{eval-rst}
+.. figure:: cs.png
+    :scale: 50%
+
+    Socioeconomic Distribution of Students in Computer Science 
+```
+```{eval-rst}
+.. figure:: Chicano_Studies.png
+    :scale: 50%
+
+    Socioeconomic Distribution of Students in Chicano Studies  
+```
+```{eval-rst}
+.. figure:: Sociology.png
+    :scale: 50%
+
+    Socioeconomic Distribution of Students in Sociology 
+```
+```{eval-rst}
+.. figure:: Economics.png
+    :scale: 50%
+
+    Socioeconomic Distribution of Students in Economics
+```
+When looking at these perliminary graphs we can see that majors in STEM feilds are disproportionately populated by studnets from affluent high schools. Currently, these graphs do not include students from out of state, international students or transfer students. 
+
 
 ### Freshmen vs. Transfer Admit Outcomes  
 Many people believe that transferring to a 4 year college because of the amount of money saved. Others believe attending a 4 year university for the full 4 years is the way to go. Taking a quick glance at the data we can see some differences. First we see transfer students obtaining Minors and Bachelors of Science at a higher rate than Freshmen admits. Meanwhile, Freshmen Admits have a higher rate of receiving Bachelors of Art, Bachelors of Fine Arts, and Bachelors of Music. 
