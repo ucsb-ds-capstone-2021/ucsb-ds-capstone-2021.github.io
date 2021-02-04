@@ -62,7 +62,7 @@ High schools throughout California are far from equal in terms of how they prepa
 #### Socioeconomic Background of Freshmen Admits at UCSB by Major 
 
 ```{eval-rst}
-.. figure:: cs.png
+.. figure:: CS.png
     :scale: 50%
 
     Socioeconomic Distribution of Students in Computer Science 
