@@ -85,7 +85,6 @@ High schools throughout California are far from equal in terms of how they prepa
 
     Socioeconomic Distribution of Students in Economics
 ```
-```
 ```{eval-rst}
 .. figure:: Biology.png
     :scale: 65%
