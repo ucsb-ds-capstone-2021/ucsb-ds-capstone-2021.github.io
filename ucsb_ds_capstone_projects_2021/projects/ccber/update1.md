@@ -35,6 +35,6 @@ In R, we spent time cleaning data in a way that would be useful in coding variou
 
 In meeting, we discussed ideas for various filtering methods and their respective uses, and also discussed future possibilities for use of such data.
 
-![](https://github.com/mitchellrapaport/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-01-30%20at%205.10.01%20PM.png)
+![](https://github.com/mitchellrapaport/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-01-30%20at%205.10.01%20PM.png?raw=true)
 
-![](https://github.com/mitchellrapaport/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-01-27%20at%202.16.23%20PM.png)
+![](https://github.com/mitchellrapaport/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-01-27%20at%202.16.23%20PM.png?raw=true)
