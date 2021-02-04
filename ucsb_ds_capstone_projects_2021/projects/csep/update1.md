@@ -59,7 +59,7 @@ We can see there exists a drop off in the beginning of the plot because there ha
 High schools throughout California are far from equal in terms of how they prepare students for college. Additionally, most high schools serving underprivileged students lack strong STEM programs and few offer computer science classes. [A study by the Kapor Center](https://www.kaporcenter.org/wp-content/uploads/2019/06/Computer-Science-in-California-Schools.pdf)    found that high schools where most students are black, Latino and Native America, only 39 percent offer computer science courses, compared with 72 percent of schools where white or Asian students make up the majority. Additionally, Computer science courses are more often offered at high-income schools (55 percent) than at low-income schools (35 percent.) Do students who attended high-income highs schools have an advantage when it comes to being admitted to UCSB's College of Engineering? Are students from low-income high schools being served equally by UCSB's STEM programs?
 
 
-## Socioeconomic Background of Freshmen Admits at UCSB by Major 
+#### Socioeconomic Background of Freshmen Admits at UCSB by Major 
 
 ```{eval-rst}
 .. figure:: cs.png
