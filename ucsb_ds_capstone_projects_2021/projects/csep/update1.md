@@ -63,27 +63,35 @@ High schools throughout California are far from equal in terms of how they prepa
 
 ```{eval-rst}
 .. figure:: CS.png
-    :scale: 50%
+    :scale: 75%
 
     Socioeconomic Distribution of Students in Computer Science 
 ```
 ```{eval-rst}
 .. figure:: Chicano_Studies.png
-    :scale: 50%
+    :scale: 75%
 
     Socioeconomic Distribution of Students in Chicano Studies  
 ```
 ```{eval-rst}
 .. figure:: Sociology.png
-    :scale: 50%
+    :scale: 75%
 
     Socioeconomic Distribution of Students in Sociology 
 ```
 ```{eval-rst}
 .. figure:: Economics.png
-    :scale: 50%
+    :scale: 75%
 
     Socioeconomic Distribution of Students in Economics
+```
+
+```
+```{eval-rst}
+.. figure:: Biology.png
+    :scale: 75%
+
+    Socioeconomic Distribution of Students in Biology
 ```
 When looking at these perliminary graphs we can see that majors in STEM feilds are disproportionately populated by studnets from affluent high schools. Currently, these graphs do not include students from out of state, international students or transfer students. 
 
