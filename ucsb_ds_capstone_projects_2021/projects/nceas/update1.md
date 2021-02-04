@@ -1,9 +1,13 @@
 
 # Update 1
-**National Center for Ecological Analysis and Synthesis (NCEAS) Long Term Ecological Research (LTER) Datasets: R package**
+January 31, 2021
 
-Goal: 
- Build an R package (and accompanying website) that contains one sample dataset from each of the 28 LTER Network sites, for use in (environmental) data science education as an alternative to the popular Iris dataset. 
+## Long Term Ecological Research (LTER) Datasets: R package
+#### Project Sponsor: National Center for Ecological Analysis and Synthesis (NCEAS) 
+#### Team Members: Sam Guo, Adhitya Logan, Lia Ran, Sophia Sternberg, Karen Zhao
+
+**Goal**: 
+ Build an R package (and accompanying website) that contains one sample dataset from each of the 28 LTER Network sites, for use in (environmental) data science education as an alternative to the popular iris dataset. 
 
 LTER datasets are archived in a centralized data repository managed by the Environmental Data Initiative (EDI).
 
