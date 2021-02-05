@@ -7,12 +7,19 @@ January 31, 2021
 ##### Team Members: Sam Guo, Adhitya Logan, Lia Ran, Sophia Sternberg, Karen Zhao
 
 **Goal**: 
- Build an R package (and accompanying website) that contains one sample dataset from each of the 28 LTER Network sites, for use in (environmental) data science education as an alternative to the popular iris dataset. 
+Build an R package (and accompanying website) that contains one sample dataset from each of the 28 LTER Network sites, for use in (environmental) data science education as an alternative to the popular iris dataset. 
 
+
+**Background Info**
+THE LTER network is 
 LTER datasets are archived in a centralized data repository managed by the Environmental Data Initiative (EDI).
 
 
-In the past month, we have:
+**Software Tools**
+
+
+
+**Progress**
 
 - Used Gitter for team communication, a chat interface that is linked with Github repositories
 - Reviewed several LTER sites, each of which contains hundreds of research projects and thousands of interesting real-world environmental datasets
