@@ -1,5 +1,4 @@
 # Update 1
-Project updates
 
 ## Meeting Time:
 Team Invoca decided to meet on Fridays at 4pm. Smaller meetings are sometimes called during the week among students.
