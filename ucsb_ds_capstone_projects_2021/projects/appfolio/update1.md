@@ -1,9 +1,20 @@
 # Update 1 - Project Updates #
 
 ## Introduction: ## 
-Appfolio is a property management company that helps customers manage their rental properties. The capstone team is working with Appfolio to help process invoices from the customers using machine learning. These invoices will then be processed by the model we develop to find the exact price needed to be covered or charged. 
+Appfolio is a property management company that helps customers manage their rental properties. The capstone team is working with Appfolio to help process invoices from the customers using machine learning. These invoices will then be processed by the model we develop to find the exact price needed to be covered or charged. This would be a big step towards automating some tasks of the accountant role.
 
 * To help us compute the model, we are utilizing receipt data from the ICDAR competition from 2019 (https://rrc.cvc.uab.es/?ch=13&com=introduction)  This dataset, which is public, offers us the chance to look at and understand the most important parts of a receipt, including the total value, and gives us a chance to generate a model to recognize it from an image. 
+
+```{figure} receipt1.png
+---
+height: 150px
+name: receipt1
+---
+Receipt Image 
+```
+
+
+
 
 ## What we have done so far: ##
 * Clean out the data. There were some repeated images and missing labels for those repeated images.
@@ -15,6 +26,11 @@ Appfolio is a property management company that helps customers manage their rent
 
 	
 ## Future Tasks: ##
+* Determine which ML models or implementations would work best for our objectives: 
+	- RNN/Faster RNN
+	- YOLO
+	- Detectron 2
+* Implement an Natural Language Processing approach for extracting important keywords
 * Completing the “Total” amount extraction task with a very high level of accuracy.
 * Since different models require different metadata, create different pipelines for the different models.
 * Creation of the input text file with coordinates. From an image, create a text file containing every word/label and a set of coordinates to identify its location. Focusing on the text with the relevant information (including total, the values associated with total, etc)
