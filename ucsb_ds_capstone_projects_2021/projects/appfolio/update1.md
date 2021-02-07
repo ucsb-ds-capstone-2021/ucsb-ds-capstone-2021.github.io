@@ -5,18 +5,20 @@ Appfolio is a property management company that helps customers manage their rent
 
 * To help us compute the model, we are utilizing receipt data from the ICDAR competition from 2019 (https://rrc.cvc.uab.es/?ch=13&com=introduction)  This dataset, which is public, offers us the chance to look at and understand the most important parts of a receipt, including the total value, and gives us a chance to generate a model to recognize it from an image. 
 
-```{figure} receipt1.png
----
-height: 150px
-name: receipt1
----
-Receipt Image 
-```
+
+![receipt1](https://github.com/DSCapstone2021/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/appfolio/receipt1.png?raw=true)
+
 
 
 
 
 ## What we have done so far: ##
+
+![ocr_data](https://github.com/DSCapstone2021/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/appfolio/ocr_data.PNG?raw=true)
+
+*Example of data we were provided in the competition*
+
+
 * Clean out the data. There were some repeated images and missing labels for those repeated images.
 * We trained a brute force approach that assumes we have the transcripts of the invoices and finds the total using predefined rules.
 * We started designing and training our first neural network for which we feed the images of the invoices (converted to pytorch tensors) and we try to get the total value.
