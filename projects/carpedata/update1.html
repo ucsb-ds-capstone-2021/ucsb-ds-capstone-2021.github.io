@@ -399,6 +399,35 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#progress">
+   Progress
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#challenges">
+   Challenges
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next-steps">
+   Next Steps
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -409,6 +438,22 @@
   <div class="section" id="update-1">
 <h1>Update 1<a class="headerlink" href="#update-1" title="Permalink to this headline">¶</a></h1>
 <p>Project updates</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Our team is building a model to predict if a website contains information about an arrest. Our data set consists of 5 GB of website’s raw html code. Each row has a websites html code, the url, and a label of 1 or 0. After classifying a website as 1 or 0, we aim to extract the date of the arrest and the arrest code. Our model has webs craping in mind so we care more about minimizing false negatives than false positives.</p>
+</div>
+<div class="section" id="progress">
+<h2>Progress<a class="headerlink" href="#progress" title="Permalink to this headline">¶</a></h2>
+<p>So far we have implemented the first version of our model using Logistic Regression. Our first step was to clean and extract all of the words out of the websites. To this this we removed all punctuation and special characters from the text and then broke the block of text up into individual words. From here we were able to build encode the words into numerical vectors capable of being used for classification. Combining this with our logistic regression model led to promising classification results.</p>
+</div>
+<div class="section" id="challenges">
+<h2>Challenges<a class="headerlink" href="#challenges" title="Permalink to this headline">¶</a></h2>
+<p>Our biggest challenge so far is the sheer amount of time it takes to clean data. Our cleaning and tokenization script took almost 15 hours to run on the data set (on a laptop). Bringing this time down would be ideal. This could be accomplished through employing employing cloud computing infrastructure, parallelization, and increasing the efficiency of our code.</p>
+</div>
+<div class="section" id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
+<p>Our next steps are to implement text extraction on to of our model. We are going to start with regular expressions. In terms of our base model, we are going to work on hyper-parameter tuning to maximize recall. We are also going to experiment with other models such as Random Forests and Neural Networks.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
