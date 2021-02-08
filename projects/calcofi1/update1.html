@@ -399,6 +399,37 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-introduction">
+   Project Introduction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary-of-datasets">
+   Summary of Datasets
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exploratory-findings">
+   Exploratory Findings
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#next-we-focused-on-yellowtail-because-that-was-the-easiest-one-to-match-between-the-datasets-but-we-will-expand-this-analysis-to-more-species-soon">
+     Next, we focused on yellowtail because that was the easiest one to match between the datasets, but we will expand this analysis to more species soon.
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -408,7 +439,69 @@
                 
   <div class="section" id="update-1">
 <h1>Update 1<a class="headerlink" href="#update-1" title="Permalink to this headline">¶</a></h1>
-<p>Project updates</p>
+<div class="section" id="project-introduction">
+<h2>Project Introduction<a class="headerlink" href="#project-introduction" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>CALCOFI is an organization tasked with studying the marine environment of coastal California and investigating the relationships between climate, fish population, and other human activities.</p></li>
+<li><p>Our project focuses on two separate information sets: fish larvae catch data from CALCOFI cruises intended to measure populations of various species, and commercial fish data from fisheries in California.</p></li>
+<li><p>We are seeking to establish whether any correlation can be drawn from the two datasets, as well as possibly investigate any environmental factors that add variance to the relationship.</p></li>
+</ul>
+</div>
+<div class="section" id="summary-of-datasets">
+<h2>Summary of Datasets<a class="headerlink" href="#summary-of-datasets" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Larvae Dataset</p>
+<ul>
+<li><p>A column for times, and one for every species caught</p></li>
+<li><p>Very sparse dataset, since most of the cruises caught 0 of a particular species</p></li>
+</ul>
+</li>
+<li><p>Commercial Fishery dataset</p>
+<ul>
+<li><p>Columns for time, location, and which species was caught</p></li>
+<li><p>Species are in common, rather than scientific, names so need to be converted</p></li>
+<li><p>Also column for total price and pounds caught of fish</p>
+<ul>
+<li><p>However, because of data privacy, much of the price/pounds are redacted (if there were very few cruises that month).</p></li>
+<li><p>We are investigating whether we can aggregate the data by using coarser spatial resolution in order to get more accurate catch information</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="exploratory-findings">
+<h2>Exploratory Findings<a class="headerlink" href="#exploratory-findings" title="Permalink to this headline">¶</a></h2>
+<img src="https://raw.githubusercontent.com/reznikovl/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/fishcount_2.png" alt="drawing" style="width:700px;"/>
+<ul class="simple">
+<li><p>First, we took a very general look at the count of species by year. The data appears to be somewhat random, with possible correlations betwen certain species. There appears to be a general downward trend from 2000-2012.</p></li>
+</ul>
+<img src="https://github.com/reznikovl/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/distribution%20of%20fish%20species%201969-2020.png?raw=true" alt="drawing" style="width:700px;"/>
+<ul class="simple">
+<li><p>As we can see from the above, there is a wide range of amounts of times each species has been caught, ranging from about 5000-10000.</p></li>
+</ul>
+<div class="section" id="next-we-focused-on-yellowtail-because-that-was-the-easiest-one-to-match-between-the-datasets-but-we-will-expand-this-analysis-to-more-species-soon">
+<h3>Next, we focused on yellowtail because that was the easiest one to match between the datasets, but we will expand this analysis to more species soon.<a class="headerlink" href="#next-we-focused-on-yellowtail-because-that-was-the-easiest-one-to-match-between-the-datasets-but-we-will-expand-this-analysis-to-more-species-soon" title="Permalink to this headline">¶</a></h3>
+<img src="https://github.com/reznikovl/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/yellowtail.png?raw=true" alt="drawing" style="width:350px;"/>
+<img src="https://github.com/reznikovl/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/yellowtailpriceyear.png?raw=true" alt="drawing" style="width:350px;"/>
+<ul class="simple">
+<li><p>It was interesting that while the price and the catch pounds spiked in the same years, the catch price appeared to have an opposite relationship. Another interesting factor is that in 2015, many fisherman appear to catch yellowtail, but there is a much smaller increase in pounds caught.</p></li>
+</ul>
+<img src="https://github.com/reznikovl/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/yellowtail_catch_by_year.png?raw=true" alt="drawing" style="width:350px;"/>
+<img src="https://github.com/reznikovl/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/yellowtail_larva_by_year.png?raw=true" alt="drawing" style="width:350px;"/>
+<ul class="simple">
+<li><p>Another investigation we did focused on seeing whether the two datasets had any visible patterns/connections.</p>
+<ul>
+<li><p>As we can see from the screenshots above, both the larva and the catches appear to have peaks around 1997, and around 2015. Further analysis, both on the environmental causes and on the statistical significance of this connection, is necessary.</p></li>
+</ul>
+</li>
+</ul>
+<img src="https://github.com/reznikovl/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/Screen%20Shot%202021-01-28%20at%2011.09.50%20PM.png?raw=true" alt="drawing" style="width:500px;"/>
+<ul class="simple">
+<li><p>Finally, we looked at a visualization of all Yellowtail larvae identified in 2016 (purple) compared to all locations Yellowtail were caught in the years 2017-2019 (yellow blocks). The time lag was picked to give enough time for recruitment to happen, so the larvae identified in 2016 could possibly be the same fish caught in the later years. All the larvae and almost all of the catches occurred within the Southern California bight which might suggest some spatial relations.</p></li>
+</ul>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

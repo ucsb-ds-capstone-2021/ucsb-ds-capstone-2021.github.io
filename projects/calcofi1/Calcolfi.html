@@ -1,0 +1,1698 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&lt;no title&gt; &#8212; Data Science Capstone 2021</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Data Science Capstone 2021</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../welcome.html">
+   Welcome to Data Science Capstone
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Class Logistics
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../class/syllabus.html">
+   Course Syllabus
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_readings.html">
+     Readings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_participation.html">
+     Meetings/Participation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_deliverables.html">
+     Deliverables
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../class/contacts.html">
+   Teams and Contacts
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../class/software-tools.html">
+   Software and Tools
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/software-tools_create-update-pages.html">
+     Create Project Update Pages
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../appfolio/description.html">
+   appfolio
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../appfolio/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="description.html">
+   calcofi1
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../calcofi2/description.html">
+   calcofi2
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../calcofi2/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../carpedata/description.html">
+   carpedata
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../carpedata/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../ccber/description.html">
+   ccber
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ccber/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../csep/description.html">
+   CSEP
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../csep/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../evidation/description.html">
+   evidation
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../flir/description.html">
+   flir
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../flir/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../invoca/description.html">
+   invoca
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../invoca/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../nceas/description.html">
+   nceas
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nceas/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../nri/description.html">
+   nri
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nri/update1.html">
+     NRI - Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../sansum/description.html">
+   sansum
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sansum/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/projects/calcofi1/Calcolfi.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/calcofi1/Calcolfi.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io/edit/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/Calcolfi.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io/main?urlpath=tree/ucsb_ds_capstone_projects_2021/projects/calcofi1/Calcolfi.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="simple nav section-nav flex-column">
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">fish</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;fish.csv&quot;</span><span class="p">)</span>
+<span class="n">landing</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;landing.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">c922c743758c</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> 
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fish</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Unnamed: 0</th>
+      <th>unique.code</th>
+      <th>S_C</th>
+      <th>S_SC</th>
+      <th>S_L</th>
+      <th>S_S</th>
+      <th>longitude</th>
+      <th>latitude</th>
+      <th>year</th>
+      <th>season</th>
+      <th>...</th>
+      <th>Cyclopteridae1</th>
+      <th>Paralabrax1</th>
+      <th>Sciaenidae1</th>
+      <th>Labridae1</th>
+      <th>Chiasmodon1</th>
+      <th>Clinidae1</th>
+      <th>Hypsoblennius1</th>
+      <th>Gobiidae1</th>
+      <th>Citharichthys1</th>
+      <th>Pleuronichthys1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>11491</td>
+      <td>76.7 49 1904 RL</td>
+      <td>1904</td>
+      <td>RL</td>
+      <td>76.7</td>
+      <td>49.0</td>
+      <td>-120.776667</td>
+      <td>35.086667</td>
+      <td>2019</td>
+      <td>spring</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>11492</td>
+      <td>76.7 51 1904 RL</td>
+      <td>1904</td>
+      <td>RL</td>
+      <td>76.7</td>
+      <td>51.0</td>
+      <td>-120.915000</td>
+      <td>35.021667</td>
+      <td>2019</td>
+      <td>spring</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11493</td>
+      <td>76.7 55 1904 RL</td>
+      <td>1904</td>
+      <td>RL</td>
+      <td>76.7</td>
+      <td>55.0</td>
+      <td>-121.196667</td>
+      <td>34.890000</td>
+      <td>2019</td>
+      <td>spring</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>11494</td>
+      <td>76.7 60 1904 RL</td>
+      <td>1904</td>
+      <td>RL</td>
+      <td>76.7</td>
+      <td>60.0</td>
+      <td>-121.551667</td>
+      <td>34.720000</td>
+      <td>2019</td>
+      <td>spring</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>11495</td>
+      <td>76.7 70 1904 RL</td>
+      <td>1904</td>
+      <td>RL</td>
+      <td>76.7</td>
+      <td>70.0</td>
+      <td>-122.245000</td>
+      <td>34.390000</td>
+      <td>2019</td>
+      <td>spring</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 109 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Month</th>
+      <th>BlockCode</th>
+      <th>SpeciesName</th>
+      <th>SpeciesCode</th>
+      <th>TotalPrice</th>
+      <th>CatchLbs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1969</td>
+      <td>1.0</td>
+      <td>600.0</td>
+      <td>Mackerel, jack</td>
+      <td>55.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1969</td>
+      <td>1.0</td>
+      <td>654.0</td>
+      <td>Mackerel, jack</td>
+      <td>55.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1969</td>
+      <td>1.0</td>
+      <td>665.0</td>
+      <td>Mackerel, jack</td>
+      <td>55.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1969</td>
+      <td>1.0</td>
+      <td>681.0</td>
+      <td>Mackerel, jack</td>
+      <td>55.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1969</td>
+      <td>1.0</td>
+      <td>683.0</td>
+      <td>Anchovy, northern</td>
+      <td>110.0</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(40047, 7)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">landing</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Month</th>
+      <th>BlockCode</th>
+      <th>SpeciesName</th>
+      <th>SpeciesCode</th>
+      <th>TotalPrice</th>
+      <th>CatchLbs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1969</td>
+      <td>1.0</td>
+      <td>600.0</td>
+      <td>Mackerel, jack</td>
+      <td>55.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1969</td>
+      <td>1.0</td>
+      <td>654.0</td>
+      <td>Mackerel, jack</td>
+      <td>55.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1969</td>
+      <td>1.0</td>
+      <td>665.0</td>
+      <td>Mackerel, jack</td>
+      <td>55.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1969</td>
+      <td>1.0</td>
+      <td>681.0</td>
+      <td>Mackerel, jack</td>
+      <td>55.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1969</td>
+      <td>1.0</td>
+      <td>683.0</td>
+      <td>Anchovy, northern</td>
+      <td>110.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>40042</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>40043</th>
+      <td>Rule of Three</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>40044</th>
+      <td>Rows Affected: 36783</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>40045</th>
+      <td>Total Pounds Affected: 75.79%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>40046</th>
+      <td>Total Price Affected: 69.45%</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>40047 rows × 7 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">landing</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Month</th>
+      <th>BlockCode</th>
+      <th>SpeciesName</th>
+      <th>SpeciesCode</th>
+      <th>TotalPrice</th>
+      <th>CatchLbs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>14269</th>
+      <td>1987</td>
+      <td>1.0</td>
+      <td>600.0</td>
+      <td>Opah</td>
+      <td>467.0</td>
+      <td>135.45</td>
+      <td>942</td>
+    </tr>
+    <tr>
+      <th>14273</th>
+      <td>1987</td>
+      <td>1.0</td>
+      <td>700.0</td>
+      <td>Mackerel, Pacific</td>
+      <td>51.0</td>
+      <td>115507.803</td>
+      <td>1527577</td>
+    </tr>
+    <tr>
+      <th>14274</th>
+      <td>1987</td>
+      <td>1.0</td>
+      <td>700.0</td>
+      <td>Opah</td>
+      <td>467.0</td>
+      <td>251.6</td>
+      <td>864</td>
+    </tr>
+    <tr>
+      <th>14279</th>
+      <td>1987</td>
+      <td>1.0</td>
+      <td>719.0</td>
+      <td>Mackerel, Pacific</td>
+      <td>51.0</td>
+      <td>192.29</td>
+      <td>1171</td>
+    </tr>
+    <tr>
+      <th>14295</th>
+      <td>1987</td>
+      <td>1.0</td>
+      <td>1032.0</td>
+      <td>Mackerel, Pacific</td>
+      <td>51.0</td>
+      <td>396.675</td>
+      <td>1148.75</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(3259, 7)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<span class="n">landing</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Month</th>
+      <th>BlockCode</th>
+      <th>SpeciesCode</th>
+      <th>TotalPrice</th>
+      <th>CatchLbs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>3259.000000</td>
+      <td>3259.000000</td>
+      <td>3259.000000</td>
+      <td>3.259000e+03</td>
+      <td>3.259000e+03</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>6.673826</td>
+      <td>809.444001</td>
+      <td>111.689475</td>
+      <td>2.781027e+04</td>
+      <td>4.970166e+05</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>3.325602</td>
+      <td>138.934181</td>
+      <td>126.770598</td>
+      <td>6.519300e+04</td>
+      <td>9.827517e+05</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>441.000000</td>
+      <td>40.000000</td>
+      <td>0.000000e+00</td>
+      <td>5.600000e+00</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>4.000000</td>
+      <td>720.000000</td>
+      <td>51.000000</td>
+      <td>8.898050e+02</td>
+      <td>1.962300e+03</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>7.000000</td>
+      <td>762.000000</td>
+      <td>51.000000</td>
+      <td>5.193300e+03</td>
+      <td>7.697600e+04</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>9.000000</td>
+      <td>863.000000</td>
+      <td>100.000000</td>
+      <td>2.808071e+04</td>
+      <td>5.321430e+05</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>12.000000</td>
+      <td>1042.000000</td>
+      <td>467.000000</td>
+      <td>1.318225e+06</td>
+      <td>9.448035e+06</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Month</th>
+      <th>BlockCode</th>
+      <th>SpeciesName</th>
+      <th>SpeciesCode</th>
+      <th>TotalPrice</th>
+      <th>CatchLbs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>14269</th>
+      <td>1987</td>
+      <td>1.0</td>
+      <td>600.0</td>
+      <td>Opah</td>
+      <td>467.0</td>
+      <td>135.450</td>
+      <td>942.00</td>
+    </tr>
+    <tr>
+      <th>14273</th>
+      <td>1987</td>
+      <td>1.0</td>
+      <td>700.0</td>
+      <td>Mackerel, Pacific</td>
+      <td>51.0</td>
+      <td>115507.803</td>
+      <td>1527577.00</td>
+    </tr>
+    <tr>
+      <th>14274</th>
+      <td>1987</td>
+      <td>1.0</td>
+      <td>700.0</td>
+      <td>Opah</td>
+      <td>467.0</td>
+      <td>251.600</td>
+      <td>864.00</td>
+    </tr>
+    <tr>
+      <th>14279</th>
+      <td>1987</td>
+      <td>1.0</td>
+      <td>719.0</td>
+      <td>Mackerel, Pacific</td>
+      <td>51.0</td>
+      <td>192.290</td>
+      <td>1171.00</td>
+    </tr>
+    <tr>
+      <th>14295</th>
+      <td>1987</td>
+      <td>1.0</td>
+      <td>1032.0</td>
+      <td>Mackerel, Pacific</td>
+      <td>51.0</td>
+      <td>396.675</td>
+      <td>1148.75</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing</span><span class="o">.</span><span class="n">SpeciesName</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;Opah&#39;, &#39;Mackerel, Pacific&#39;, &#39;Yellowtail&#39;,
+       &#39;Anchovy, northern             &#39;, &#39;Mackerel, jack&#39;,
+       &#39;Sardine, Pacific              &#39;], dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing</span><span class="p">[</span><span class="s1">&#39;SpeciesName&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Mackerel, Pacific                 1254
+Sardine, Pacific                   921
+Yellowtail                         407
+Opah                               356
+Mackerel, jack                     180
+Anchovy, northern                  141
+Name: SpeciesName, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_grouped</span> <span class="o">=</span> <span class="n">landing</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="s1">&#39;SpeciesName&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">landing_grouped</span> <span class="o">=</span> <span class="n">landing_grouped</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">landing_grouped</span> <span class="o">=</span> <span class="n">landing_grouped</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;BlockCode&#39;</span><span class="p">,</span> <span class="s1">&#39;SpeciesCode&#39;</span><span class="p">,</span> <span class="s1">&#39;Month&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_grouped</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>SpeciesName</th>
+      <th>TotalPrice</th>
+      <th>CatchLbs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1987</td>
+      <td>Anchovy, northern</td>
+      <td>26716.750</td>
+      <td>720531.00</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1987</td>
+      <td>Mackerel, Pacific</td>
+      <td>1314432.161</td>
+      <td>24095100.05</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1987</td>
+      <td>Mackerel, jack</td>
+      <td>9170.750</td>
+      <td>113402.00</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1987</td>
+      <td>Opah</td>
+      <td>14030.170</td>
+      <td>38861.30</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1987</td>
+      <td>Sardine, Pacific</td>
+      <td>2862.600</td>
+      <td>58613.00</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_grouped</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(192, 4)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_grouped</span><span class="p">[</span><span class="s1">&#39;SpeciesName&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Anchovy, northern             &#39;</span><span class="p">,</span> <span class="s1">&#39;Anchovy, northern&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">landing_grouped</span><span class="p">[</span><span class="s1">&#39;SpeciesName&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Sardine, Pacific              &#39;</span><span class="p">,</span> <span class="s1">&#39;Sardine, Pacific&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_price</span> <span class="o">=</span> <span class="n">landing_grouped</span><span class="p">[[</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span><span class="s1">&#39;SpeciesName&#39;</span><span class="p">,</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]]</span>
+<span class="n">landing_lbs</span> <span class="o">=</span> <span class="n">landing_grouped</span><span class="p">[[</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span><span class="s1">&#39;SpeciesName&#39;</span><span class="p">,</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_grouped</span><span class="o">.</span><span class="n">SpeciesName</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;Anchovy, northern&#39;, &#39;Mackerel, Pacific&#39;, &#39;Mackerel, jack&#39;, &#39;Opah&#39;,
+       &#39;Sardine, Pacific&#39;, &#39;Yellowtail&#39;], dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inflation</span> <span class="o">=</span> <span class="p">[</span><span class="mf">2.32</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="mf">2.13</span><span class="p">,</span> <span class="mf">2.02</span><span class="p">,</span> <span class="mf">1.92</span><span class="p">,</span> <span class="mf">1.87</span><span class="p">,</span> <span class="mf">1.81</span><span class="p">,</span> <span class="mf">1.76</span><span class="p">,</span> <span class="mf">1.72</span><span class="p">,</span> <span class="mf">1.67</span><span class="p">,</span> <span class="mf">1.62</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">1.57</span><span class="p">,</span> <span class="mf">1.53</span><span class="p">,</span> <span class="mf">1.47</span><span class="p">,</span> <span class="mf">1.46</span><span class="p">,</span> <span class="mf">1.42</span><span class="p">,</span> <span class="mf">1.39</span><span class="p">,</span> <span class="mf">1.35</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.27</span><span class="p">,</span> <span class="mf">1.22</span><span class="p">,</span> <span class="mf">1.22</span><span class="p">,</span> <span class="mf">1.19</span><span class="p">,</span> <span class="mf">1.17</span><span class="p">,</span> <span class="mf">1.14</span><span class="p">,</span> <span class="mf">1.12</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.09</span><span class="p">,</span> <span class="mf">1.06</span><span class="p">,</span> <span class="mf">1.04</span><span class="p">,</span> <span class="mf">1.02</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_anchovy</span> <span class="o">=</span> <span class="n">landing_grouped</span><span class="p">[</span><span class="n">landing_grouped</span><span class="o">.</span><span class="n">values</span>  <span class="o">==</span> <span class="s1">&#39;Anchovy, northern&#39;</span><span class="p">]</span>
+<span class="n">landing_mackerelp</span> <span class="o">=</span> <span class="n">landing_grouped</span><span class="p">[</span><span class="n">landing_grouped</span><span class="o">.</span><span class="n">values</span>  <span class="o">==</span> <span class="s1">&#39;Mackerel, Pacific&#39;</span><span class="p">]</span>
+<span class="n">landing_mackerelj</span> <span class="o">=</span> <span class="n">landing_grouped</span><span class="p">[</span><span class="n">landing_grouped</span><span class="o">.</span><span class="n">values</span>  <span class="o">==</span> <span class="s1">&#39;Mackerel, jack&#39;</span><span class="p">]</span>
+<span class="n">landing_opah</span> <span class="o">=</span> <span class="n">landing_grouped</span><span class="p">[</span><span class="n">landing_grouped</span><span class="o">.</span><span class="n">values</span>  <span class="o">==</span> <span class="s1">&#39;Opah&#39;</span><span class="p">]</span>
+<span class="n">landing_sardine</span> <span class="o">=</span> <span class="n">landing_grouped</span><span class="p">[</span><span class="n">landing_grouped</span><span class="o">.</span><span class="n">values</span>  <span class="o">==</span> <span class="s1">&#39;Sardine, Pacific&#39;</span><span class="p">]</span>
+<span class="n">landing_yellowtail</span> <span class="o">=</span> <span class="n">landing_grouped</span><span class="p">[</span><span class="n">landing_grouped</span><span class="o">.</span><span class="n">values</span>  <span class="o">==</span> <span class="s1">&#39;Yellowtail&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_anchovy</span><span class="p">[</span><span class="s1">&#39;PricePound&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing_anchovy</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">landing_anchovy</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span>
+<span class="n">inflation_anchovy</span> <span class="o">=</span> <span class="p">[</span><span class="mf">2.32</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="mf">2.13</span><span class="p">,</span> <span class="mf">2.02</span><span class="p">,</span> <span class="mf">1.92</span><span class="p">,</span>  <span class="mf">1.81</span><span class="p">,</span> <span class="mf">1.76</span><span class="p">,</span> <span class="mf">1.67</span><span class="p">,</span> <span class="mf">1.62</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">1.57</span><span class="p">,</span> <span class="mf">1.53</span><span class="p">,</span> <span class="mf">1.47</span><span class="p">,</span> <span class="mf">1.46</span><span class="p">,</span> <span class="mf">1.42</span><span class="p">,</span> <span class="mf">1.39</span><span class="p">,</span> <span class="mf">1.35</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.27</span><span class="p">,</span> <span class="mf">1.22</span><span class="p">,</span> <span class="mf">1.22</span><span class="p">,</span> <span class="mf">1.19</span><span class="p">,</span> <span class="mf">1.17</span><span class="p">,</span> <span class="mf">1.12</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.09</span><span class="p">,</span> <span class="mf">1.04</span><span class="p">,</span> <span class="mf">1.02</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">landing_anchovy</span><span class="p">[</span><span class="s1">&#39;PricePoundAdj&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing_anchovy</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">inflation_anchovy</span><span class="o">/</span><span class="n">landing_anchovy</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-192-fe0ea8be5097&gt;:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  landing_anchovy[&#39;PricePound&#39;] = landing_anchovy[&#39;TotalPrice&#39;]/landing_anchovy[&#39;CatchLbs&#39;]
+&lt;ipython-input-192-fe0ea8be5097&gt;:3: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  landing_anchovy[&#39;PricePoundAdj&#39;] = landing_anchovy[&#39;TotalPrice&#39;]*inflation_anchovy/landing_anchovy[&#39;CatchLbs&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_anchovy</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;CatchLbs&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Northern Anchovy Catch Lbs Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_anchovy</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;TotalPrice&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Northern Anchovy Total Price Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_anchovy</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;PricePound&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Northern Anchovy Price/Pound Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_anchovy</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;PricePoundAdj&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Northern Anchovy Price/Pound Per Year (Adjusted for Inflation)&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x19a61753400&gt;
+</pre></div>
+</div>
+<img alt="../../_images/Calcolfi_23_1.png" src="../../_images/Calcolfi_23_1.png" />
+<img alt="../../_images/Calcolfi_23_2.png" src="../../_images/Calcolfi_23_2.png" />
+<img alt="../../_images/Calcolfi_23_3.png" src="../../_images/Calcolfi_23_3.png" />
+<img alt="../../_images/Calcolfi_23_4.png" src="../../_images/Calcolfi_23_4.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_mackerelp</span><span class="p">[</span><span class="s1">&#39;PricePound&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing_mackerelp</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">landing_mackerelp</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span>
+<span class="n">landing_mackerelp</span><span class="p">[</span><span class="s1">&#39;PricePoundAdj&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing_mackerelp</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">inflation</span><span class="o">/</span><span class="n">landing_mackerelp</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-194-7d3439f18274&gt;:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  landing_mackerelp[&#39;PricePound&#39;] = landing_mackerelp[&#39;TotalPrice&#39;]/landing_mackerelp[&#39;CatchLbs&#39;]
+&lt;ipython-input-194-7d3439f18274&gt;:2: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  landing_mackerelp[&#39;PricePoundAdj&#39;] = landing_mackerelp[&#39;TotalPrice&#39;]*inflation/landing_mackerelp[&#39;CatchLbs&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_mackerelp</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;CatchLbs&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Pacific Mackerel Catch Lbs Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_mackerelp</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;TotalPrice&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Pacific Mackerel Total Price Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_mackerelp</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;PricePound&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Pacific Mackerel Price/Pound Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_mackerelp</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;PricePoundAdj&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Pacific Macerel Price/Pound Per Year (Adjusted for Inflation)&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x19a632399d0&gt;
+</pre></div>
+</div>
+<img alt="../../_images/Calcolfi_25_1.png" src="../../_images/Calcolfi_25_1.png" />
+<img alt="../../_images/Calcolfi_25_2.png" src="../../_images/Calcolfi_25_2.png" />
+<img alt="../../_images/Calcolfi_25_3.png" src="../../_images/Calcolfi_25_3.png" />
+<img alt="../../_images/Calcolfi_25_4.png" src="../../_images/Calcolfi_25_4.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_mackerelj</span><span class="p">[</span><span class="s1">&#39;PricePound&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing_mackerelj</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">landing_mackerelj</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span>
+<span class="n">inflation_j</span> <span class="o">=</span> <span class="p">[</span><span class="mf">2.32</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="mf">2.13</span><span class="p">,</span> <span class="mf">2.02</span><span class="p">,</span> <span class="mf">1.92</span><span class="p">,</span> <span class="mf">1.87</span><span class="p">,</span> <span class="mf">1.81</span><span class="p">,</span> <span class="mf">1.76</span><span class="p">,</span> <span class="mf">1.72</span><span class="p">,</span> <span class="mf">1.67</span><span class="p">,</span> <span class="mf">1.62</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">1.57</span><span class="p">,</span> <span class="mf">1.53</span><span class="p">,</span> <span class="mf">1.47</span><span class="p">,</span> <span class="mf">1.46</span><span class="p">,</span> <span class="mf">1.39</span><span class="p">,</span> <span class="mf">1.35</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.27</span><span class="p">,</span> <span class="mf">1.22</span><span class="p">,</span> <span class="mf">1.22</span><span class="p">,</span> <span class="mf">1.19</span><span class="p">,</span> <span class="mf">1.17</span><span class="p">,</span> <span class="mf">1.14</span><span class="p">,</span> <span class="mf">1.12</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.09</span><span class="p">,</span> <span class="mf">1.06</span><span class="p">,</span> <span class="mf">1.04</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">landing_mackerelj</span><span class="p">[</span><span class="s1">&#39;PricePoundAdj&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing_mackerelj</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">inflation_j</span><span class="o">/</span><span class="n">landing_mackerelj</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-196-dfb39e6f3f41&gt;:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  landing_mackerelj[&#39;PricePound&#39;] = landing_mackerelj[&#39;TotalPrice&#39;]/landing_mackerelj[&#39;CatchLbs&#39;]
+&lt;ipython-input-196-dfb39e6f3f41&gt;:3: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  landing_mackerelj[&#39;PricePoundAdj&#39;] = landing_mackerelj[&#39;TotalPrice&#39;]*inflation_j/landing_mackerelj[&#39;CatchLbs&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_mackerelj</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;CatchLbs&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Jack Mackerel Catch Lbs Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_mackerelj</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;TotalPrice&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Jack Mackerel Total Price Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_mackerelj</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;PricePound&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Jack Mackerel Price/Pound Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_mackerelj</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;PricePoundAdj&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Jack Macerel Price/Pound Per Year (Adjusted for Inflation)&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x19a65273af0&gt;
+</pre></div>
+</div>
+<img alt="../../_images/Calcolfi_27_1.png" src="../../_images/Calcolfi_27_1.png" />
+<img alt="../../_images/Calcolfi_27_2.png" src="../../_images/Calcolfi_27_2.png" />
+<img alt="../../_images/Calcolfi_27_3.png" src="../../_images/Calcolfi_27_3.png" />
+<img alt="../../_images/Calcolfi_27_4.png" src="../../_images/Calcolfi_27_4.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inflation_opah</span> <span class="o">=</span> <span class="p">[</span><span class="mf">2.32</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="mf">2.13</span><span class="p">,</span> <span class="mf">2.02</span><span class="p">,</span> <span class="mf">1.92</span><span class="p">,</span> <span class="mf">1.87</span><span class="p">,</span> <span class="mf">1.81</span><span class="p">,</span> <span class="mf">1.76</span><span class="p">,</span> <span class="mf">1.72</span><span class="p">,</span> <span class="mf">1.67</span><span class="p">,</span> <span class="mf">1.62</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">1.57</span><span class="p">,</span> <span class="mf">1.53</span><span class="p">,</span> <span class="mf">1.47</span><span class="p">,</span> <span class="mf">1.46</span><span class="p">,</span> <span class="mf">1.42</span><span class="p">,</span> <span class="mf">1.39</span><span class="p">,</span> <span class="mf">1.35</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.27</span><span class="p">,</span> <span class="mf">1.22</span><span class="p">,</span> <span class="mf">1.22</span><span class="p">,</span> <span class="mf">1.19</span><span class="p">,</span> <span class="mf">1.17</span><span class="p">,</span> <span class="mf">1.14</span><span class="p">,</span> <span class="mf">1.12</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.09</span><span class="p">,</span> <span class="mf">1.06</span><span class="p">]</span>
+<span class="n">landing_opah</span><span class="p">[</span><span class="s1">&#39;PricePound&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing_opah</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">landing_opah</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span>
+<span class="n">landing_opah</span><span class="p">[</span><span class="s1">&#39;PricePoundAdj&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing_opah</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">inflation_opah</span><span class="o">/</span><span class="n">landing_opah</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-205-e7ce7fa71dfb&gt;:2: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  landing_opah[&#39;PricePound&#39;] = landing_opah[&#39;TotalPrice&#39;]/landing_opah[&#39;CatchLbs&#39;]
+&lt;ipython-input-205-e7ce7fa71dfb&gt;:3: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  landing_opah[&#39;PricePoundAdj&#39;] = landing_opah[&#39;TotalPrice&#39;]*inflation_opah/landing_opah[&#39;CatchLbs&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_opah</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;CatchLbs&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Opah Catch Lbs Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_opah</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;TotalPrice&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Opah Total Price Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_opah</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;PricePound&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Opah Price/Pound Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_opah</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;PricePoundAdj&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Opah Price/Pound Per Year (Adjusted for Inflation)&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x19a65db4220&gt;
+</pre></div>
+</div>
+<img alt="../../_images/Calcolfi_29_1.png" src="../../_images/Calcolfi_29_1.png" />
+<img alt="../../_images/Calcolfi_29_2.png" src="../../_images/Calcolfi_29_2.png" />
+<img alt="../../_images/Calcolfi_29_3.png" src="../../_images/Calcolfi_29_3.png" />
+<img alt="../../_images/Calcolfi_29_4.png" src="../../_images/Calcolfi_29_4.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_sardine</span><span class="p">[</span><span class="s1">&#39;PricePound&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing_sardine</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">landing_sardine</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span>
+<span class="n">landing_sardine</span><span class="p">[</span><span class="s1">&#39;PricePoundAdj&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing_sardine</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">inflation</span><span class="o">/</span><span class="n">landing_sardine</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-208-fc33d455d2c0&gt;:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  landing_sardine[&#39;PricePound&#39;] = landing_sardine[&#39;TotalPrice&#39;]/landing_sardine[&#39;CatchLbs&#39;]
+&lt;ipython-input-208-fc33d455d2c0&gt;:2: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  landing_sardine[&#39;PricePoundAdj&#39;] = landing_sardine[&#39;TotalPrice&#39;]*inflation/landing_sardine[&#39;CatchLbs&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_sardine</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;CatchLbs&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Pacific Sardine Catch Lbs Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_sardine</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;TotalPrice&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Pacific Sardine Total Price Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_sardine</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;PricePound&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Sardine Price/Pound Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_sardine</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;PricePoundAdj&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Sardine Price/Pound Per Year (Adjusted for Inflation)&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x19a650fdf70&gt;
+</pre></div>
+</div>
+<img alt="../../_images/Calcolfi_31_1.png" src="../../_images/Calcolfi_31_1.png" />
+<img alt="../../_images/Calcolfi_31_2.png" src="../../_images/Calcolfi_31_2.png" />
+<img alt="../../_images/Calcolfi_31_3.png" src="../../_images/Calcolfi_31_3.png" />
+<img alt="../../_images/Calcolfi_31_4.png" src="../../_images/Calcolfi_31_4.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">inflation_yellowtail</span> <span class="o">=</span> <span class="p">[</span><span class="mf">2.32</span><span class="p">,</span> <span class="mf">2.23</span><span class="p">,</span> <span class="mf">2.13</span><span class="p">,</span> <span class="mf">2.02</span><span class="p">,</span> <span class="mf">1.92</span><span class="p">,</span> <span class="mf">1.87</span><span class="p">,</span> <span class="mf">1.81</span><span class="p">,</span> <span class="mf">1.72</span><span class="p">,</span> <span class="mf">1.67</span><span class="p">,</span> <span class="mf">1.62</span><span class="p">,</span> <span class="mf">1.6</span><span class="p">,</span> <span class="mf">1.57</span><span class="p">,</span> <span class="mf">1.53</span><span class="p">,</span> <span class="mf">1.47</span><span class="p">,</span> <span class="mf">1.46</span><span class="p">,</span> <span class="mf">1.42</span><span class="p">,</span> <span class="mf">1.39</span><span class="p">,</span> <span class="mf">1.35</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.27</span><span class="p">,</span> <span class="mf">1.22</span><span class="p">,</span> <span class="mf">1.22</span><span class="p">,</span> <span class="mf">1.19</span><span class="p">,</span> <span class="mf">1.17</span><span class="p">,</span> <span class="mf">1.14</span><span class="p">,</span> <span class="mf">1.12</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.09</span><span class="p">,</span> <span class="mf">1.06</span><span class="p">,</span> <span class="mf">1.04</span><span class="p">,</span> <span class="mf">1.02</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="n">landing_yellowtail</span><span class="p">[</span><span class="s1">&#39;PricePound&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing_yellowtail</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">landing_yellowtail</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span>
+<span class="n">landing_yellowtail</span><span class="p">[</span><span class="s1">&#39;PricePoundAdj&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">landing_yellowtail</span><span class="p">[</span><span class="s1">&#39;TotalPrice&#39;</span><span class="p">]</span><span class="o">*</span><span class="n">inflation_yellowtail</span><span class="o">/</span><span class="n">landing_yellowtail</span><span class="p">[</span><span class="s1">&#39;CatchLbs&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-213-ffb33c03d430&gt;:2: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  landing_yellowtail[&#39;PricePound&#39;] = landing_yellowtail[&#39;TotalPrice&#39;]/landing_yellowtail[&#39;CatchLbs&#39;]
+&lt;ipython-input-213-ffb33c03d430&gt;:3: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  landing_yellowtail[&#39;PricePoundAdj&#39;] = landing_yellowtail[&#39;TotalPrice&#39;]*inflation_yellowtail/landing_yellowtail[&#39;CatchLbs&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">landing_yellowtail</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;CatchLbs&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Yellowtail Catch Lbs Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_yellowtail</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;TotalPrice&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Yellowtail Total Price Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_yellowtail</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;PricePound&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Yellowtail Price/Pound Per Year&#39;</span><span class="p">)</span>
+<span class="n">landing_yellowtail</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="s1">&#39;PricePoundAdj&#39;</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Yellowtail Price/Pound Per Year (Adjusted for Inflation)&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x19a652dc6a0&gt;
+</pre></div>
+</div>
+<img alt="../../_images/Calcolfi_33_1.png" src="../../_images/Calcolfi_33_1.png" />
+<img alt="../../_images/Calcolfi_33_2.png" src="../../_images/Calcolfi_33_2.png" />
+<img alt="../../_images/Calcolfi_33_3.png" src="../../_images/Calcolfi_33_3.png" />
+<img alt="../../_images/Calcolfi_33_4.png" src="../../_images/Calcolfi_33_4.png" />
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./projects/calcofi1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By UCSB DS Capstone Class<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-186739861-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
