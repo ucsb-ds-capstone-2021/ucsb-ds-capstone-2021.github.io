@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Update 1 &#8212; Data Science Capstone 2021</title>
+    <title>NRI - Update 1 &#8212; Data Science Capstone 2021</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -295,7 +295,7 @@
   <ul class="current collapse-ul">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Update 1
+     NRI - Update 1
     </a>
    </li>
   </ul>
@@ -399,6 +399,45 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#description-of-the-project">
+   Description of The Project
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#goals">
+   Goals
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-files">
+   Data Files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#technology-software">
+   Technology (Software)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-we-are-working-on">
+   What We are Working On
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -406,9 +445,188 @@
         
               <div>
                 
-  <div class="section" id="update-1">
-<h1>Update 1<a class="headerlink" href="#update-1" title="Permalink to this headline">¶</a></h1>
-<p>Project updates</p>
+  <div class="section" id="nri-update-1">
+<h1>NRI - Update 1<a class="headerlink" href="#nri-update-1" title="Permalink to this headline">¶</a></h1>
+<p>January 31, 2020</p>
+<p>Helen Huang, Shivam Misra, Priya Padmanabhan, Surya Pugal,  Yixiao Yue</p>
+<div class="section" id="description-of-the-project">
+<h2>Description of The Project<a class="headerlink" href="#description-of-the-project" title="Permalink to this headline">¶</a></h2>
+<p>The project seeks to examine a variant of Alzheimer’s disease passed genetically and determine how far back the mutation/mutations responsible for said disorder trace back – identifying the timeframe when this occurred can provide us key insights into whether or not the mutation was the result of potential selective advantage.</p>
+</div>
+<div class="section" id="goals">
+<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h2>
+<p>Due to the Founder effect found in the various families, we can try to figure out background information on the anscestors of the family groups.</p>
+<p><strong>First goal:</strong></p>
+<p>Our first project goal is to find out how many generations ago the common ancestor was for each family found in the region. One way we can do this is by
+looking at the length of DNA segment shared by each of the carriers around each varient. As recombination occurs, we can compare lengths and see the progression of length
+to try to find how long ago the initial generation for the carriers/varient group was. But we run into a problem…</p>
+<p>Throughout our dataset, we don’t really know for sure which genetic information belongs to which chromosome. One way to is to infer haplotypes - we can infer
+haplotypes by comparing common varients of the chromosomes. Then, using these haplotypes, we can see which haplotypes are shared and find out
+the earliest shared ancestor by comparing the haplotype through the carriers.</p>
+<p>But even then, comparing haplotypes won’t be able to tell us the age of the mutation across each varient.</p>
+<p><strong>Second Goal:</strong></p>
+<p>The second goal of the project is the estimate the age of each varient. Inferring haplotypes can only get us so far, and our dataset is missing a lot of
+genetic information. Using the concept of “linkage disequillibrium”, which measures the deviation from expected non-association along the genome, we can
+fill in genetic information for the dataset.</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>Listed below are the terminology and biology concepts that are fundamental to our project.</p>
+<p><strong>Inheritance of Genetic Variation</strong></p>
+<ul class="simple">
+<li><p>Identical by state (IBS)</p>
+<ul>
+<li><p>Two or more than two individuals share similar nucleotide sequences</p></li>
+</ul>
+</li>
+<li><p>Identical by descent (IBD)</p>
+<ul>
+<li><p>In addition to IBS, if they inherit the similar nucleotide sequences from a common ancestor</p></li>
+<li><p>IBD length is correlated with historical relationship</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Haplotype</strong></p>
+<ul class="simple">
+<li><p>Combination of alleles at different markers along the same chromosome that are inherited together</p></li>
+<li><p>Haplotype decay over time because of recombination</p></li>
+</ul>
+<p><strong>Linkage Equilibrium (LE) vs. Linkage Disequilibrium (LD)</strong></p>
+<ul class="simple">
+<li><p>Linkage Equilibrium (LE) - Independent assortment, Recombination occurs</p></li>
+<li><p>Linkage Disequilibrium (LD) - Coinheritance, Non-randomly inherited</p></li>
+<li><p>Measures</p>
+<ul>
+<li><p>(LE) 0 &lt;– D’ (Recombination) –&gt; 1 (LD)</p></li>
+<li><p>(LE) 0 &lt;– r^2 (Correlation) –&gt; 1 (LD)</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Illumina NGS Workflow</strong></p>
+<ul class="simple">
+<li><p>Library presentation</p></li>
+<li><p>Cluster generation</p></li>
+<li><p>Sequencing</p></li>
+<li><p>Data analysis</p></li>
+</ul>
+<p><strong>Data Generation Process</strong></p>
+<ul class="simple">
+<li><p>DNA</p></li>
+<li><p>FASTQ - Contains all the information (the reads from all DNA fragments)</p></li>
+<li><p>SAM (Sequence Alignment Mapping) - Align the results to the reference genome</p></li>
+<li><p>VCF (Variant Call Format) - Get rid of all the identical parts and keep the variants info only</p></li>
+</ul>
+<p><strong>Global IBD</strong></p>
+<ul class="simple">
+<li><p>Coefficient of Relatedness</p>
+<ul>
+<li><p>For a pair of individuals separated by m meiosis, the average portion of the genome shared identical by descent (IBD) owing to that shared ancestry is 2^(-m)</p></li>
+</ul>
+</li>
+<li><p>Portion IBD</p>
+<ul>
+<li><p>Parent-Offspring (OP): 1st degree, 50%</p></li>
+<li><p>Full siblings: 1st degree, 50%</p></li>
+<li><p>Half siblings (ex. Relationship between 2 children with same mother but different father): 2nd degree, 25%</p></li>
+<li><p>Avuncular (ex. Relationship between a uncle and his sister’s children): 2nd degree, 25%</p></li>
+<li><p>Cousins: 3rd degree, 12.5%</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Local IBD</strong></p>
+<ul class="simple">
+<li><p>IBD0: shared 0 allele</p></li>
+<li><p>IBD1: shared 1 allele</p></li>
+<li><p>IBD2: shared 2 alleles</p></li>
+<li><p>The length of the shared IBD segments is approximately exponentially distributed with a mean of 100 m^(-1) cM</p></li>
+</ul>
+<p><strong>Trio Phasing (Haplotype)</strong></p>
+<ul class="simple">
+<li><p>Problem - We do not have genomes from both parents of every individual of interest</p></li>
+<li><p>Solutions</p>
+<ul>
+<li><p>Option 1: Add more relatives into the phasing algorithm</p></li>
+<li><p>Option 2: Use known haplotypes from human populations and change your approach to a supervised method</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="data-files">
+<h2>Data Files<a class="headerlink" href="#data-files" title="Permalink to this headline">¶</a></h2>
+<p><strong>Human Readable Bigger Size</strong></p>
+<ul class="simple">
+<li><p>.map</p></li>
+<li><p>.ped</p></li>
+</ul>
+<p><strong>Given Files</strong></p>
+<ul>
+<li><p>.bed</p>
+<ul class="simple">
+<li><p>Contains binary version of the Single Nucleotide Polymorphism (SNP) information of the .ped file</p></li>
+<li><p>Not human readable</p></li>
+</ul>
+</li>
+<li><p>.fam</p>
+<ul class="simple">
+<li><p>Human readable</p></li>
+<li><p>Contains information from .map</p></li>
+<li><p>FID | IID | PID | MID | Sex | P</p></li>
+</ul>
+<ol class="simple">
+<li><p>Family ID (‘FID’)</p></li>
+<li><p>Within-family ID (‘IID’; cannot be ‘0’)</p></li>
+<li><p>Within-family ID of father (‘0’ if father isn’t in dataset)</p></li>
+<li><p>Within-family ID of mother (‘0’ if mother isn’t in dataset)</p></li>
+<li><p>Sex code (‘1’ = male, ‘2’ = female, ‘0’ = unknown)</p></li>
+<li><p>Phenotype value (‘1’ = control, ‘2’ = case, ‘-9’/’0’/non-numeric = missing data if case/control)</p></li>
+</ol>
+</li>
+<li><p>.bim</p>
+<ul class="simple">
+<li><p>Human readable</p></li>
+<li><p>Contains the first 6 columns of .ped</p></li>
+<li><p>Chr | SNP | GD | BPP | Allele 1 | Allele 2</p></li>
+</ul>
+<ol class="simple">
+<li><p>Chromosome code (either an integer, or ‘X’/’Y’/’XY’/’MT’; ‘0’ indicates unknown) or name</p></li>
+<li><p>Variant identifier</p></li>
+<li><p>Position in morgans or centimorgans (safe to use dummy value of ‘0’)</p></li>
+<li><p>Base-pair coordinate (1-based; limited to 231-2)</p></li>
+<li><p>Allele 1 (corresponding to clear bits in .bed; usually minor)</p></li>
+<li><p>Allele 2 (corresponding to set bits in .bed; usually major)</p></li>
+</ol>
+</li>
+</ul>
+</div>
+<div class="section" id="technology-software">
+<h2>Technology (Software)<a class="headerlink" href="#technology-software" title="Permalink to this headline">¶</a></h2>
+<p>There are three main softwares that we will be using for the first part of our project. The PLINK and KING program both take in the given files (I416T.bed, I416T.fam, and I416T.bim). KINSHIP2 requires us to build the input file ourselves. King and Plink will allow us to get the relatedness score of the genomes which we will compare with the pedigree (built through KINSHIP2).</p>
+<ol class="simple">
+<li><p>KING
+<a class="reference external" href="https://people.virginia.edu/~wc9c/KING/manual.html">https://people.virginia.edu/~wc9c/KING/manual.html</a></p></li>
+</ol>
+<p>KING is used to explore genotype data, usually from genome-wide studies or sequencing projects, and requires the input files to be in PLINK format.</p>
+<ol class="simple">
+<li><p>PLINK
+<a class="reference external" href="https://www.cog-genomics.org/plink2">https://www.cog-genomics.org/plink2</a></p></li>
+</ol>
+<p>PLINK is a command-line tool that is open-source and is essentially a whole-genome association analysis toolset desgined to perform basic, large-scale analyses on genetics.</p>
+<ol class="simple">
+<li><p>KINSHIP2
+<a class="reference external" href="https://cran.r-project.org/web/packages/kinship2/index.html">https://cran.r-project.org/web/packages/kinship2/index.html</a></p></li>
+</ol>
+<p>The purpose of KINSHIP2 is to create structures signifying correlations between family relationships (pedigrees).</p>
+</div>
+<div class="section" id="what-we-are-working-on">
+<h2>What We are Working On<a class="headerlink" href="#what-we-are-working-on" title="Permalink to this headline">¶</a></h2>
+<p><strong>Task 1:</strong></p>
+<p>We are given .bed/.fam/.bim data about individuals whom we have pedigree information for.
+We will feed the data into King program to calculate coefficients of relatedness (what percentage of
+genes between a pair of individuals is the same). Based on the percentage, we can tell whether two
+individuals are first degree, second degree, or not related. We will use the kinship2 software which
+takes in a pedigree object and output coefficients of relateness. Comparing the two tables of coefficients,
+we can verify the accuracy of the pedigree, which is constructed only from words of participants.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
