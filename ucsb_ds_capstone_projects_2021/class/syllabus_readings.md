@@ -16,3 +16,4 @@ You will be reading and making comments on the text via Google docs or the pdfs 
 | TLDS Chapter 2 ([Google doc](https://docs.google.com/document/d/10iyEB0-yZmUX5wu3jrISu1GqQm90uKBSoy2zDmvu8oI/edit?usp=sharing)) | January 20, 2021 |
 | Data Ethics in a Changing World([PDF](https://drive.google.com/file/d/1VrT3SP_3MaCmtPSXp3BGJPAQJ8-EIoJj/view?usp=sharing)) | January 27, 2021 |
 | Principles of Figure Design ([Google doc](https://docs.google.com/document/d/1DMWAUcA9pLwhwZ6lVlMSNOmNKUdLyAKHTY9LfF8Mj9w/edit?usp=sharing)) | February 10, 2021 |
+| TLD Chapter 5 - Data Assessment [Google doc](https://docs.google.com/document/d/14LWZPs1KO5w8X5YQrVwf6l9EMz56im_oL7cQXP_MgwI/edit?usp=sharing) | February 17, 2021 |
