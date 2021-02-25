@@ -3,7 +3,7 @@
 Over the past few weeks our team has been investigating a dataset used in the ["Pre-symptomatic detection of COVID-19 from smartwatch data" (Mishra et al)](https://www.nature.com/articles/s41551-020-00640-6) study. The dataset contains the heart rate, step count, and sleep data of 32 individuals diagnosed with COVID-19. Ultimately our goal is to discover methods of pre-symptomatic COVID-19 detection using this wearable data.
 
 ## Residuals 
-One method of pre-symptomatic COVID-19 detection proposed in Mishra et al is to look at an individual's heart rate (HR) or step count on a given day, and compare that value with some baseline (like mean or average). The difference between an individual's HR or stepcount and their baseline is what we refer to as a residual. If an individual has anomalous (for example, abnormally high) residuals over a time interval, it could be a sign that they've contracted the coronavirus. So far we've explored two methods of computing the residuals: comparing HR with the average over all days, and comparing HR with the average over a sliding window.
+One method of pre-symptomatic COVID-19 detection proposed in Mishra et al is to look at an individual's heart rate (HR) or step count on a given day, and compare that value with some baseline (like their mean or median HR/step count). The difference between an individual's HR or stepcount and their baseline is what we refer to as a residual. If an individual has anomalous (for example, abnormally high) residuals over a time interval, it could be a sign that they've contracted the coronavirus. So far we've explored two methods of computing the residuals: comparing HR with the average over all days, and comparing HR with the average over a sliding window.
 
 ### Method 1: comparing HR with the average over all days
 We began looking at heart rate and step residuals in the most basic sense we could. This gave us the ability to see any basic trends in the heart rate, steps, and COVID-19 diagnosis. To calculate the residuals for each patient, we used the following formulas:
@@ -14,7 +14,7 @@ Where t is the heart rate at time $t$ and $i\in\{1,...,32\}$, representing each 
 
 $$resid_{step} = step_t - \bar{step}_i$$
 
-Below is a visualizations of participant AFPB8J2's heart rate data over approximately 2 months. Each blue dot is the participant's average HR that day, and the red line is their average HR over all days. The blue lines represent the residual value of heart rate described in the equations above:
+Below is a visualizations of participant AFPB8J2's heart rate and residuals computed using this method. Each blue dot is the participant's average HR that day, and the red line is their average HR over all days. The blue lines represent the residual value of heart rate described in the equations above:
 
 <img src="./AFPB8J2_hr_residuals.png"></img>
 
