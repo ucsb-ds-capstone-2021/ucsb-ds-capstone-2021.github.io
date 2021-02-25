@@ -23,7 +23,7 @@ Method 1 is naive because we are assuming that every patient has an overall aver
 ### Method 2: comparing HR with the average over a 5 day window
 An alternative method is computing the average heart rate over a 5 day window.:
 
-<img src="./AFPB8J2_hr_residuals_5d.png"></img>
+![Image](./AFPB8J2_hr_residuals_5d.png)
 
 
 ## Data Updates
