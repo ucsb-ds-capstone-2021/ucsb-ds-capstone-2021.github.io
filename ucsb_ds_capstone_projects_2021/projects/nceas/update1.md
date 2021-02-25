@@ -16,7 +16,7 @@ The [LTER network](https://lternet.edu/) is an NSF-funded research program to ob
 
 
 **Software Tools**
-- Git, Github, RStudio, Tidyverse, [palmerpenguins](https://github.com/allisonhorst/palmerpenguins)
+- Git, Github, RStudio, Tidyverse, [palmerpenguins](https://github.com/allisonhorst/palmerpenguins) (an R package created by one of our sponsors)
 
 
 **Progress**
