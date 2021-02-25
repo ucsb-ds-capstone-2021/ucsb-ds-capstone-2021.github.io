@@ -20,6 +20,12 @@ Below is a visualizations of participant AFPB8J2's heart rate and residuals comp
 
 Method 1 is naive because we are assuming that every patient has an overall average heart rate. This means we assume this average even when the patient is sitting, sleeping, exercising, etc.. This differs from [Mishra et al.](https://www.nature.com/articles/s41551-020-00640-6), where the average heart rate for each patient was a moving average calculated on a 28 day time interval. Using this naive approach allows us to see if there are any basic trends and do comparisons to the methods used by Mishra et al., further giving us an understanding of choices they made in the creation of their detection algorithms. 
 
+## Method 2: comparing HR with the average over a 5 day window
+An alternative method is computing the average heart rate over a 5 day window.:
+
+<img src="./AFPB8J2_hr_residuals_5d.png"></img>
+
+
 ## Data Updates
 
 ### Data Resolutions
