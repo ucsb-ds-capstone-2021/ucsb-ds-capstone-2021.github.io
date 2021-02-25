@@ -25,7 +25,7 @@ An alternative method is computing the average heart rate over a 5 day window.:
 
 ![Image](./AFPB8J2_hr_residuals_5d.png)
 
-In this method, we took the 5 day moving average of a users heart rate and computed residuals from their data. There was one caveat with this method: To remove NA values, we had to set the moving average to compute with at least one value. This means that our moving average is a 1-to-5 day moving average so, for example, if there was a 5-day period with only one non-null value, that value would be the 5 day moving average. This would explain why the first 4 values have a line for the moving average. 
+In this method, we took the 5 day moving average of a users heart rate and computed residuals from their data. This sliding window would compute the average over the previous 5 days, moving as the data went along.
 
 This method's strength is that it takes into account variability over a time frame, rather than assuming there is no variance in a patients resting heart rate. If someone began exercising, and their resting heart rate decreases as their cardiovascular health increases, then the moving average would take into account this change, whereas the baseline model would not.
 
