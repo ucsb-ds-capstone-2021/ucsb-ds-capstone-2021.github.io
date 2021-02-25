@@ -13,13 +13,14 @@ Febrauary 28, 2021
 - workflow of creating R package (documentation, license, github, function ) through the say_aloha (insert link)
 - 
 - each of us created a demo pckge
+- incorporate what we learned in past weeks (github workflow, tidyverse, metajam)  putting them together
 - analyzed couple datasets from sites we are intested in
 - vignettes
 - presented to the rest of the team during weekly meetings
 - can be found here (insert five links)
 
 
-Visualizations (all produced using ggplot from the tidyverse package)
+Examples of Visualizations in our pckages (all produced using ggplot from the tidyverse package)
 
 a plot of xxx vs xxx created by Sophia 
 (insert image) 
@@ -27,7 +28,7 @@ a plot of xxx vs xxx created by Sophia
 a plot of change in xxx created by Adhitya
 
 
-a plot showing the relationship by Karen
+a plot showing the relationship of xxx by Karen
 
 
 visualization illustrating the xxx of xxx by Samuel
