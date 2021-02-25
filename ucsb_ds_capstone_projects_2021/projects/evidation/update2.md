@@ -16,7 +16,7 @@ Where ![Image](./hr_t.png) is the heart rate at time t and ![Image](./hr_i.png) 
 
 Below is a visualizations of participant AFPB8J2's heart rate and residuals computed using this method. Each blue dot is the participant's average HR that day, and the red line is their average HR over all days. The blue lines represent the residual value of heart rate described in the equations above:
 
-<img src="./AFPB8J2_hr_residuals.png"></img>
+![image](./AFPB8J2_hr_residuals.png)
 
 Method 1 is naive because we are assuming that every patient has an overall average heart rate. This means we assume this average even when the patient is sitting, sleeping, exercising, etc.. This differs from [Mishra et al.](https://www.nature.com/articles/s41551-020-00640-6), where the average heart rate for each patient was a moving average calculated on a 28 day time interval. Using this naive approach allows us to see if there are any basic trends and do comparisons to the methods used by Mishra et al., further giving us an understanding of choices they made in the creation of their detection algorithms. 
 
