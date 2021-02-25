@@ -8,11 +8,11 @@ One method of pre-symptomatic COVID-19 detection proposed in Mishra et al is to 
 ### Method 1: comparing HR with the average over all days
 We began looking at heart rate and step residuals in the most basic sense we could. This gave us the ability to see any basic trends in the heart rate, steps, and COVID-19 diagnosis. To calculate the residuals for each patient, we used the following formulas:
 
-$$resid_{hr} = hr_t - \bar{hr}_i$$
+![Image](./hr_residual.png)
 
 Where $hr_t$ is the heart rate at time $t$ and $\bar{hr}_i$ is participant $i$'s average heart rate over all days. A similar method was used to compute step residuals: 
 
-$$resid_{step} = step_t - \bar{step}_i$$
+![Image](./step_residual.png)
 
 Below is a visualizations of participant AFPB8J2's heart rate and residuals computed using this method. Each blue dot is the participant's average HR that day, and the red line is their average HR over all days. The blue lines represent the residual value of heart rate described in the equations above:
 
