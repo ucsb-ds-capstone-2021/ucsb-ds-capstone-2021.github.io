@@ -41,7 +41,7 @@ In this most recent update, we took the data, which was recorded every 1-second 
 |1 hour       |101,623 |
 |1 day                 | 4,353     |
 
-As we can see, making the data less granular allowed us to greatly reduce the size of the data, making it easier for us to compute residuals. In computation of the residuals from the following section, we decided to use the 1 hour residuals and 1 day residuals to make computations as fast as possible. 
+As we can see, making the data less granular allowed us to greatly reduce the size of the data, making it easier for us to compute residuals. In computation of the residuals from the previous section, we decided to use the 1 hour residuals and 1 day residuals to make computations as fast as possible. 
 
 ### Future Work on data
 
