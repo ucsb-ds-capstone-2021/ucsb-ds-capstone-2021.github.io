@@ -10,7 +10,7 @@ We began looking at heart rate and step residuals in the most basic sense we cou
 
 ![Image](./hr_residual.png)
 
-Where $hr_t$ is the heart rate at time $t$ and $\bar{hr}_i$ is participant $i$'s average heart rate over all days. A similar method was used to compute step residuals: 
+Where ![Image](./hr_t.png) is the heart rate at time t and ![Image](./hr_i.png) is participant i's average heart rate over all days. A similar method was used to compute step residuals: 
 
 ![Image](./step_residual.png)
 
