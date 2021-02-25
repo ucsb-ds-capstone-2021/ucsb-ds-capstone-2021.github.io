@@ -1,4 +1,24 @@
 # Evidation Project Update 2 - February 21st 
+## Overview
+Over the past few weeks our team has been investigating a dataset used in the ["Pre-symptomatic detection of COVID-19 from smartwatch data" (Mishra et al)](https://www.nature.com/articles/s41551-020-00640-6) study. The dataset contains the heart rate, step count, and sleep data of 32 individuals diagnosed with COVID-19. Ultimately our goal is to discover methods of pre-symptomatic COVID-19 detection using this wearable data.
+
+## Residuals 
+One method of pre-symptomatic COVID-19 detection proposed in Mishra et al is to look at an individual's heart rate (HR) or step count on a given day, and compare that value with some baseline (like mean or average). The difference between an individual's HR or stepcount and their baseline is what we refer to as a residual. If an individual has anomalous (for example, abnormally high) residuals over a time interval, it could be a sign that they've contracted the coronavirus. So far we've explored two methods of computing the residuals: comparing HR with the average over all days, and comparing HR with the average over a sliding window.
+
+### Method 1: comparing HR with the average over all days
+We began looking at heart rate and step residuals in the most basic sense we could. This gave us the ability to see any basic trends in the heart rate, steps, and COVID-19 diagnosis. To calculate the residuals for each patient, we used the following formulas:
+
+$$resid_{hr} = hr_t - \bar{hr}_i$$
+
+Where t is the heart rate at time $t$ and $i\in\{1,...,32\}$, representing each patient. The same was done for steps: 
+
+$$resid_{step} = step_t - \bar{step}_i$$
+
+Below is a visualizations of participant AFPB8J2's heart rate data over approximately 2 months. Each blue dot is the participant's average HR that day, and the red line is their average HR over all days. The blue lines represent the residual value of heart rate described in the equations above:
+
+<img src="./AFPB8J2_hr_residuals.png"></img>
+
+Method 1 is naive because we are assuming that every patient has an overall average heart rate. This means we assume this average even when the patient is sitting, sleeping, exercising, etc.. This differs from [Mishra et al.](https://www.nature.com/articles/s41551-020-00640-6), where the average heart rate for each patient was a moving average calculated on a 28 day time interval. Using this naive approach allows us to see if there are any basic trends and do comparisons to the methods used by Mishra et al., further giving us an understanding of choices they made in the creation of their detection algorithms. 
 
 ## Data Updates
 
@@ -16,20 +36,6 @@ In this most recent update, we took the data, which was recorded every 1-second 
 |1 day                 | 4,353     |
 
 As we can see, making the data less granular allowed us to greatly reduce the size of the data, making it easier for us to compute residuals. In computation of the residuals from the following section, we decided to use the 1 hour residuals and 1 day residuals to make computations as fast as possible. 
-
-### Calculating Residuals 
-
-We began looking at heart rate and step residuals in the most basic sense we could. This gave us the ability to see any basic trends in the heart rate, steps, and COVID-19 diagnosis. To calculate the residuals for each patient, we used the following formulas:
-
-$$resid_{hr} = hr_t - \bar{hr}_i$$
-
-Where t is the heart rate at time $t$ and $i$ is each different patient. The same was done for steps: 
-
-$$resid_{step} = step_t - \bar{step}_i$$
-
-This method was naive because we are assuming that every patient has an overall average heart rate. This means we assume this average even when the patient is sitting, sleeping, exercising, etc.. This differs from [Mishra et al.](https://www.nature.com/articles/s41551-020-00640-6), where the average heart rate for each patient was a moving average calculated on a 28 day time interval. Using this naive approach allows us to see if there are any basic trends and do comparisons to the methods used by Mishra et al., further giving us an understanding of choices they made in the creation of their detection algorithms. 
-
-Below are visualizations of two participants’ heart rate data and their residuals. 
 
 ### Future Work on data
 
