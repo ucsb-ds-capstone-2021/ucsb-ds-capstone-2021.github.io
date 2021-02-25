@@ -10,7 +10,7 @@ We began looking at heart rate and step residuals in the most basic sense we cou
 
 $$resid_{hr} = hr_t - \bar{hr}_i$$
 
-Where t is the heart rate at time $t$ and $i\in\{1,...,32\}$, representing each patient. The same was done for steps: 
+Where $t$ is the heart rate at time $t$ and $i\in\{1,...,32\}$ is an index representing each patient. A similar method was used to compute step residuals: 
 
 $$resid_{step} = step_t - \bar{step}_i$$
 
