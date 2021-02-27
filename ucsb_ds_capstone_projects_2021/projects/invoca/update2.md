@@ -2,8 +2,12 @@
 
 ## Parsing Conversation and Label Data:
 
-## Word Press: 
+## Word Cloud:
 
-## LDA Visualizations:
+## Modeling:
+
+### LDA Visualizations:
+
+### Hugging Face API:
 
 ## React Frontend/Backend Basics:
