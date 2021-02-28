@@ -36,10 +36,22 @@ Most Abundant Columns
 ```
 
 ## Water Correlations
-With the water data I was able to find strong postive and negative correlation.I used Pearson's r correlation that measures linear correlation. Using linear regression method and finding pearson's r coefficient I was able to make these visuals shown below.For my strong positive correlation I used DIC1 (Dissolve Inorganic Carbon) as the same feature but used different observant such as Sigma-Theta (denisty of water), Salinity1 (Salinity in DIC bottles) and TA1 (total alkanity). From the visual plots I made we can see that when we have low DIC we will most likely find low Sigma-Theta , Salinity1 and TA1 (total alkanity) and vice cersa when DIC is high.
-
+With the water data we were able to find strong postive and negative correlation.We used Pearson's r correlation that measures linear correlation. Using linear regression method and finding pearson's r coefficient I was able to make these visuals shown below.For my strong positive correlation I used DIC1 (Dissolve Inorganic Carbon) as the same feature but used different observant such as Sigma-Theta (denisty of water), Salinity1 (Salinity in DIC bottles) and TA1 (total alkanity). From the visual plots I made we can see that when we have low DIC we will most likely find low Sigma-Theta , Salinity1 and TA1 (total alkanity) and vice cersa when DIC is high.
+```{figure} images/postive_cr.png
+---
+height: 150px
+name: directive-fig
+---
+Positive correlations 
+```
 For my strong negetive correltation I use Tempature as my feature and had Salinity1, and DIC1 as my observant.With the visual plots I generated we can see the strong negative correlation. In area where their are high tempature in our data then we will find low levels of DIC and Salinity since they share a negative correlation relationship. 
-
+```{figure} images/negative_cr.png
+---
+height: 150px
+name: directive-fig
+---
+Negative correlations 
+```
 ## Heatmaps of Water Characteristics
 
 One of our objectives, we hold important for our goal of being able to find correlations between water characteristics and makeup of fish, is to be able to clearly visualize the levels of a given water characteristic at all present locations, at all given time steps. For example, to be able to view a spatial heatmap of say water TA (Total Alkalinity, which measures the water's ability to not be affected by an introduction of an acidic compound to the water), where at any given time step, we can spatially visualize the pH levels of the water at all present locations in the dataset by color on a 2D lattitude/longitude graph (red color at a location means high TA, blue color means low TA). We decided on the color theme, of a red color at a graph location indicating higher levels of the observed characteristic and blue color indicating lower level. 
