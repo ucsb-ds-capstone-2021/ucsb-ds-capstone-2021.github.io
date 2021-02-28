@@ -15,7 +15,7 @@ certain fish species was very dominant. We have been making more visualizations,
 
 ### Finsing the Most Abundant Fish Species at a given location at a Given Time (and storing in a dataset)
 
-## Some Intermediate Correlations
+## Water Correlations
 
 ## Heatmaps of Water Characteristics
 
