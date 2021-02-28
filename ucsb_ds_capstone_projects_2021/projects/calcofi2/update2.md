@@ -21,7 +21,18 @@ We made sub-time series datasets, where each of these smaller datasets give the 
 In order to be able to correlate the makeup of fish species to water characteristics, we have started by obtaining the three most abundant fish species at a given location and time, and storing these results in a .csv file as a dataset. The fish dataset consists of fish abundance at a given location and time for each species of fish we are looking at, however we needed a way to compare abundance of two species against each other to see which has more abundant. For example at a given time/location, a species with abundance level of 19 when it's average abundance is 10 is a different abundance level measure than a species with abundance of 19 when its average abundance is 500. So in order to compare this, we made another dataset, that measures the abundance of a species relative to its mean abundance at any given space and time. This way now, we can look at this relative abundances, and pick out the top three at a given time/location to be able to accurately extract "most abundant species". From here we are now working on drawing out as many correlations and derived statistics as we can relating fish species abundance to water characteriatics.
 
 ** **Insert MostAbundantColumns.png here** **
+```{figure} images/MostAbundantColumns.png
+---
+height: 150px
+name: directive-fig
+---
+Most Abundant Columns
+```
+
 ## Water Correlations
+With the water data I was able to find strong postive and negative correlation.I used Pearson's r correlation that measures linear correlation. Using linear regression method and finding pearson's r coefficient I was able to make these visuals shown below.For my strong positive correlation I used DIC1 (Dissolve Inorganic Carbon) as the same feature but used different observant such as Sigma-Theta (denisty of water), Salinity1 (Salinity in DIC bottles) and TA1 (total alkanity). From the visual plots I made we can see that when we have low DIC we will most likely find low Sigma-Theta , Salinity1 and TA1 (total alkanity) and vice cersa when DIC is high.
+
+For my strong negetive correltation I use Tempature as my feature and had Salinity1, and DIC1 as my observant.With the visual plots I generated we can see the strong negative correlation. In area where their are high tempature in our data then we will find low levels of DIC and Salinity since they share a negative correlation relationship. 
 
 ## Heatmaps of Water Characteristics
 
@@ -30,6 +41,21 @@ One of our objectives, we hold important for our goal of being able to find corr
 However, what does "high" and "low" mean with respect to a given water characteristic? How do we decide on what "high" and "low" should be for a water characteristic. For any given water characteristic, we looked at the range of values it holds overall over all of the time steps (looking at the globally lowest and highest value in the dataset), and base the notion of "high" and "low" for that observed characteristic. At a given location and time step, the closer to the global minimum the characteristic value is, the "lower" and hence more blue it is denoted as, and the closer the the global maximum the value there is, the "higher" and more red it is denoted as. We made sure that for a given characteristic, we keep the same range of values we are color coding by over all time steps, so that this way we can compare how characteristic levels are changing over time visually by looking at how the colors change spatially over time, by looking at all the time step heatmaps for a given characteristic.
 
 ** **Insert AlkalinityHeatmap.png and AlkalinityHeatmap2.png here** **
+```{figure} images/AlkalinityHeatmap.png
+---
+height: 150px
+name: directive-fig
+---
+Alkanity Heat map 
+```
+
+```{figure} images/AlkalinityHeatmap2.png
+---
+height: 150px
+name: directive-fig
+---
+Alkanity Heat map 2
+```
 
 ## Accurately Inferring Water pH Values Based On Other Water Characteristics
 
@@ -38,3 +64,9 @@ Our dataset containing the water characteristics contains many water characteris
 Due to the paper Perspectives in Environmental Chemistry by Donald L. Macalady (http://denning.atmos.colostate.edu/ats760/Readings/Tans_1998.pdf), as well as the discussion Simplified Carbonate Chemistry of Seawater based on an article by Pieter Tans, and the website https://biocycle.atmos.colostate.edu/shiny/carbonate/#References, we wrote a Python script using the algorithm from the above mentioned sources that calculates the water pH level, based on using the water DIC (Dissolved Inorganic Carbon), TA (Total Alkalinity), and Temperature. 
 
 ** **Insert pHHEatmap.png here** **
+```{figure} images/pHHEatmap.png
+---
+height: 150px
+name: directive-fig
+---
+```
