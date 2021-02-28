@@ -14,7 +14,7 @@ Where ![Image](./hr_t.png) is the heart rate at time t and ![Image](./hr_i.png) 
 
 ![Image](./step_residual.png)
 
-Below is a visualizations of participant AFPB8J2's heart rate and residuals computed using this method. Each blue dot is the participant's average HR that day, and the red line is their average HR over all days. The blue lines represent the residual value of heart rate described in the equations above:
+Below is a visualizations of participant AFPB8J2's heart rate and residuals computed using this method. Each blue dot is the participant's average HR that day, and the black line is their average HR over all days. The blue lines represent the residual value of heart rate described in the equations above:
 
 ![image](./AFPB8J2_hr_residuals.png)
 
