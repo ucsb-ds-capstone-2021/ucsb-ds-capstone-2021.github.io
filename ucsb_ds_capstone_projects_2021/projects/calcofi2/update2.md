@@ -29,7 +29,7 @@ In order to be able to correlate the makeup of fish species to water characteris
 ** **Insert MostAbundantColumns.png here** **
 ```{figure} images/MostAbundantColumns.png
 ---
-scale: 50%
+scale: 75%
 align: left
 name: directive-fig
 ---
@@ -37,16 +37,18 @@ Most Abundant Columns
 ```
 
 ## Water Correlations
-With the water data we were able to find strong postive and negative correlation.We used Pearson's r correlation that measures linear correlation. Using linear regression method and finding pearson's r coefficient I was able to make these visuals shown below.For my strong positive correlation I used DIC1 (Dissolve Inorganic Carbon) as the same feature but used different observant such as Sigma-Theta (denisty of water), Salinity1 (Salinity in DIC bottles) and TA1 (total alkanity). From the visual plots I made we can see that when we have low DIC we will most likely find low Sigma-Theta , Salinity1 and TA1 (total alkanity) and vice cersa when DIC is high.
+With the water data we were able to find strong postive and negative correlation.We used Pearson's r correlation that measures linear correlation. Using linear regression method and finding pearson's r coefficient I was able to make these visuals shown below.
+
+For my strong positive correlation I used DIC1 (Dissolve Inorganic Carbon) as the same feature but used different observant such as Sigma-Theta (denisty of water), Salinity1 (Salinity in DIC bottles) and TA1 (total alkanity). From the visual plots I made we can see that when we have low DIC we will most likely find low Sigma-Theta , Salinity1 and TA1 and vice cersa when DIC is high.
 ```{figure} images/postive_cr.png
 ---
-scale: 100%
+scale: 80%
 align: left
 name: directive-fig
 ---
 Positive correlations 
 ```
-For my strong negetive correltation I use Tempature as my feature and had Salinity1, and DIC1 as my observant.With the visual plots I generated we can see the strong negative correlation. In area where their are high tempature in our data then we will find low levels of DIC and Salinity since they share a negative correlation relationship. 
+For my strong negetive correltation I use Tempature as my feature and had Salinity1, and DIC1 as my observant.With the visual plots I generated we can see the strong negative correlation. In area where their are high tempature in our data then we will find low levels of DIC and Salinity since they share a negative correlation relationship and vice versa when tempature is low. 
 ```{figure} images/negative_cr.png
 ---
 height: 300px
@@ -86,7 +88,7 @@ Due to the paper Perspectives in Environmental Chemistry by Donald L. Macalady (
 ** **Insert pHHEatmap.png here** **
 ```{figure} images/pHHeatmap.png
 ---
-height: 200px
+height: 500px
 name: directive-fig
 ---
 PH heat map 
