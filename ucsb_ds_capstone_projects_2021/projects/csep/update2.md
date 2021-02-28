@@ -20,3 +20,9 @@ The organization providing the data does not have an overall goal for the outcom
 SCRE is a way for the team to access the data without having any breaches in the security of the data itself. Because the data we are using is of actual past UCSB alumni, we don't want to expose any sensitive information of each individual. While on SCRE, we're not only able to access this information, but we're also able to play around with it in python code on our virtual machines! 
 
 More specifically, each capstone member is assigned a specific Virtual Machine (VM) that allows the designated user to access the data through that VM. An important aspect to note is that while UCSB maintains a complete and thorough alumni dataset, not all of it is allocated to our team. The Family Educational Rights and Privacy Act (FERPA) restricts the alumni and student information that institutions such as UCSB can release. For this reason, our team only works with a portion of the alumni dataset in a secure environment as a means to respect the privacy of UCSB alumni and students.
+
+
+### Software Used
+* Python
+* SCRE
+* Excel
