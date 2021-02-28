@@ -11,9 +11,14 @@ certain fish species was very dominant. We have been making more visualizations,
 
 ### Subsetting the Fish Dataset to Match the Water Dataset Sample Locations/Times
 
-### Grouping and splitting the Fish Dataset by Location
+### Grouping and Splitting the Water and Fish Dataset by Location
 
-### Finsing the Most Abundant Fish Species at a given location at a Given Time (and storing in a dataset)
+We made sub-time series datasets, where each of these smaller datasets give the time series of water over all time steps in a certain small location area. We also split the fish data up this way as well in order to analyze the time series at a certain location only.
+
+
+### Finding the Most Abundant Fish Species at a given location at a Given Time (and storing it as a dataset)
+
+In order to be able to correlate the makeup of fish species to water characteristics, we have started by obtaining the three most abundant fish species at a given location and time, and storing these results in a .csv file as a dataset. The fish dataset consists of fish abundance at a given location and time for each species of fish we are looking at, however we needed a way to compare abundance of two species against each other to see which has more abundant. For example at a given time/location, a species with abundance level of 19 when it's average abundance is 10 is a different abundance level measure than a species with abundance of 19 when its average abundance is 500. So in order to compare this, we made another dataset, that measures the abundance of a species relative to its mean abundance at any given space and time. This way now, we can look at this relative abundances, and pick out the top three at a given time/location to be able to accurately extract "most abundant species". From here we are now working on drawing out as many correlations and derived statistics as we can relating fish species abundance to water characteriatics.
 
 ## Water Correlations
 
