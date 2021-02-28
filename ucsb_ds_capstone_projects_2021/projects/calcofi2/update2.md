@@ -28,8 +28,12 @@ One of our objectives, we hold important for our goal of being able to find corr
 
 However, what does "high" and "low" mean with respect to a given water characteristic? How do we decide on what "high" and "low" should be for a water characteristic. For any given water characteristic, we looked at the range of values it holds overall over all of the time steps (looking at the globally lowest and highest value in the dataset), and base the notion of "high" and "low" for that observed characteristic. At a given location and time step, the closer to the global minimum the characteristic value is, the "lower" and hence more blue it is denoted as, and the closer the the global maximum the value there is, the "higher" and more red it is denoted as. We made sure that for a given characteristic, we keep the same range of values we are color coding by over all time steps, so that this way we can compare how characteristic levels are changing over time visually by looking at how the colors change spatially over time, by looking at all the time step heatmaps for a given characteristic.
 
+**Insert AlkalinityHeatmap.png and AlkalinityHeatmap2.png here**
+
 ## Accurately Inferring Water pH Values Based On Other Water Characteristics
 
 Our dataset containing the water characteristics contains many water characteristics, about water at any avilable location and time in the ocean from 2008-2015 over various depths. However, the dataset does not contain information about the water pH at these times and locations. Therefore, we wanted to find a way to accurately infer the water pH values at the given location/time water samples in our dataset. This way, at any available location/time in the water dataset, we can also be able to look at the water pH level as well. This is very important to us because we strongly suspect that the pH levels play a very significant part in determinint the makeup of the fish population, and in determining which fish species are more abundant where.
 
 Due to the paper Perspectives in Environmental Chemistry by Donald L. Macalady (http://denning.atmos.colostate.edu/ats760/Readings/Tans_1998.pdf), as well as the discussion Simplified Carbonate Chemistry of Seawater based on an article by Pieter Tans, and the website https://biocycle.atmos.colostate.edu/shiny/carbonate/#References, we wrote a Python script using the algorithm from the above mentioned sources that calculates the water pH level, based on using the water DIC (Dissolved Inorganic Carbon), TA (Total Alkalinity), and Temperature. 
+
+**Insert pHHEatmap.png here"
