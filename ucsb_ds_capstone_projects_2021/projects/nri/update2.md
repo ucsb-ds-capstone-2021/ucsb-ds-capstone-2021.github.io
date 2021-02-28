@@ -7,6 +7,21 @@ Helen Huang, Shivam Misra, Priya Padmanabhan, Surya Pugal,  Yixiao Yue
 
 ## Summary
 
+We are given .bed/.fam/.bim data about individuals whom we have pedigree information for. We will feed the data into King and Plink program to calculate coefficients of relatedness (what percentage of genes between a pair of individuals is the same). Based on the percentage, we can tell whether two individuals are first degree, second degree, or not related. We will use the Kinship2 software which produces a pedigree object and output coefficients of relateness. Comparing the King and Plink values to the theoretical values produced by Kinship2, we can compare the accuracy of both of the softwares. 
+
+**Coefficient of Relatedness**
+* Percentages of genes between a pair of individuals that are the same
+* Larger value typically means closer relationship
+* Examples:
+  * Parent-Offspring (OP): 0.5
+  * Full siblings: 0.5
+  * Half siblings (ex. Relationship between 2 children with same mother but different father): 0.25
+  * Avuncular (ex. Relationship between a uncle and his sister's children): 0.25
+  * Cousins: 0.125
+
+
+## Data Processing
+
 ### King & Plink Results
 
 **Summary**
@@ -18,7 +33,6 @@ Command for King : ` king -b InputFilename.bed --related --prefix OutputFileName
 Command for Plink : ` plink --bfile InputFileName --genome --nonfounders --out OutputFileName `
 
 One notable thing is that for the plink command, the filename do not need any extensions.
-
 
 **Format of King Outputs**
 
@@ -68,10 +82,10 @@ Our output file produced a matrix in a similar format to the structure shown bel
 6. Removed all of the rows who were not fully sequenced (i.e. the individuals that we do not have their entire genome/DNA sequence)
 
 
-## Data Processing
-
-
 ## Data Analysis
+
+
+## Visualization
 
 
 ## Future Vision
