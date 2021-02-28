@@ -29,6 +29,14 @@ In this method, we took the 5 day moving average of a users heart rate and compu
 
 This method's strength is that it takes into account variability over a time frame, rather than assuming there is no variance in a patients resting heart rate. If someone began exercising, and their resting heart rate decreases as their cardiovascular health increases, then the moving average would take into account this change, whereas the baseline model would not.
 
+### Residuals and COVID-19 symptom onset/recovery
+We were interested to see whether there are spikes/dips in HR residuals before and after a participant experiences COVID-19 symptoms. Below are the same plots from before, but with residuals colored in red if a participant experienced symptoms that day:
+
+|Avg over all days|Avg over 5 day window|
+|---|---|
+|![image](./c_AFPB8J2_hr_residuals.png)|![image](./c_AFPB8J2_hr_residuals_5d.png)|
+
+Just inspecting the graph, we see there's an initial spike in the residual, and then a significant drop. Our next steps are to investigate anomaly detection algorithms and see if they can pick up on these anomalous HRs and anticipate COVID-19 diagnosis.
 
 ## Data Updates
 
