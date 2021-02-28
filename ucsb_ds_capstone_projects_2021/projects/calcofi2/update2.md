@@ -29,7 +29,7 @@ In order to be able to correlate the makeup of fish species to water characteris
 ** **Insert MostAbundantColumns.png here** **
 ```{figure} images/MostAbundantColumns.png
 ---
-scale: 75%
+scale: 150%
 align: left
 name: directive-fig
 ---
