@@ -10,9 +10,9 @@
 * Alexander Franks, Lubi Lenaburg, Joshua Bang
 
 ### Introduction
-The CSEP Alumni Tracking Project tracks students graduating from  2000 - 2018 from the University of California, Santa Barbara. The overall goal of tracking students is monitoring opportunites UCSB provides and the impact on student outcomes. 
+The CSEP Alumni Tracking Project tracks students graduating from  2000 - 2018 from the University of California, Santa Barbara. The overall goal of tracking students is monitoring opportunities UCSB provides and the impact on student outcomes. 
 
-The data comes from a mix of sources: online - LinkedIn, personal websites, and professional organizations - and UCSB's own information about students. While not all of the data was accessed through an automated system, some of it required some manual revisions to determine if a student's data is updated. So while we collected from some of the sources listed above, there will exist some type of error whether it is a simple mispelling of a word to texts existing in an integer column. 
+The data comes from a mix of sources: online - LinkedIn, personal websites, and professional organizations - and UCSB's information about students. While not all of the data was accessed through an automated system, some of it required some manual revisions to determine if a student's data is updated. So while we collected from some of the sources listed above, there will exist some type of error whether it is a simple misspelling of a word to texts existing in an integer column. 
 
 The organization providing the data does not have an overall goal for the outcome of the data: the CSEP group is free to explore any possible avenue for the data within reason.  
 
@@ -20,6 +20,17 @@ The organization providing the data does not have an overall goal for the outcom
 SCRE is a way for the team to access the data without having any breaches in the security of the data itself. Because the data we are using is of actual past UCSB alumni, we don't want to expose any sensitive information of each individual. While on SCRE, we're not only able to access this information, but we're also able to play around with it in python code on our virtual machines! 
 
 More specifically, each capstone member is assigned a specific Virtual Machine (VM) that allows the designated user to access the data through that VM. An important aspect to note is that while UCSB maintains a complete and thorough alumni dataset, not all of it is allocated to our team. The Family Educational Rights and Privacy Act (FERPA) restricts the alumni and student information that institutions such as UCSB can release. For this reason, our team only works with a portion of the alumni dataset in a secure environment as a means to respect the privacy of UCSB alumni and students.
+
+### Cleaning Up the Data  
+The first and arguably most important step in any project is cleaning up the dataset. CSEP provided a very detailed, yet messy dataset. Containing five total files, the datasets included over 30,000 students and their accomplishments over the years. Getting everyone on the same page, the cleaned-up data can be accessed via a function call. This way we can ensure reproducibility in the results.  
+#### Standardizing Dates 
+Academic choices and Careers contained numerous corresponding months, days, and years in different columns. In some instances, the months were given as seasons. Taking that into account, the months were replaced with a standardized form using a dictionary. Then months, days, and years were combined and converted into a DateTime format. Next, the redundant dates were dropped. The missing values were imputed based on the mode for either the month or the year.  
+#### Capitalization, Punctuation, and Typos  
+CSEP provided hand-entered data. Unfortunately, humans are not perfect and errors are to be expected. The most common error is capitalization. Python and many other programming languages interpret different capitalizations of the same words as different. The quick and most effective fix was to capitalize everything. Also, programming languages can't overcome different punctuation. Therefore, non-essential punctuation was stripped to standardize the data. Finally, everyone makes typos. Pesky and annoying, they can completely alter a dataset. While an ongoing process, any found typos are being corrected.  
+#### Missing Data  
+As mentioned in standardized dates, there is missing data. While not significant, the best practice would be to insert any good assumptions. Many techniques were used, but the most effective is using a forward fill on objects regarding the same ID.  
+#### Adding Data  
+The data currently available does not extend much further beyond student information. Wanting to know more about the graduate and professional schools attended, ranking data was web-scrapped from U.S. News and added to the institutional data.  
 
 
 ### Software Used
