@@ -56,7 +56,7 @@ In comparison to relatedness coefficient, the kinship coefficient is defined as 
 
 Our output file produced a matrix in a similar format to the structure shown below. For example, row 3 column 2 and row 2 column 3 both contain the kinship2 coefficient of the pair id1 and id2. The values on the diagonal are all 1s because they represent the relationship  of an individual to themself. After removing the individuals who were not directly part of the family, our file reduced to a 29 by 29 matrix.  
 
-![](kinship2example.png)
+![](task1_figs/kinship2example.png)
 
 **What We Did**
 
