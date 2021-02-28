@@ -32,7 +32,15 @@ As mentioned in standardized dates, there is missing data. While not significant
 #### Adding Data  
 The data currently available does not extend much further beyond student information. Wanting to know more about the graduate and professional schools attended, ranking data was web-scrapped from U.S. News and added to the institutional data.  
 
-
+### Predicting Level of Job Title  
+#### Question  
+Is a student's first job out of college dependent on what they did in college?  
+####  Data and Modeling  
+The CSEP data combined to form a data frame containing the quantifiable characteristics of their highschool (SAT Quintile, Total Enrollment, Graduates, etc.), their degree and college characteristics (Honors Program, Study Abroad, STEM, College, etc.), their characteristics (Gender), and their level of job title. The level of job title is divided into sixteen categories from intern to owner/CEO. Based on their job title and description, everyone was placed into a level. After dropping all rows with Null data, there were over five thousand rows to model on. The level of Job Title was converted into numerical labels and all other categorical features were one-hot encoded. Then a multinomial logistic regression model predicted a graduate's first job out of college. Finally, cross-validation tuned the results. The model predicts with 30% accuracy, three times better than a random guess.  
+```{eval-rst}
+.. figure:: Multinomial_Logistic_Regression.png
+    :scale: 90% 
+```
 ### Software Used
 * Python
 * SCRE
