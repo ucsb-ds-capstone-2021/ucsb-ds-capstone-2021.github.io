@@ -19,4 +19,4 @@ certain fish species was very dominant. We have been making more visualizations,
 
 ## Heatmaps of Water Characteristics
 
-## Filling in pH Values
+## Interpolating pH Values
