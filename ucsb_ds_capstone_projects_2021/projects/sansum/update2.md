@@ -24,7 +24,7 @@ jupyter:
 <!-- #endregion -->
 
 <!-- #region id="n9bxvcswantQ" -->
-#### Overview of our progress: 
+#### Overview of our progress
 - Exploratory Data Analysis
     - Compared HbA1c levels to other variables of interest such as whether they have been treated with insulin
     - Addressing missing data
@@ -40,6 +40,7 @@ jupyter:
 <!-- #endregion -->
 
 <!-- #region id="YyJ3pMindCd4" -->
+#### Exploratory Data Analysis
 <img src = "visuals\zipcode.png" width = 400px height = 300px>
 
 We stratified the data set into three different tiers of HbA1c levels and plotted their distribution by zipcode. We found higher HbA1c levels in the 93101 and 93117 zip codes. A possible explanation could be the lower air quality in these zip codes.
@@ -68,7 +69,7 @@ These plots show the differences between the correlation and stratification of A
 We projected the biological data into three-dimensions and plotted the results by HbA1c class to see if we could identify any patterns in the data. There were no clear patterns in this 3D plot.
 
 <!-- #region id="NESXWU68antR" -->
-#### RedCap:
+#### Database Management in REDCap
 1. Enrolling and Data Capture: 	
   - Screening IDs are automatically generated on enrollment
   - Subject IDs assigned to a patient/subject are their unique identifier during a Study
@@ -112,7 +113,7 @@ We projected the biological data into three-dimensions and plotted the results b
 <!-- #endregion -->
 
 <!-- #region id="RNC7vrIYantS" -->
-### Future goals
+#### Future goals
 - Analyzing qualitative data
 - Predicting A1c Classes
 - Entering research data into the RedCap database
