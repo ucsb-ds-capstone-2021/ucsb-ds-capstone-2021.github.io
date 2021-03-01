@@ -33,7 +33,7 @@ jupyter:
     - Scoring Qualitative Survey Answers
       - Using the scoring rubric to assess scores for survery responses 
       - e.g. for the Social Needs survey, we would assess a score from all the responses that would tell us what the social needs of an individual
-      - Another exmaple: Scoring how religious/ spiritual someone is based off of meaning, peace, and faith
+      - Another example: Scoring how religious/ spiritual someone is based off of meaning, peace, and faith
 - Database Management
   - Using REDCap (Research Electronic Data Capture tool) cloud to store and manage research data 
   - REDCap Cloud is a web-based software that is highly customizable so researchers can design a database or survey to meet each study’s needs.
@@ -63,7 +63,7 @@ The scatter plots display the HbA1c levels of participants over the years based 
 
 <img src = "https://raw.githubusercontent.com/lawrencedlin/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/sansum/visuals/survey.png">
 
-These plots show the differences between the correlation and stratification of A1c in relation to both the total FACIT-Sp-12 score and the FACIT-Sp-12 meaning subscore. FACIT-Sp-12 stands for “Functional Assessment of Chronic Illness Therapy - Spiritual Well-Being 12 Item Scale”. There are three subscores when using the 3-Factor model: meaning, peace and faith. The meaning subscore had a substantially higher correlation coefficient at around ~0.16 then the total score, which had a correlation coefficient of around ~0.08. The faith subscores, in contrast, had correlation coefficients
+These plots show the differences between the correlation and stratification of A1c in relation to both the FACIT-Sp-12 total score and subscores. FACIT-Sp-12 stands for “Functional Assessment of Chronic Illness Therapy - Spiritual Well-Being 12 Item Scale”. There are three subscores when using the 3-Factor model: meaning, peace and faith. Higher scores imply better spiritual well being. The meaning subscore has a higher correlation coefficient then the other plots at around ~0.16. The total score has a correlation coefficient of ~0.10 and peace subscore has a correlation coefficient of around ~0.08. The faith subscore, in contrast, has a correlation coefficient as low as ~.01.
 
 
 <img src = "https://raw.githubusercontent.com/lawrencedlin/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/sansum/visuals/pca.png" width = 200px, height = 200px>
