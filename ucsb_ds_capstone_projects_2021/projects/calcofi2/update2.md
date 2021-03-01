@@ -26,7 +26,7 @@ When graphing the subsetted data, we noticed that there were 6 water locations t
 height: 300px
 name: linestation-fig
 ---
-Data Location Plot
+Plots showing where data is sampled from (blue points are water samples red are fish samples)
 ```
 
 ### Grouping and Splitting the Water and Fish Dataset by Location
@@ -57,7 +57,7 @@ scale: 80%
 align: left
 name: directive-fig
 ---
-Positive correlations 
+Positively correlated characteristics
 ```
 For my strong negetive correltation I use Tempature as my feature and had Salinity1, and DIC1 as my observant.With the visual plots I generated we can see the strong negative correlation. In area where their are high tempature in our data then we will find low levels of DIC and Salinity since they share a negative correlation relationship and vice versa when tempature is low. 
 ```{figure} images/negative_cr.png
@@ -65,7 +65,7 @@ For my strong negetive correltation I use Tempature as my feature and had Salini
 height: 300px
 name: directive-fig
 ---
-Negative correlations 
+Negatively correlated characteristics
 ```
 ## Heatmaps of Water Characteristics
 
