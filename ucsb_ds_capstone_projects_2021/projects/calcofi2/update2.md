@@ -38,7 +38,6 @@ We made sub-time series datasets, where each of these smaller datasets give the 
 
 In order to be able to correlate the makeup of fish species to water characteristics, we have started by obtaining the three most abundant fish species at a given location and time, and storing these results in a .csv file as a dataset. The fish dataset consists of fish abundance at a given location and time for each species of fish we are looking at, however we needed a way to compare abundance of two species against each other to see which has more abundant. For example at a given time/location, a species with abundance level of 19 when it's average abundance is 10 is a different abundance level measure than a species with abundance of 19 when its average abundance is 500. So in order to compare this, we made another dataset, that measures the abundance of a species relative to its mean abundance at any given space and time. This way now, we can look at this relative abundances, and pick out the top three at a given time/location to be able to accurately extract "most abundant species". From here we are now working on drawing out as many correlations and derived statistics as we can relating fish species abundance to water characteriatics.
 
-** **Insert MostAbundantColumns.png here** **
 ```{figure} images/MostAbundantColumns.png
 ---
 scale: 100%
@@ -74,7 +73,6 @@ One of our objectives, we hold important for our goal of being able to find corr
 
 However, what does "high" and "low" mean with respect to a given water characteristic? How do we decide on what "high" and "low" should be for a water characteristic. For any given water characteristic, we looked at the range of values it holds overall over all of the time steps (looking at the globally lowest and highest value in the dataset), and base the notion of "high" and "low" for that observed characteristic. At a given location and time step, the closer to the global minimum the characteristic value is, the "lower" and hence more blue it is denoted as, and the closer the the global maximum the value there is, the "higher" and more red it is denoted as. We made sure that for a given characteristic, we keep the same range of values we are color coding by over all time steps, so that this way we can compare how characteristic levels are changing over time visually by looking at how the colors change spatially over time, by looking at all the time step heatmaps for a given characteristic.
 
-** **Insert AlkalinityHeatmap.png and AlkalinityHeatmap2.png here** **
 ```{figure} images/NewTAHeatmaps.png
 ---
 height: 500px
@@ -90,7 +88,6 @@ Our dataset containing the water characteristics contains many water characteris
 
 Due to the paper Perspectives in Environmental Chemistry by Donald L. Macalady (http://denning.atmos.colostate.edu/ats760/Readings/Tans_1998.pdf), as well as the discussion Simplified Carbonate Chemistry of Seawater based on an article by Pieter Tans, and the website https://biocycle.atmos.colostate.edu/shiny/carbonate/#References, we wrote a Python script using the algorithm from the above mentioned sources that calculates the water pH level, based on using the water DIC (Dissolved Inorganic Carbon), TA (Total Alkalinity), and Temperature. 
 
-** **Insert pHHEatmap.png here** **
 ```{figure} images/pHHeatmap.png
 ---
 height: 300px
