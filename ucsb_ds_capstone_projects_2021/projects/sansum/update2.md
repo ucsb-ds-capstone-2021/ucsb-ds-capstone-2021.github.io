@@ -41,30 +41,30 @@ jupyter:
 
 <!-- #region id="YyJ3pMindCd4" -->
 #### Exploratory Data Analysis
-<img src = "visuals\zipcode.png" width = 400px height = 300px>
+<img src = "https://raw.githubusercontent.com/lawrencedlin/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/sansum/visuals/zipcode.png" width = 400px height = 300px>
 
 We stratified the data set into three different tiers of HbA1c levels and plotted their distribution by zipcode. We found higher HbA1c levels in the 93101 and 93117 zip codes. A possible explanation could be the lower air quality in these zip codes.
 
 
 <!-- #endregion -->
 
-<img src = "visuals\insulin.png" width = 500px, height = 290px>
+<img src = "https://raw.githubusercontent.com/lawrencedlin/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/sansum/visuals/insulin.png" width = 500px, height = 290px>
 
 The histograms above compare the distribution of HbA1c levels of participants treated with Insulin during research and participants not treated during research. The vertical red bar indicates the point at which HbA1c = 7, giving a better view to the distribution of individuals with lower or higher values than 7. Surprisingly, the individuals not treated have lower HbA1c levels, having a skewed right distribution when compared to their treated counterparts. This could be due to the treated participants having a greater need for Insulin, or could be due to the lower number of participants being treated than not being treated.
 
 
-<img class = "resize" src = "visuals\diagnosis.png" width = 500px, height = 300px>
+<img src = "https://raw.githubusercontent.com/lawrencedlin/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/sansum/visuals/diagnosis.png" width = 500px, height = 300px>
 
 The scatter plots display the HbA1c levels of participants over the years based on year of diagnosis. The left plot displays participants treated for insulin during research, while the right plot displays the participants not treated for insulin during research. Both graphs have a solid red bar at the level HbA1c = 7, displaying the two groups used to categorize HbA1c so far in our research. As the years get closer to present day, there is a noticeable negative correlation between diagnosis and HbA1c for both graphs. While the treated group has a higher HbA1c levels for its slope, both groups seem to have a similar slope based on the angle of line depicted in each graph. When measuring the correlations for each group, the treated group had a correlation of -0.065, while the non-treated group had a correlation of -0.052. While separated, the two groups do not produce significant correlations, but when combined they produce a significant correlation with a value of -0.242.
 
 
 
-<img src = "visuals/survey.png">
+<img src = "https://raw.githubusercontent.com/lawrencedlin/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/sansum/visuals/survey.png">
 
 These plots show the differences between the correlation and stratification of A1c in relation to both the total FACIT-Sp-12 score and the FACIT-Sp-12 meaning subscore. FACIT-Sp-12 stands for “Functional Assessment of Chronic Illness Therapy - Spiritual Well-Being 12 Item Scale”. There are three subscores when using the 3-Factor model: meaning, peace and faith. The meaning subscore had a substantially higher correlation coefficient at around ~0.16 then the total score, which had a correlation coefficient of around ~0.08. The faith subscores, in contrast, had correlation coefficients
 
 
-<img src = "visuals/pca.png" width = 200px, height = 200px>
+<img src = "https://raw.githubusercontent.com/lawrencedlin/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/sansum/visuals/pca.png" width = 200px, height = 200px>
 
 We projected the biological data into three-dimensions and plotted the results by HbA1c class to see if we could identify any patterns in the data. There were no clear patterns in this 3D plot.
 
