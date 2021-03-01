@@ -33,6 +33,7 @@ Sophia: The first image shows an initial view of the Bull Shark Count Overtime. 
 
 
 a plot of change in xxx created by Adhitya
+
 <img src="https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/adhitya_plot.png" alt="Pika" width="500"/>
 
 
