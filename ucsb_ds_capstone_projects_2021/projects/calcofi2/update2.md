@@ -95,3 +95,7 @@ name: directive-fig
 ---
 A sample spatial heatmap for the water pH characteristic levels that display the pH levels over various locations.
 ```
+
+## Next Steps
+
+We now intend to take our findings so far keep making more correlations between specific species of fish and water pH, as well as other water characteristics. We also in the future plan to accurately predict what the water should have been before 2008 and verify that our correlations are holding.
