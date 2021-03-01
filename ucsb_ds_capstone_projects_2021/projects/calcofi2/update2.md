@@ -45,7 +45,7 @@ scale: 100%
 align: left
 name: directive-fig
 ---
-Most Abundant Columns
+The columns of the dataset displaying the three most abundant fish species at a given location and time. "Cruise" denotes the date (YYYYMM); for example "201411" means "November of 2014", and "Line_Sta_ID" is a way to measure the location in the ocean of a sample.
 ```
 
 ## Water Correlations
@@ -80,7 +80,7 @@ However, what does "high" and "low" mean with respect to a given water character
 height: 500px
 name: directive-fig
 ---
-Test Caption
+Two spatial heatmaps for the water alkalinity (TA) characteristic for two timesteps. The color at a location indicates the TA level in the water at that location.
 ```
 
 
@@ -93,8 +93,8 @@ Due to the paper Perspectives in Environmental Chemistry by Donald L. Macalady (
 ** **Insert pHHEatmap.png here** **
 ```{figure} images/pHHeatmap.png
 ---
-height: 500px
+height: 300px
 name: directive-fig
 ---
-PH heat map 
+A sample spatial heatmap for the water pH characteristic levels that display the pH levels over various locations.
 ```
