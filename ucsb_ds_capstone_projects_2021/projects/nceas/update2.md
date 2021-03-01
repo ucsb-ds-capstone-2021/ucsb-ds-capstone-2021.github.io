@@ -1,7 +1,5 @@
-
-
 ## Update 2
-Febrauary 28, 2021
+February 28, 2021
 
 ### Long Term Ecological Research (LTER) Datasets: R package
 ### Project Sponsor: National Center for Ecological Analysis and Synthesis (NCEAS) 
@@ -9,46 +7,37 @@ Febrauary 28, 2021
 
 
 **Progress**
-- We began coworking hours on Fridays in addition to our weekly meeting on Mondays for more collaboration and to share ideas/troubleshooting.
-- Learned the workflow of creating an R package from scratch (documentation, license, github, function ) through the say_aloha (insert link)
-- We each created 3 of our own demo datasets, 2 where the data was provided for us, and 1 where we chose our own dataset from any LTER site. 
-- Incorporated what we learned in past weeks (github workflow, tidyverse, metajam) by putting them together.
-- Large importance placed on the creation of vignettes and we are really thinking of who they are for in the process of building them out. 
-- We started presenting our demo packages and vignettes during our weekly meetings as a form of updates/feedback. 
-- Our installable R packages can be found here (insert five Github links)
+- Began coworking hours on Fridays in addition to our weekly meeting on Mondays to collaborate and share ideas and troubleshoot.
+- Learned the workflow of creating an R package from scratch, such as creating documentation, licenses, github repositories, and functions using the say_aloha, devtools, and use_this packages.
+- Created three of our own demo datasets, two where the data was provided for us, and one where we chose our own dataset from any LTER site. 
+- Incorporated what we learned in past weeks, such as the github, tidyverse, and metajam workflows.
+- Large importance placed on the creation of vignettes and their audiences.
+- Presented our demo packages and vignettes during our weekly meetings to update the group and to receive feedback. 
+- Our installable R packages can be found here:
     - Adhitya: [Adhitya's Package](https://github.com/adhil0/alohaal)
-    - Sophia: [Sophia’s Package] ()
-    - Karen:
-    - Lia:
+    - Sophia: [Sophia’s Package] (https://github.com/sophiasternberg/fcess)
+    - Karen: [Karen’s Package] (https://github.com/karenezhao/alohakz)
+    - Lia: [Lia’s Package] (https://github.com/liaaaaran/alohalr)
     - Sam: [Bonanza](https://github.com/TokyoExpress/bonanza)
 
 
-Examples of Visualizations in our packages (all produced using ggplot from the tidyverse package)
+Examples of Visualizations in our packages, all of which were produced using ggplot from the tidyverse package:
 
 Sophia: The first image shows an initial view of the Bull Shark Count Overtime. This data is from the Florida Coastal Everglades (FCE) LTER Site. I thought this was an interesting plot to include because of the pattern happening YoY. The second image shows the relationship between Temperature and Bull Sharks. I thought this was important to include because it brings up an important point about the nature of collecting data and taking data with a grain of salt. From a first glance, it appears that more Bull Sharks are counted when the Temperature is higher; however researchers are also more likely to survey when the Temperature is warmer/nicer and that may be a bias in the data and affect the number of Bull Sharks counted.
 
 
 
 
-
-
-a plot of change in xxx created by Adhitya
+This plot shows the weight distributions of pikas found at various sampling sites in the Niwot Ridge LTER:
 
 <img src="https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/adhitya_plot.png" alt="Pika" width="500"/>
 
-
-a plot showing the relationship of xxx by Karen
-
-
-visualization illustrating the xxx of xxx by Samuel
-
-
-xxxxxgram by Lia
 
 
 **Future Plans**
 - For the remainder of this quarter, we plan to refine our packages and vignettes even more, while adding more in-depth descriptions and other important metadata about our packages. To do this, we will really need to know our datasets inside and out and understand every nuance. 
 - We will need to start deciding what datasets we will import to our final product and map out a plan of how to best collaborate on this. 
-- 
+
+
 
 
