@@ -35,7 +35,9 @@ jupyter:
       - e.g. for the Social Needs survey, we would assess a score from all the responses that would tell us what the social needs of an individual
       - Another exmaple: Scoring how religious/ spiritual someone is based off of meaning, peace, and faith
 - Database Management
-  - Using REDCap cloud to store and manage research data 
+  - Using REDCap (Research Electronic Data Capture tool) cloud to store and manage research data 
+  - REDCap Cloud is a web-based software that is highly customizable so researchers can design a database or survey to meet each study’s needs.
+  - REDCap Cloud is HIPAA compliant and provides ready-to-use templates for various study designs. 
 
 <!-- #endregion -->
 
@@ -69,32 +71,32 @@ These plots show the differences between the correlation and stratification of A
 We projected the biological data into three-dimensions and plotted the results by HbA1c class to see if we could identify any patterns in the data. There were no clear patterns in this 3D plot.
 
 <!-- #region id="NESXWU68antR" -->
-#### Database Management in REDCap
-1. Enrolling and Data Capture: 	
+#### Database Management (REDCap)
+Enrolling and Data Capture: 	
   - Screening IDs are automatically generated on enrollment
   - Subject IDs assigned to a patient/subject are their unique identifier during a Study
   - "Confirm enrollment" (if enabled in Parameters), enables a user to enroll a subject even if they do not qualify based on their screening results
   - All Subjects don’t need to be screened for eligibility prior to enrollment but can be
-2. Data Export, Reporting, Audit Logs:
+Data Export, Reporting, Audit Logs:
   - The Send It module can be used to send large (up to 500MB) and/or sensitive files to one or more recipients in a HIPAA compliant manner
   - After clicking submit report in “Report Wizard”, the report can be exported into either CSV or Excel
-3. Intermediate Reporting:
+Intermediate Reporting:
   - In Report Wizard, a user can save a report as a Shared Report for access to other Users
   - A user can configure their reports by selecting fields to include in their report from the drop-down of instruments
   - When searching for a specific report, a user can either use the search bar or click “filter” and use: is, is not, starts with, contains, is empty, or is not empty
-4. Surveys:
+Surveys:
   - Surveys (if enabled) will allow for an alternative data capture medium for the Study Team by enabling data capture direct from Subjects via a Survey URL
   - There are four ways a Survey can be launched, and an email generated to (Study enrolled) Survey participants with a URL to access it
   - Survey Queue displays a list of ALL surveys in the Study on a single person
   - Surveys can be set to appear in the Survey Queue based upon if the participant has completed a particular survey and/or if certain conditions are met (based upon data values)
   - Public Surveys can be used for the general public for teaching purposes, such as Health Fairs, Company Parties, or School Lectures, where the study team could make a laptop(s) available for attendees to enter data anonymously
-5. Monitoring:
+Monitoring:
   - Monitoring consists of 3 separate components which are:
     - Source Data Verification – CRF(Case report form) or fields within the CRF which require verification to source documents by the field/site monitor.
     - Medical Review – CRF or field data requires review by e.g. a medical reviewer.
     - Data Review - CRF or field data which require review by a data manager.
   - An Event cannot be closed out if monitoring has not been completed on any of the 'Required' CRFs that requiring monitoring
-6. E-signature process:
+E-signature process:
   - The icon for eSignature will show up next to the form; as well as, the Event level, as long as the role for the user has been enabled
   - When the forms have been completed, the user with the ability to eSign, will click on the icon and enter their password
   - eSignatures can be erased and “resigned” if necessary
