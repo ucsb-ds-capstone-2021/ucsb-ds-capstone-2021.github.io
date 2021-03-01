@@ -27,7 +27,7 @@ We needed to explore these varying levels of specialization with the Apidae, And
 
  After last weeks discussion of targeting different levels of specialization for bees, we were able to further explore these different levels. Specifically, we found heatmaps to be a great way of finding interactions at different levels that are significant. While the heatmaps enabled us to identify particularly interesting plant bee relationships, and also gave us a quick and general way to identify specialists/generalists, we found that comparing these relationships was hard to quantify using heatmaps. By using bar plots to better study and quantify the differences between relationships we had found, we were able to look into various levels of species interaction in a much more informatve context.
 
-![](https://github.com/nickb1125/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-02-24%20at%203.56.36%20PM.png)
-![](https://github.com/nickb1125/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-02-24%20at%203.56.47%20PM.png)
-![](https://github.com/nickb1125/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-02-24%20at%203.56.55%20PM.png)
+![](https://github.com/nickb1125/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-02-24%20at%203.56.36%20PM.png?raw=true)
+![](https://github.com/nickb1125/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-02-24%20at%203.56.47%20PM.png?raw=true)
+![](https://github.com/nickb1125/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-02-24%20at%203.56.55%20PM.png?raw=true)
 
