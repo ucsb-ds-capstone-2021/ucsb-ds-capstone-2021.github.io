@@ -1,6 +1,7 @@
 # Update 2
 
 ## Parsing Conversation and Label Data:
+We cleaned up the data to avoid common words that don't hold a lot of valuable information and other discrepencies that would skew our model results. The effects of such parsing can be viewed in the word clouds below, the former of which being less informative for labels that we are looking to classify and the latter being more useful.
 
 ## Word Cloud:
 No Pre-Processing:
@@ -119,3 +120,4 @@ Our data is in a nested json format which has made it difficult to extract and w
 Did some exploration with the Hugging Face API and directly using the pretrained transformer models, which is mainly based on the multi-head self attention mechanism that replaces the original recurrence. Also gained some experienced with BERT: specifically using distilled BERT with pretrained weights and embedding.
 
 ## React Frontend/Backend Basics:
+We had a client/server test application in Python to demonstrate the classifying power of our models and also feed more conversation data into the models in real time. For reproducability and versatility, we decided to move this and our other model components into a React app that uses MongoDB and Docker to connect all the components of our app.
