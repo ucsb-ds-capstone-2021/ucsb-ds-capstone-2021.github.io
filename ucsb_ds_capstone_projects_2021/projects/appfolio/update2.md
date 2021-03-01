@@ -10,6 +10,7 @@
 
 ![FUNSDpred](https://github.com/DSCapstone2021/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/appfolio/FUNSDpred.png?raw=true)
 
+(Predictions of LayoutLM for the FUNSD dataset, which is similar to the Appfolio Dataset)
 
 * As an alternative approach, we started our implementation of using object detection to classify key data within the invoice. Object detection is an expansion of image classification, in which rather than simply classifying an image, the detector outputs the localized bounding box coordinates as well as the predicted class. Our team decided to go with Detectron2, Facebook’s open source object detection library. The main reasoning behind this decision was based on Detectron2’s capability of achieving high confidence with a relatively simple structure, as well as having ample collections of pretrained models for various object detection algorithms.
 
@@ -26,6 +27,7 @@ Therefore, we have two datasets on hand that we can definitely use (and any othe
 
 ![InvoiceLabels](https://github.com/DSCapstone2021/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/appfolio/InvoiceLabels.png?raw=true)
 
+(from the SROIE dataset: total values labeled)
 
 ## Obstacles:
 * Getting the data in the right format for each model has been harder than expected. 
