@@ -133,7 +133,40 @@ We found a pattern where the closer relationships (such as parent/offspring and 
 
 Because the coefficient 0.5 comprises of both parent/offspring relationship and a sibling relationship, we split it up based on each category. We did not split other coefficients that are shared between different relationships because 0.5 is very closely related and therefore, impacts our findings more. Because both parent/offspring and sibling relationship are very common, we wanted to split them to further analyze the software's behavior on both in order to go deeper on the outputs of the software. We found that the values produced by Kinship2, Plink, and King were are more similar for parent/offspring than that for siblings.
 
+
 ## Visualization
+
+### Heat Map
+
+A heatmap is a visualization that shows magnitude of variables along two dimensions. We are inspired to use heatmap in this case because we have pairwise comparison data. I took the data output (2 lists), and transformed it into a 2d numpy array to feed into a Matplotlib library function.
+
+![](task1_figs/heatmap.png)
+
+**Figure 6. Difference between King, Plink and Theoretical Heat Map**
+
+The red slanted line is due to the fact that the softwares do not compare an individual with herself, so it is set to an arbitary value as a boundary on the heatmap. To the left, King's output is compared with Kinship2's output, which is also the theoretical value. To the right, Plink's output is compared to Kinship2's output. The colormap is chosen to be diverging, so that yellow corresponds to zero difference to theoretical. The darker the color, the bigger the difference is. And blue is used for values higher than the theoretical, while red is used for values lower than the theoretical. Ideally, we would expect the map to look mostly yellow.
+
+Finding:
+* King's result is closer to the theoretical because most tiles are yellow on King's side
+* Plink's result is overall higher than the theoretical because most of the tiles are blue on Plink's side
+
+### Distribution Curve
+
+
+
+### 3D Scatter Plot
+
+![](task1_figs/scatter3d.png)
+
+**Figure 8. 3D Scatter Plot for Relatedness**
+
+This visualization plots the given data into a 3D Scatter plot, with Kinship2 coefficients on the x-axis, King coefficients on the y-axis, and Plink coefficients on the z-axis.
+
+Since Kinship2 is the recorded information on the pedigrees, they are put into the x-axis, and differences between the King and Plink coefficients can be plotted. If the recorded pedigree was correct, the scatter plot would feature all points on a line such that x=y=z. Deviation from that line shows a different coefficient calculated from either King or Plink.
+
+The color scheme of the plot is based on relatedness - the lighter a plot is, the more related the set of individuals are, based on the Kinship2 coefficient data.
+
+We find that deviations occur usually with Plink, and that too whenthe relatedness coefficient is small ($<0.2$).
 
 
 ## Future Vision
