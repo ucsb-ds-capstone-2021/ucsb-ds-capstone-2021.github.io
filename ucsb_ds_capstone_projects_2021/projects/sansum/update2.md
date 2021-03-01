@@ -16,24 +16,26 @@ jupyter:
 # Update 2
 ![](https://www.sansum.org/wp-content/uploads/2020/05/SDRI_logo_72.png)
 
-### Capstone members
+#### Capstone members
 - Lawrence Lin, Zoe Holzer, Emily San Juan, Jake Simon, Vanessa Salgado
 
-### Faculty
+#### Faculty
 - Alexander Franks, Jiajing Zheng, Dr. Namino Glantz, Dr. David Kerr
 <!-- #endregion -->
 
 <!-- #region id="n9bxvcswantQ" -->
-### Things we’ve done since last progress report: 
-- Scoring Qualitative Survey Answers
-    - Using the scoring rubric to assess scores for survery responses 
-    - e.g. for the Social Needs survey, we would assess a score from all the responses that would tell us what the social needs of an individual
-    - Another exmaple: Scoring how religious/ spiritual someone is based off of meaning, peace, and faith
-- Addressing missing data
-    - Asking questions about missing data
-    - Removing missing rows and columns
+#### Overview of our progress: 
 - Exploratory Data Analysis
     - Compared HbA1c levels to other variables of interest such as whether they have been treated with insulin
+    - Addressing missing data
+      - Asking questions about missing data
+      - Removing missing rows and columns
+    - Scoring Qualitative Survey Answers
+      - Using the scoring rubric to assess scores for survery responses 
+      - e.g. for the Social Needs survey, we would assess a score from all the responses that would tell us what the social needs of an individual
+      - Another exmaple: Scoring how religious/ spiritual someone is based off of meaning, peace, and faith
+- Database Management
+  - Using REDCap cloud to store and manage research data 
 
 <!-- #endregion -->
 
@@ -66,7 +68,7 @@ These plots show the differences between the correlation and stratification of A
 We projected the biological data into three-dimensions and plotted the results by HbA1c class to see if we could identify any patterns in the data. There were no clear patterns in this 3D plot.
 
 <!-- #region id="NESXWU68antR" -->
-### RedCap(what have we learned?):
+#### RedCap:
 1. Enrolling and Data Capture: 	
   - Screening IDs are automatically generated on enrollment
   - Subject IDs assigned to a patient/subject are their unique identifier during a Study
@@ -100,7 +102,7 @@ We projected the biological data into three-dimensions and plotted the results b
 <!-- #endregion -->
 
 <!-- #region id="UpDEkszbantR" -->
-### Things that have changed since last time: 
+#### Summary 
 - We have been finding variables that are correlated with A1c 
 - Determined that our next step is to explore our data while controlling for time since diagnosis and the insulin treated variable
 - Familiarized ourselves with REDCap 
@@ -110,7 +112,7 @@ We projected the biological data into three-dimensions and plotted the results b
 <!-- #endregion -->
 
 <!-- #region id="RNC7vrIYantS" -->
-### Hopes for the future
+### Future goals
 - Analyzing qualitative data
 - Predicting A1c Classes
 - Entering research data into the RedCap database
