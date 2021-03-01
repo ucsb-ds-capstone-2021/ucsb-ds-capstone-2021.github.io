@@ -17,6 +17,12 @@ We are have a water time series dataset, what gives information about many water
 
 ### Subsetting the Fish Dataset to Match the Water Dataset Sample Locations/Times
 
+The originial fish dataset had observations dating back to the 1950s and over 100 different locations along the California coast. However, the water dataset only had data avilable from 2008 to 2015. We also discovered that the water dataset covered a much smaller set of locations than the fish dataset. Our goal is to be able to correlate the pH calculated from the water dataset with the abundance of fish species from the fish dataset. In order to follow this goal and provide the most accurate readings, we not only subsetted the fish dataset to match the time frame of available water data, but we also wanted to subset with only the locations that matched those where water data is available.
+
+When graphing the subsetted data, we noticed that there were 6 water locations that did not align in the same line/station pattern as the fish data. After further analysis, we found that all 6 anomalies occured on the same date, November of 2013 (Cruise=201311). We decided to elimate this from the final combined data for intial correlations to be able have the most accurate pH and larval fish abundance correlations as possible. 
+
+** **Insert LineStationPlot.png here** **
+
 ### Grouping and Splitting the Water and Fish Dataset by Location
 
 We made sub-time series datasets, where each of these smaller datasets give the time series of water over all time steps in a certain small location area. We also split the fish data up this way as well in order to analyze the time series at a certain location only.
