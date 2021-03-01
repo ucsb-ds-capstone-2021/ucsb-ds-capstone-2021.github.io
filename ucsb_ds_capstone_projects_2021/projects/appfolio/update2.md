@@ -8,14 +8,8 @@
 * Started implementing LayoutLM, which is a natural language processing (NLP) approach which also incorporates layout of a document to get the total value. To finetune this model, we are utilizing the bounding boxes for each text, the text inside those, and the label for them. For example, we could have [120, 40, 160, 60] as the coordinates for the top left and bottom right points of the bounding box, “company” as the text inside that box, and “other” as the label since it does not correspond to the total value of the bill. Once we finish fine tuning the model we should be able to predict the label for each bounding box and corresponding text/number inside it. We tried the model on another dataset (FUNSD), which contains noisy scanned documents and could be easily preprocessed to the right format since the code to do this was publicly available. 
 
 
+![FUNSDpred](https://github.com/DSCapstone2021/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/appfolio/FUNSDpred.png?raw=true)
 
-```{figure} FUNSDpred.png
----
-scale = 50%
-name: FUNSD_predictions
----
-Predictions of LayoutLM for the FUNSD dataset, which is similar to the Appfolio Dataset
-```
 
 * As an alternative approach, we started our implementation of using object detection to classify key data within the invoice. Object detection is an expansion of image classification, in which rather than simply classifying an image, the detector outputs the localized bounding box coordinates as well as the predicted class. Our team decided to go with Detectron2, Facebook’s open source object detection library. The main reasoning behind this decision was based on Detectron2’s capability of achieving high confidence with a relatively simple structure, as well as having ample collections of pretrained models for various object detection algorithms.
 
@@ -29,13 +23,8 @@ Therefore, we have two datasets on hand that we can definitely use (and any othe
 * Worked on combining datasets and cleaning them so as to get them in the format we needed for our models.
 * Implemented a function to visualize the predictions of our models. This is useful in order to see what the label for each bounding box is.
 
-```{figure} InvoiceLabels.png
----
-scale = 50%
-name: Invoice_Labels
----
-From the SROIE dataset: total values labeled
-```
+
+![InvoiceLabels](https://github.com/DSCapstone2021/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/appfolio/InvoiceLabels.png?raw=true)
 
 
 ## Obstacles:
