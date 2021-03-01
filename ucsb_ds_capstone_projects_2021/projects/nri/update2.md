@@ -150,9 +150,15 @@ Finding:
 * King's result is closer to the theoretical because most tiles are yellow on King's side
 * Plink's result is overall higher than the theoretical because most of the tiles are blue on Plink's side
 
-### Distribution Curve
+### Probability Distribution Curve
 
+The below normal probability distribution curves represent the variability of the plink, king, and kinship data respectively -- with the shaded region corresponding to existing data from the data set (data outside of this does not exist in data set). We observe that the king and kinship data look nearly identical, compared to the plink data, due to deviations in mean, standard deviation, and extrema. 
 
+![](task1_figs/normalCurves.png)
+
+**Figure 7. Normal Gaussian Curve for Plink, King, and Kinship2**
+
+Additionally, after running two-sample z tests for comparing means between Plink and Kinship, Plink and King, and Kinship and King, we found that the p value obtained were near zero for the first two groupings (3.077875030154161e-05 and 7.457103829542305e-05) and a relatively high p value for the latter grouping (0.9424546370785375).
 
 ### 3D Scatter Plot
 
