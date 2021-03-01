@@ -14,7 +14,7 @@ Pre-Processed:
 ### LDA Visualizations:
 
 We ran an LDA on our dataset in order to better understand it. LDA is a generative model that that treats a topic as a probability distribution over a set of words and a document as a probability distribution over a set of topics. The model takes in a number of topics and calculates the distribution of words for each topic. Since our dataset contains 6 classification categories, we initially tried to get 6 topics, but it was difficult to get coherent and well separated topics. Eventually it became clear that 5 topics are best to describe our dataset. Our initial topic model includes only the text tagged as spoken by the “USER” since that’s the kind of speech we want to model. This model can be visualized below: 
-![](lda_user_20pass_auto5.html)
+![](./lda_user_20pass_auto5.html)
       
 We trained another topic model, this time including common phrases by using Gensim’s collocation detection (gensim.models.phrases). We tried this to see if it would help the model disambiguate between two categories and find 6 well separated topics but this did not happen. Instead, we ended up training another 5 topic model. Visualization below :
 ![alt text](lda_user+phrase_40pass_symalpha_etaauto5.html).
