@@ -26,7 +26,7 @@ When graphing the subsetted data, we noticed that there were 6 water locations t
 height: 300px
 name: linestation-fig
 ---
-Plots showing where data is sampled from (blue points are water samples red are fish samples)
+Plots showing where data is sampled from (blue points are water samples red are fish samples). The left side shows the few water data points that did not match the line and station patterns in the fish dataset.
 ```
 
 ### Grouping and Splitting the Water and Fish Dataset by Location
