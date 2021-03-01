@@ -57,7 +57,7 @@ scale: 80%
 align: left
 name: directive-fig
 ---
-Positively correlated characteristics
+Positively correlated characteristics (the missing observant on the top right plot is "sigma-theta")
 ```
 For my strong negetive correltation I use Tempature as my feature and had Salinity1, and DIC1 as my observant.With the visual plots I generated we can see the strong negative correlation. In area where their are high tempature in our data then we will find low levels of DIC and Salinity since they share a negative correlation relationship and vice versa when tempature is low. 
 ```{figure} images/negative_cr.png
