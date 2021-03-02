@@ -79,23 +79,23 @@ The percent of students who are eligable to recieve free and reduced lunch (FRPM
 
 ```{eval-rst}
 .. figure:: ComparativeHistogram-CS.png
-    :scale: 90%
+    :scale: 120%
 ```
 
 ```{eval-rst}
 .. figure:: ComparativeHistogram-Bio.png
-    :scale: 90%
+    :scale: 120%
 ```
 
 ```{eval-rst}
 .. figure:: ComparativeHistogram-Chicano.png
-    :scale: 90%
+    :scale: 120%
 ```
 
 
 ```{eval-rst}
 .. figure:: ComparativeHistogram-Econ.png
-    :scale: 90%
+    :scale: 120%
 ```
 
 
