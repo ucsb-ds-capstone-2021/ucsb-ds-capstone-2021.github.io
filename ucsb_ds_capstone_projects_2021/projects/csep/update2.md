@@ -54,26 +54,6 @@ To keep in mind on the rankings, we pulled from usnews.com under their best grad
     :scale: 90% 
 ```
 
-```{eval-rst}
-.. figure:: TopCSGrads.png
-    :scale: 90%
-```
-
-```{eval-rst}
-.. figure:: TopEconGrads.png
-    :scale: 90%
-```
-
-```{eval-rst}
-.. figure:: TopStatsGrads.png
-    :scale: 90%
-```
-
-```{eval-rst}
-.. figure:: TopPhysicsGrads.png
-    :scale: 90%
-```
-
 ### Software Used
 * Python
 * SCRE
