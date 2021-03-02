@@ -41,16 +41,23 @@ The CSEP data combined to form a data frame containing the quantifiable characte
 .. figure:: Multinomial_Logistic_Regression.png
     :scale: 90% 
 ```
-### Graduate Degrees
+### 'Graduate' Degrees
 #### Question
 Do Our UCSB Alumni Receive Their 'Graduate' Degree From a Top 10 University For Their Specific Discipline?
 #### Respective Rankings
 There is a lot of wonder where our UCSB alumni actually earn their 'Graduate' degree from. Particularly, we're looking at students who went to a university that was a top-tier school for what they were studying in. For instance, if we were looking at students who earned their 'Graduate' Degree under a Computer Science discilpline, then we want to see if that university is a top-tier university for Computer Science. To keep in mind on the rankings, we pulled from usnews.com under their best graduate degree programs for specific majors. We were able to do that for a few choices: Electrical Engineering(2020 list), Computer Science(2018 list), Economics(2017 list), Statistics(2018 list), and Physics(2018 list). Our goal would be then to utilize a machine learning algorithm to be able to predict of the XX students who earned their 'Graduate' Degree under a XY discipline, then we can predict a subset of those XX students will attend a top-10 university for their discipline.
 ```{eval-rst}
-.. figure:: TopEEGrads.png TopCSGrads.png TopEconGrads.png TopStatsGrads.png TopPhysicsGrads.png
+.. figure:: TopEEGrads.png 
     :scale: 90% 
+.. figure:: TopCSGrads.png
+    :scale: 90%
+.. figure:: TopEconGrads.png
+    :scale: 90%
+.. figure:: TopStatsGrads.png
+    :scale: 90%
+.. figure:: TopPhysicsGrads.png
+    :scale: 90%
 ```
-
 ### Software Used
 * Python
 * SCRE
