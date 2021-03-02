@@ -34,7 +34,7 @@ First we trained a Yolo-V3 model with the attempt to reproduce the results from 
 Unfortunately we didn't have as much success. Pictured below is our results with a Yolo-V3 model.
 
 
-```{figure} 1_6B58Ohs9t7sRjYISbYZs-Q.png
+```{figure} 108645101-84e4b780-7466-11eb-9c89-9e862626f3c1-1.png
 ---
 height: 150px
 name: directive-fig
