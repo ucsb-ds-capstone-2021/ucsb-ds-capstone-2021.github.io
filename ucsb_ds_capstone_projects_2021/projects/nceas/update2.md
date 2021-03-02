@@ -15,9 +15,9 @@ February 28, 2021
 - Presenting our demo packages and vignettes during our weekly meetings to update the group and to receive feedback. 
 - Our installable R packages can be found here:
     - Adhitya: [Adhitya's Package](https://github.com/adhil0/alohaal)
-    - Sophia: [Sophia’s Package] (https://github.com/sophiasternberg/fcess)
-    - Karen: [Karen’s Package] (https://github.com/karenezhao/alohakz)
-    - Lia: [Lia’s Package] (https://github.com/liaaaaran/alohalr)
+    - Sophia: [Sophia’s Package](https://github.com/sophiasternberg/fcess)
+    - Karen: [Karen’s Package](https://github.com/karenezhao/alohakz)
+    - Lia: [Lia’s Package](https://github.com/liaaaaran/alohalr)
     - Sam: [Bonanza](https://github.com/TokyoExpress/bonanza)
 
 
@@ -30,7 +30,7 @@ Sophia: The first image shows an initial view of the Bull Shark Count Overtime. 
 
 This plot shows the weight distributions of pikas found at various sampling sites in the Niwot Ridge LTER:
 
-<img src="https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/adhitya_plot.png" alt="Pika" width="500"/>
+<img src="adhitya_plot.png" alt="Pika" width="500"/>
 
 
 
