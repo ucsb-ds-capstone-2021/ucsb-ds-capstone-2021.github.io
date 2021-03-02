@@ -50,7 +50,7 @@ There is a lot of wonder where our UCSB alumni actually earn their 'Graduate' de
 To keep in mind on the rankings, we pulled from usnews.com under their best graduate degree programs for specific majors. We were able to do that for a few choices: Electrical Engineering(2020 list), Computer Science(2018 list), Economics(2017 list), Statistics(2018 list), and Physics(2018 list). Our goal would be then to utilize a machine learning algorithm to be able to predict of the XX students who earned their 'Graduate' Degree under a XY discipline, then we can predict a subset of those XX students will attend a top-10 university for their discipline.
 
 ```{eval-rst}
-.. figure:: TopEEGrads.png 
+.. figure:: TopEEGrads.png TopCSGrads.png
     :scale: 90% 
 ```
 
