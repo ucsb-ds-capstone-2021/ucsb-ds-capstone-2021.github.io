@@ -46,6 +46,7 @@
     - file: projects/nceas/description
       sections:
         - file: projects/nceas/update1
+        - file: projects/nceas/update2
     - file: projects/nri/description
       sections:
         - file: projects/nri/update1
