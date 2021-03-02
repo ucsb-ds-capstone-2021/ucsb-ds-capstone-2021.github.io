@@ -73,6 +73,28 @@ To keep in mind on the rankings, we pulled from usnews.com under their best grad
 .. figure:: TopPhysicsGrads.png
     :scale: 60%
 ```
+
+### Socioeconomic Distribution by Major 
+The percent of students who are eligable to recieve free and reduced lunch (FRPM) at a particular high school is a good metric for the socioeconomic status of the studnets who attend that high school. Using publicly availibe data we can find the FRPM distribution of high schools across California. Looking at the high schools of studnets from various majors we can see how the FRPM distribution of a certain major compares to FRPM distribution of high schools across California. In general we see that STEM majors are highly selective for studnets from highschools where most students aren't eligable for free and reduced lunch. 
+
+```{eval-rst}
+.. figure:: Cs_frpm_hist_all.png
+    :scale: 60%
+```
+```{eval-rst}
+.. figure:: econ.png
+    :scale: 60%
+```
+```{eval-rst}
+.. figure:: bio.png
+    :scale: 60%
+```
+```{eval-rst}
+.. figure:: chicano.png
+    :scale: 60%
+```
+
+
 ### Software Used
 * Python
 * SCRE
