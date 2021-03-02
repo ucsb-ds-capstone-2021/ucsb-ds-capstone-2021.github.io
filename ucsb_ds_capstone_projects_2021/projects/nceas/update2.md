@@ -30,7 +30,7 @@ Sophia: The first image shows an initial view of the Bull Shark Count Overtime. 
 
 This plot shows the weight distributions of pikas found at various sampling sites in the Niwot Ridge LTER:
 
-<img src="adhitya_plot.png" alt="Pika" width="500"/>
+![pika](https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/adhitya_plot.png?raw=true)
 
 
 
