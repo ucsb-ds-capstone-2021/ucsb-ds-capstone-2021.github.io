@@ -1,4 +1,4 @@
-# Update 2 - February 28, 2021
+# Update 2
 
 ## Project Introduction
 - CALCOFI is an organization tasked with studying the marine environment of coastal California and investigating the relationships between climate, fish population, and other human activities.
@@ -21,7 +21,7 @@
 
 
 
-# Part 1: Exploring Correlations
+## Part 1: Exploring Correlations
 
 In our last progress update, we took a brief look at the visual relationship between the larvae and the fishery catch. Now that we got more refined data, we noticed strong correlation with certain fish, such as pacific sardine:
 
@@ -84,7 +84,7 @@ from those larvae.
 Additionally, we created plots that visualized the relationship between catch pounds and larvae amounts, with the associated year on each point. Our intention with these plots was to explore whether there was a relationship between a grouping of years that might influence the catch pounds. These graphs were reproduced for each of the 6 species.
 
 
-# Part 2: Exploring the Effect of Extreme Weather Events
+## Part 2: Exploring the Effect of Extreme Weather Events
 
 We also explored the relationship between fish larvae and extreme weather events, such as El Nino and La Nina. Since these weather events affect the warming and cooling of ocean temperatures, we wanted to see if they played a role in the amount of larvae found. 
 
@@ -96,7 +96,7 @@ The plot above shows the average amount of mackerel jack fish larval found each 
 
 Similar to the previous visualization, we created these weather event plots for each of the 6 fish species. Although it was difficult to see immediate trends, we plan on spending more time investigating the effect that these weather events have on fish larvae amounts. Ideally, we would be able to isolate certain years and see if changes in fish larvae are signiciant or not.
 
-# Conclusion: Update 2
+## Conclusion: Update 2
 
 Since the first update, we have continued to focus on conducting exploratory analysis, with the intention of finding some meaningful correlations between larvae amounts and catch pounds. In the coming weeks, we plan on doing more exploratory analysis, and then deciding on a primary focus for the project.
 
