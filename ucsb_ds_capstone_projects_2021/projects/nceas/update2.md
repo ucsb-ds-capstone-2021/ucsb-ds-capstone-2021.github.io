@@ -40,4 +40,3 @@ This plot shows the weight distributions of pikas found at various sampling site
 
 
 
-
