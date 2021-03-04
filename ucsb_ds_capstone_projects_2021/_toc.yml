@@ -43,6 +43,7 @@
     - file: projects/invoca/description
       sections:
         - file: projects/invoca/update1
+        - file: projects/invoca/update2
     - file: projects/nceas/description
       sections:
         - file: projects/nceas/update1
