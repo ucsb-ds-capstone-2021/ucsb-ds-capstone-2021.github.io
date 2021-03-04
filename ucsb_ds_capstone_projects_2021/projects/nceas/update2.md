@@ -2,11 +2,11 @@
 February 28, 2021
 
 ### Long Term Ecological Research (LTER) Datasets: R package
-### Project Sponsor: National Center for Ecological Analysis and Synthesis (NCEAS) 
-#### Team Members: Sam Guo, Adhitya Logan, Lia Ran, Sophia Sternberg, Karen Zhao
+**Project Sponsor: National Center for Ecological Analysis and Synthesis (NCEAS)** \
+**Team Members: Sam Guo, Adhitya Logan, Lia Ran, Sophia Sternberg, Karen Zhao**
 
 
-**Progress**
+#### Progress
 - Began coworking hours on Fridays in addition to our weekly meeting on Mondays to collaborate, share ideas and troubleshoot.
 - Learned the workflow of creating an R package from scratch, such as creating documentation, licenses, github repositories, and functions using the say_aloha, devtools, and use_this packages.
 - Created three of our own demo datasets, two where the data was provided for us, and one where we chose our own dataset from any LTER site. 
@@ -34,7 +34,7 @@ This plot shows the weight distributions of pikas found at various sampling site
 
 
 
-**Future Plans**
+#### Future Plans
 - For the remainder of this quarter, we plan to refine our packages and vignettes even more, while adding more in-depth descriptions and other important metadata about our packages. To do this, we will really need to know our datasets inside and out and understand every nuance. 
 - We will need to start deciding what datasets we will import to our final product and map out a plan of how to best collaborate on this. 
 
