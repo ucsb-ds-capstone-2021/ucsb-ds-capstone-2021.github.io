@@ -3,6 +3,10 @@
 ## Parsing Conversation and Label Data:
 We cleaned up the data to avoid common words that don't hold a lot of valuable information and other discrepencies that would skew our model results. The effects of such parsing can be viewed in the word clouds below, the former of which being less informative for labels that we are looking to classify and the latter being more useful.
 
+Furthermore, after cleaning up the data, we were able to develop a better understanding of how the data is structured and how to organize a chatbot that uses our ML models to make classifications and maybe eventually, conversational responses. Notes for our chatbot structure can be found here:
+
+[Chatbot Structure](https://docs.google.com/document/d/1AIHlIQ1Y-_yLgH012E7MqabeAh2kXH1yXyLpcQUfAho)
+
 ## Word Cloud:
 No Pre-Processing:
 ![alt text](Not_Processed_WC.png)
@@ -39,4 +43,13 @@ Our data is in a nested json format which has made it difficult to extract and w
 Did some exploration with the Hugging Face API and directly using the pretrained transformer models, which is mainly based on the multi-head self attention mechanism that replaces the original recurrence. Also gained some experienced with BERT: specifically using distilled BERT with pretrained weights and embedding.
 
 ## React Frontend/Backend Basics:
-We had a client/server test application in Python to demonstrate the classifying power of our models and also feed more conversation data into the models in real time. For reproducability and versatility, we decided to move this and our other model components into a React app that uses MongoDB and Docker to connect all the components of our app.
+We had a client/server test application in Python to demonstrate the classifying power of our models and also feed more conversation data into the models in real time.
+
+One of the most important aspects of our project is how we will visualize and display the results of the machine learning models we created. After much research we decided to set up a React app with a Flask and MongoDB backend using Docker. This implementation prioritizes reproducability and versatility.
+
+React is a front-end javascript library for building user interfaces.  
+Flask is a micro web framework written in python that will be used to connect to our database using MongoEngine and host our machine learning models.
+MongoDB is a document-oriented database program that uses JSON-like documents with optional schemas.
+
+The frontend network will use react for the user interface and get the predictions for machine learning models from the RESTful Flask API. The backend network will use MongoDB to store the chat logs which will feed into the machine learning models in Flask. The reason for using docker is it creates a self-contained development environment that adapts to the users system specifications. The isolation and the portability allows our team members to quickly start working on our app and share the containers using docker hub.
+
