@@ -16,7 +16,7 @@ The [LTER network](https://lternet.edu/) is a set of 27 National Science Foundat
 
 
 #### Software Tools
-- Google Drive, Git, Github, RStudio, Tidyverse, [palmerpenguins](https://github.com/allisonhorst/palmerpenguins) (an R package created by one of our sponsors)
+- Google Drive, Git, Github, RStudio, tidyverse, [metajam](https://github.com/NCEAS/metajam) (an R package maintained by one of our sponsors), [palmerpenguins](https://github.com/allisonhorst/palmerpenguins) (an R package created by one of our sponsors)
 
 
 #### Progress
