@@ -4,7 +4,7 @@
 January 31, 2021
 
 **Long Term Ecological Research (LTER) Datasets: R package** \
-**Project Sponsor: National Center for Ecological Analysis and Synthesis (NCEAS) ** \
+**Project Sponsor: National Center for Ecological Analysis and Synthesis (NCEAS)** \
 **Team Members: Sam Guo, Adhitya Logan, Lia Ran, Sophia Sternberg, Karen Zhao**
 
 ##### Goal
