@@ -31,13 +31,16 @@ The [LTER network](https://lternet.edu/) is an NSF-funded research program to ob
 #### Visualizations
 
 A scatterplot showing the relationship between penguin body mass and flipper length 
-
-![p](https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update1image1.png)
+<p align="center">
+  <img  src="https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update1image1.png">
+</p>
 
 A scatterplot of bill depth versus bill length for Adelie penguins
-
-![p](https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update1image2.png)
+<p align="center">
+  <img  src="https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update1image2.png">
+</p>
 
 Adelie penguin chick production across years and islands
-
-![p](https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update1image3.png)
+<p align="center">
+  <img  src="https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update1image3.png">
+</p>
