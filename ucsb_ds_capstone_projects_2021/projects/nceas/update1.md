@@ -24,7 +24,7 @@ The [LTER network](https://lternet.edu/) is an NSF-funded research program to ob
 - Reviewed several LTER sites, each of which contains hundreds of research projects and thousands of interesting real-world environmental datasets
 - Used Git, Github, and RStudio for project management and collaboration (each of us have different levels of experience with these tools)
 - Learned the workflow we will be using from our sponsors, Julien and Allison, who gave us mini lessons
-- Partnered up with each other and practiced the workflow (creating RMarkdown documents, branches, pulls, pushes, code reviews, merges, etc)[](https://github.com/adhil0/git-collab)
+- Partnered up with each other and practiced the [workflow](https://github.com/adhil0/git-collab) (creating RMarkdown documents, branches, pulls, pushes, code reviews, merges, etc)
 - Used the tidyverse package for data wrangling and visualization (see next section) for data from the palmerpenguins package
 - Been introduced to the metajam R package, which is used for downloading metadata
 
