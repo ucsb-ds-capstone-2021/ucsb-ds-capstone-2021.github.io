@@ -27,8 +27,10 @@ We trained another topic model, this time including common phrases by using Gens
 [LDA #2 Link](https://htmlpreview.github.io/?https://github.com/antondlf/LDA_visualizations/blob/main/lda_visual+phrases.html)
       
 After we got these topic models, we started playing with the idea of using them as features for classification. This would be done by getting the topic distribution for each document and using those five probabilities as features. After doing some cross validation we arrived at a Random Forest model and a logistic regression model with roughly the same accuracy. Model performance is broken down below: 
+
 #### Random Forest Performance:
 ![alt text](rand_forest_summary.png)
+
 #### Logistic Regression Performance:
 ![alt text](log_reg_summary.png)
       
@@ -53,3 +55,4 @@ MongoDB is a document-oriented database program that uses JSON-like documents wi
 
 The frontend network will use react for the user interface and get the predictions for machine learning models from the RESTful Flask API. The backend network will use MongoDB to store the chat logs which will feed into the machine learning models in Flask. The reason for using docker is it creates a self-contained development environment that adapts to the users system specifications. The isolation and the portability allows our team members to quickly start working on our app and share the containers using docker hub.
 
+![alt text](React_Docker_Model.png)
