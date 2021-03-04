@@ -12,21 +12,20 @@ Build an R package (and accompanying website) that contains one sample dataset f
 
 
 #### Background Info
-The [LTER network](https://lternet.edu/) is a set of 27 National Science Foundation-funded research programs to observe long-term and large scale ecological effects at various sites across the United States. LTER datasets are archived in a centralized data repository managed by the [Environmental Data Initiative (EDI)](https://portal.edirepository.org/nis/home.jsp). Our project sponsor, [NCEAS](https://www.nceas.ucsb.edu/), is an environmental science research center at UC Santa Barbara that operates the LTER Network Office
+The [LTER network](https://lternet.edu/) is a set of 27 National Science Foundation-funded research programs to observe long-term and large scale ecological effects at various sites across the United States. LTER datasets are archived in a centralized data repository managed by the [Environmental Data Initiative (EDI)](https://portal.edirepository.org/nis/home.jsp). Our project sponsor, [NCEAS](https://www.nceas.ucsb.edu/), is an environmental science research center at UC Santa Barbara that operates the LTER Network Office.
 
 
 #### Software Tools
-- Google Drive, Git, Github, RStudio, tidyverse, [metajam](https://github.com/NCEAS/metajam) (an R package maintained by one of our sponsors), [palmerpenguins](https://github.com/allisonhorst/palmerpenguins) (an R package created by one of our sponsors)
-
+- Google Drive, Git, Github, RStudio, tidyverse, [palmerpenguins](https://allisonhorst.github.io/palmerpenguins/index.html), [metajam](https://github.com/NCEAS/metajam)
 
 #### Progress
 - Used Gitter for team communication, a chat interface that is linked with Github repositories
-- Reviewed several LTER sites, each of which contains hundreds of research projects and thousands of interesting real-world environmental datasets
+- Reviewed all 28 LTER sites, each of which contains hundreds of research projects and thousands of interesting real-world environmental datasets
 - Used Git, Github, and RStudio for project management and collaboration (each of us have different levels of experience with these tools)
 - Learned the workflow we will be using from our sponsors, Julien and Allison, who gave us mini lessons
 - Partnered up with each other and practiced the [workflow](https://github.com/adhil0/git-collab) (creating RMarkdown documents, branches, pulls, pushes, code reviews, merges, etc)
-- Used the tidyverse package for data wrangling and visualization (see next section) for data from the palmerpenguins package
-- Been introduced to the metajam R package, which is used for downloading metadata
+- Used the tidyverse package for data wrangling and visualization (see next section) for data from the palmerpenguins package (created by Allison)
+- Been introduced to the metajam R package (created by data scientists fromNCEAS), which is used for downloading and reading metadata
 
 #### Visualizations
 
