@@ -24,10 +24,10 @@ The [LTER network](https://lternet.edu/) is a set of 27 National Science Foundat
 - Used Git, Github, and RStudio for project management and collaboration (each of us have different levels of experience with these tools)
 - Learned the workflow we will be using from our sponsors, Julien and Allison, who gave us mini lessons
 - Partnered up with each other and practiced the [workflow](https://github.com/adhil0/git-collab) (creating RMarkdown documents, branches, pulls, pushes, code reviews, merges, etc)
-- Used the tidyverse package for data wrangling and visualization (see next section) for data from the palmerpenguins package (created by Allison)
+- Used the tidyverse package for data wrangling and visualization (see next section) of data from the palmerpenguins package (created by Allison)
 - Been introduced to the metajam R package (created by data scientists fromNCEAS), which is used for downloading and reading metadata
 
-#### Visualizations
+##### Below are some examples of visualizations we created after exploring the palmerpenguins package. 
 
 A scatterplot showing the relationship between penguin body mass and flipper length 
 <p align="center">
