@@ -12,7 +12,7 @@ Build an R package (and accompanying website) that contains one sample dataset f
 
 
 #### Background Info
-The [LTER network](https://lternet.edu/) is a set of 27 National Science Foundation-funded research programs to observe long-term and large scale ecological effects at various sites across the United States. LTER datasets are archived in a centralized data repository managed by the [Environmental Data Initiative (EDI)](https://portal.edirepository.org/nis/home.jsp). Our project sponsor, [NCEAS](https://www.nceas.ucsb.edu/), is an environmental science research center at UC Santa Barbara that operates the LTER Network Office.
+The [LTER network](https://lternet.edu/) is a set of (currently) 27 National Science Foundation-funded research programs to observe long-term and large scale ecological effects at various sites across the United States. LTER datasets are archived in a centralized data repository managed by the [Environmental Data Initiative (EDI)](https://portal.edirepository.org/nis/home.jsp). Our project sponsor, [NCEAS](https://www.nceas.ucsb.edu/), is an environmental science research center at UC Santa Barbara that operates the LTER Network Office.
 
 
 #### Software Tools
