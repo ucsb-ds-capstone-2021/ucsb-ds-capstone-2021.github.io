@@ -1,0 +1,700 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NRI - Update 2 &#8212; Data Science Capstone 2021</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.37f24b989f4638ff9c27c22dc7559d4f.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="sansum" href="../sansum/description.html" />
+    <link rel="prev" title="NRI - Update 1" href="update1.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Data Science Capstone 2021</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../welcome.html">
+   Welcome to Data Science Capstone
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Class Logistics
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../class/syllabus.html">
+   Course Syllabus
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_readings.html">
+     Readings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_participation.html">
+     Meetings/Participation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_deliverables.html">
+     Deliverables
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../class/contacts.html">
+   Teams and Contacts
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../class/software-tools.html">
+   Software and Tools
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/software-tools_create-update-pages.html">
+     Create Project Update Pages
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../appfolio/description.html">
+   appfolio
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../appfolio/update1.html">
+     Update 1 - Project Updates
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../calcofi1/description.html">
+   calcofi1
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../calcofi1/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../calcofi2/description.html">
+   calcofi2
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../calcofi2/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../carpedata/description.html">
+   carpedata
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../carpedata/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../ccber/description.html">
+   ccber
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ccber/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../csep/description.html">
+   CSEP
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../csep/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../csep/update2.html">
+     Update 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../evidation/description.html">
+   evidation
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation/update1.html">
+     Evidation Health Project Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../flir/description.html">
+   flir
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../flir/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../flir/update2.html">
+     Update 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../invoca/description.html">
+   invoca
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../invoca/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../nceas/description.html">
+   nceas
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nceas/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nceas/update2.html">
+     Update 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="description.html">
+   nri
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="update1.html">
+     NRI - Update 1
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     NRI - Update 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../sansum/description.html">
+   sansum
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sansum/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/projects/nri/update2.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/nri/update2.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io/edit/main/ucsb_ds_capstone_projects_2021/projects/nri/update2.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-processing">
+   Data Processing
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#king-plink-results">
+     King &amp; Plink Results
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#kinship2-results">
+     Kinship2 Results
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-analysis">
+   Data Analysis
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comparison-between-theoretical-vs-observed">
+     Comparison between Theoretical vs. Observed
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualization">
+   Visualization
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#heat-map">
+     Heat Map
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#probability-distribution-curve">
+     Probability Distribution Curve
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#d-scatter-plot">
+     3D Scatter Plot
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#future-vision">
+   Future Vision
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="nri-update-2">
+<h1>NRI - Update 2<a class="headerlink" href="#nri-update-2" title="Permalink to this headline">¶</a></h1>
+<p>February 28, 2020</p>
+<p>Helen Huang, Shivam Misra, Priya Padmanabhan, Surya Pugal,  Yixiao Yue</p>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<p>We are given .bed/.fam/.bim data about individuals whom we have pedigree information for. We will feed the data into King and Plink program to calculate coefficients of relatedness (what percentage of genes between a pair of individuals is the same). Based on the percentage, we can tell whether two individuals are first degree, second degree, or not related. We will use the Kinship2 software which produces a pedigree object and output coefficients of relateness. Comparing the King and Plink values to the theoretical values produced by Kinship2, we can compare the accuracy of both of the softwares.</p>
+<p><strong>Coefficient of Relatedness</strong></p>
+<ul class="simple">
+<li><p>Percentages of genes between a pair of individuals that are the same</p></li>
+<li><p>Larger value typically means closer relationship</p></li>
+<li><p>Examples:</p>
+<ul>
+<li><p>Parent-Offspring (OP): 0.5</p></li>
+<li><p>Full siblings: 0.5</p></li>
+<li><p>Half siblings (ex. Relationship between 2 children with same mother but different father): 0.25</p></li>
+<li><p>Avuncular (ex. Relationship between a uncle and his sister’s children): 0.25</p></li>
+<li><p>Cousins: 0.125</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="data-processing">
+<h2>Data Processing<a class="headerlink" href="#data-processing" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="king-plink-results">
+<h3>King &amp; Plink Results<a class="headerlink" href="#king-plink-results" title="Permalink to this headline">¶</a></h3>
+<p><strong>Summary</strong></p>
+<p>Using the .bed/.fam/.bim data, we fed the data into these two programs, and used the linux command line to produce 2 output files.</p>
+<p>Command for King : <code class="docutils literal notranslate"><span class="pre">king</span> <span class="pre">-b</span> <span class="pre">InputFilename.bed</span> <span class="pre">--related</span> <span class="pre">--prefix</span> <span class="pre">OutputFileName</span></code></p>
+<p>Command for Plink : <code class="docutils literal notranslate"><span class="pre">plink</span> <span class="pre">--bfile</span> <span class="pre">InputFileName</span> <span class="pre">--genome</span> <span class="pre">--nonfounders</span> <span class="pre">--out</span> <span class="pre">OutputFileName</span></code></p>
+<p>One notable thing is that for the plink command, the filename do not need any extensions.</p>
+<p><strong>Format of King Outputs</strong></p>
+<p>The output file has .kin extension. Each row compares the DNA of 2 individuals from the same family. We are interested in the column named “PropIBD” because it is the coefficient of relatedness. The column named “InfType” also provided useful information that infered relationship type based on PropIBD values.</p>
+<p><strong>Format of Plink Outputs</strong></p>
+<p>The output file has .genome extension. Each row also compares the DNA of 2 individuals from the same family. The content of the columns are different, but the coefficients of relatedness information is still there, named “PI_HAT” this time.</p>
+<p><strong>Challenges</strong></p>
+<p>While seemingly straight-forward at first, this task did not go smoothly. When we ran the command on our own computers, the execution always got stuck, which led us to conclude that our computers did not have enough CPU power for it. Then we set up to ssh to CNSI (California Nanosystem Institute) computers. Unfortunately, it got stuck on those computers as well. Strangely, our mentors were able to run the commands when they ssh to CNSI computers. The problems ended up being the version of the software. We downloaded the latest version which had a bug. We got an older version, and were able to got the outputs successfully.</p>
+</div>
+<div class="section" id="kinship2-results">
+<h3>Kinship2 Results<a class="headerlink" href="#kinship2-results" title="Permalink to this headline">¶</a></h3>
+<p><strong>Summary</strong></p>
+<p>Given the .bed/.fam/.bim data for multiple inviduals in the same family, we were asked to feed in the data into Kinship2 in order to produce a pedigree and calculate the coefficients of relatedness. This value is the percentage of genes between a pair of individuals that is the same. We then had to compare the values produced by Kinship2 with what came from the King and Plink software.</p>
+<p><strong>Introduction of The Package (Kinship2)</strong></p>
+<p>Kinship2 is a package in R. Accoriding to its official documentation, it is a routine to handle family data with a pedigree object. It can be used to create correlation structure that can describe family relationships, draw pedigrees focusing on producing compact layouts without intervention, trim the pedigree object with various criteria, and so forth.</p>
+<p>For our project, we fed in the data containing family relationship and disease carrying information. With the help of Kinship2, we were able to produce the pedigree and obtain the theoretical relatedness coefficients for all pairs of individuals in the family.</p>
+<p><strong>Kinship Coefficient vs. Relatedness Coefficient</strong></p>
+<p>What we got from Kinship2 are the kinship coefficients. To get the relatedness coefficients, we needed to multiply the kinship coefficients by 2:</p>
+<p>Relatedness Coefficient = Kinship Coefficient * 2</p>
+<p>In comparison to relatedness coefficient, the kinship coefficient is defined as the probability that a pair of randomly sampled homologous alleles are identical by descent (IBD, see Update 1 for definition). In simple words, it is the probability that an randomly chosen allele selected from individual 1 and an allele selected at the same autosomal locus from individual 2 are IBD. Because humans are diploid, meaning that cells contain 2 copies of each chromosome, we need to multiply the kinship coefficient by two to get the relatedness coefficient.</p>
+<p><strong>Format of Output</strong></p>
+<p>Our output file produced a matrix in a similar format to the structure shown below. For example, row 3 column 2 and row 2 column 3 both contain the kinship2 coefficient of the pair id1 and id2. The values on the diagonal are all 1s because they represent the relationship  of an individual to themself. After removing the individuals who were not directly part of the family, our file reduced to a 29 by 29 matrix.</p>
+<p><img alt="" src="../../_images/kinship2example.png" /></p>
+<p><strong>What We Did</strong></p>
+<ol class="simple">
+<li><p>Created a .ped (txt) file which contains the information for all the PSEN1 family members. Each individual has the information of family id, individual id, paternal id, maternal id, sex id, and phenotype info</p></li>
+<li><p>Used R to read in the .ped file</p></li>
+<li><p>Created a pedigree structure and plotted it</p></li>
+<li><p>Created the Kinship2 coeffcient matrix</p></li>
+<li><p>Multiplied all of the values by 2 (see above for why)</p></li>
+<li><p>Removed all of the rows who were not fully sequenced (i.e. the individuals that we do not have their entire genome/DNA sequence)</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="data-analysis">
+<h2>Data Analysis<a class="headerlink" href="#data-analysis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="comparison-between-theoretical-vs-observed">
+<h3>Comparison between Theoretical vs. Observed<a class="headerlink" href="#comparison-between-theoretical-vs-observed" title="Permalink to this headline">¶</a></h3>
+<p>Upon obtaining all the pairwise coefficients of relatedness produced by Plink and King, we compared them with the theoretical coefficient of relatedness produced by Kinship2. We analyzed them using several bar plots in order to get some insights of both the softwares we were using and the individuals/family members we were studying.</p>
+<p><strong>Workflow</strong></p>
+<ul class="simple">
+<li><p>Using Kinship2 theoretical values, we divided the pairs into 16 groups where each group has a unique coefficient of relatedness (ex. All pairs with coefficient of relatedness (produced by Kinship2) equals 0.5 were grouped together)</p></li>
+<li><p>For each of the 16 groups, we calculated the mean and standard deviation of the coefficients produced by Plink, as well as those produced by King</p></li>
+<li><p>We compared those mean values with the theoretical values produced by Kinship2 (See <strong>Figure 1</strong>)</p></li>
+<li><p>We then calculated the absolute difference between Plink mean values and Kinship2 values, and between King mean values and Kinship2 values (See <strong>Figure 2</strong>)</p></li>
+<li><p>We further calculated the percent difference between Plink mean values and Kinship2 values, and between King mean values and Kinship2 values (See <strong>Figure 3</strong>)</p></li>
+<li><p>Knowing how Plink and King performed in comparison to Kinship2, we wanted to analyze how they performed compared to each other. We sorted the percent difference plot using the difference between Plink’s percent difference with Kinship2 and King’s percent difference with Kinship2 (See <strong>Figure 4</strong>)</p></li>
+<li><p>Since the same coefficient of relatedness value can include several types of relationship, the group with the same coefficient can be further broken down (ex. 0.5 group contains both parent/offspring and siblings relationship). We broke down the group with coefficient equals 0.5 and further analyzed how the softwares performed on each of the relationship (See <strong>Figure 5</strong>)</p></li>
+</ul>
+<p>Note: Detailed rationals of why we did such analysis and created such plots, and detailed analysis of what we found out of those plots are explained below each figure</p>
+<p><strong>Consanguineous Couple</strong></p>
+<p>In this family, there is a marriage among relatives. There exist a couple who are cousins, meaning that they are descended from the same common ancestor. Exact individual id numbers are not shown to protect privacy. According to our analysis, Plink and King were giving interesting results whenever the individuals in the pairwise relationship are connected to this consanguineous couple in some ways, such as the children of this couple, the cousins of this couple, etc. We will be referring to this couple in the analysis below.</p>
+<p><img alt="" src="../../_images/MeanStd_Comparison.png" /></p>
+<p><strong>Figure 1. Comparison of Mean Based on Software Output</strong></p>
+<p>This graph visualizes how the outputs of all 16 relationship coefficients vary based on the different softwares. The goal was to see how the mean of outputs of the Plink software and King software for each coefficient compare with the theoretical values produced by Kinship2. The black error lines on the graph represent the standard deviation. The coefficient of relatedness 0.53125 does not have a standard deviation line because amongst that coefficient, all of the values produced were very similar to each other.</p>
+<p><img alt="" src="../../_images/Absolute_Diff.png" /></p>
+<p><strong>Figure 2. Absolute Difference of Mean Compared to Kinship2 Based on Software Output</strong></p>
+<p>Based on this graph, it is clear that King produced results which had a smaller difference from the theoretical value compared to Plink (except for when the coefficient of relatedness is 0.15625). The 0.15625 coefficient seems to cover most relations involving the couple who are cousins. For example, looking at the pair including the child of this couple with any of their cousins results in this relatedness value. The coefficient relatedness value 0.53125 produced King/Plink values whose difference was fairly close to each other. This value represents and parent offspring relationship under the couple who are also cousins.</p>
+<p><img alt="" src="../../_images/Percent_Diff.png" /></p>
+<p><strong>Figure 3. Percent Difference of Mean Compared to Kinship2 Based on Software Output</strong></p>
+<p>In addition to the absolute difference, we calculated the percent difference. This allowed us to visualize the differences between what King and Plink produced, irrespective of the Kinship2 theoretical value. This graph shows how the percent of difference between King and Plink with some coefficients is more drastic and obvious in some coefficients over others.  In order to get more insights, we sorted the graph so that the coefficients are ordered based on an increase in difference (see Figure 4 below).</p>
+<p><img alt="" src="../../_images/Sorted_Percent_Diff.png" /></p>
+<p><strong>Figure 4. Sorted Percent Difference of Mean Compared to Kinship2 Based on Software Output</strong></p>
+<p>We found a pattern where the closer relationships (such as parent/offspring and siblings) had much more similar King/Plink values compared to more distant relationships (like an individual with their great-aunt). There are certain coefficients that do not fall in this pattern (such as 0.3123 having a smaller difference than 0.5625). We hypothesize that considering how the differences between King and Plink are very small with the coefficients that are slightly out of order, it might be negligible. This is something that we need to keep in mind when working with the software later and also hopefully dive into deeper so we can test our hypothesis.</p>
+<p><img alt="" src="../../_images/0.5Group_Comparison.png" /></p>
+<p><strong>Figure 5. Comparison of Mean Based on Software Output (0.5 Relationship)</strong></p>
+<p>Because the coefficient 0.5 comprises of both parent/offspring relationship and a sibling relationship, we split it up based on each category. We did not split other coefficients that are shared between different relationships because 0.5 is very closely related and therefore, impacts our findings more. Because both parent/offspring and sibling relationship are very common, we wanted to split them to further analyze the software’s behavior on both in order to go deeper on the outputs of the software. We found that the values produced by Kinship2, Plink, and King were are more similar for parent/offspring than that for siblings.</p>
+</div>
+</div>
+<div class="section" id="visualization">
+<h2>Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="heat-map">
+<h3>Heat Map<a class="headerlink" href="#heat-map" title="Permalink to this headline">¶</a></h3>
+<p>A heatmap is a visualization that shows magnitude of variables along two dimensions. We are inspired to use heatmap in this case because we have pairwise comparison data. I took the data output (2 lists), and transformed it into a 2d numpy array to feed into a Matplotlib library function.</p>
+<p><img alt="" src="../../_images/heatmap.png" /></p>
+<p><strong>Figure 6. Difference between King, Plink and Theoretical Heat Map</strong></p>
+<p>The red slanted line is due to the fact that the softwares do not compare an individual with herself, so it is set to an arbitary value as a boundary on the heatmap. To the left, King’s output is compared with Kinship2’s output, which is also the theoretical value. To the right, Plink’s output is compared to Kinship2’s output. The colormap is chosen to be diverging, so that yellow corresponds to zero difference to theoretical. The darker the color, the bigger the difference is. And blue is used for values higher than the theoretical, while red is used for values lower than the theoretical. Ideally, we would expect the map to look mostly yellow.</p>
+<p>Finding:</p>
+<ul class="simple">
+<li><p>King’s result is closer to the theoretical because most tiles are yellow on King’s side</p></li>
+<li><p>Plink’s result is overall higher than the theoretical because most of the tiles are blue on Plink’s side</p></li>
+</ul>
+</div>
+<div class="section" id="probability-distribution-curve">
+<h3>Probability Distribution Curve<a class="headerlink" href="#probability-distribution-curve" title="Permalink to this headline">¶</a></h3>
+<p>The below normal probability distribution curves represent the variability of the plink, king, and kinship data respectively – with the shaded region corresponding to existing data from the data set (data outside of this does not exist in data set). We observe that the king and kinship data look nearly identical, compared to the plink data, due to deviations in mean, standard deviation, and extrema.</p>
+<p><img alt="" src="../../_images/normalCurves.png" /></p>
+<p><strong>Figure 7. Normal Gaussian Curve for Plink, King, and Kinship2</strong></p>
+<p>Additionally, after running two-sample z tests for comparing means between Plink and Kinship, Plink and King, and Kinship and King, we found that the p value obtained were near zero for the first two groupings (3.077875030154161e-05 and 7.457103829542305e-05) and a relatively high p value for the latter grouping (0.9424546370785375).</p>
+</div>
+<div class="section" id="d-scatter-plot">
+<h3>3D Scatter Plot<a class="headerlink" href="#d-scatter-plot" title="Permalink to this headline">¶</a></h3>
+<p><img alt="" src="../../_images/scatter3d.png" /></p>
+<p><strong>Figure 8. 3D Scatter Plot for Relatedness</strong></p>
+<p>This visualization plots the given data into a 3D Scatter plot, with Kinship2 coefficients on the x-axis, King coefficients on the y-axis, and Plink coefficients on the z-axis.</p>
+<p>Since Kinship2 is the recorded information on the pedigrees, they are put into the x-axis, and differences between the King and Plink coefficients can be plotted. If the recorded pedigree was correct, the scatter plot would feature all points on a line such that x=y=z. Deviation from that line shows a different coefficient calculated from either King or Plink.</p>
+<p>The color scheme of the plot is based on relatedness - the lighter a plot is, the more related the set of individuals are, based on the Kinship2 coefficient data.</p>
+<p>We find that deviations occur usually with Plink, and that too whenthe relatedness coefficient is small (<span class="math notranslate nohighlight">\(&lt;0.2\)</span>).</p>
+</div>
+</div>
+<div class="section" id="future-vision">
+<h2>Future Vision<a class="headerlink" href="#future-vision" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./projects/nri"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="update1.html" title="previous page">NRI - Update 1</a>
+    <a class='right-next' id="next-link" href="../sansum/description.html" title="next page">sansum</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By UCSB DS Capstone Class<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-186739861-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
