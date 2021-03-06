@@ -57,4 +57,5 @@
     - file: projects/sansum/description
       sections:
         - file: projects/sansum/update1
+        - file: projects/sansum/update2
 
