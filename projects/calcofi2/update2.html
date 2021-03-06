@@ -1,0 +1,646 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update 2 &#8212; Data Science Capstone 2021</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.37f24b989f4638ff9c27c22dc7559d4f.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="carpedata" href="../carpedata/description.html" />
+    <link rel="prev" title="Update 1" href="update1.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Data Science Capstone 2021</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../welcome.html">
+   Welcome to Data Science Capstone
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Class Logistics
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../class/syllabus.html">
+   Course Syllabus
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_readings.html">
+     Readings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_participation.html">
+     Meetings/Participation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/syllabus_deliverables.html">
+     Deliverables
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../class/contacts.html">
+   Teams and Contacts
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../../class/software-tools.html">
+   Software and Tools
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../class/software-tools_create-update-pages.html">
+     Create Project Update Pages
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../appfolio/description.html">
+   appfolio
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../appfolio/update1.html">
+     Update 1 - Project Updates
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../calcofi1/description.html">
+   calcofi1
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../calcofi1/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="description.html">
+   calcofi2
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Update 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../carpedata/description.html">
+   carpedata
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../carpedata/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../ccber/description.html">
+   ccber
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ccber/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../ccber/update2.html">
+     Update 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../csep/description.html">
+   CSEP
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../csep/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../csep/update2.html">
+     Update 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../evidation/description.html">
+   evidation
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../evidation/update1.html">
+     Evidation Health Project Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../flir/description.html">
+   flir
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../flir/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../flir/update2.html">
+     Update 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../invoca/description.html">
+   invoca
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../invoca/update1.html">
+     Update 1
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../nceas/description.html">
+   nceas
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nceas/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nceas/update2.html">
+     Update 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../nri/description.html">
+   nri
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nri/update1.html">
+     NRI - Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../nri/update2.html">
+     NRI - Update 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../sansum/description.html">
+   sansum
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sansum/update1.html">
+     Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sansum/update2.html">
+     Update 2
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/projects/calcofi2/update2.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/calcofi2/update2.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io/edit/main/ucsb_ds_capstone_projects_2021/projects/calcofi2/update2.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reiterating-our-project-and-goal">
+   Reiterating Our Project and Goal
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#making-more-processed-datasets">
+   Making More Processed Datasets
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#subsetting-the-fish-dataset-to-match-the-water-dataset-sample-locations-times">
+     Subsetting the Fish Dataset to Match the Water Dataset Sample Locations/Times
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#grouping-and-splitting-the-water-and-fish-dataset-by-location">
+     Grouping and Splitting the Water and Fish Dataset by Location
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finding-the-most-abundant-fish-species-at-a-given-location-at-a-given-time-and-storing-it-as-a-dataset">
+     Finding the Most Abundant Fish Species at a given location at a Given Time (and storing it as a dataset)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#water-correlations">
+   Water Correlations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#heatmaps-of-water-characteristics">
+   Heatmaps of Water Characteristics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#accurately-inferring-water-ph-values-based-on-other-water-characteristics">
+   Accurately Inferring Water pH Values Based On Other Water Characteristics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next-steps">
+   Next Steps
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="update-2">
+<h1>Update 2<a class="headerlink" href="#update-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>We have been working on taking our progress, results, and findings from update 1 and building our analyses on top of that here in order to keep extracting
+valuable information regarding our fish and water data. We also had to overcome a few obstacles with respect to matching our two datasets we have (fish and water)
+to each other so that we can analyze the fish and water datasets together. For example, in order to be able to easily see what the water characteristics were when a
+certain fish species was very dominant. We have been making more visualizations, more processed datasets , as well as drawing together various correlations in order to start to draw out correlations between the makeup of fish and water characteristics (specifically pH). Finally, we also worked on taking our water dataset, and being able to interpolate what the pH level of the water should be at a given place and time based on the other water characteristics we do have available in the dataset due to great work from a paper that we will write the reference for in the “Accurately Inferring Water pH Values Based On Other Water Characteristics” section.</p>
+</div>
+<div class="section" id="reiterating-our-project-and-goal">
+<h2>Reiterating Our Project and Goal<a class="headerlink" href="#reiterating-our-project-and-goal" title="Permalink to this headline">¶</a></h2>
+<p>In our project, we aim to correlate water data containing many water characteristics at a given location and time, to our fish data, in order to draw better understand relationships between how water characteristics affect the makeup of specific species in California’s oceans. We are especially interested in seeing how water pH affects the makeup of these fish species. We hope that our conclusions can be used to for one, be able to accurately infer what the makeup of fish looks like at a given time where we know the water makeup, and two also be able to predict what the makeup of fish should look like in the future. We hope that this will help reduce the effort needed to be able to get a portrayal of the makeup of fish, since currently usually sampling the fish by a boat all along California’s oceans is the effort that is needed.</p>
+<p>We are have a water time series dataset, what gives information about many water characteristics over many different locations, from 2008-2015, and we also have a fish time series dataset that tells us the abundance of each fish species at a given location and time, from the 1960’s until present.</p>
+</div>
+<div class="section" id="making-more-processed-datasets">
+<h2>Making More Processed Datasets<a class="headerlink" href="#making-more-processed-datasets" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="subsetting-the-fish-dataset-to-match-the-water-dataset-sample-locations-times">
+<h3>Subsetting the Fish Dataset to Match the Water Dataset Sample Locations/Times<a class="headerlink" href="#subsetting-the-fish-dataset-to-match-the-water-dataset-sample-locations-times" title="Permalink to this headline">¶</a></h3>
+<p>The originial fish dataset had observations dating back to the 1950s and over 100 different locations along the California coast. However, the water dataset only had data avilable from 2008 to 2015. We also discovered that the water dataset covered a much smaller set of locations than the fish dataset. Our goal is to be able to correlate the pH calculated from the water dataset with the abundance of fish species from the fish dataset. In order to follow this goal and provide the most accurate readings, we not only subsetted the fish dataset to match the time frame of available water data, but we also wanted to subset with only the locations that matched those where water data is available.</p>
+<p>When graphing the subsetted data, we noticed that there were 6 water locations that did not align in the same line/station pattern as the fish data. After further analysis, we found that all 6 anomalies occured on the same date, November of 2013 (Cruise=201311). We decided to elimate this from the final combined data for intial correlations to be able have the most accurate pH and larval fish abundance correlations as possible.</p>
+<div class="figure align-default" id="linestation-fig">
+<a class="reference internal image-reference" href="../../_images/LineStationPlot.png"><img alt="../../_images/LineStationPlot.png" src="../../_images/LineStationPlot.png" style="height: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Plots showing where data is sampled from (blue points are water samples red are fish samples). The left side shows the few water data points that did not match the line and station patterns in the fish dataset.</span><a class="headerlink" href="#linestation-fig" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="grouping-and-splitting-the-water-and-fish-dataset-by-location">
+<h3>Grouping and Splitting the Water and Fish Dataset by Location<a class="headerlink" href="#grouping-and-splitting-the-water-and-fish-dataset-by-location" title="Permalink to this headline">¶</a></h3>
+<p>We made sub-time series datasets, where each of these smaller datasets give the time series of water over all time steps in a certain small location area. We also split the fish data up this way as well in order to analyze the time series at a certain location only.</p>
+</div>
+<div class="section" id="finding-the-most-abundant-fish-species-at-a-given-location-at-a-given-time-and-storing-it-as-a-dataset">
+<h3>Finding the Most Abundant Fish Species at a given location at a Given Time (and storing it as a dataset)<a class="headerlink" href="#finding-the-most-abundant-fish-species-at-a-given-location-at-a-given-time-and-storing-it-as-a-dataset" title="Permalink to this headline">¶</a></h3>
+<p>In order to be able to correlate the makeup of fish species to water characteristics, we have started by obtaining the three most abundant fish species at a given location and time, and storing these results in a .csv file as a dataset. The fish dataset consists of fish abundance at a given location and time for each species of fish we are looking at, however we needed a way to compare abundance of two species against each other to see which has more abundant. For example at a given time/location, a species with abundance level of 19 when it’s average abundance is 10 is a different abundance level measure than a species with abundance of 19 when its average abundance is 500. So in order to compare this, we made another dataset, that measures the abundance of a species relative to its mean abundance at any given space and time. This way now, we can look at this relative abundances, and pick out the top three at a given time/location to be able to accurately extract “most abundant species”. From here we are now working on drawing out as many correlations and derived statistics as we can relating fish species abundance to water characteriatics.</p>
+<div class="figure align-left" id="directive-fig">
+<a class="reference internal image-reference" href="../../_images/MostAbundantColumns.png"><img alt="../../_images/MostAbundantColumns.png" src="../../_images/MostAbundantColumns.png" style="width: 940.0px; height: 45.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">The columns of the dataset displaying the three most abundant fish species at a given location and time. “Cruise” denotes the date (YYYYMM); for example “201411” means “November of 2014”, and “Line_Sta_ID” is a way to measure the location in the ocean of a sample.</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="water-correlations">
+<h2>Water Correlations<a class="headerlink" href="#water-correlations" title="Permalink to this headline">¶</a></h2>
+<p>With the water data we were able to find strong postive and negative correlation.We used Pearson’s r correlation that measures linear correlation. Using linear regression method and finding pearson’s r coefficient I was able to make these visuals shown below.</p>
+<p>For my strong positive correlation I used DIC1 (Dissolve Inorganic Carbon) as the same feature but used different observant such as Sigma-Theta (denisty of water), Salinity1 (Salinity in DIC bottles) and TA1 (total alkanity). From the visual plots I made we can see that when we have low DIC we will most likely find low Sigma-Theta , Salinity1 and TA1 and vice cersa when DIC is high.</p>
+<div class="figure align-left" id="id1">
+<a class="reference internal image-reference" href="../../_images/postive_cr.png"><img alt="../../_images/postive_cr.png" src="../../_images/postive_cr.png" style="width: 964.8000000000001px; height: 612.0px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Positively correlated characteristics (the missing observant on the top right plot is “sigma-theta”)</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>For my strong negetive correltation I use Tempature as my feature and had Salinity1, and DIC1 as my observant.With the visual plots I generated we can see the strong negative correlation. In area where their are high tempature in our data then we will find low levels of DIC and Salinity since they share a negative correlation relationship and vice versa when tempature is low.</p>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="../../_images/negative_cr.png"><img alt="../../_images/negative_cr.png" src="../../_images/negative_cr.png" style="height: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Negatively correlated characteristics</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="heatmaps-of-water-characteristics">
+<h2>Heatmaps of Water Characteristics<a class="headerlink" href="#heatmaps-of-water-characteristics" title="Permalink to this headline">¶</a></h2>
+<p>One of our objectives, we hold important for our goal of being able to find correlations between water characteristics and makeup of fish, is to be able to clearly visualize the levels of a given water characteristic at all present locations, at all given time steps. For example, to be able to view a spatial heatmap of say water TA (Total Alkalinity, which measures the water’s ability to not be affected by an introduction of an acidic compound to the water), where at any given time step, we can spatially visualize the pH levels of the water at all present locations in the dataset by color on a 2D lattitude/longitude graph (red color at a location means high TA, blue color means low TA). We decided on the color theme, of a red color at a graph location indicating higher levels of the observed characteristic and blue color indicating lower level.</p>
+<p>However, what does “high” and “low” mean with respect to a given water characteristic? How do we decide on what “high” and “low” should be for a water characteristic. For any given water characteristic, we looked at the range of values it holds overall over all of the time steps (looking at the globally lowest and highest value in the dataset), and base the notion of “high” and “low” for that observed characteristic. At a given location and time step, the closer to the global minimum the characteristic value is, the “lower” and hence more blue it is denoted as, and the closer the the global maximum the value there is, the “higher” and more red it is denoted as. We made sure that for a given characteristic, we keep the same range of values we are color coding by over all time steps, so that this way we can compare how characteristic levels are changing over time visually by looking at how the colors change spatially over time, by looking at all the time step heatmaps for a given characteristic.</p>
+<div class="figure align-default" id="id3">
+<a class="reference internal image-reference" href="../../_images/NewTAHeatmaps.png"><img alt="../../_images/NewTAHeatmaps.png" src="../../_images/NewTAHeatmaps.png" style="height: 500px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Two spatial heatmaps for the water alkalinity (TA) characteristic for two timesteps. The color at a location indicates the TA level in the water at that location.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="accurately-inferring-water-ph-values-based-on-other-water-characteristics">
+<h2>Accurately Inferring Water pH Values Based On Other Water Characteristics<a class="headerlink" href="#accurately-inferring-water-ph-values-based-on-other-water-characteristics" title="Permalink to this headline">¶</a></h2>
+<p>Our dataset containing the water characteristics contains many water characteristics, about water at any avilable location and time in the ocean from 2008-2015 over various depths. However, the dataset does not contain information about the water pH at these times and locations. Therefore, we wanted to find a way to accurately infer the water pH values at the given location/time water samples in our dataset. This way, at any available location/time in the water dataset, we can also be able to look at the water pH level as well. This is very important to us because we strongly suspect that the pH levels play a very significant part in determinint the makeup of the fish population, and in determining which fish species are more abundant where.</p>
+<p>Due to the paper Perspectives in Environmental Chemistry by Donald L. Macalady (<a class="reference external" href="http://denning.atmos.colostate.edu/ats760/Readings/Tans_1998.pdf">http://denning.atmos.colostate.edu/ats760/Readings/Tans_1998.pdf</a>), as well as the discussion Simplified Carbonate Chemistry of Seawater based on an article by Pieter Tans, and the website <a class="reference external" href="https://biocycle.atmos.colostate.edu/shiny/carbonate/#References">https://biocycle.atmos.colostate.edu/shiny/carbonate/#References</a>, we wrote a Python script using the algorithm from the above mentioned sources that calculates the water pH level, based on using the water DIC (Dissolved Inorganic Carbon), TA (Total Alkalinity), and Temperature.</p>
+<div class="figure align-default" id="id4">
+<a class="reference internal image-reference" href="../../_images/pHHeatmap.png"><img alt="../../_images/pHHeatmap.png" src="../../_images/pHHeatmap.png" style="height: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">A sample spatial heatmap for the water pH characteristic levels that display the pH levels over various locations.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
+<p>We now intend to take our findings so far keep making more correlations between specific species of fish and water pH, as well as other water characteristics. We also in the future plan to accurately predict what the water should have been before 2008 and verify that our correlations are holding.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./projects/calcofi2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="update1.html" title="previous page">Update 1</a>
+    <a class='right-next' id="next-link" href="../carpedata/description.html" title="next page">carpedata</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By UCSB DS Capstone Class<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-186739861-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
