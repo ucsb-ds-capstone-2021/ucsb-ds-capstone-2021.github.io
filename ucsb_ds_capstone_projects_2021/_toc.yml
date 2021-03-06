@@ -25,6 +25,7 @@
     - file: projects/calcofi2/description
       sections:
         - file: projects/calcofi2/update1
+        - file: projects/calcofi2/update2
     - file: projects/carpedata/description
       sections:
         - file: projects/carpedata/update1
