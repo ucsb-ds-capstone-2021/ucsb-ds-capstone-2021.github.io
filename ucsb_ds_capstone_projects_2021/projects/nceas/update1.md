@@ -29,7 +29,7 @@ The [LTER network](https://lternet.edu/) is a set of (currently) 27 National Sci
 
 ##### Below are some examples of visualizations we created after exploring the palmerpenguins package. 
  A scatterplot showing the relationship between penguin body mass and flipper length
-<img align="center" src="https://github.com/karenezhao/ucsb-ds-capstone 2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update1image1.png">
+<img align="center" idth="100" height="100" src="https://github.com/karenezhao/ucsb-ds-capstone 2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update1image1.png">
 
 A scatterplot of bill depth versus bill length for Adelie penguins
 <p align="center">
