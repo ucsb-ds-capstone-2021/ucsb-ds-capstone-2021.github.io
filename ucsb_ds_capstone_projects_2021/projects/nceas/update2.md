@@ -28,7 +28,7 @@ Sophia: The first image shows an initial view of the Bull Shark Count Overtime. 
 
 This plot shows Seasonal Seabird Richness from 1987 to 2006 at sea off southern California . The data is from the California Current Ecosystem (CCE) LTER.
 
-![seabird](https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update2karen.png)
+![seabird](https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update2karen.png?raw=true)
 
 
 This plot shows the weight distributions of pikas found at various sampling sites in the Niwot Ridge LTER:
