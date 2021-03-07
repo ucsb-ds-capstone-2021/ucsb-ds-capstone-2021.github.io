@@ -54,8 +54,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="calcofi1" href="../calcofi1/description.html" />
-    <link rel="prev" title="Update 1 - Project Updates" href="update1.html" />
+    <link rel="next" title="calcofi2" href="../calcofi2/description.html" />
+    <link rel="prev" title="Update 1" href="update1.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -148,18 +148,18 @@
  </span>
 </p>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="description.html">
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../appfolio/description.html">
    appfolio
   </a>
-  <ul class="current collapse-ul">
+  <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="update1.html">
+    <a class="reference internal" href="../appfolio/update1.html">
      Update 1 - Project Updates
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../appfolio/update2.html">
      Update 2
     </a>
    </li>
@@ -167,18 +167,18 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="../calcofi1/description.html">
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="description.html">
    calcofi1
   </a>
-  <ul class="collapse-ul">
+  <ul class="current collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="../calcofi1/update1.html">
+    <a class="reference internal" href="update1.html">
      Update 1
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../calcofi1/update2.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Update 2
     </a>
    </li>
@@ -411,7 +411,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/projects/appfolio/update2.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/projects/calcofi1/update2.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -431,10 +431,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/appfolio/update2.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/calcofi1/update2.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io/edit/main/ucsb_ds_capstone_projects_2021/projects/appfolio/update2.md"><button
+        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io/edit/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/update2.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -460,23 +460,50 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#reminder-of-our-project-description">
-   Reminder of our project description:
+  <a class="reference internal nav-link" href="#project-introduction">
+   Project Introduction
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-weve-done">
-   What we’ve done:
+  <a class="reference internal nav-link" href="#summary-of-datasets">
+   Summary of Datasets
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#obstacles">
-   Obstacles:
+  <a class="reference internal nav-link" href="#part-1-exploring-correlations">
+   Part 1: Exploring Correlations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-price-per-pound-vs-catch-pounds">
+     a) Price Per Pound vs. Catch Pounds
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#b-total-catch-vs-larvae-amounts">
+     b) Total Catch vs. Larvae Amounts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#c-total-catch-vs-larvae-amounts-lagged">
+     c) Total Catch vs. Larvae Amounts (lagged)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#d-total-catch-vs-larvae-amounts-with-years">
+     d) Total Catch vs. Larvae Amounts (with years)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-2-exploring-the-effect-of-extreme-weather-events">
+   Part 2: Exploring the Effect of Extreme Weather Events
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#future-tasks">
-   Future Tasks:
+  <a class="reference internal nav-link" href="#conclusion-update-2">
+   Conclusion: Update 2
   </a>
  </li>
 </ul>
@@ -493,49 +520,109 @@
                 
   <div class="section" id="update-2">
 <h1>Update 2<a class="headerlink" href="#update-2" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="reminder-of-our-project-description">
-<h2>Reminder of our project description:<a class="headerlink" href="#reminder-of-our-project-description" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="project-introduction">
+<h2>Project Introduction<a class="headerlink" href="#project-introduction" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>The goal of our project is to be able to extract information from an invoice. The motivation behind this comes from the fact that AppFolio has many invoices and analyzing them could provide valuable insights to the company. We are now focusing on getting the total value that a customer would have to pay, but there is other valuable information to extract in future steps of our project. We get an image of an invoice and the corresponding OCR. The latter is a file that has bounding boxes for each text on the image and the corresponding word/number inside it. For example, it could have “total” and the coordinates of the bounding box that surround that word. Right now our main goal is to extract the total value from all this data.</p></li>
+<li><p>CALCOFI is an organization tasked with studying the marine environment of coastal California and investigating the relationships between climate, fish population, and other human activities.</p></li>
+<li><p>Our project focuses on two separate information sets: fish larvae catch data from CALCOFI cruises intended to measure populations of various species, and commercial fish data from fisheries in California.</p></li>
+<li><p>We are seeking to establish whether any correlation can be drawn from the two datasets, as well as possibly investigate any environmental factors that add variance to the relationship.</p></li>
 </ul>
 </div>
-<div class="section" id="what-weve-done">
-<h2>What we’ve done:<a class="headerlink" href="#what-weve-done" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="summary-of-datasets">
+<h2>Summary of Datasets<a class="headerlink" href="#summary-of-datasets" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Started implementing LayoutLM, which is a natural language processing (NLP) approach which also incorporates layout of a document to get the total value. To finetune this model, we are utilizing the bounding boxes for each text, the text inside those, and the label for them. For example, we could have [120, 40, 160, 60] as the coordinates for the top left and bottom right points of the bounding box, “company” as the text inside that box, and “other” as the label since it does not correspond to the total value of the bill. Once we finish fine tuning the model we should be able to predict the label for each bounding box and corresponding text/number inside it. We tried the model on another dataset (FUNSD), which contains noisy scanned documents and could be easily preprocessed to the right format since the code to do this was publicly available.</p></li>
-</ul>
-<p><img alt="FUNSDpred" src="https://github.com/DSCapstone2021/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/appfolio/FUNSDpred.png?raw=true" /></p>
-<p>(Predictions of LayoutLM for the FUNSD dataset, which is similar to the Appfolio Dataset)</p>
-<ul class="simple">
-<li><p>As an alternative approach, we started our implementation of using object detection to classify key data within the invoice. Object detection is an expansion of image classification, in which rather than simply classifying an image, the detector outputs the localized bounding box coordinates as well as the predicted class. Our team decided to go with Detectron2, Facebook’s open source object detection library. The main reasoning behind this decision was based on Detectron2’s capability of achieving high confidence with a relatively simple structure, as well as having ample collections of pretrained models for various object detection algorithms.</p></li>
-<li><p>In regards to data access, we have finally gotten access to the Appfolio dataset, which is composed of:</p>
+<li><p>Larvae Dataset</p>
 <ul>
-<li><p>images of the invoices</p></li>
-<li><p>csv files composed of bounding box annotations for each word in the invoices</p></li>
-<li><p>the metadata of each invoice upload, which includes a Total amount value that we can use as validation for our models that extract the total amount from an invoice</p></li>
+<li><p>A column for times, and one for every species caught</p></li>
+<li><p>Very sparse dataset, since most of the cruises caught 0 of a particular species</p></li>
+</ul>
+</li>
+<li><p>Commercial Fishery Dataset</p>
+<ul>
+<li><p>Columns for time, location, and which species was caught</p></li>
+<li><p>Species are in common, rather than scientific, names so need to be converted</p></li>
+<li><p>Also column for total price and pounds caught of fish</p>
+<ul>
+<li><p>However, because of data privacy, much of the price/pounds are redacted (if there were very few cruises that month).</p></li>
+<li><p>We are investigating whether we can aggregate the data by using coarser spatial resolution in order to get more accurate catch information</p></li>
 </ul>
 </li>
 </ul>
-<p>Therefore, we have two datasets on hand that we can definitely use (and any other invoice dataset we decide to include for our model fine-tuning, such as the FUNSD dataset) to train our extraction models for total value, and just the Appfolio dataset for extracting the reference IDs of each invoice</p>
-<ul class="simple">
-<li><p>Worked on combining datasets and cleaning them so as to get them in the format we needed for our models.</p></li>
-<li><p>Implemented a function to visualize the predictions of our models. This is useful in order to see what the label for each bounding box is.</p></li>
+</li>
+<li><p>Block Grouping Dataset</p>
+<ul>
+<li><p>Contains total price and total pounds caught for each species, by year</p></li>
+<li><p>Also contains basic information about location of each catch</p></li>
 </ul>
-<p><img alt="InvoiceLabels" src="https://github.com/DSCapstone2021/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/appfolio/InvoiceLabels.png?raw=true" /></p>
-<p>(from the SROIE dataset: total values labeled)</p>
-</div>
-<div class="section" id="obstacles">
-<h2>Obstacles:<a class="headerlink" href="#obstacles" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Getting the data in the right format for each model has been harder than expected.</p></li>
-<li><p>We were just recently exposed to the Appfolio dataset, which is noticeably more complicated than the practice dataset we’ve been handling.</p></li>
+</li>
 </ul>
 </div>
-<div class="section" id="future-tasks">
-<h2>Future Tasks:<a class="headerlink" href="#future-tasks" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>We have thus far accomplished working with initial models and exploring different strategies. Our future goals are to pinpoint the model architecture that we will be working with, along with improving the accuracy of our models on both the SROIE and the Appfolio dataset. These models, once strong enough, can ultimately serve as a tool incorporated in Appfolio’s property management workflow.</p></li>
-</ul>
+<div class="section" id="part-1-exploring-correlations">
+<h2>Part 1: Exploring Correlations<a class="headerlink" href="#part-1-exploring-correlations" title="Permalink to this headline">¶</a></h2>
+<p>In our last progress update, we took a brief look at the visual relationship between the larvae and the fishery catch. Now that we got more refined data, we noticed strong correlation with certain fish, such as pacific sardine:</p>
+<img src="https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/update2_exploratory.png" alt="drawing" />
+<p>At this point, we wanted to explore the possibility of a more causal relationship by offsetting the years between the datasets. This way, it would give us a better look if, for example, a higher larvae count 2-4 years ago could potentially predict a higher fishery catch later. We performed a basic linear correlation on the offset data, generating the following graph:</p>
+<img src="https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/update2_final.png" alt="drawing" />
+<p>As we can see, several fish (anchovy and opah) hold almost no correlation regardless of the year offset. However, the fish with the highest correlations (both mackarels and the sardine) do seem to have higher correlations when offsetted by several years, around the typical lifespans of the fish.</p>
+<p>The logical next steps would be to now explore performing some significance tests between the two correlations to see if they differ by a statistically significant amount, or purely by random chance. Either way, we were quite excited about finding any such relationship in the data, even if it is only moderately strong.</p>
+<p>Then, we continued to explore correlations by investigating the following:</p>
+<div class="section" id="a-price-per-pound-vs-catch-pounds">
+<h3>a) Price Per Pound vs. Catch Pounds<a class="headerlink" href="#a-price-per-pound-vs-catch-pounds" title="Permalink to this headline">¶</a></h3>
+<img src="https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/beforeafterppp.png" alt="drawing" style="width:700px;"/>
+<p>These graphs showcases the correlation between the price/pound of each individual fish
+compared with how many fish were caught that specific year. In addition, this compares
+the graphs produced by the old dataset (left) with our new dataset (right), which draws
+a conclusion that the new dataset showcases a clearer relationship between the two
+features. The new dataset now reveals that all fish has a negative correlation when
+comparing price/pound and total catch, with Anchovy, Opah, and Sardine showing that
+their correlation is significant enough that this did not happen through chance. Thus,
+we can draw a inference where the more fish that is caught in a singular year, the
+lower the price of each individual fish is, which is something we couldn’t conclude from
+the original dataset due to some of the fish showcasing varying relationships and
+correlations.</p>
+</div>
+<div class="section" id="b-total-catch-vs-larvae-amounts">
+<h3>b) Total Catch vs. Larvae Amounts<a class="headerlink" href="#b-total-catch-vs-larvae-amounts" title="Permalink to this headline">¶</a></h3>
+<img src=https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/CatchvsLarvae.png alt="drawing" style="width:700px;"/>
+<p>These graphs showcases the correlation between the total catch of an individual fish in
+a single year versus how much larvae was seen that year. Not all the fish display the
+same correlation or result, but when looking at sardine, we see that the correlation
+between those two attributes are significant. Thus, we can infer from this that more
+sardine was caught in a single year, likely explained by there being more adult sardine
+to be caught. If that premise is true, then because there are more adult fish, more
+adult fish would be laying more larvae, which explains why there is a positive
+correlatin between total catch and larvae count.</p>
+</div>
+<div class="section" id="c-total-catch-vs-larvae-amounts-lagged">
+<h3>c) Total Catch vs. Larvae Amounts (lagged)<a class="headerlink" href="#c-total-catch-vs-larvae-amounts-lagged" title="Permalink to this headline">¶</a></h3>
+<img src=https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/sardinelag.png alt="drawing" style="width:700px;"/>
+<p>Using the insight granted from the second graph, we plotted a graph showcasing a lagged
+correlation between total catch and larvae amount. This is to see if there is a
+possibility on whether the amount of larvae that was seen would hatch out and become
+adults in the future to be caught. The graph showcases that there is a significant
+result for a positive correlation where the more sardine larvae there is, the more
+fish that is to be caught in the future years because more fish are becoming adults
+from those larvae.</p>
+</div>
+<div class="section" id="d-total-catch-vs-larvae-amounts-with-years">
+<h3>d) Total Catch vs. Larvae Amounts (with years)<a class="headerlink" href="#d-total-catch-vs-larvae-amounts-with-years" title="Permalink to this headline">¶</a></h3>
+<img src=https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/meanlarvaevscatchlbsopah.png alt="drawing" />
+<img src=https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/meanlarvaevscatchlbssardine.png alt="drawing">
+<p>Additionally, we created plots that visualized the relationship between catch pounds and larvae amounts, with the associated year on each point. Our intention with these plots was to explore whether there was a relationship between a grouping of years that might influence the catch pounds. These graphs were reproduced for each of the 6 species.</p>
+</div>
+</div>
+<div class="section" id="part-2-exploring-the-effect-of-extreme-weather-events">
+<h2>Part 2: Exploring the Effect of Extreme Weather Events<a class="headerlink" href="#part-2-exploring-the-effect-of-extreme-weather-events" title="Permalink to this headline">¶</a></h2>
+<p>We also explored the relationship between fish larvae and extreme weather events, such as El Nino and La Nina. Since these weather events affect the warming and cooling of ocean temperatures, we wanted to see if they played a role in the amount of larvae found.</p>
+<img src=https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/elnino_mjack.png alt="drawing">
+<p>The plot above shows the average amount of mackerel jack fish larval found each year, along with lines that depict when an El Nino or La Nina event starts and ends. The goal was to identify trends during years with weather events.</p>
+<img src=https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/elnino_sardine.png alt="drawing">
+<p>Similar to the previous visualization, we created these weather event plots for each of the 6 fish species. Although it was difficult to see immediate trends, we plan on spending more time investigating the effect that these weather events have on fish larvae amounts. Ideally, we would be able to isolate certain years and see if changes in fish larvae are signiciant or not.</p>
+</div>
+<div class="section" id="conclusion-update-2">
+<h2>Conclusion: Update 2<a class="headerlink" href="#conclusion-update-2" title="Permalink to this headline">¶</a></h2>
+<p>Since the first update, we have continued to focus on conducting exploratory analysis, with the intention of finding some meaningful correlations between larvae amounts and catch pounds. In the coming weeks, we plan on doing more exploratory analysis, and then deciding on a primary focus for the project.</p>
+<img src=https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/unnamed.png style="width:300px;alt=drawing">
 </div>
 </div>
 
@@ -552,7 +639,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./projects/appfolio"
+            path: "./projects/calcofi1"
         },
         predefinedOutput: true
     }
@@ -564,8 +651,8 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="update1.html" title="previous page">Update 1 - Project Updates</a>
-    <a class='right-next' id="next-link" href="../calcofi1/description.html" title="next page">calcofi1</a>
+    <a class='left-prev' id="prev-link" href="update1.html" title="previous page">Update 1</a>
+    <a class='right-next' id="next-link" href="../calcofi2/description.html" title="next page">calcofi2</a>
 
         </div>
         
