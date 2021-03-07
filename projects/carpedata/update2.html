@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Progress &#8212; Data Science Capstone 2021</title>
+    <title>Update 2 &#8212; Data Science Capstone 2021</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -217,17 +217,7 @@
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Progress
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="#challenges">
-     Challenges
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="#next-steps">
-     Next Steps
+     Update 2
     </a>
    </li>
   </ul>
@@ -474,17 +464,17 @@
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#progress">
    Progress
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#challenges">
    Challenges
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#next-steps">
    Next Steps
   </a>
@@ -501,17 +491,20 @@
         
               <div>
                 
-  <div class="section" id="progress">
-<h1>Progress<a class="headerlink" href="#progress" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="update-2">
+<h1>Update 2<a class="headerlink" href="#update-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="progress">
+<h2>Progress<a class="headerlink" href="#progress" title="Permalink to this headline">¶</a></h2>
 <p>Since our last update we have experimented with a variety of new models. We implemented gradient-boosted-tree’s using LightGBM and tuned our models hyperparameters using Optuna. Gradient-boosted trees are better for highly unbalanced data like ours where the minority class (positive labels–the ones containing criminal record information) hold greater value than the majority (negative) class and we care more about false negatives than false positives. After tuning we were able to achieve Recall of nearly 90%. A good improvement over our original model.</p>
 </div>
 <div class="section" id="challenges">
-<h1>Challenges<a class="headerlink" href="#challenges" title="Permalink to this headline">¶</a></h1>
+<h2>Challenges<a class="headerlink" href="#challenges" title="Permalink to this headline">¶</a></h2>
 <p>First, we encountered challenges during hyperparameter tuning. We started by using GridsearchCV, which was too slow for LightGBM’s many hyperparameters. We solved this by using Optuna, which is able to optimize the hyperparameter space. Instead of using GridSearchCV, which searches for all combinations of manually input hyperparameter values, Optuna looks for ranges of a specific hyperparameter and narrows it down more effectively and time efficiently. Using this package, we managed to efficiently obtain the best hyperparameters for our model. We can broaden this tuning to most other models as well.</p>
 </div>
 <div class="section" id="next-steps">
-<h1>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h1>
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
 <p>Our next steps are to continue to work on extracting the dates and arrest codes from our positive predicted data. Furthermore, we want to look at embedded and combined models to possibly deepen our understanding and effectiveness of the models to interpret our results. We are exploring REGEX and more complicated language models for information extraction.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">

@@ -1,3 +1,5 @@
+# Update 2
+
 ## Progress
 
 Since our last update we have experimented with a variety of new models. We implemented gradient-boosted-tree's using LightGBM and tuned our models hyperparameters using Optuna. Gradient-boosted trees are better for highly unbalanced data like ours where the minority class (positive labels--the ones containing criminal record information) hold greater value than the majority (negative) class and we care more about false negatives than false positives. After tuning we were able to achieve Recall of nearly 90%. A good improvement over our original model.
