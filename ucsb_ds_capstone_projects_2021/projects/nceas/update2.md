@@ -16,7 +16,7 @@ February 28, 2021
 - Our installable R packages can be found here:
     - Adhitya: [Adhitya's Package](https://github.com/adhil0/alohaal)
     - Sophia: [Sophia’s Package](https://github.com/sophiasternberg/fcess)
-    - Karen: [Karen’s Package](https://github.com/karenezhao/alohakz)
+    - Karen: [Karen’s Package](https://github.com/karenezhao/alohakez)
     - Lia: [Lia’s Package](https://github.com/liaaaaran/alohalr)
     - Sam: [Bonanza](https://github.com/TokyoExpress/bonanza)
 
