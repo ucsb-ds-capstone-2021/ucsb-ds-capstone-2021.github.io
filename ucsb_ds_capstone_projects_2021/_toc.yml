@@ -23,7 +23,7 @@
     - file: projects/calcofi1/description
       sections:
         - file: projects/calcofi1/update1
-        - file: projects/calcofi1/update2.md
+        - file: projects/calcofi1/update2
     - file: projects/calcofi2/description
       sections:
         - file: projects/calcofi2/update1
@@ -31,6 +31,7 @@
     - file: projects/carpedata/description
       sections:
         - file: projects/carpedata/update1
+        - file: projects/carpedata/update2
     - file: projects/ccber/description
       sections:
         - file: projects/ccber/update1
