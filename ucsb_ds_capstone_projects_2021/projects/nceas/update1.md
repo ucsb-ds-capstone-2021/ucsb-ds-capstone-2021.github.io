@@ -32,11 +32,6 @@ The [LTER network](https://lternet.edu/) is a set of (currently) 27 National Sci
 <img align="center" width="100" height="100" src="https://github.com/karenezhao/ucsb-ds-capstone 2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update1image1.png">
 
 A scatterplot of bill depth versus bill length for Adelie penguins
-<p align="center">
-  <img  src="https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update1image2.png">
-</p>
+
 
 Adelie penguin chick production across years and islands
-<p align="center">
-  <img  src="https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update1image3.png">
-</p>
