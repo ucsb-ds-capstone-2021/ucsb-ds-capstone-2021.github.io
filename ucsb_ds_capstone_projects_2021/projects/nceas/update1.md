@@ -3,7 +3,7 @@
 ## Update 1
 January 31, 2021
 
-### Long Term Ecological Research (LTER) Datasets: R package
+#### Long Term Ecological Research (LTER) Datasets: R package
 **Project Sponsor: National Center for Ecological Analysis and Synthesis (NCEAS)** \
 **Team Members: Sam Guo, Adhitya Logan, Lia Ran, Sophia Sternberg, Karen Zhao**
 
@@ -28,13 +28,8 @@ The [LTER network](https://lternet.edu/) is a set of (currently) 27 National Sci
 - Been introduced to the metajam R package (created by data scientists fromNCEAS), which is used for downloading and reading metadata
 
 ##### Below are some examples of visualizations we created after exploring the palmerpenguins package. 
- 
-```{figure} ../update1image1.png
-scale: 50%
-align: left
-A scatterplot showing the relationship between penguin body mass and flipper length
-```
-
+ A scatterplot showing the relationship between penguin body mass and flipper length
+<img align="center" src="https://github.com/karenezhao/ucsb-ds-capstone 2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update1image1.png">
 
 A scatterplot of bill depth versus bill length for Adelie penguins
 <p align="center">
