@@ -26,6 +26,9 @@ Examples of Visualizations in our packages, all of which were produced using ggp
 Sophia: The first image shows an initial view of the Bull Shark Count Overtime. This data is from the Florida Coastal Everglades (FCE) LTER Site. I thought this was an interesting plot to include because of the pattern happening YoY. The second image shows the relationship between Temperature and Bull Sharks. I thought this was important to include because it brings up an important point about the nature of collecting data and taking data with a grain of salt. From a first glance, it appears that more Bull Sharks are counted when the Temperature is higher; however researchers are also more likely to survey when the Temperature is warmer/nicer and that may be a bias in the data and affect the number of Bull Sharks counted.
 
 
+This plot shows Seasonal Seabird Richness from 1987 to 2006 at sea off southern California . The data is from the California Current Ecosystem (CCE) LTER.
+
+![seabird](https://github.com/karenezhao/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/nceas/update2karen.png)
 
 
 This plot shows the weight distributions of pikas found at various sampling sites in the Niwot Ridge LTER:
@@ -37,6 +40,4 @@ This plot shows the weight distributions of pikas found at various sampling site
 #### Future Plans
 - For the remainder of this quarter, we plan to refine our packages and vignettes even more, while adding more in-depth descriptions and other important metadata about our packages. To do this, we will need to know our datasets inside and out and understand every nuance. 
 - Start deciding which datasets we will import to our final product and map out a plan of how to best collaborate on this. 
-
-
 
