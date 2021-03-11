@@ -47,14 +47,14 @@ The interactions between the species from the Apidae bee family and all plant sp
 
  After last weeks discussion of targeting different levels of specialization for bees, we were able to further explore these different levels. Specifically, we found heatmaps to be a great way of finding interactions at different levels that are significant. While the heatmaps enabled us to identify particularly interesting plant bee relationships, and also gave us a quick and general way to identify specialists/generalists, we found that comparing these relationships was hard to quantify using heatmaps. By using bar plots to better study and quantify the differences between relationships we had found, we were able to look into various levels of species interaction in a much more informatve context.
  
- ```{figure} Screen Shot 2021-02-24 at 3.56.36 PM.png
+ ```{figure} andrenidae_genus_genus.png
 ---
 name: andrenidae_genus_genus_heatmap
 ---
 The interactions between the genera from the Andrenidae bee family and all plant genera, presented as a heatmap. The citation count is synonymous with interaction count. The lighter areas mean that that particular bee genus has interacted with that plant genus many times. 
 ```
 
- ```{figure} Screen Shot 2021-02-24 at 3.56.47 PM.png
+ ```{figure} andrenidae_genus_genus_bar.png
 ---
 name: andrenidae_genus_genus_barplot
 ---
@@ -62,7 +62,7 @@ The interactions between the genera from the Andrenidae bee family and all plant
 ```
 
 
- ```{figure} Screen Shot 2021-02-24 at 3.56.55 PM.png
+ ```{figure} andrenidae_genus_fam.png
 ---
 name: andrenidae_genus_family_heatmap
 ---
