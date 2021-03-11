@@ -7,7 +7,12 @@ In order to spot all entries with bees, we filter the animal family with the sev
 We compared the cleaning script from the Python team to that of the R team. We found that the observation count of the R and Python groups were close but not exact. The issue of duplicate rows was discussed in greater detail- trying to figure out whether duplicate observations were erroneous or true citations. We decided to use the reticulate package in R to call Python code from RMarkdown so that we would have one consistent cleaning script.
 In addition, we reviewed our visualizations- network graphs and heat maps, focusing on specifics such as color-coding nodes by taxon family. We also spent some time discussing our long-term objective relating to classifying certain bees as specialists or generalists. A generalist can thrive in various environmental and temporal conditions while a specialist can only survive in more specific conditions. For example, a bee species that interacts with 40 different plant families may be more generalized than a bee species that interacts with 10 plant families. 
 
-![](https://github.com/angelchen7/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/genus_to_genus.png?raw=true)
+```{figure} genus_to_genus.png
+---
+name: genus_to_genus
+---
+caption here
+```
 ![](https://github.com/angelchen7/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/species_to_species.png?raw=true)
 
 ## Week 7
