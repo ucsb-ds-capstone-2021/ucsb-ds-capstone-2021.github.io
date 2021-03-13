@@ -1,9 +1,16 @@
 # Update 1
+# Overview
+For the first half of this winter quarter, we focused on doing exploratory analysis on our [Global Biotic Interactions (GloBI)](https://www.globalbioticinteractions.org/about) dataset. Our goal is to understand interactions between bees and flowers, like which types of bees visit which types of flowers and why. To accomplish this, we made network graphs and heatmaps with various R and Python packages like [igraph](https://igraph.org/r/), [bipartite](https://www.rdocumentation.org/packages/bipartite/versions/2.16), [NetworkX](https://networkx.org/), [Plotly](https://plotly.com/python/), [ggraph](https://cran.r-project.org/web/packages/ggraph/index.html), and [ggplot](https://ggplot2.tidyverse.org/reference/ggplot.html).
+
+# Progress
 ## Week 1
 We spent the first week learning about our research interest ([bees](https://www.wikiwand.com/en/Bee)) and exploring the [Global Biotic Interactions (GloBI)](https://www.globalbioticinteractions.org/about) dataset. Our data come from literature reports, human observations, and natural history specimen. 
-Goal of GloBI is to structure data into a usable form (csv., tsv.). \
-<img src="http://clipart-library.com/images/yTk4eXgTE.png" width="200" />\
-During our weekly meeting with the sponsors, we gained substantial knowledge about bees, especially the vital role it plays in global biotic interactions. In particular, we want to focus our research on the interactions between bees and plants. Interactions are directional, i.e. "Apis Mellifera pollinates brasicca rapa" will be categorized into source, interaction, and target, respectively.\
+Goal of GloBI is to structure data into a usable form (csv., tsv.). 
+
+![](https://github.com/angelchen7/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/bee.PNG?raw=true)
+
+During our weekly meeting with the sponsors, we gained substantial knowledge about bees, especially the vital role it plays in global biotic interactions. In particular, we want to focus our research on the interactions between bees and plants. Interactions are directional, i.e. "Apis Mellifera pollinates brasicca rapa" will be categorized into source, interaction, and target, respectively.
+
 The goal for this week is to get a sense of the strengths and liminations of differnt query methods. Our options are direct access to the data files, [rglobi](https://github.com/ropensci/rglobi) package, [GloBI Web API](https://github.com/globalbioticinteractions/globalbioticinteractions/wiki/API), and [Cypher](https://neo4j.globalbioticinteractions.org/browser/) on [Neo4j](https://neo4j.com/developer/cypher/). We discovered that these methods operate on the same dataset, which renders the same result regardless which one we use.
 
 
@@ -22,7 +29,7 @@ We discussed the attributes and qualities of the raw data. Also, we explored dif
 
 ![](https://github.com/angelchen7/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/different_bees.png?raw=true "variation in Apidae")
 
-Another topic for consideration was visualization. We learned of different methods to visualize network data. Some of our options included igraph & bipartite for R packages; NetworkX, Plotly, Dash for Python packages. By visualizing this data, we would gain more insight on the network structure and attributes of the data.
+Another topic for consideration was visualization. We learned of different methods to visualize network data. Some of our options included [igraph](https://igraph.org/r/) & [bipartite](https://www.rdocumentation.org/packages/bipartite/versions/2.16) for R packages; [NetworkX](https://networkx.org/), [Plotly](https://plotly.com/python/), [Dash] (https://dash.plotly.com/) for Python packages. By visualizing this data, we would gain more insight on the network structure and attributes of the data.
 
 ![](https://github.com/angelchen7/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Rplot04.png?raw=true)
 
@@ -38,3 +45,6 @@ In meeting, we discussed ideas for various filtering methods and their respectiv
 ![](https://github.com/mitchellrapaport/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-01-30%20at%205.10.01%20PM.png?raw=true)
 
 ![](https://github.com/mitchellrapaport/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-01-27%20at%202.16.23%20PM.png?raw=true)
+
+# Conclusions and Next Steps
+There are many ways to present the information in a network. Both heatmaps and network graphs have their own pros and cons. For example, although heatmap layouts are easy for anyone to understand, it is easier to categorize the species into broader categories like genus by color-coding in network graphs. For our next steps, we plan to refine our visualizations even more and hone in on a more specific goal for our project.
