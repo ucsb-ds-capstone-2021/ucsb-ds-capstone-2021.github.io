@@ -45,7 +45,7 @@ The interactions between the species from the Apidae bee family and all plant sp
 
 ### Week 8
 
- After last weeks discussion of targeting different levels of specialization for bees, we were able to further explore these different levels. Specifically, we found heatmaps to be a great way of finding interactions at different levels that are significant. While the heatmaps enabled us to identify particularly interesting plant bee relationships, and also gave us a quick and general way to identify specialists/generalists, we found that comparing these relationships was hard to quantify using heatmaps. By using bar plots to better study and quantify the differences between relationships we had found, we were able to look into various levels of species interaction in a much more informatve context.
+ After last week's discussion of targeting different levels of specialization for bees, we were able to further explore these different levels. Specifically, we found heatmaps to be a great way of finding interactions at different levels that are significant. While the heatmaps enabled us to identify particularly interesting plant bee relationships, and also gave us a quick and general way to identify specialists/generalists, we found that comparing these relationships was hard to quantify using heatmaps. By using bar plots to better study and quantify the differences between relationships we had found, we were able to look into various levels of species interaction in a much more informatve context.
  
  ```{figure} andrenidae_genus_genus.png
 ---
@@ -70,3 +70,4 @@ The interactions between the genera from the Andrenidae bee family and all plant
 ```
 
 ## Conclusion and Next Steps
+In the future, we will explore a bee's degree of generalization vs. the frequency at which it appears in the dataset. We are looking to perform more correlation tests to better understand this relatioinship. We also hope to implement various machine learning methods to classify each bee as a generalist or a specialist- doing so by gaining access to or creating our own training set. 
