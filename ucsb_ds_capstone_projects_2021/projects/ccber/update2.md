@@ -70,4 +70,4 @@ The interactions between the genera from the Andrenidae bee family and all plant
 ```
 
 ## Conclusion and Next Steps
-In the future, we will explore a bee's degree of generalization vs. the frequency at which it appears in the dataset. We are looking to perform more correlation tests to better understand this relatioinship. We also hope to implement various machine learning methods to classify each bee as a generalist or a specialist- doing so by gaining access to or creating our own training set. 
+In the future, we will explore a bee's degree of generalization vs. the frequency at which it appears in the dataset. We are looking to perform more correlation tests to better understand this relationship. We also hope to implement various machine learning methods to classify each bee as a generalist or a specialist- doing so by gaining access to or creating our own training set. 
