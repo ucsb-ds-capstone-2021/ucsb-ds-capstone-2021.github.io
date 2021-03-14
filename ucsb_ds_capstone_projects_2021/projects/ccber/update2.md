@@ -37,27 +37,27 @@ We needed to explore these varying levels of specialization with the Apidae, Hal
 name: genus_to_genus
 ---
 The interactions between the genera from the Apidae bee family and all plant genera, presented as a network graph. Here, citation count is synonymous with interaction count. The more interactions a bee genus has with a plant genus, the darker the lines. Since there were lots of interactions that only happened once, we decided to make a cut-off point at 200 interactions in order to filter for the most important interactions. The nodes are color-coded by family.
-
-The interaction that occurred the most times is between the Bombus genus and Trifolium genus. The genera in the Apidae family mostly seem to be generalists, especially Bombus.
 ```
+
+In Figure 4, the interaction that occurred the most times is between the Bombus genus and Trifolium genus. The genera in the Apidae family mostly seem to be generalists, especially Bombus.
 
 ```{figure} species_to_species.png
 ---
 name: species_to_species
 ---
 The interactions between the species from the Apidae bee family and all plant species or genera, presented as a network graph. Again, the citation count is synonymous with interaction count. The cut-off point remains at 200 interactions in order to keep the network graph more simple and easier to understand. The nodes are color-coded by family.
-
-The interaction that occurred the most times is between Melissodes tristis and Melilotus officinalis. Here, Bombus bifarius and Bombus impatiens appear to be generalists. Meanwhile, the bee species Diadasia ochracea, Melissodes tristis, and Melissodes paroselae all seem to prefer to visit only Melilotus officinalis (yellow sweet clover), which may indicate that they are specialists.
 ```
+
+In Figure 5, the interaction that occurred the most times is between Melissodes tristis and Melilotus officinalis. Here, Bombus bifarius and Bombus impatiens appear to be generalists. Meanwhile, the bee species Diadasia ochracea, Melissodes tristis, and Melissodes paroselae all seem to prefer to visit only Melilotus officinalis (yellow sweet clover), which may indicate that they are specialists.
 
 ```{figure} halictidae.png
 ---
 name: halictidae
 ---
 The interactions between the genera from the Halictidae bee family and all plant genera, presented as a network graph. The cut-off point remains at 200 interactions in order to keep the network graph more simple and easier to understand. The nodes are color-coded by family.
-
-We can tell here that the Lasioglossum and Halictus bee genera visits many different plant genera/families. On the other hand, Agapostemon, Conanthalictus, Goeletapis, Penapis, and Xeralictus prefer to visit one plant genus each, making them appear to be specialists. 
 ```
+
+We can tell from Figure 6 that the Lasioglossum and Halictus bee genera visits many different plant genera/families. On the other hand, Agapostemon, Conanthalictus, Goeletapis, Penapis, and Xeralictus prefer to visit one plant genus each, making them appear to be specialists. 
 
 ### Week 8
 
@@ -68,9 +68,9 @@ We can tell here that the Lasioglossum and Halictus bee genera visits many diffe
 name: andrenidae_genus_genus_heatmap
 ---
 The interactions between the genera from the Andrenidae bee family and all plant genera, presented as a heatmap. The citation count is synonymous with interaction count. The lighter areas mean that that particular bee genus has interacted with that plant genus many times. 
-
-Most of the interactions in the Andrenidae bee family came from the Andrena genus. We can see that bees in the Andrena genus vists many other plant genera, which indicates that they may be generalists.  
 ```
+
+Most of the interactions in the Andrenidae bee family came from the Andrena genus. We can see from Figure 7 that bees in the Andrena genus vists many other plant genera, which indicates that they may be generalists.  
 
  ```{figure} andrenidae_genus_genus_bar.png
 ---
@@ -84,8 +84,10 @@ The interactions between the Andrenidae bee family and all plant genera, present
 ---
 name: andrenidae_genus_family_heatmap
 ---
-The interactions between the genera from the Andrenidae bee family and all plant families, presented as a bar plot. The citation count is synonymous with interaction count. We can see again that the Andrena bees visit many other plant families, which supports the idea that they may be generalists.
+The interactions between the genera from the Andrenidae bee family and all plant families, presented as a bar plot. The citation count is synonymous with interaction count. 
 ```
+
+We can see again from Figure 9 that the Andrena bees visit many other plant families, which supports the idea that they may be generalists.
 
 ## Conclusion and Next Steps
 We cannot determine for certain which types of bees are specialists or generalists yet because these visualizations may not tell the whole story, but it's a good start. We will need to investigate statistical methods and models to support our hypotheses from the visualizations because we cannot just draw conclusions based on the visualizations alone. 
