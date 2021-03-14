@@ -31,7 +31,7 @@ We discussed the attributes and qualities of the raw data. Also, we explored dif
 
 ![](https://github.com/angelchen7/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/different_bees.png?raw=true "variation in Apidae")
 
-Another topic for consideration was visualization. We learned of different methods to visualize network data. Some of our options included [igraph](https://igraph.org/r/) & [bipartite](https://www.rdocumentation.org/packages/bipartite/versions/2.16) for R packages; [NetworkX](https://networkx.org/), [Plotly](https://plotly.com/python/), [Dash] (https://dash.plotly.com/) for Python packages. By visualizing this data, we would gain more insight on the network structure and attributes of the data.
+Another topic for consideration was visualization. We learned of different methods to visualize network data. Some of our options included [igraph](https://igraph.org/r/) & [bipartite](https://www.rdocumentation.org/packages/bipartite/versions/2.16) for R packages; [NetworkX](https://networkx.org/), [Plotly](https://plotly.com/python/), [Dash](https://dash.plotly.com/) for Python packages. By visualizing this data, we would gain more insight on the network structure and attributes of the data.
 
  ```{figure} Rplot04.png
 ---
