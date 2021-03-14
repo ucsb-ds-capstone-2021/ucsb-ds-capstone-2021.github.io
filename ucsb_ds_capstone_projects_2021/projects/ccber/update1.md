@@ -63,4 +63,4 @@ Another network graph for interactions between species in the Melittidae bee fam
 ```
 
 ## Conclusion and Next Steps
-There are many ways to present the information in a network. Both heatmaps and network graphs have their own pros and cons. For example, although heatmap layouts are easy for anyone to understand, it is easier to categorize the species into broader categories like genus by color-coding in network graphs. For our next steps, we plan to refine our visualizations even more and hone in on a more specific goal for our project.
+There are many ways to present the information in a network. Both heatmaps and network graphs have their own pros and cons. For example, the heatmap seems to present information in a neater way whereas the arrows in the network graph can lead someone's eyes all over the page. However, it is easier to categorize the species into broader categories like genus by color-coding the nodes in network graphs. For our next steps, we plan to refine our visualizations even more and hone in on a more specific goal for our project.
