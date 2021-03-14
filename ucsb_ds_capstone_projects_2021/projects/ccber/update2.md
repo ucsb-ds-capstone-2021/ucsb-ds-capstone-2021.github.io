@@ -3,17 +3,20 @@
 ## Overview
 The dataset we are working with contains data on interactions between bees and plants. Each row represents an interaction, and the data comes from museum records, publications, and from people submitting their sightings/observations to be recorded online. There are columns detailing the taxonomy of the bees and the plants, like what family, genus, or species they belong to. There is also a column detailing what is the source of this sighting, which is the citation. 
 
-After doing some exploratory analysis from our first update, we had a clearer sense of the goals and direction of this project. Our major goal for the next few weeks is to identify which bees are the type to visit a lot of different flowers (generalists) and which bees are the type to visit the same few flowers (specialists). To accomplish that, we figured that making visualizations would help answer some of our questions. However, classifying bees as generalists or specialists becomes tricky because of all the taxonomic levels we need to consider. For example, a bee genus may be considered as a generalist genus but there might be one bee species in that genus that is a specialist, which can be confusing. Additionally, there were many combinations of taxonomic levels that we can look at, such as family-to-family, family-to-genus, family-to-species, genus-to-family, genus-to-genus, genus-to-species, etc. This adds layers of complexity to our problem. We will need to keep this in mind as we continue with our project. 
+After doing some exploratory analysis from our first update, we had a clearer sense of the goals and direction of this project. Our major goal for the next few weeks is to identify which bees are the type to visit a lot of different flowers (generalists) and which bees are the type to visit the same few flowers (specialists). To accomplish that, we figured that making visualizations would help answer some of our questions. 
 
-Our ultimate, dream goal would be to identify which bee species are generalists or specialists.
+However, classifying bees as generalists or specialists becomes tricky because of all the taxonomic levels we need to consider. For example, a bee genus may be considered as a generalist genus but there might be one bee species in that genus that is a specialist, which can be confusing. Additionally, there were many combinations of taxonomic levels that we can look at, such as family-to-family, family-to-genus, family-to-species, genus-to-family, genus-to-genus, genus-to-species, etc. This adds layers of complexity to our problem. We will need to keep this in mind as we continue with our project. 
+
+Our major goal is to identify which bee species are generalists or specialists.
 
 ## Progress
 ### Week 5
-This week we focused on cleaning the data into something we can collaboratively work with together. Instead of all of us having our own code for cleaning the data, we want to have a script that is used to clean data periodically so that we can work on the same exported data. The original file contains all recorded biotic interactions, and we want to create a file with only bees <-> plants interactions. \
-In order to spot all entries with bees, we filter the animal family with the seven ([bee families](https://www.beelab.umn.edu/bees/bee-diversity)): Andrenidae, Apidae, Colletidae, Halictidae, Megachilidae, Melittidae, and Stenotritidae. The criterion for plants is simply TaxonKingdomName == "Plantae". The interactions would be either bees as source and plants as target, or plants as source and bees as target, which we predict would have less entries. Other specific requirements include case insensitivity and removing duplicate entries.
+This week we focused on cleaning the data into something we can collaboratively work with together. Instead of all of us having our own code for cleaning the data, we want to have a script that is used to clean data periodically so that we can work on the same exported data. The original file contains all recorded biotic interactions, and we want to create a file with only bees <-> plants interactions.
+
+In order to spot all entries with bees, we filter the animal family with the seven [bee families](https://www.beelab.umn.edu/bees/bee-diversity): Andrenidae, Apidae, Colletidae, Halictidae, Megachilidae, Melittidae, and Stenotritidae. The criterion for plants is simply TaxonKingdomName == "Plantae". The interactions would be either bees as source and plants as target, or plants as source and bees as target, which we predict would have less entries. Other specific requirements include case insensitivity and removing duplicate entries.
 
 ### Week 6
-We compared the cleaning script from the Python team to that of the R team. We found that the observation count of the R and Python groups were close but not exact. The issue of duplicate rows was discussed in greater detail- trying to figure out whether duplicate observations were erroneous or true citations. We decided to use the ([reticulate package](https://cran.r-project.org/web/packages/reticulate/index.html)) in R to call Python code from RMarkdown so that we would have one consistent cleaning script.
+We compared the cleaning script from the Python team to that of the R team. We found that the observation count of the R and Python groups were close but not exact. The issue of duplicate rows was discussed in greater detail- trying to figure out whether duplicate observations were erroneous or true citations. We decided to use the [reticulate package](https://cran.r-project.org/web/packages/reticulate/index.html) in R to call Python code from RMarkdown so that we would have one consistent cleaning script.
 In addition, we reviewed our visualizations- network graphs and heat maps, focusing on specifics such as color-coding nodes by taxon family. We also spent some time discussing our long-term objective relating to classifying certain bees as specialists or generalists. A generalist can thrive in various environmental and temporal conditions while a specialist can only survive in more specific conditions. For example, a bee species that interacts with 40 different plant families may be more generalized than a bee species that interacts with 10 plant families. 
 
 ### Week 7
@@ -58,7 +61,7 @@ The interactions between the genera from the Andrenidae bee family and all plant
 ---
 name: andrenidae_genus_genus_barplot
 ---
-The interactions between the genera from the Andrenidae bee family and all plant genera, presented as a bar plot. The citation count is synonymous with interaction count. This figure represents the same information found in Figure 3. 
+The interactions between the Andrenidae bee family and all plant genera, presented as a bar plot. The citation count is synonymous with interaction count.
 ```
 
 
@@ -70,4 +73,4 @@ The interactions between the genera from the Andrenidae bee family and all plant
 ```
 
 ## Conclusion and Next Steps
-In the future, we will explore a bee's degree of generalization vs. the frequency at which it appears in the dataset. We are looking to perform more correlation tests to better understand this relationship. We also hope to implement various machine learning methods to classify each bee as a generalist or a specialist- doing so by gaining access to or creating our own training set. 
+In the future, we will explore a bee genus' degree of generalization vs. the frequency at which it appears in the dataset. The degree of generalization is defined as the number of different plant families that the bee genus visits and the frequency is how many times that genus appears in the dataset. We are looking to perform more correlation tests to better understand this relationship between the two variables. Specifically, we are working on getting the Spearman's rank correlation coefficient. We also hope to implement various machine learning methods (like support vector machine) to classify each bee as a generalist or a specialist- doing so by gaining access to or creating our own training set. 
