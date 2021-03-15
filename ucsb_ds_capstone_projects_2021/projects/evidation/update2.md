@@ -59,4 +59,7 @@ We were interested to see whether there are spikes/dips in HR residuals before a
 
 Just inspecting the graph, we see there's an initial spike in the residual, and then a significant drop. Our next steps are to investigate anomaly detection algorithms and see if they can pick up on these anomalous HRs and anticipate COVID-19 diagnosis.
 
+### Next Steps
+For Spring Quarter, we plan to investigate further into the Anomaly Detection methods, RHR-Diff and HROS-AD, and running those on our residuals. Additionally, we will try to improve or even devise our own algorithms for detecting anomalies in the residual heart rate. Furthermore, we will explore cross-validated linear mixed models and causal modeling and inference.
+
  
