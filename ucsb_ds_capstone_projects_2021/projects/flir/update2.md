@@ -58,7 +58,8 @@ Yolo-V5 Scores
 
 ```{figure} mAPcurve.png
 ---
-height: 300px
+height: 250px
+width: 300px
 name: directive-fig
 ---
 mAP@0.5 Curve for each epoch
