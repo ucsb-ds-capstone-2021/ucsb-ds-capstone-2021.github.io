@@ -30,16 +30,20 @@ def clean_and_tokenize(x):
     return w
   ```
   
- ### Logistic Regression 
- Examing the words associated with the largest coefficients of our model showed some seemingly intuitive results.
- 
- <img width="645" alt="Screen Shot 2021-03-15 at 5 23 37 PM" src="https://user-images.githubusercontent.com/43657731/111237870-2fa64c80-85b3-11eb-8274-dc556ecda226.png">
+### Logistic Regression 
  
  The classification report of our logistic regression showed a promissing model. 
  
- <img width="494" alt="Screen Shot 2021-03-15 at 5 24 52 PM" src="https://user-images.githubusercontent.com/43657731/111237962-5c5a6400-85b3-11eb-91f1-709281bd1a1e.png">
+<img width="483" alt="Screen Shot 2021-03-15 at 5 29 31 PM" src="https://user-images.githubusercontent.com/43657731/111238284-04702d00-85b4-11eb-9027-c6fa7d20a767.png">
 
-   
+Examing the words associated with the largest coefficients of our model showed some seemingly intuitive results.
+ 
+<img width="672" alt="Screen Shot 2021-03-15 at 5 30 22 PM" src="https://user-images.githubusercontent.com/43657731/111238348-22d62880-85b4-11eb-83c4-1dd7e1fbf8da.png">
+
+The precision-recall curve shows our model needs very little hyperparameter tuning for our desired goal of maximizing recall. 
+
+<img width="415" alt="Screen Shot 2021-03-15 at 5 32 56 PM" src="https://user-images.githubusercontent.com/43657731/111238517-7e081b00-85b4-11eb-862d-30c9d115bf56.png">
+
 ## Challenges
 
 Our biggest challenge so far is the sheer amount of time it takes to clean data. Our cleaning and tokenization script took almost 15 hours to run on the data set (on a laptop). Bringing this time down would be ideal so we could experiment with other forms of tokenization (such as bigrams or trigrams). This could be accomplished through employing cloud computing infrastructure, parallelization, and increasing the efficiency of our code.
