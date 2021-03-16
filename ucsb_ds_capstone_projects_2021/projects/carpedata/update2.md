@@ -22,11 +22,15 @@ As shown in the plot, the words ‘arrested’, ‘charged’, ‘police’ and 
 
 ![image1](https://user-images.githubusercontent.com/43657731/111241726-f1149000-85ba-11eb-97b9-c71dc8172a1c.png)
 
+A probability threshold of ~0.65 would optimize both recall and precision, however we opted to use a threshold of 0.2 since recall is more important to us. A threshold of 0.2 maximizes recall without sacrificing too much precision and accuracy
+
 ### Hyperparameter Tuning
 
 Optuna is a python package that runs trials by case on a designated objective function. For hyperparameter tuning, the objective function consists of ranges of parameters tested and tests for best parameters values in that range. Optuna was found to be more efficient and faster than GridSearchCVParameter output is also more precise given its range, not from manually inputted values. For the above plot, over the number of trials, the search objective value becomes closer to 1 or -1,  indicating strong model correlation to the dataset.
 
 ![image5](https://user-images.githubusercontent.com/43657731/111241943-641e0680-85bb-11eb-87f2-84083acd8e8d.png)
+
+
 
 ## Model Assessment
 
