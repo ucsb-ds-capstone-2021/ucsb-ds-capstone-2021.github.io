@@ -5,11 +5,13 @@
 Since our last update we've made considerable progress on our project. Early on we ran into some issues getting hardware setup for the group to work on. Considering it's computationally expensive to train neural networks we weren't able to train a model on our local machines so we spent a fair amount of time exploring our options to get a machine running that we could work with. We decided on setting up a virtual machine on google cloud so we could all remotely access the compute enginge. After getting that setup we got all our packages and notebooks running and started training. 
 
 #### Metrics used for understanding
-To provide some insight into the metrics that we use to determine accuracy of the models we have a brief introduction to some of the commonly used ones that will be shown in this update. 
+To provide some insight into the metrics that we use to determine accuracy of the models we have a brief introduction to some of the commonly used ones that will be shown in this update. In the context of this project a true postive would be the model correctly predicting the class of an object while a false positive would be predicting a class incorrectly or predicting a class for a non existant object. A false negative would be failing to predict the class of an object. 
 
 Precision - True Positive/(True Positive + False Positive)
 
 Recall - True Positive/(True Positive + False Negative)
+
+F1 - 2 * (Precision * Recall)/(Precision + Recall)
 
 Precision x Recall Curve(PR curve) - A plot of Precision vs. Recall
 
@@ -56,7 +58,7 @@ Yolo-V5 Scores
 
 ```{figure} mAPcurve.png
 ---
-height: 150px
+height: 300px
 name: directive-fig
 ---
 mAP@0.5 Curve for each epoch
