@@ -43,7 +43,7 @@ This plot shows Seasonal Seabird Richness from 1987 to 2006 at sea off southern 
 **Adhitya** \
 This plot shows the weight distributions of pikas found at various sampling sites in the Niwot Ridge LTER:
 
-![pika](adhitya_plot.png)
+![ice](images/update2adhitya.png)
 
 
 
