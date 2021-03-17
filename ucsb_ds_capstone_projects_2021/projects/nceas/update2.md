@@ -21,7 +21,7 @@ February 28, 2021
     - Sam: [Bonanza](https://github.com/TokyoExpress/bonanza)
 
 
-###### Examples of Visualizations in our vignettes, all of which were produced using ggplot from the tidyverse package:
+###### Examples of our vignettes:
 
 **Sophia** \
 This image shows an initial view of the Bull Shark Count Overtime. This data is from the Florida Coastal Everglades (FCE) LTER Site. I thought this was an interesting plot to include because of the pattern happening YoY. 
@@ -36,9 +36,11 @@ I choose a dataset from the Moorea Coral Reef site that analyzes the changes in 
 ![coral2](images/update2lia2.png)
 
 **Karen** \
-This plot shows Seasonal Seabird Richness from 1987 to 2006 at sea off southern California . The data is from the California Current Ecosystem (CCE) LTER.
+I chose to study a dataset from the California Current Ecosystem (CCE) LTER. CCE is a coastal upwelling biome, located off the southern coast of California. Because there is a long record of observations and a rich data set from this region, many of the studies conducted here focus on changes in the ocean ecosystem. This includes a long term ocean warming trend, which can have biological effects on plankton production, fish catch and seabirds. \
+The dataset that I worked with is daily sea-surface temperature measurements, collected and provided by the Shore Stations Program, La Jolla CA. The raw data contains more than 36 thousand entires. 
+![sst](images/update2karen.png)
 
-![seabird](images/update2karen.png)
+
 
 **Adhitya** \
 This plot shows the weight distributions of pikas found at various sampling sites in the Niwot Ridge LTER:
