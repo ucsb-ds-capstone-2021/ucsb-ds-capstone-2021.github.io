@@ -37,10 +37,18 @@ The dataset that I worked with is daily sea-surface temperature measurements, co
 ![sst](images/update2karen.png)
 We can see from the plots above that the sea-surface temperature (annual average, single day highest, and single day lowest) from 1916 to 2015 has been increasing over the years. 
 
+**Sam** \
+The dataset that I'm working on is from the Northeast U.S. Shelf LTER, which observes the ocean ecosystem in the Atlantic in order to draw conclusions and make predictions about food webs and how they continually change over time, as well as how it affects higher trophic levels in the area and biome. The specific dataset is from a series of observations of predator and prey relationships by recording the number of prey found in predators' stomachs. The below plot showcases a relationship between the average sampling depth and the log of the prey count:
 
+![depth](images/nc1.png)
 
+It's clear that there is some sort of downward trend, indicating that as depth increases, the individual number of prey found tends to decrease. This may be due to the fact that as light becomes more and more scarce, there are less microscopic organisms to ingest and thus the prey count decreases rapidly.
 
+The data is also useful for drawing conclusions about specific species. This next graph is a grouped histogram showcasing the distribution of predators of a specific prey species:
 
+![cal](images/nc2.png)
+
+Some insights can be drawn from these types of graphs, such as Calanoida being particularly suspectible to being eaten by Atlantic mackerel. Further analysis and more advanced techniques such as graph analysis and better transformations can help to paint a better picture of how this data interacts with each other to form a complex food web.
 
 
 **Adhitya** \
