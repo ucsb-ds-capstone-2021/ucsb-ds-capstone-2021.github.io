@@ -28,7 +28,7 @@ Faculty
 - Scoring Qualitative Survey Answers
     - Using the scoring rubric to assess scores for survery responses 
     - e.g. for the Social Needs survey, we would assess a score from all the responses that would tell us what the social needs of an individual
-    - Another exmaple: Scoring how religious/ spiritual someone is based off of meaning, peace, and faith
+    - Another example: Scoring how religious/ spiritual someone is based off of meaning, peace, and faith
 - Addressing missing data
     - Asking questions about missing data
     - Removing missing rows and columns
@@ -54,8 +54,8 @@ Examples of influences measured
 - Biological: 
 
     - HbA1c levels
-    - vital signs
-    - medical history
+    - Vital signs
+    - Medical history
 
 - Psychological: 
 
