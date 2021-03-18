@@ -36,7 +36,7 @@ I choose a dataset from the Moorea Coral Reef site that analyzes the changes in 
 ![coral2](images/update2lia2.png)
 
 **Karen** \
-The dataset that I worked with is daily sea-surface temperature measurements, collected from the end of the Scripps Pier at the sea surface and a depth of about 5 meters. This plot shows the annual mean sea-surface temperature from 1930 to 2015 in Celsius. \
+The dataset that I worked with is daily sea-surface temperature measurements, collected from the end of the Scripps Pier at the sea surface and a depth of about 5 meters. The location makes data collected here quite representative of oceanic condition. This plot below shows how the annual mean sea-surface temperature from 1930 to 2015 has been increasing. \
 ![sst](images/update2karen.png)
 This dataset is from the California Current Ecosystem (CCE) LTER. CCE is a coastal upwelling biome, located off the southern coast of California. Because there is a long record of observations and a rich data set from this region, many of the studies conducted here focus on changes in the ocean ecosystem. This includes a long term ocean warming trend, which can have biological effects on plankton production, fish catch and seabirds. It is also associated with changes in sea level, wave heights and beach erosion. Scientists are just beginning to learn the details of the linkages between all these processes.\
 
