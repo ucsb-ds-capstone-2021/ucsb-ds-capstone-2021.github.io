@@ -27,13 +27,13 @@ In our last progress update, we took a brief look at the visual relationship bet
 
 <img src="https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/update2_exploratory.png" alt="drawing" />
 
-At this point, we wanted to explore the possibility of a more causal relationship by offsetting the years between the datasets. This way, it would give us a better look if, for example, a higher larvae count 2-4 years ago could potentially predict a higher fishery catch later. We performed a basic linear correlation on the offset data, generating the following graph:
+At this point, we wanted to explore the possibility of a more causal relationship. We decided to calculate the correlation of Larva_(t) and Fish_(t+x), with x being between (-2, 7).  This way, it would give us a better look if, for example, a higher larvae count 2-4 years ago could potentially predict a higher fishery catch later. We performed a basic linear correlation on the offset data, generating the following graph:
 
 <img src="https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/update2_final.png" alt="drawing" />
 
-As we can see, several fish (anchovy and opah) hold almost no correlation regardless of the year offset. However, the fish with the highest correlations (both mackarels and the sardine) do seem to have higher correlations when offsetted by several years, around the typical lifespans of the fish.
+As we can see, several fish (anchovy and opah) hold almost no correlation regardless of the year offset. Northern Anchovy had a moderately strong negative correlation, which was rather unexpected, and something that we will need to investigate further in the future. Most importantly, however, the fish with the highest correlations (both mackarels and the sardine) do seem to have higher correlations when offsetted by several years, around the typical lifespans of the fish. This is a very promising piece of information! It seems to support our initial hypothesis that if we see more larvae present, then in a few years, we will see more adult fish.
 
-The logical next steps would be to now explore performing some significance tests between the two correlations to see if they differ by a statistically significant amount, or purely by random chance. Either way, we were quite excited about finding any such relationship in the data, even if it is only moderately strong.
+The logical next steps would be to now explore performing some significance tests between the two correlations to see if they differ by a statistically significant amount, or purely by random chance. Additionally, we want to explore whether evaluating a possible Granger causality between the two datasets to more rigorously validate our initial conclusions. Either way, we were quite excited about finding any such relationship in the data, even if it is only moderately strong.
 
 Then, we continued to explore correlations by investigating the following:
 
