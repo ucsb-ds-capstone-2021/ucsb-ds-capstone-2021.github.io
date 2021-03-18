@@ -54,4 +54,5 @@ The plot shows that, over time, the average temperature in Madison, WI is increa
 #### Future Plans
 - For the remainder of this quarter, we plan to refine our packages and vignettes even more, while adding more in-depth descriptions and other important metadata about our packages. To do this, we will need to know our datasets inside and out and understand every nuance. 
 - Start deciding which datasets we will import to our final product and map out a plan of how to best collaborate on this. 
+- For next quarter, we will map out the best route to merge all of our individual packages into one, master package.
 
