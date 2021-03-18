@@ -228,7 +228,7 @@ The below normal probability distribution curves represent the variability of th
 * Goal:
     * To plot the given data into a 3D Scatter plot, with Kinship2 coefficients on the x-axis, King coefficients on the y-axis, and Plink coefficients on the z-axis
         * Since Kinship2 is the recorded information on the pedigrees, they are put into the x-axis, and differences between the King and Plink coefficients can be plotted
-        * If the recorded pedigree was correct, the scatter plot would feature all points on a line such that $$x=y=z$$
+        * If the recorded pedigree was correct, the scatter plot would feature all points on a line such that $x=y=z$
 * Key findings:
     * Deviation from that line shows a different coefficient calculated from either King or Plink
     * The color scheme of the plot is based on relatedness - the lighter a plot is, the more related the set of individuals are, based on the Kinship2 coefficient data
@@ -241,7 +241,7 @@ The below normal probability distribution curves represent the variability of th
 **Figure 9. Pair Plot for Relatedness**
 
 The bar plots on the diagonal is a distribution of plink, king, and kinship values. The other graph is ploting two values against each other.
-We expect all the scatter plots to look like $$y=x$$
+We expect all the scatter plots to look like $y=x$
 
 Key findings:
 * Distribution of king is more similar to that of kinship than plink
