@@ -75,7 +75,7 @@ However, what does "high" and "low" mean with respect to a given water character
 
 ### Locating the California Coast on the Heatmaps
 
-In the heatmaps, the cities of Santa Barbara and San Diego have been labelled, and the California coast is along that edge on the right hand side between where the heatmap ends and where the white on the graph starts on the right hand side where San Diego and Santa Barbara are labelled.
+In the heatmaps, the cities of Santa Barbara and San Diego have been labelled, and the California coast is along that edge on the right hand side of the heatmaps between where the heatmap ends and where the white on the graph starts on the right hand side where San Diego and Santa Barbara are labelled.
 
 ```{figure} images/LabelledHeatmap1.png
 ---
