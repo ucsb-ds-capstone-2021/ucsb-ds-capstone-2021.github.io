@@ -21,10 +21,10 @@ The originial fish dataset had observations dating back to the 1950s and over 10
 
 When graphing the subsetted data, we noticed that there were 6 water locations that did not align in the same line/station pattern as the fish data. After further analysis, we found that all 6 anomalies occured on the same date, November of 2013 (Cruise=201311). We decided to elimate this from the final combined data for intial correlations to be able have the most accurate pH and larval fish abundance correlations as possible. 
 
-```{figure} images/LineStationPlot.png
+```{figure} images/anomaly.png
 ---
 height: 300px
-name: linestation-fig
+name: anomaly-fig
 ---
 Plots showing where data is sampled from (blue points are water samples red are fish samples). The left side shows the few water data points that did not match the line and station patterns in the fish dataset.
 ```
