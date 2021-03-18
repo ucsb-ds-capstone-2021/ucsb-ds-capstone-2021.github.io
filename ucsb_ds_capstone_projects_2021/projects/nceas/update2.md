@@ -24,11 +24,8 @@ February 28, 2021
 ###### Examples of our vignettes:
 
 **Sophia** \
-This image shows an initial view of the Bull Shark Count Overtime. This data is from the Florida Coastal Everglades (FCE) LTER Site. I thought this was an interesting plot to include because of the pattern happening YoY. 
-![shark](images/update2sophia1.png)
-
-The second image shows the relationship between Temperature and Bull Sharks. I thought this was important to include because it brings up an important point about the nature of collecting data and taking data with a grain of salt. From a first glance, it appears that more Bull Sharks are counted when the Temperature is higher; however researchers are also more likely to survey when the Temperature is warmer/nicer and that may be a bias in the data and affect the number of Bull Sharks counted.
-![shark2](images/update2sophia2.png)
+I worked with a Fish Abundance dataset from the SBC (Santa Barbara Coastal) LTER. This dataset is particularly interesting because researchers record the date, site, fish type, and length. I chose this visualization of garibaldi fish due to the variety of its recorded length across multiple sites within SBC. The disparity in garibaldi fish length could be due to actual differences or also due to inconsistency in researcher's measuring techniques. This is a great real-world example for future data science students to learn from due to these clear, inherent differences. The fish abundance dataset is extremely workable and had a lot of promise for future analysis.
+![fish](images/update2sophia3.png) 
 
 **Lia** \
 I choose a dataset from the Moorea Coral Reef site that analyzes the changes in abundance of fish functional groups in relation to live/dead coral. My initial visualization was to showcase the obvious: how live coral rates decrease over time. Then, I plotted this per site to maybe account for biases in the data that were unobserved otherwise. We concluded that coral rates continue to decrease (yet as a slower rate), despite what the initial visualization might imply. 
