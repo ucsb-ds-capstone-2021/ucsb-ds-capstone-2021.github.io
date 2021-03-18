@@ -92,7 +92,7 @@ We trichotomized individuals by HbA1c levels. These classes represent an individ
 
 |HbA1c Class|HbA1c levels|Risk level|Description|
 |-----------|------------|----------|:----|
-|     0     |      <7%   | Low Risk |No diabetes, pre-diabetes, or diabetics who are able to control their a1c levels with insulin      |
+|     0     |      <7%   | Low risk |No diabetes, pre-diabetes, or diabetics who are able to control their a1c levels with insulin      |
 |1|7-9%|Moderate risk|Poor control over diabetes; at risk for complications with heart, kidney, and eyes|
 |2|>9%|High risk|A1c levels are critically high; Undiagnosed diabetes patients or when current diabetes management is inadequate|
 
