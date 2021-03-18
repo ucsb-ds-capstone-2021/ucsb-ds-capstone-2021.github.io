@@ -9,8 +9,8 @@ February 28, 2021
 #### Progress
 - Began coworking hours on Fridays in addition to our weekly meeting on Mondays to collaborate, share ideas and troubleshoot.
 - Learned the workflow of creating an R package from scratch based on this [example](https://github.com/isteves/r-pkg-intro ), such as creating documentation, licenses, github repositories, and functions using the say_aloha, devtools, and use_this packages.
-- Created three of our own demo datasets, two where the data was provided for us, and one where we chose our own dataset from any LTER site. 
 - Incorporated what we learned in past weeks, such as the github, tidyverse, and metajam workflows.
+- explored interesting datasets from LTER sites to create vignettes in our R package 
 - Large importance placed on the creation of vignettes and their audiences.
 - Presenting our demo packages and vignettes during our weekly meetings to update the group and to receive feedback. 
 - Our installable R packages can be found here:
