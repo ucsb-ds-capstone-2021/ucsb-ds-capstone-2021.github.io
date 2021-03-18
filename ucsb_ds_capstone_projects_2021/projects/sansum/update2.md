@@ -24,7 +24,7 @@ Faculty
 <!-- #endregion -->
 
 <!-- #region id="n9bxvcswantQ" -->
-### Things we’ve done since last progress report: 
+### Things we’ve done since last progress report
 - Scoring Qualitative Survey Answers
     - Using the scoring rubric to assess scores for survery responses 
     - e.g. for the Social Needs survey, we would assess a score from all the responses that would tell us what the social needs of an individual
@@ -37,8 +37,8 @@ Faculty
 
 <!-- #endregion -->
 
-### A quick refresher: 
-Data:
+### A quick refresher
+Data
 
 - Approximately 230 individuals
 - Each individual participant contributes
@@ -71,14 +71,14 @@ Examples of influences measured
 
     - Demographic information 
 
-Relevant Jargon:
+Relevant Jargon
 
 - Type 2 Diabetes (T2D): Type 2 diabetes is an impairment in the way the body regulates and uses sugar (glucose) as a fuel. This long-term (chronic) condition results in too much sugar circulating in the bloodstream. Eventually, high blood sugar levels can lead to disorders of the circulatory, nervous and immune systems.
 - HbA1c (Hemoglobin A1c): A minor component of hemoglobin (the protein in red blood cells that carries oxygen to the body's tissues) that binds with glucose. HbA1c blood tests are commonly used to measure average blood sugar levels and diagnose diabetes. HbA1c levels are given as a percentage of hemoglobin proteins that are coated with sugar. 
 
 - Five Determinants of Health: Genetic, Biological, Behavioral, Psychological, and Societal/Environmental factors.
 
-Background:
+Background
 
 Diabetes is the fifth leading cause of death among Latino Americans. Almost 1 in 2 Latino adults are at risk of type 2 diabetes. Recent data from the CDC shows that diabetes rates are twice as high for Latinos of Mexican heritage compared with Whites. This excess burden of diabetes is due to complex, poorly-understood interactions between determinants of health. Some of these include economic challenges, cultural/language/health literacy barriers, pollution, etc. Many of these factors are beyond traditional biological factors; by learning more about these relationships we can identify interventions that can target diabetes outside of traditional clinical options.
 
@@ -101,7 +101,7 @@ Through data visualizations and linear regressions, we attempted to discover a r
 
 
 
-### Exploratory Data Analysis:
+### Exploratory Data Analysis
 
 
 <img src = "https://raw.githubusercontent.com/lawrencedlin/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/sansum/visuals/pca.png" width = 200px, height = 200px>
