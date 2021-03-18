@@ -73,6 +73,10 @@ One of our objectives, we hold important for our goal of being able to find corr
 
 However, what does "high" and "low" mean with respect to a given water characteristic? How do we decide on what "high" and "low" should be for a water characteristic. For any given water characteristic, we looked at the range of values it holds overall over all of the time steps (looking at the globally lowest and highest value in the dataset), and base the notion of "high" and "low" for that observed characteristic. At a given location and time step, the closer to the global minimum the characteristic value is, the "lower" and hence more blue it is denoted as, and the closer the the global maximum the value there is, the "higher" and more red it is denoted as. We made sure that for a given characteristic, we keep the same range of values we are color coding by over all time steps, so that this way we can compare how characteristic levels are changing over time visually by looking at how the colors change spatially over time, by looking at all the time step heatmaps for a given characteristic.
 
+### Locating the California Coast on the Heatmaps
+
+In the heatmaps, the cities of Santa Barbara and San Diego have been labelled, and the California coast is along that edge on the right hand side between where the heatmap ends and where the white on the graph starts on the right hand side where San Diego and Santa Barbara are labelled.
+
 ```{figure} images/LabelledHeatmap1.png
 ---
 height: 500px
