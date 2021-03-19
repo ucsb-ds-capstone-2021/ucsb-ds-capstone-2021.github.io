@@ -39,6 +39,8 @@ After this plot, I wanted to determine if there was a difference in snail recove
 ![image](https://user-images.githubusercontent.com/55970232/111717290-fff67f00-8814-11eb-8216-53f4b65d6ea2.png)
 
 After this plot, I wanted to determine if there was a difference in snail recovery of these two species differing in wet or dry seasons. 'Gaenig', which has high resilience as seen in the previous graph, seems to have returned to their previous numbers during the *dry* season surprisingly, despite previous trends of the wet season. On the other hand, we can see that traditionally 'nentri' thrives during the wet season, and we can see this trend slowly start to continue after the devastation of the hurricane. 
+
+
 **Karen** \
 The dataset that I worked with is daily sea-surface temperature measurements, collected from the end of the Scripps Pier at the sea surface and a depth of about 5 meters. The location makes data collected here quite representative of oceanic condition. This dataset is from the California Current Ecosystem (CCE) LTER. CCE is a coastal upwelling biome, located off the southern coast of California. Many of the studies conducted here focus on changes in the ocean ecosystem. This includes a long term ocean warming trend, which can have biological effects on plankton production, fish catch and seabirds. 
 ![sst](images/update2karen.png)
