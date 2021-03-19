@@ -44,7 +44,7 @@ After this plot, I wanted to determine if there was a difference in snail recove
 **Karen** \
 The dataset that I worked with is daily sea-surface temperature measurements, collected from the end of the Scripps Pier at the sea surface and a depth of about 5 meters. The location makes data collected here quite representative of oceanic condition. This dataset is from the California Current Ecosystem (CCE) LTER. CCE is a coastal upwelling biome, located off the southern coast of California. Many of the studies conducted here focus on changes in the ocean ecosystem. This includes a long term ocean warming trend, which can have biological effects on plankton production, fish catch and seabirds. 
 ![sst](images/update2karen.png)
-We can see from the plots above that the sea-surface temperature (annual average, single day highest, and single day lowest) from 1916 to 2015 has been increasing over the years. 
+We can see from the plot above that the sea-surface temperature (annual average, single day highest, and single day lowest) from 1916 to 2015 has been increasing over the years. 
 
 **Sam** \
 The dataset that I'm working on is from the Northeast U.S. Shelf LTER, which observes the ocean ecosystem in the Atlantic in order to draw conclusions and make predictions about food webs and how they continually change over time, as well as how it affects higher trophic levels in the area and biome. The specific dataset is from a series of observations of predator and prey relationships by recording the number of prey found in predators' stomachs. The below plot showcases a relationship between the average sampling depth and the log of the prey count:
