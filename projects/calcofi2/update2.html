@@ -26,7 +26,7 @@
 
     
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.37f24b989f4638ff9c27c22dc7559d4f.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -460,7 +460,8 @@
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
         <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
+            <i class="fas fa-list"></i>
+            Contents
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
@@ -507,6 +508,11 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#locating-the-california-coast-on-the-heatmaps">
+   Locating the California Coast on the Heatmaps
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#accurately-inferring-water-ph-values-based-on-other-water-characteristics">
    Accurately Inferring Water pH Values Based On Other Water Characteristics
   </a>
@@ -548,9 +554,9 @@ certain fish species was very dominant. We have been making more visualizations,
 <h3>Subsetting the Fish Dataset to Match the Water Dataset Sample Locations/Times<a class="headerlink" href="#subsetting-the-fish-dataset-to-match-the-water-dataset-sample-locations-times" title="Permalink to this headline">¶</a></h3>
 <p>The originial fish dataset had observations dating back to the 1950s and over 100 different locations along the California coast. However, the water dataset only had data avilable from 2008 to 2015. We also discovered that the water dataset covered a much smaller set of locations than the fish dataset. Our goal is to be able to correlate the pH calculated from the water dataset with the abundance of fish species from the fish dataset. In order to follow this goal and provide the most accurate readings, we not only subsetted the fish dataset to match the time frame of available water data, but we also wanted to subset with only the locations that matched those where water data is available.</p>
 <p>When graphing the subsetted data, we noticed that there were 6 water locations that did not align in the same line/station pattern as the fish data. After further analysis, we found that all 6 anomalies occured on the same date, November of 2013 (Cruise=201311). We decided to elimate this from the final combined data for intial correlations to be able have the most accurate pH and larval fish abundance correlations as possible.</p>
-<div class="figure align-default" id="linestation-fig">
-<a class="reference internal image-reference" href="../../_images/LineStationPlot.png"><img alt="../../_images/LineStationPlot.png" src="../../_images/LineStationPlot.png" style="height: 300px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Plots showing where data is sampled from (blue points are water samples red are fish samples). The left side shows the few water data points that did not match the line and station patterns in the fish dataset.</span><a class="headerlink" href="#linestation-fig" title="Permalink to this image">¶</a></p>
+<div class="figure align-default" id="anomally-fig">
+<a class="reference internal image-reference" href="../../_images/anomally.png"><img alt="../../_images/anomally.png" src="../../_images/anomally.png" style="height: 300px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Plots showing where data is sampled from (blue points are water samples red are fish samples). The left side shows the few water data points (green X’s) that did not match the line and station patterns in the fish dataset.</span><a class="headerlink" href="#anomally-fig" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="grouping-and-splitting-the-water-and-fish-dataset-by-location">
@@ -584,8 +590,12 @@ certain fish species was very dominant. We have been making more visualizations,
 <h2>Heatmaps of Water Characteristics<a class="headerlink" href="#heatmaps-of-water-characteristics" title="Permalink to this headline">¶</a></h2>
 <p>One of our objectives, we hold important for our goal of being able to find correlations between water characteristics and makeup of fish, is to be able to clearly visualize the levels of a given water characteristic at all present locations, at all given time steps. For example, to be able to view a spatial heatmap of say water TA (Total Alkalinity, which measures the water’s ability to not be affected by an introduction of an acidic compound to the water), where at any given time step, we can spatially visualize the pH levels of the water at all present locations in the dataset by color on a 2D lattitude/longitude graph (red color at a location means high TA, blue color means low TA). We decided on the color theme, of a red color at a graph location indicating higher levels of the observed characteristic and blue color indicating lower level.</p>
 <p>However, what does “high” and “low” mean with respect to a given water characteristic? How do we decide on what “high” and “low” should be for a water characteristic. For any given water characteristic, we looked at the range of values it holds overall over all of the time steps (looking at the globally lowest and highest value in the dataset), and base the notion of “high” and “low” for that observed characteristic. At a given location and time step, the closer to the global minimum the characteristic value is, the “lower” and hence more blue it is denoted as, and the closer the the global maximum the value there is, the “higher” and more red it is denoted as. We made sure that for a given characteristic, we keep the same range of values we are color coding by over all time steps, so that this way we can compare how characteristic levels are changing over time visually by looking at how the colors change spatially over time, by looking at all the time step heatmaps for a given characteristic.</p>
+</div>
+<div class="section" id="locating-the-california-coast-on-the-heatmaps">
+<h2>Locating the California Coast on the Heatmaps<a class="headerlink" href="#locating-the-california-coast-on-the-heatmaps" title="Permalink to this headline">¶</a></h2>
+<p>In the heatmaps, the cities of Santa Barbara and San Diego have been labelled, and the California coast is along that edge on the right hand side of the heatmaps between where the heatmap ends and where the white on the graph starts on the right hand side where San Diego and Santa Barbara are labelled.</p>
 <div class="figure align-default" id="id3">
-<a class="reference internal image-reference" href="../../_images/NewTAHeatmaps.png"><img alt="../../_images/NewTAHeatmaps.png" src="../../_images/NewTAHeatmaps.png" style="height: 500px;" /></a>
+<a class="reference internal image-reference" href="../../_images/LabelledHeatmap1.png"><img alt="../../_images/LabelledHeatmap1.png" src="../../_images/LabelledHeatmap1.png" style="height: 500px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Two spatial heatmaps for the water alkalinity (TA) characteristic for two timesteps. The color at a location indicates the TA level in the water at that location.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 </div>
@@ -594,7 +604,7 @@ certain fish species was very dominant. We have been making more visualizations,
 <p>Our dataset containing the water characteristics contains many water characteristics, about water at any avilable location and time in the ocean from 2008-2015 over various depths. However, the dataset does not contain information about the water pH at these times and locations. Therefore, we wanted to find a way to accurately infer the water pH values at the given location/time water samples in our dataset. This way, at any available location/time in the water dataset, we can also be able to look at the water pH level as well. This is very important to us because we strongly suspect that the pH levels play a very significant part in determinint the makeup of the fish population, and in determining which fish species are more abundant where.</p>
 <p>Due to the paper Perspectives in Environmental Chemistry by Donald L. Macalady (<a class="reference external" href="http://denning.atmos.colostate.edu/ats760/Readings/Tans_1998.pdf">http://denning.atmos.colostate.edu/ats760/Readings/Tans_1998.pdf</a>), as well as the discussion Simplified Carbonate Chemistry of Seawater based on an article by Pieter Tans, and the website <a class="reference external" href="https://biocycle.atmos.colostate.edu/shiny/carbonate/#References">https://biocycle.atmos.colostate.edu/shiny/carbonate/#References</a>, we wrote a Python script using the algorithm from the above mentioned sources that calculates the water pH level, based on using the water DIC (Dissolved Inorganic Carbon), TA (Total Alkalinity), and Temperature.</p>
 <div class="figure align-default" id="id4">
-<a class="reference internal image-reference" href="../../_images/pHHeatmap.png"><img alt="../../_images/pHHeatmap.png" src="../../_images/pHHeatmap.png" style="height: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/LabelledHeatmap2.png"><img alt="../../_images/LabelledHeatmap2.png" src="../../_images/LabelledHeatmap2.png" style="height: 300px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">A sample spatial heatmap for the water pH characteristic levels that display the pH levels over various locations.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
 </div>

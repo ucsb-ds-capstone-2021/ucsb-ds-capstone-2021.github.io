@@ -21,12 +21,12 @@ The originial fish dataset had observations dating back to the 1950s and over 10
 
 When graphing the subsetted data, we noticed that there were 6 water locations that did not align in the same line/station pattern as the fish data. After further analysis, we found that all 6 anomalies occured on the same date, November of 2013 (Cruise=201311). We decided to elimate this from the final combined data for intial correlations to be able have the most accurate pH and larval fish abundance correlations as possible. 
 
-```{figure} images/LineStationPlot.png
+```{figure} images/anomally.png
 ---
 height: 300px
-name: linestation-fig
+name: anomally-fig
 ---
-Plots showing where data is sampled from (blue points are water samples red are fish samples). The left side shows the few water data points that did not match the line and station patterns in the fish dataset.
+Plots showing where data is sampled from (blue points are water samples red are fish samples). The left side shows the few water data points (green X's) that did not match the line and station patterns in the fish dataset.
 ```
 
 ### Grouping and Splitting the Water and Fish Dataset by Location
@@ -73,7 +73,11 @@ One of our objectives, we hold important for our goal of being able to find corr
 
 However, what does "high" and "low" mean with respect to a given water characteristic? How do we decide on what "high" and "low" should be for a water characteristic. For any given water characteristic, we looked at the range of values it holds overall over all of the time steps (looking at the globally lowest and highest value in the dataset), and base the notion of "high" and "low" for that observed characteristic. At a given location and time step, the closer to the global minimum the characteristic value is, the "lower" and hence more blue it is denoted as, and the closer the the global maximum the value there is, the "higher" and more red it is denoted as. We made sure that for a given characteristic, we keep the same range of values we are color coding by over all time steps, so that this way we can compare how characteristic levels are changing over time visually by looking at how the colors change spatially over time, by looking at all the time step heatmaps for a given characteristic.
 
-```{figure} images/NewTAHeatmaps.png
+## Locating the California Coast on the Heatmaps
+
+In the heatmaps, the cities of Santa Barbara and San Diego have been labelled, and the California coast is along that edge on the right hand side of the heatmaps between where the heatmap ends and where the white on the graph starts on the right hand side where San Diego and Santa Barbara are labelled.
+
+```{figure} images/LabelledHeatmap1.png
 ---
 height: 500px
 name: directive-fig
@@ -88,7 +92,7 @@ Our dataset containing the water characteristics contains many water characteris
 
 Due to the paper Perspectives in Environmental Chemistry by Donald L. Macalady (http://denning.atmos.colostate.edu/ats760/Readings/Tans_1998.pdf), as well as the discussion Simplified Carbonate Chemistry of Seawater based on an article by Pieter Tans, and the website https://biocycle.atmos.colostate.edu/shiny/carbonate/#References, we wrote a Python script using the algorithm from the above mentioned sources that calculates the water pH level, based on using the water DIC (Dissolved Inorganic Carbon), TA (Total Alkalinity), and Temperature. 
 
-```{figure} images/pHHeatmap.png
+```{figure} images/LabelledHeatmap2.png
 ---
 height: 300px
 name: directive-fig
