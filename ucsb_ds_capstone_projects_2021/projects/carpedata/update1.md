@@ -11,7 +11,7 @@ Seeing the early success of our parsing function and a fairly simplistic model, 
 
 #### Sampling our Data
 
-<img width="744" alt="Screen Shot 2021-03-15 at 5 25 54 PM" src="https://user-images.githubusercontent.com/43657731/111238047-8449c780-85b3-11eb-8620-204522bf8594.png">
+![datasample](datasample.png)
 
 #### Cleaning Function
 
@@ -34,15 +34,15 @@ def clean_and_tokenize(x):
  
  The classification report of our logistic regression showed a promissing model. 
  
-<img width="483" alt="Screen Shot 2021-03-15 at 5 29 31 PM" src="https://user-images.githubusercontent.com/43657731/111238284-04702d00-85b4-11eb-9027-c6fa7d20a767.png">
+![classreport](lrreport.png)
 
 Examing the words associated with the largest coefficients of our model showed some seemingly intuitive results.
  
-<img width="672" alt="Screen Shot 2021-03-15 at 5 30 22 PM" src="https://user-images.githubusercontent.com/43657731/111238348-22d62880-85b4-11eb-83c4-1dd7e1fbf8da.png">
+![importantwords](importantwords.png)
 
 The precision-recall curve shows our model needs very little hyperparameter tuning for our desired goal of maximizing recall. 
 
-<img width="415" alt="Screen Shot 2021-03-15 at 5 32 56 PM" src="https://user-images.githubusercontent.com/43657731/111238517-7e081b00-85b4-11eb-862d-30c9d115bf56.png">
+![lrpr](lrpr.png)
 
 ## Challenges
 
