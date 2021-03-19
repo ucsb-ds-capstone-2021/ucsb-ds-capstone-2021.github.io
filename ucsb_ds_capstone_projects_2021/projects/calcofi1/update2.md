@@ -77,9 +77,9 @@ fish that is to be caught in the future years because more fish are becoming adu
 from those larvae. 
 
 ### d) Total Catch vs. Larvae Amounts (with years)
-<img src=https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/meanlarvaevscatchlbsopah.png alt="drawing" />
+<img src=https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/opah_fixedc.png alt="drawing" />
 
-<img src=https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/meanlarvaevscatchlbssardine.png alt="drawing">
+<img src=https://raw.githubusercontent.com/gavintieng/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/sardine_fixedc.png alt="drawing">
 
 Additionally, we created plots that visualized the relationship between catch pounds and larvae amounts, with the associated year on each point. Our intention with these plots was to explore whether there was a relationship between a grouping of years that might influence the catch pounds. These graphs were reproduced for each of the 6 species.
 
