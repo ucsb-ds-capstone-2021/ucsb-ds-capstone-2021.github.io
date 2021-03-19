@@ -505,9 +505,10 @@
 </div>
 <div class="section" id="metrics-used-for-understanding">
 <h2>Metrics used for understanding<a class="headerlink" href="#metrics-used-for-understanding" title="Permalink to this headline">¶</a></h2>
-<p>To provide some insight into the metrics that we use to determine accuracy of the models we have a brief introduction to some of the commonly used ones that will be shown in this update.</p>
+<p>To provide some insight into the metrics that we use to determine accuracy of the models we have a brief introduction to some of the commonly used ones that will be shown in this update. In the context of this project a true postive would be the model correctly predicting the class of an object while a false positive would be predicting a class incorrectly or predicting a class for a non existant object. A false negative would be failing to predict the class of an object.</p>
 <p>Precision - True Positive/(True Positive + False Positive)</p>
 <p>Recall - True Positive/(True Positive + False Negative)</p>
+<p>F1 - 2 * (Precision * Recall)/(Precision + Recall)</p>
 <p>Precision x Recall Curve(PR curve) - A plot of Precision vs. Recall</p>
 <p>Average Precision(AP) - Area under the PR curve for each class</p>
 <p>Mean Average Precision(mAP) - Average AP over all classes</p>
@@ -536,7 +537,7 @@
 <p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">Yolo-V5 Scores</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id3">
-<a class="reference internal image-reference" href="../../_images/mAPcurve.png"><img alt="../../_images/mAPcurve.png" src="../../_images/mAPcurve.png" style="height: 150px;" /></a>
+<a class="reference internal image-reference" href="../../_images/mAPcurve.png"><img alt="../../_images/mAPcurve.png" src="../../_images/mAPcurve.png" style="width: 300px; height: 250px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">mAP&#64;0.5 Curve for each epoch</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 </div>
