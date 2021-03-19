@@ -8,19 +8,19 @@ This quarter our team worked with local Insurtech company Carpe Data. Carpe Data
 
 Since our last update we have experimented with a variety of new models. We implemented gradient-boosted-trees using LightGBM and tuned our models hyperparameters using Optuna. Gradient-boosted trees are better for highly unbalanced data like ours where the minority class (positive labels--the ones containing criminal record information) hold greater value than the majority (negative) class and we care more about false negatives than false positives. After tuning we were able to achieve Recall of 96%. A major improvement over our original random forest model.
 
-![image2](https://user-images.githubusercontent.com/43657731/111241637-c7f3ff80-85ba-11eb-846f-d41156020231.png)
+![lgbm](lgbm.png)
 
 From the confusion matrix, we see that the bottom left value (the false negatives) is less than that from the Random Forest model (which had 301 false negatives).  
 
 In order to interpret the model, we plotted variable importance using lightGBM’s feature_importances method. We found the 25 most important features in our model.
 
-![image4](https://user-images.githubusercontent.com/43657731/111241691-dd692980-85ba-11eb-868d-e0ddcf0c3df6.png)
+![importantvariables](importantvariables.png)
 
 As shown in the plot, the words ‘arrested’, ‘charged’, ‘police’ and ‘crime’ are the most important and are words we would associate with criminal records. 
 
 ## Decision Threshold Tuning
 
-![image1](https://user-images.githubusercontent.com/43657731/111241726-f1149000-85ba-11eb-97b9-c71dc8172a1c.png)
+![pr](precisionrecall.png)
 
 A probability threshold of ~0.65 would optimize both recall and precision, however we opted to use a threshold of 0.2 since recall is more important to us. A threshold of 0.2 maximizes recall without sacrificing too much precision and accuracy
 
@@ -28,13 +28,13 @@ A probability threshold of ~0.65 would optimize both recall and precision, howev
 
 Optuna is a python package that runs trials by case on a designated objective function. For hyperparameter tuning, the objective function consists of ranges of parameters tested and tests for best parameters values in that range. Optuna was found to be more efficient and faster than GridSearchCVParameter output is also more precise given its range, not from manually inputted values. For the above plot, over the number of trials, the search objective value becomes closer to 1 or -1,  indicating strong model correlation to the dataset.
 
-![image5](https://user-images.githubusercontent.com/43657731/111241943-641e0680-85bb-11eb-87f2-84083acd8e8d.png)
+![optuna](optuna.png)
 
 
 
 ## Model Assessment
 
-![image3](https://user-images.githubusercontent.com/43657731/111242010-831c9880-85bb-11eb-932c-cd545e251070.png)
+![report](lgbmreport.png)
 
 As shown in the classification report after setting the threshold at 0.2, for websites where we identified arrest information (label of 1) , we got 96% recall, 85% precision and 95% accuracy.
 
