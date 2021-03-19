@@ -28,10 +28,17 @@ I worked with a Fish Abundance dataset from the SBC (Santa Barbara Coastal) LTER
 ![fish](images/update2sophia3.png) 
 
 **Lia** \
-I choose a dataset from the Moorea Coral Reef site that analyzes the changes in abundance of fish functional groups in relation to live/dead coral. My initial visualization was to showcase the obvious: how live coral rates decrease over time. Then, I plotted this per site to maybe account for biases in the data that were unobserved otherwise. We concluded that coral rates continue to decrease (yet as a slower rate), despite what the initial visualization might imply. 
-![coral](images/update2lia1.png)
-![coral2](images/update2lia2.png)
+The dataset I worked with is from the Luquillo site. Luquillo is an experimental forest. After a hurricane Georges in 1998, the dataset I explored investigates the recovery of snails over time. After converted the data from wide to long, I aggregated total snail counts by species and plotted them in a time series to try and see what snail species seemed the most resilient. 
 
+![image](https://user-images.githubusercontent.com/55970232/111717307-071d8d00-8815-11eb-9260-8141544e403e.png)
+
+This graph shows us that 'gaenig' (Gaeotis nigrolineata) has the highest resilience in frog species: their numbers return to the original pre-hurricane levels just a couple years after hurricane Georges. On the other hang, it seems like 'nentri' (Nenia tridens) had a sharp decrease in their numbers, which seems to have plateaued out. I made this graph interactive in R, since there are so many species it helps us analyze trends better.
+
+After this plot, I wanted to determine if there was a difference in snail recovery of these two species differing in wet or dry seasons. 'Gaenig', which has high resilience as seen in the previous graph, seems to have returned to their previous numbers during the *dry* season surprisingly, despite previous trends of the wet season. On the other hand, we can see that traditionally 'nentri' thrives during the wet season, and we can see this trend slowly start to continue after the devastation of the hurricane. 
+
+![image](https://user-images.githubusercontent.com/55970232/111717290-fff67f00-8814-11eb-8216-53f4b65d6ea2.png)
+
+After this plot, I wanted to determine if there was a difference in snail recovery of these two species differing in wet or dry seasons. 'Gaenig', which has high resilience as seen in the previous graph, seems to have returned to their previous numbers during the *dry* season surprisingly, despite previous trends of the wet season. On the other hand, we can see that traditionally 'nentri' thrives during the wet season, and we can see this trend slowly start to continue after the devastation of the hurricane. 
 **Karen** \
 The dataset that I worked with is daily sea-surface temperature measurements, collected from the end of the Scripps Pier at the sea surface and a depth of about 5 meters. The location makes data collected here quite representative of oceanic condition. This dataset is from the California Current Ecosystem (CCE) LTER. CCE is a coastal upwelling biome, located off the southern coast of California. Many of the studies conducted here focus on changes in the ocean ecosystem. This includes a long term ocean warming trend, which can have biological effects on plankton production, fish catch and seabirds. 
 ![sst](images/update2karen.png)
