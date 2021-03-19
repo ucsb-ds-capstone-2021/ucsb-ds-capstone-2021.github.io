@@ -22,7 +22,7 @@ After tokenization:  [101, 1188, 1110, 1103, 22002, 3554, 22074, 22559, 17260, 1
 ```
 
 
-![FUNSDpred](https://github.com/DSCapstone2021/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/appfolio/FUNSDpred.png?raw=true)
+![FUNSDpred](FUNSDpred.png)
 
 (Predictions of LayoutLM for the [FUNSD](https://guillaumejaume.github.io/FUNSD/) dataset, which is similar to the Appfolio Dataset)
 
@@ -32,7 +32,7 @@ After tokenization:  [101, 1188, 1110, 1103, 22002, 3554, 22074, 22559, 17260, 1
 * Implemented a function to visualize the predictions of our models. This is useful in order to see what the label for each bounding box is.
 
 
-![Invoice_Label](https://github.com/DSCapstone2021/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/appfolio/Invoice_Label.PNG?raw=true)
+![Invoice_Label](Invoice_Label.PNG)
 
 
 (from the SROIE dataset: total values labeled)
