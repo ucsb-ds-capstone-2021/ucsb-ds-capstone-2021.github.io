@@ -471,6 +471,18 @@
   <a class="reference internal nav-link" href="#summary">
    Summary
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#task-1-purpose">
+     Task 1 Purpose
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#coefficient-of-relatedness-definition">
+     Coefficient of Relatedness Definition
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#data-processing">
@@ -521,7 +533,17 @@
      3D Scatter Plot
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pair-plot">
+     Pair Plot
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion">
+   Conclusion
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#future-vision">
@@ -547,20 +569,40 @@
 <div class="section" id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <p>We are given .bed/.fam/.bim data about individuals whom we have pedigree information for. We will feed the data into King and Plink program to calculate coefficients of relatedness (what percentage of genes between a pair of individuals is the same). Based on the percentage, we can tell whether two individuals are first degree, second degree, or not related. We will use the Kinship2 software which produces a pedigree object and output coefficients of relateness. Comparing the King and Plink values to the theoretical values produced by Kinship2, we can compare the accuracy of both of the softwares.</p>
-<p><strong>Coefficient of Relatedness</strong></p>
+<div class="section" id="task-1-purpose">
+<h3>Task 1 Purpose<a class="headerlink" href="#task-1-purpose" title="Permalink to this headline">¶</a></h3>
+<p>As per our Goal #1 (outlined in the previous update), we want to be able to figure out how many generations ago the common ancestor was for each family found in the region. Task 1’s purpose was to familiarize us with the dataset for families at hand and verify the reported pedigree with genetic data. Understanding how individuals via their genetic makeup is a crucial step we need to make to be able to match genetic information with speciifc chromosomes, as is required with our first goal.</p>
+</div>
+<div class="section" id="coefficient-of-relatedness-definition">
+<h3>Coefficient of Relatedness Definition<a class="headerlink" href="#coefficient-of-relatedness-definition" title="Permalink to this headline">¶</a></h3>
+<p><img alt="" src="../../_images/Coefficient_of_relatedness.png" /></p>
 <ul class="simple">
 <li><p>Percentages of genes between a pair of individuals that are the same</p></li>
 <li><p>Larger value typically means closer relationship</p></li>
-<li><p>Examples:</p>
-<ul>
-<li><p>Parent-Offspring (OP): 0.5</p></li>
-<li><p>Full siblings: 0.5</p></li>
-<li><p>Half siblings (ex. Relationship between 2 children with same mother but different father): 0.25</p></li>
-<li><p>Avuncular (ex. Relationship between a uncle and his sister’s children): 0.25</p></li>
-<li><p>Cousins: 0.125</p></li>
+<li><p>Examples:</p></li>
 </ul>
-</li>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Relationship</p></th>
+<th class="head"><p>Coefficient</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Parent-Offspring (OP)</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-odd"><td><p>Full Siblings</p></td>
+<td><p>0.5</p></td>
+</tr>
+<tr class="row-even"><td><p>Cousins</p></td>
+<td><p>0.125</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>You can read more from <a class="reference external" href="https://en.wikipedia.org/wiki/Coefficient_of_relationship">Wikipedia</a></p></li>
 </ul>
+</div>
 </div>
 <div class="section" id="data-processing">
 <h2>Data Processing<a class="headerlink" href="#data-processing" title="Permalink to this headline">¶</a></h2>
@@ -621,21 +663,115 @@
 <p>Note: Detailed rationals of why we did such analysis and created such plots, and detailed analysis of what we found out of those plots are explained below each figure</p>
 <p><strong>Consanguineous Couple</strong></p>
 <p>In this family, there is a marriage among relatives. There exist a couple who are cousins, meaning that they are descended from the same common ancestor. Exact individual id numbers are not shown to protect privacy. According to our analysis, Plink and King were giving interesting results whenever the individuals in the pairwise relationship are connected to this consanguineous couple in some ways, such as the children of this couple, the cousins of this couple, etc. We will be referring to this couple in the analysis below.</p>
+<p>We decided to use bar graphs since our overarching goal was to explore the data and analyze what possible patterns exist in the data visually. We chose graphs based on our curiosity on how different visuals might lead to different results. Based on our findings, we have learned that there are other graphs that might be more appropriate (such as box plots) and we plan to explore those in future analysis.</p>
 <p><img alt="" src="../../_images/MeanStd_Comparison.png" /></p>
 <p><strong>Figure 1. Comparison of Mean Based on Software Output</strong></p>
-<p>This graph visualizes how the outputs of all 16 relationship coefficients vary based on the different softwares. The goal was to see how the mean of outputs of the Plink software and King software for each coefficient compare with the theoretical values produced by Kinship2. The black error lines on the graph represent the standard deviation. The coefficient of relatedness 0.53125 does not have a standard deviation line because amongst that coefficient, all of the values produced were very similar to each other.</p>
+<ul class="simple">
+<li><p>Goal:</p>
+<ul>
+<li><p>To see how the mean of outputs of Plink and King for each coefficient compare with the theoretical values produced by Kinship2</p></li>
+<li><p>Black error lines on the graph represent the standard deviation</p></li>
+</ul>
+</li>
+<li><p>Key findings:</p>
+<ul>
+<li><p>Outputs of all 16 relationship coefficients vary based on the software</p></li>
+<li><p>Mean of the values from King are closer to theoretical than Plink (for the most part)</p></li>
+<li><p>0.53125 does not have a standard deviation line because amongst that coefficient which makes sense since all of the values produced were very similar to each other</p></li>
+</ul>
+</li>
+</ul>
 <p><img alt="" src="../../_images/Absolute_Diff.png" /></p>
 <p><strong>Figure 2. Absolute Difference of Mean Compared to Kinship2 Based on Software Output</strong></p>
-<p>Based on this graph, it is clear that King produced results which had a smaller difference from the theoretical value compared to Plink (except for when the coefficient of relatedness is 0.15625). The 0.15625 coefficient seems to cover most relations involving the couple who are cousins. For example, looking at the pair including the child of this couple with any of their cousins results in this relatedness value. The coefficient relatedness value 0.53125 produced King/Plink values whose difference was fairly close to each other. This value represents and parent offspring relationship under the couple who are also cousins.</p>
+<ul class="simple">
+<li><p>Goal:</p>
+<ul>
+<li><p>To see how much difference there is between King and Plink based on the coefficient of relatedness (using absolute difference)</p></li>
+</ul>
+</li>
+<li><p>Math:</p>
+<ul>
+<li><p>diff_plink_kinship2 = abs(kinship2coef - plink_mean)</p></li>
+<li><p>diff_king_kinship2 = abs(kinship2coef - king_mean)</p></li>
+</ul>
+</li>
+<li><p>Key findings:</p>
+<ul>
+<li><p>King produced results which had a smaller difference from the theoretical value compared to Plink (except for when the coefficient of relatedness is 0.15625)</p></li>
+<li><p>0.15625 coefficient covers most relationships involving the couple who are cousins</p>
+<ul>
+<li><p>Ex: The pair including the child of this couple with any of their cousins results in this relatedness value</p></li>
+</ul>
+</li>
+<li><p>0.53125 produced King/Plink values whose difference was fairly close to each other</p>
+<ul>
+<li><p>Represents the parent offspring relationship under the couple who are also cousins</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <p><img alt="" src="../../_images/Percent_Diff.png" /></p>
 <p><strong>Figure 3. Percent Difference of Mean Compared to Kinship2 Based on Software Output</strong></p>
-<p>In addition to the absolute difference, we calculated the percent difference. This allowed us to visualize the differences between what King and Plink produced, irrespective of the Kinship2 theoretical value. This graph shows how the percent of difference between King and Plink with some coefficients is more drastic and obvious in some coefficients over others.  In order to get more insights, we sorted the graph so that the coefficients are ordered based on an increase in difference (see Figure 4 below).</p>
+<ul class="simple">
+<li><p>Goal:</p>
+<ul>
+<li><p>To see how much difference there is between King and Plink based on the coefficient of relatedness (using percent difference)</p></li>
+</ul>
+</li>
+<li><p>Math:</p>
+<ul>
+<li><p>plink_percent_diff = (diff_plink_kinship2 / kinship2coef)</p></li>
+<li><p>king_percent_diff = (diff_king_kinship2 / kinship2coef)</p></li>
+</ul>
+</li>
+<li><p>Key findings:</p>
+<ul>
+<li><p>Difference between King and Plink varies a lot</p></li>
+<li><p>Graph does not directly give a lot of info and therefore we wanted to explore it further by sorting it by difference</p></li>
+</ul>
+</li>
+</ul>
 <p><img alt="" src="../../_images/Sorted_Percent_Diff.png" /></p>
 <p><strong>Figure 4. Sorted Percent Difference of Mean Compared to Kinship2 Based on Software Output</strong></p>
-<p>We found a pattern where the closer relationships (such as parent/offspring and siblings) had much more similar King/Plink values compared to more distant relationships (like an individual with their great-aunt). There are certain coefficients that do not fall in this pattern (such as 0.3123 having a smaller difference than 0.5625). We hypothesize that considering how the differences between King and Plink are very small with the coefficients that are slightly out of order, it might be negligible. This is something that we need to keep in mind when working with the software later and also hopefully dive into deeper so we can test our hypothesis.</p>
+<ul class="simple">
+<li><p>Goal:</p>
+<ul>
+<li><p>Sorted Figure 3 to see if there is any pattern with regards to how King/Plink differ</p></li>
+</ul>
+</li>
+<li><p>Math:</p>
+<ul>
+<li><p>Sorted by difference between percent difference: abs(plink_percent_diff - king_percent_diff)</p></li>
+</ul>
+</li>
+<li><p>Key findings:</p>
+<ul>
+<li><p>Closer relationships (like parent/offspring and siblings) had much more similar values compared to more distant relationships (like an individual with their great-aunt)</p></li>
+<li><p>Certain coefficients do not fall in this pattern (such as 0.3123 having a smaller difference than 0.5625)</p></li>
+<li><p>Our hypothesis: Considering how the differences between King and Plink are very small with the coefficients that are slightly out of order, it might be negligible</p>
+<ul>
+<li><p>Something to keep in mind when working with the software later</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <p><img alt="" src="../../_images/0.5Group_Comparison.png" /></p>
 <p><strong>Figure 5. Comparison of Mean Based on Software Output (0.5 Relationship)</strong></p>
-<p>Because the coefficient 0.5 comprises of both parent/offspring relationship and a sibling relationship, we split it up based on each category. We did not split other coefficients that are shared between different relationships because 0.5 is very closely related and therefore, impacts our findings more. Because both parent/offspring and sibling relationship are very common, we wanted to split them to further analyze the software’s behavior on both in order to go deeper on the outputs of the software. We found that the values produced by Kinship2, Plink, and King were are more similar for parent/offspring than that for siblings.</p>
+<ul class="simple">
+<li><p>Goal:</p>
+<ul>
+<li><p>To split parent/offspring and siblings since they share the same coefficient and both are very close relationships</p></li>
+<li><p>Other coefficients not split since 0.5 is very closely related and impacts our findings more</p></li>
+</ul>
+</li>
+<li><p>Key findings:</p>
+<ul>
+<li><p>Values produced by Kinship2, Plink, and King were are more similar for parent/offspring than that for siblings</p></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 <div class="section" id="visualization">
@@ -646,7 +782,7 @@
 <p><img alt="" src="../../_images/heatmap.png" /></p>
 <p><strong>Figure 6. Difference between King, Plink and Theoretical Heat Map</strong></p>
 <p>The red slanted line is due to the fact that the softwares do not compare an individual with herself, so it is set to an arbitary value as a boundary on the heatmap. To the left, King’s output is compared with Kinship2’s output, which is also the theoretical value. To the right, Plink’s output is compared to Kinship2’s output. The colormap is chosen to be diverging, so that yellow corresponds to zero difference to theoretical. The darker the color, the bigger the difference is. And blue is used for values higher than the theoretical, while red is used for values lower than the theoretical. Ideally, we would expect the map to look mostly yellow.</p>
-<p>Finding:</p>
+<p>Key findings:</p>
 <ul class="simple">
 <li><p>King’s result is closer to the theoretical because most tiles are yellow on King’s side</p></li>
 <li><p>Plink’s result is overall higher than the theoretical because most of the tiles are blue on Plink’s side</p></li>
@@ -654,23 +790,112 @@
 </div>
 <div class="section" id="probability-distribution-curve">
 <h3>Probability Distribution Curve<a class="headerlink" href="#probability-distribution-curve" title="Permalink to this headline">¶</a></h3>
-<p>The below normal probability distribution curves represent the variability of the plink, king, and kinship data respectively – with the shaded region corresponding to existing data from the data set (data outside of this does not exist in data set). We observe that the king and kinship data look nearly identical, compared to the plink data, due to deviations in mean, standard deviation, and extrema.</p>
+<p>The below normal probability distribution curves represent the variability of the plink, king, and kinship data respectively – with the shaded region corresponding to existing data from the data set (data outside of this does not exist in data set).</p>
 <p><img alt="" src="../../_images/normalCurves.png" /></p>
 <p><strong>Figure 7. Normal Gaussian Curve for Plink, King, and Kinship2</strong></p>
-<p>Additionally, after running two-sample z tests for comparing means between Plink and Kinship, Plink and King, and Kinship and King, we found that the p value obtained were near zero for the first two groupings (3.077875030154161e-05 and 7.457103829542305e-05) and a relatively high p value for the latter grouping (0.9424546370785375).</p>
+<ul class="simple">
+<li><p>Goal:</p>
+<ul>
+<li><p>Map out extrema for provided dataset and observe mean/standard deviation with respect to usage of Plink, King, and Kinship2</p></li>
+</ul>
+</li>
+<li><p>Key findings:</p>
+<ul>
+<li><p>King and Kinship2 data look nearly identical, compared to the plink data, due to deviations in mean, standard deviation, and extrema</p></li>
+<li><p>Ran two-sample z tests for comparing means between:</p>
+<ol class="simple">
+<li><p>Plink and Kinship</p>
+<ul>
+<li><p>p-value: 3.077875030154161e-05</p></li>
+</ul>
+</li>
+<li><p>Plink and King</p>
+<ul>
+<li><p>p-value: 7.457103829542305e-05</p></li>
+</ul>
+</li>
+<li><p>Kinship and King</p>
+<ul>
+<li><p>p-value: 0.9424546370785375</p></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>p value obtained was near zero for the first two groupings</p>
+<ul>
+<li><p>low p value corresponds to a low change that the means are likely the same</p></li>
+</ul>
+</li>
+<li><p>Relatively high p value for the latter grouping</p>
+<ul>
+<li><p>high p value corresponds to a high chance that the corresponding means are likely the same</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </div>
 <div class="section" id="d-scatter-plot">
 <h3>3D Scatter Plot<a class="headerlink" href="#d-scatter-plot" title="Permalink to this headline">¶</a></h3>
 <p><img alt="" src="../../_images/scatter3d.png" /></p>
 <p><strong>Figure 8. 3D Scatter Plot for Relatedness</strong></p>
-<p>This visualization plots the given data into a 3D Scatter plot, with Kinship2 coefficients on the x-axis, King coefficients on the y-axis, and Plink coefficients on the z-axis.</p>
-<p>Since Kinship2 is the recorded information on the pedigrees, they are put into the x-axis, and differences between the King and Plink coefficients can be plotted. If the recorded pedigree was correct, the scatter plot would feature all points on a line such that x=y=z. Deviation from that line shows a different coefficient calculated from either King or Plink.</p>
-<p>The color scheme of the plot is based on relatedness - the lighter a plot is, the more related the set of individuals are, based on the Kinship2 coefficient data.</p>
-<p>We find that deviations occur usually with Plink, and that too whenthe relatedness coefficient is small (<span class="math notranslate nohighlight">\(&lt;0.2\)</span>).</p>
+<ul class="simple">
+<li><p>Goal:</p>
+<ul>
+<li><p>To plot the given data into a 3D Scatter plot, with Kinship2 coefficients on the x-axis, King coefficients on the y-axis, and Plink coefficients on the z-axis</p>
+<ul>
+<li><p>Since Kinship2 is the recorded information on the pedigrees, they are put into the x-axis, and differences between the King and Plink coefficients can be plotted</p></li>
+<li><p>If the recorded pedigree was correct, the scatter plot would feature all points on a line such that <span class="math notranslate nohighlight">\(x=y=z\)</span></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Key findings:</p>
+<ul>
+<li><p>Deviation from that line shows a different coefficient calculated from either King or Plink</p></li>
+<li><p>The color scheme of the plot is based on relatedness - the lighter a plot is, the more related the set of individuals are, based on the Kinship2 coefficient data</p></li>
+<li><p>Deviations occur usually with Plink, and that too when the relatedness coefficient is small (<span class="math notranslate nohighlight">\(&lt;0.2\)</span>)</p></li>
+</ul>
+</li>
+</ul>
 </div>
+<div class="section" id="pair-plot">
+<h3>Pair Plot<a class="headerlink" href="#pair-plot" title="Permalink to this headline">¶</a></h3>
+<p><img alt="" src="../../_images/pairplot-I416T.png" /></p>
+<p><strong>Figure 9. Pair Plot for Relatedness</strong></p>
+<p>The bar plots on the diagonal is a distribution of plink, king, and kinship values. The other graph is ploting two values against each other.
+We expect all the scatter plots to look like <span class="math notranslate nohighlight">\(y=x\)</span></p>
+<p>Key findings:</p>
+<ul class="simple">
+<li><p>Distribution of king is more similar to that of kinship than plink</p></li>
+<li><p>plink’s output for the same theoretical value has larger variance than king’s output</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Plink and King both overestimate and underestimate at times</p></li>
+<li><p>Plink deviates from theoretical values more than King</p></li>
+<li><p>Heatmaps itself are not enough to identify pairs of individuals whose pedigree information are incorrect, so Z-values calculation needed</p></li>
+<li><p>Filial relationships were easier to deduce/find from coefficient of relatedness software than manually determining said relationships</p></li>
+</ul>
 </div>
 <div class="section" id="future-vision">
 <h2>Future Vision<a class="headerlink" href="#future-vision" title="Permalink to this headline">¶</a></h2>
+<p>Now, we have an idea about how these three softwares (Plink, King, Kinship2) work and what kind of biases they may have. We are able to make proper assumptions when utilizing these softwares in the future.</p>
+<p><strong>Short Term Goals</strong></p>
+<ul class="simple">
+<li><p>Analyze all the family structures of the PSEN1 variants, and detect outliers of these variants</p></li>
+<li><p>Verify suspected “outliers”</p></li>
+<li><p>Calculate the length of the shared DNA sengment with 2 new tools (VCFTools and BCFTools)</p></li>
+</ul>
+<p><strong>Long Term Vision</strong></p>
+<ul class="simple">
+<li><p>Find the common ancestors for each of the variants</p></li>
+<li><p>Calculate the “age” of each variant</p></li>
+<li><p>Perform more statistical analysis with the metadata</p></li>
+</ul>
 </div>
 </div>
 

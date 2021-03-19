@@ -533,9 +533,59 @@ fill in genetic information for the dataset.</p>
 </div>
 <div class="section" id="background">
 <h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
-<p>Listed below are the terminology and biology concepts that are fundamental to our project.</p>
-<p><strong>Inheritance of Genetic Variation</strong></p>
+<p>Listed below are some definitions and biology concepts that are fundamental to our project. We will be referring to them throughout our updates.</p>
+<p><strong>Alzheimer’s Disease</strong></p>
 <ul class="simple">
+<li><p>A progressive disease that destroys memory and other important mental functions</p></li>
+<li><p>Common symptoms: dementia, memory loss, confusion, more severely, hallucinations, anxiety, etc.</p></li>
+</ul>
+<p><strong>Overview of Genetics</strong></p>
+<ul class="simple">
+<li><p>Nucleotide Sequence</p>
+<ul>
+<li><p>4 types of DNA nucleotides: ATCG</p></li>
+<li><p>Together, with various combination and permutation, they form the DNA sequence</p></li>
+</ul>
+</li>
+<li><p>Gene</p>
+<ul>
+<li><p>A sequence of nucleotides in DNA</p></li>
+</ul>
+</li>
+<li><p>Allele</p>
+<ul>
+<li><p>One of two or more versions of a gene.</p></li>
+</ul>
+</li>
+<li><p>Mutation</p>
+<ul>
+<li><p>A change in the DNA sequence</p></li>
+<li><p>For example:</p>
+<ul>
+<li><p>Original sequence: TAACT</p></li>
+<li><p>Mutated sequence: TAACC (Note that the last T is changed to a C)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Single Nucleotide Polymorphism (SNP)</p>
+<ul>
+<li><p>The most common type of genetic variation among people</p></li>
+<li><p>Each SNP represents a substitution of a single nucleotide at a specific position in the gene, which is somehow similar to a mutation. In our project, we will be referring each of these different substitutions as different variants.</p></li>
+</ul>
+</li>
+<li><p>Common Ancestor</p>
+<ul>
+<li><p>The most recent individual from which all the individuals of the group are descended</p></li>
+</ul>
+</li>
+<li><p>Coefficient of Relatedness</p>
+<ul>
+<li><p>Percentage of genes between a pair of individuals that are the same</p></li>
+</ul>
+</li>
+<li><p>Inheritance of Genetic Variation</p>
+<ul>
 <li><p>Identical by state (IBS)</p>
 <ul>
 <li><p>Two or more than two individuals share similar nucleotide sequences</p></li>
@@ -547,68 +597,6 @@ fill in genetic information for the dataset.</p>
 <li><p>IBD length is correlated with historical relationship</p></li>
 </ul>
 </li>
-</ul>
-<p><strong>Haplotype</strong></p>
-<ul class="simple">
-<li><p>Combination of alleles at different markers along the same chromosome that are inherited together</p></li>
-<li><p>Haplotype decay over time because of recombination</p></li>
-</ul>
-<p><strong>Linkage Equilibrium (LE) vs. Linkage Disequilibrium (LD)</strong></p>
-<ul class="simple">
-<li><p>Linkage Equilibrium (LE) - Independent assortment, Recombination occurs</p></li>
-<li><p>Linkage Disequilibrium (LD) - Coinheritance, Non-randomly inherited</p></li>
-<li><p>Measures</p>
-<ul>
-<li><p>(LE) 0 &lt;– D’ (Recombination) –&gt; 1 (LD)</p></li>
-<li><p>(LE) 0 &lt;– r^2 (Correlation) –&gt; 1 (LD)</p></li>
-</ul>
-</li>
-</ul>
-<p><strong>Illumina NGS Workflow</strong></p>
-<ul class="simple">
-<li><p>Library presentation</p></li>
-<li><p>Cluster generation</p></li>
-<li><p>Sequencing</p></li>
-<li><p>Data analysis</p></li>
-</ul>
-<p><strong>Data Generation Process</strong></p>
-<ul class="simple">
-<li><p>DNA</p></li>
-<li><p>FASTQ - Contains all the information (the reads from all DNA fragments)</p></li>
-<li><p>SAM (Sequence Alignment Mapping) - Align the results to the reference genome</p></li>
-<li><p>VCF (Variant Call Format) - Get rid of all the identical parts and keep the variants info only</p></li>
-</ul>
-<p><strong>Global IBD</strong></p>
-<ul class="simple">
-<li><p>Coefficient of Relatedness</p>
-<ul>
-<li><p>For a pair of individuals separated by m meiosis, the average portion of the genome shared identical by descent (IBD) owing to that shared ancestry is 2^(-m)</p></li>
-</ul>
-</li>
-<li><p>Portion IBD</p>
-<ul>
-<li><p>Parent-Offspring (OP): 1st degree, 50%</p></li>
-<li><p>Full siblings: 1st degree, 50%</p></li>
-<li><p>Half siblings (ex. Relationship between 2 children with same mother but different father): 2nd degree, 25%</p></li>
-<li><p>Avuncular (ex. Relationship between a uncle and his sister’s children): 2nd degree, 25%</p></li>
-<li><p>Cousins: 3rd degree, 12.5%</p></li>
-</ul>
-</li>
-</ul>
-<p><strong>Local IBD</strong></p>
-<ul class="simple">
-<li><p>IBD0: shared 0 allele</p></li>
-<li><p>IBD1: shared 1 allele</p></li>
-<li><p>IBD2: shared 2 alleles</p></li>
-<li><p>The length of the shared IBD segments is approximately exponentially distributed with a mean of 100 m^(-1) cM</p></li>
-</ul>
-<p><strong>Trio Phasing (Haplotype)</strong></p>
-<ul class="simple">
-<li><p>Problem - We do not have genomes from both parents of every individual of interest</p></li>
-<li><p>Solutions</p>
-<ul>
-<li><p>Option 1: Add more relatives into the phasing algorithm</p></li>
-<li><p>Option 2: Use known haplotypes from human populations and change your approach to a supervised method</p></li>
 </ul>
 </li>
 </ul>
