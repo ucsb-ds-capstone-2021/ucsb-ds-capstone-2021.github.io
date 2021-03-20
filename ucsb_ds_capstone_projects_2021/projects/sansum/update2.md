@@ -102,14 +102,9 @@ Through data visualizations and linear regressions, we attempted to discover a r
 
 +++
 
-```{image} ../visuals/pca.png
-:alt: pca
-:width: 250px
-:heigh: 250px
-:align: center
+![](./visuals/pca.png)
 
 We projected the biological data into three-dimensions and plotted the color-coded points to see if we could identify any trends between the HbA1c classes. There were no clear patterns in this 3D plot.
-```
 
 +++
 
