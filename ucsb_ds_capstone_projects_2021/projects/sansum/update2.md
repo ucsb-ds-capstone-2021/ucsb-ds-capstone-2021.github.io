@@ -82,8 +82,6 @@ Background:
 
 Diabetes is the fifth leading cause of death among Latino Americans. Almost 1 in 2 Latino adults are at risk of type 2 diabetes. Recent data from the CDC shows that diabetes rates are twice as high for Latinos of Mexican heritage compared with Whites. This excess burden of diabetes is due to complex, poorly-understood interactions between determinants of health. Some of these include economic challenges, cultural/language/health literacy barriers, pollution, etc. Many of these factors are beyond traditional biological factors; by learning more about these relationships we can identify interventions that can target diabetes outside of traditional clinical options.
 
-
-
 +++
 
 ### Analysis Strategy
@@ -96,8 +94,7 @@ We trichotomized individuals by HbA1c levels. These classes represent an individ
 |1|7-9%|Moderate risk|Poor control over diabetes; at risk for complications with heart, kidney, and eyes|
 |2|>9%|High risk|A1c levels are critically high; Undiagnosed diabetes patients or when current diabetes management is inadequate|
 
-Through data visualizations and linear regressions, we attempted to discover a relationship between features and categorical HbA1c class or the numerical HbA1c level. 
-
+Through data visualizations and linear regressions, we attempted to discover a relationship between features and categorical HbA1c class or the numerical HbA1c level.
 
 +++
 
@@ -125,7 +122,6 @@ The histograms above compare the distribution of HbA1c levels of participants tr
 ![](./visuals/zipcode.png)
 
 We stratified the data set into three different tiers of HbA1c levels and plotted their distribution by zipcode. We found a higher proportion of high-risk individuals  in the 93101 and 93117 zip codes. A possible explanation could be the lower air quality in these zip codes.
-
 
 +++
 
@@ -156,16 +152,12 @@ What did not work:
 - Principle Components Analysis
     - PCA on biological data of observations did not yield any noticeable relationships
 
-
-
 +++ {"id": "RNC7vrIYantS"}
 
 ### Hopes for the future
 - Further analyzing questionnaires
 - Prediction of HbA1c class
 
-
-
-```{code-cell} ipython3
+```{code-cell}
 
 ```
