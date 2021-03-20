@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Update 1 &#8212; Data Science Capstone 2021</title>
+    <title>Update1 &#8212; Data Science Capstone 2021</title>
     
   <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -212,7 +212,7 @@
   <ul class="current collapse-ul">
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Update 1
+     Update1
     </a>
    </li>
    <li class="toctree-l2">
@@ -474,6 +474,23 @@
   <a class="reference internal nav-link" href="#progress">
    Progress
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sampling-our-data">
+     Sampling our Data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cleaning-function">
+     Cleaning Function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#logistic-regression">
+     Logistic Regression
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#challenges">
@@ -497,24 +514,54 @@
         
               <div>
                 
-  <div class="section" id="update-1">
-<h1>Update 1<a class="headerlink" href="#update-1" title="Permalink to this headline">¶</a></h1>
-<p>Project updates</p>
+  <div class="section" id="update1">
+<h1>Update1<a class="headerlink" href="#update1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>Our team is building a model to predict if a website contains information about an arrest. Our data set consists of 5 GB of website’s raw html code. Each row has a websites html code, the url, and a label of 1 or 0. After classifying a website as 1 or 0, we aim to extract the date of the arrest and the arrest code. Our model has webs craping in mind so we care more about minimizing false negatives than false positives.</p>
+<p>This quarter our team worked with local Insurtech company Carpe Data. Carpe Data uses real-time data and predictive scoring for claims, underwriting and book assessment. Our team is building a model to predict if a website contains information about an arrest. Our data set consists of 5 GB of raw html code. Each row has a website’s html code, the url, and a label of 1 or 0. There are 34,307 rows of training data and 8,577 rows of testing data. The data set was web scraped and then labeled for the content. If the label was ‘Potentially unlawful activity’, a new label of 1 was assigned, otherwise a label of 0 was assigned. We aim to accurately classify new websites as either 1 or 0, while striving to avoid false negatives - since our model is for information retrieval. After classification, we aim to extract the date of the arrest and the arrest code.</p>
 </div>
 <div class="section" id="progress">
 <h2>Progress<a class="headerlink" href="#progress" title="Permalink to this headline">¶</a></h2>
-<p>So far we have implemented the first version of our model using Logistic Regression. Our first step was to clean and extract all of the words out of the websites. To this this we removed all punctuation and special characters from the text and then broke the block of text up into individual words. From here we were able to build encode the words into numerical vectors capable of being used for classification. Combining this with our logistic regression model led to promising classification results.</p>
+<p>Given our large dataset, we started by examining a random sample. Using pandas, we randomly selected 5% of the dataset. From here we were able to prototype a function to parse through the html, break the sentence up into individual words, and then remove all punctuation, case, and stopwords (words which convey not meaningful information). This data we fed into a TFIDFvectorizer – TFIDF means term frequency - inverse document frequency. In short, the TFIDF vectorizer turns each document into a numerical feature, weighting the words by their frequency across the entire set of documents. This decreases the importance of very common and meaningless words while excluding words that occur above or below our desired frequency all together. With our new vectorized features we were able to train a logistic regression model to promising results: 94% mean accuracy, 87% recall and 89% precision.<br />
+Seeing the early success of our parsing function and a fairly simplistic model, we expanded our methods to the entire dataset. Our basic parsing/cleaning function was beefed up into a script that could run overnight. Parsing the html, tokenizing the strings, and then removing unnecessary attributes is extremely computationally expensive; our training data set took approximately 15 hours to be cleaned. In the end our training dataset was reduced from 4Gb to 628 MB and our test dataset was reduced from 1Gb to 151 MB. Training a logistic regression model on the full dataset again yielded excellent results - 94% accuracy, 94% recall, and 85% precision.</p>
+<div class="section" id="sampling-our-data">
+<h3>Sampling our Data<a class="headerlink" href="#sampling-our-data" title="Permalink to this headline">¶</a></h3>
+<p><img alt="datasample" src="../../_images/datasample.png" /></p>
+</div>
+<div class="section" id="cleaning-function">
+<h3>Cleaning Function<a class="headerlink" href="#cleaning-function" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">clean_and_tokenize</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Takes in string of html codes and returns cleaned and tokenized </span>
+<span class="sd">    requires BeautifulSoup, nltk.word_tokenize, nltk.corpus stopwords&quot;&quot;&quot;</span>
+    <span class="c1">#stemmer = PorterStemmer()</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;lxml&#39;</span><span class="p">)</span> <span class="c1">#parses html</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span> <span class="c1">#convert to text</span>
+    <span class="n">tokens</span> <span class="o">=</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="c1">#tokenize</span>
+    <span class="n">stop_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">))</span> <span class="c1">#remove stop words</span>
+    <span class="c1"># remove all tokens that are not alphabetic </span>
+    <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">tokens</span> <span class="k">if</span> <span class="n">word</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span> <span class="ow">and</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span><span class="p">]</span>
+    <span class="n">w</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">w</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="logistic-regression">
+<h3>Logistic Regression<a class="headerlink" href="#logistic-regression" title="Permalink to this headline">¶</a></h3>
+<p>The classification report of our logistic regression showed a promissing model.</p>
+<p><img alt="classreport" src="../../_images/lrreport.png" /></p>
+<p>Examing the words associated with the largest coefficients of our model showed some seemingly intuitive results.</p>
+<p><img alt="importantwords" src="../../_images/importantwords.png" /></p>
+<p>The precision-recall curve shows our model needs very little hyperparameter tuning for our desired goal of maximizing recall.</p>
+<p><img alt="lrpr" src="../../_images/lrpr.png" /></p>
+</div>
 </div>
 <div class="section" id="challenges">
 <h2>Challenges<a class="headerlink" href="#challenges" title="Permalink to this headline">¶</a></h2>
-<p>Our biggest challenge so far is the sheer amount of time it takes to clean data. Our cleaning and tokenization script took almost 15 hours to run on the data set (on a laptop). Bringing this time down would be ideal. This could be accomplished through employing employing cloud computing infrastructure, parallelization, and increasing the efficiency of our code.</p>
+<p>Our biggest challenge so far is the sheer amount of time it takes to clean data. Our cleaning and tokenization script took almost 15 hours to run on the data set (on a laptop). Bringing this time down would be ideal so we could experiment with other forms of tokenization (such as bigrams or trigrams). This could be accomplished through employing cloud computing infrastructure, parallelization, and increasing the efficiency of our code.</p>
 </div>
 <div class="section" id="next-steps">
 <h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
-<p>Our next steps are to implement text extraction on to of our model. We are going to start with regular expressions. In terms of our base model, we are going to work on hyper-parameter tuning to maximize recall. We are also going to experiment with other models such as Random Forests and Neural Networks.</p>
+<p>Our next step is to fine tune our model and experiment with other models such as Random Forests, Boosted Trees, Naive Bayes, and Neural Networks. We are going to empoy hyperparameter tuning to maximize the recall of our potential models and then select our best performer. After we have found an optimal model, we are going to implement text to obtain arrest codes and arrest dates from our positively classified documents. To do this we are going to start with regular expressions and then potentially move on to more advanced custom functions or model based solutions.</p>
 </div>
 </div>
 

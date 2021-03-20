@@ -55,7 +55,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="ccber" href="../ccber/description.html" />
-    <link rel="prev" title="Update 1" href="update1.html" />
+    <link rel="prev" title="Update1" href="update1.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -212,7 +212,7 @@
   <ul class="current collapse-ul">
    <li class="toctree-l2">
     <a class="reference internal" href="update1.html">
-     Update 1
+     Update1
     </a>
    </li>
    <li class="toctree-l2 current active">
@@ -466,8 +466,30 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#progress">
-   Progress
+  <a class="reference internal nav-link" href="#overview">
+   Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-progress">
+   Model Progress
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#decision-threshold-tuning">
+   Decision Threshold Tuning
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hyperparameter-tuning">
+     Hyperparameter Tuning
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-assessment">
+   Model Assessment
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -494,9 +516,34 @@
                 
   <div class="section" id="update-2">
 <h1>Update 2<a class="headerlink" href="#update-2" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="progress">
-<h2>Progress<a class="headerlink" href="#progress" title="Permalink to this headline">¶</a></h2>
-<p>Since our last update we have experimented with a variety of new models. We implemented gradient-boosted-tree’s using LightGBM and tuned our models hyperparameters using Optuna. Gradient-boosted trees are better for highly unbalanced data like ours where the minority class (positive labels–the ones containing criminal record information) hold greater value than the majority (negative) class and we care more about false negatives than false positives. After tuning we were able to achieve Recall of nearly 90%. A good improvement over our original model.</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>This quarter our team worked with local Insurtech company Carpe Data. Carpe Data uses real-time data and predictive scoring for claims, underwriting and book assessment. Our team is building a model to predict if a website contains information about an arrest. Our data set consists of 5 GB of raw html code. Each row has a website’s html code, the url, and a label of 1 or 0. There are 34,307 rows of training data and 8,577 rows of testing data. The data set was web scraped and then labeled for the content. If the label was ‘Potentially unlawful activity’, a new label of 1 was assigned, otherwise a label of 0 was assigned. We aim to accurately classify new websites as either 1 or 0, while striving to avoid false negatives - since our model is for information retrieval. After classification, we aim to extract the date of the arrest and the arrest code.</p>
+</div>
+<div class="section" id="model-progress">
+<h2>Model Progress<a class="headerlink" href="#model-progress" title="Permalink to this headline">¶</a></h2>
+<p>Since our last update we have experimented with a variety of new models. We implemented gradient-boosted-trees using LightGBM and tuned our models hyperparameters using Optuna. Gradient-boosted trees are better for highly unbalanced data like ours where the minority class (positive labels–the ones containing criminal record information) hold greater value than the majority (negative) class and we care more about false negatives than false positives. After tuning we were able to achieve Recall of 96%. A major improvement over our original random forest model.</p>
+<p><img alt="lgbm" src="../../_images/lgbm.png" /></p>
+<p>From the confusion matrix, we see that the bottom left value (the false negatives) is less than that from the Random Forest model (which had 301 false negatives).</p>
+<p>In order to interpret the model, we plotted variable importance using lightGBM’s feature_importances method. We found the 25 most important features in our model.</p>
+<p><img alt="importantvariables" src="../../_images/importantvariables.png" /></p>
+<p>As shown in the plot, the words ‘arrested’, ‘charged’, ‘police’ and ‘crime’ are the most important and are words we would associate with criminal records.</p>
+</div>
+<div class="section" id="decision-threshold-tuning">
+<h2>Decision Threshold Tuning<a class="headerlink" href="#decision-threshold-tuning" title="Permalink to this headline">¶</a></h2>
+<p><img alt="pr" src="../../_images/precisionrecall.png" /></p>
+<p>A probability threshold of ~0.65 would optimize both recall and precision, however we opted to use a threshold of 0.2 since recall is more important to us. A threshold of 0.2 maximizes recall without sacrificing too much precision and accuracy</p>
+<div class="section" id="hyperparameter-tuning">
+<h3>Hyperparameter Tuning<a class="headerlink" href="#hyperparameter-tuning" title="Permalink to this headline">¶</a></h3>
+<p>Optuna is a python package that runs trials by case on a designated objective function. For hyperparameter tuning, the objective function consists of ranges of parameters tested and tests for best parameters values in that range. Optuna was found to be more efficient and faster than GridSearchCVParameter output is also more precise given its range, not from manually inputted values. For the above plot, over the number of trials, the search objective value becomes closer to 1 or -1,  indicating strong model correlation to the dataset.</p>
+<p><img alt="optuna" src="../../_images/optuna.png" /></p>
+</div>
+</div>
+<div class="section" id="model-assessment">
+<h2>Model Assessment<a class="headerlink" href="#model-assessment" title="Permalink to this headline">¶</a></h2>
+<p><img alt="report" src="../../_images/lgbmreport.png" /></p>
+<p>As shown in the classification report after setting the threshold at 0.2, for websites where we identified arrest information (label of 1) , we got 96% recall, 85% precision and 95% accuracy.</p>
+<p>In order to further assess our models, we used metrics such as the ROC curve, the Precision vs. Recall curve, and the Confusion matrix. Since we are dealing with criminal record information, we care more about minimizing our false negatives since they are more harmful if missed (so we care more about high recall than anything else).</p>
 </div>
 <div class="section" id="challenges">
 <h2>Challenges<a class="headerlink" href="#challenges" title="Permalink to this headline">¶</a></h2>
@@ -504,7 +551,7 @@
 </div>
 <div class="section" id="next-steps">
 <h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">¶</a></h2>
-<p>Our next steps are to continue to work on extracting the dates and arrest codes from our positive predicted data. Furthermore, we want to look at embedded and combined models to possibly deepen our understanding and effectiveness of the models to interpret our results. We are exploring REGEX and more complicated language models for information extraction.</p>
+<p>Our next steps are to continue to work on extracting the dates and arrest codes from our positive predicted data. Furthermore, we want to look at embedded and combined models such as Neural Networks  and combined models results (ex: positive tree, positive log, negative lgbm) to potentially increase the effectiveness of our models. We are exploring REGEX and more complicated language models for information extraction. We aim to improve parsing and tokenization of data by experimenting with stemming, bigrams, and trigrams and potentially use  dimensionality reduction to make our large dataset more manageable. Finally, we wish to expand on the  interpretations of the models and remove any harmful bias from our features.</p>
 </div>
 </div>
 
@@ -533,7 +580,7 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="update1.html" title="previous page">Update 1</a>
+    <a class='left-prev' id="prev-link" href="update1.html" title="previous page">Update1</a>
     <a class='right-next' id="next-link" href="../ccber/description.html" title="next page">ccber</a>
 
         </div>
