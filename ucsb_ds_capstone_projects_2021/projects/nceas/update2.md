@@ -30,13 +30,13 @@ I worked with a Fish Abundance dataset from the SBC (Santa Barbara Coastal) LTER
 **Lia** \
 The dataset I worked with is from the Luquillo site. Luquillo is an experimental forest. After a hurricane Georges in 1998, the dataset I explored investigates the recovery of snails over time. After converted the data from wide to long, I aggregated total snail counts by species and plotted them in a time series to try and see what snail species seemed the most resilient. 
 
-![image](https://user-images.githubusercontent.com/55970232/111717307-071d8d00-8815-11eb-9260-8141544e403e.png)
+![snails](images/snails1.png)
 
 This graph shows us that 'gaenig' (Gaeotis nigrolineata) has the highest resilience in frog species: their numbers return to the original pre-hurricane levels just a couple years after hurricane Georges. On the other hang, it seems like 'nentri' (Nenia tridens) had a sharp decrease in their numbers, which seems to have plateaued out. I made this graph interactive in R, since there are so many species it helps us analyze trends better.
 
 After this plot, I wanted to determine if there was a difference in snail recovery of these two species differing in wet or dry seasons. 'Gaenig', which has high resilience as seen in the previous graph, seems to have returned to their previous numbers during the *dry* season surprisingly, despite previous trends of the wet season. On the other hand, we can see that traditionally 'nentri' thrives during the wet season, and we can see this trend slowly start to continue after the devastation of the hurricane. 
 
-![image](https://user-images.githubusercontent.com/55970232/111717290-fff67f00-8814-11eb-8216-53f4b65d6ea2.png)
+![snails](/images/snails2.png)
 
 After this plot, I wanted to determine if there was a difference in snail recovery of these two species differing in wet or dry seasons. 'Gaenig', which has high resilience as seen in the previous graph, seems to have returned to their previous numbers during the *dry* season surprisingly, despite previous trends of the wet season. On the other hand, we can see that traditionally 'nentri' thrives during the wet season, and we can see this trend slowly start to continue after the devastation of the hurricane. 
 
