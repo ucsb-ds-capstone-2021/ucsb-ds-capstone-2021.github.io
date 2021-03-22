@@ -36,7 +36,7 @@ This graph shows us that 'gaenig' (Gaeotis nigrolineata) has the highest resilie
 
 After this plot, I wanted to determine if there was a difference in snail recovery of these two species differing in wet or dry seasons. 'Gaenig', which has high resilience as seen in the previous graph, seems to have returned to their previous numbers during the *dry* season surprisingly, despite previous trends of the wet season. On the other hand, we can see that traditionally 'nentri' thrives during the wet season, and we can see this trend slowly start to continue after the devastation of the hurricane. 
 
-![snails](/images/snails2.png)
+![snails](images/snails2.png)
 
 After this plot, I wanted to determine if there was a difference in snail recovery of these two species differing in wet or dry seasons. 'Gaenig', which has high resilience as seen in the previous graph, seems to have returned to their previous numbers during the *dry* season surprisingly, despite previous trends of the wet season. On the other hand, we can see that traditionally 'nentri' thrives during the wet season, and we can see this trend slowly start to continue after the devastation of the hurricane. 
 
