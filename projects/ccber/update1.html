@@ -466,23 +466,40 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#week-1">
-   Week 1
+  <a class="reference internal nav-link" href="#overview">
+   Overview
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#week-2">
-   Week 2
+  <a class="reference internal nav-link" href="#progress">
+   Progress
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#week-1">
+     Week 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#week-2">
+     Week 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#week-3">
+     Week 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#week-4">
+     Week 4
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#week-3">
-   Week 3
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#week-4">
-   Week 4
+  <a class="reference internal nav-link" href="#conclusion-and-next-steps">
+   Conclusion and Next Steps
   </a>
  </li>
 </ul>
@@ -499,36 +516,57 @@
                 
   <div class="section" id="update-1">
 <h1>Update 1<a class="headerlink" href="#update-1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>For the first half of this winter quarter, we focused on doing exploratory analysis on our <a class="reference external" href="https://www.globalbioticinteractions.org/about">Global Biotic Interactions (GloBI)</a> dataset. This dataset contains information on interactions between bees and plants. Each row represents an interaction, and the data comes from museum records, publications, and from people submitting their sightings/observations to be recorded online. There are columns detailing the taxonomy of the bees and the plants, like what family, genus, or species they belong to. There is also a column detailing what is the source of this sighting, which is the citation.</p>
+<p>Our goal is to understand interactions between bees and flowers, like which types of bees visit which types of flowers and why. To accomplish this, we made network graphs and heatmaps with various R and Python packages like <a class="reference external" href="https://igraph.org/r/">igraph</a>, <a class="reference external" href="https://www.rdocumentation.org/packages/bipartite/versions/2.16">bipartite</a>, <a class="reference external" href="https://networkx.org/">NetworkX</a>, <a class="reference external" href="https://plotly.com/python/">Plotly</a>, <a class="reference external" href="https://cran.r-project.org/web/packages/ggraph/index.html">ggraph</a>, and <a class="reference external" href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a>.</p>
+</div>
+<div class="section" id="progress">
+<h2>Progress<a class="headerlink" href="#progress" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="week-1">
-<h2>Week 1<a class="headerlink" href="#week-1" title="Permalink to this headline">¶</a></h2>
+<h3>Week 1<a class="headerlink" href="#week-1" title="Permalink to this headline">¶</a></h3>
 <p>We spent the first week learning about our research interest (<a class="reference external" href="https://www.wikiwand.com/en/Bee">bees</a>) and exploring the <a class="reference external" href="https://www.globalbioticinteractions.org/about">Global Biotic Interactions (GloBI)</a> dataset. Our data come from literature reports, human observations, and natural history specimen.
-Goal of GloBI is to structure data into a usable form (csv., tsv.). <br />
-<img src="http://clipart-library.com/images/yTk4eXgTE.png" width="200" /><br />
-During our weekly meeting with the sponsors, we gained substantial knowledge about bees, especially the vital role it plays in global biotic interactions. In particular, we want to focus our research on the interactions between bees and plants. Interactions are directional, i.e. “Apis Mellifera pollinates brasicca rapa” will be categorized into source, interaction, and target, respectively.<br />
-The goal for this week is to get a sense of the strengths and liminations of differnt query methods. Our options are direct access to the data files, <a class="reference external" href="https://github.com/ropensci/rglobi">rglobi</a> package, <a class="reference external" href="https://github.com/globalbioticinteractions/globalbioticinteractions/wiki/API">GloBI Web API</a>, and <a class="reference external" href="https://neo4j.globalbioticinteractions.org/browser/">Cypher</a> on <a class="reference external" href="https://neo4j.com/developer/cypher/">Neo4j</a>. We discovered that these methods operate on the same dataset, which renders the same result regardless which one we use.</p>
+Goal of GloBI is to structure data into a usable form (csv., tsv.).</p>
+<p><img alt="Image" src="../../_images/bee.PNG" /></p>
+<p>During our weekly meeting with the sponsors, we gained substantial knowledge about bees, especially the vital role it plays in global biotic interactions. In particular, we want to focus our research on the interactions between bees and plants. Interactions are directional, i.e. “Apis Mellifera pollinates brasicca rapa” will be categorized into source, interaction, and target, respectively.</p>
+<p>The goal for this week is to get a sense of the strengths and liminations of differnt query methods. Our options are direct access to the data files, <a class="reference external" href="https://github.com/ropensci/rglobi">rglobi</a> package, <a class="reference external" href="https://github.com/globalbioticinteractions/globalbioticinteractions/wiki/API">GloBI Web API</a>, and <a class="reference external" href="https://neo4j.globalbioticinteractions.org/browser/">Cypher</a> on <a class="reference external" href="https://neo4j.com/developer/cypher/">Neo4j</a>. We discovered that these methods operate on the same dataset, which renders the same result regardless which one we use.</p>
 </div>
 <div class="section" id="week-2">
-<h2>Week 2<a class="headerlink" href="#week-2" title="Permalink to this headline">¶</a></h2>
+<h3>Week 2<a class="headerlink" href="#week-2" title="Permalink to this headline">¶</a></h3>
 <p>During our meeting for week 2, we went over the 8 levels of taxonomy, which is shown below. We also learned about the 7 bee families. For instance, the honey bee belongs to Apidae, the largest bee family.
-<img alt="" src="https://cdn.britannica.com/78/103778-050-D797CF4F/Animals-groups-organisms-succession-general-particular.jpg" /></p>
-<p><img alt="" src="https://github.com/angelchen7/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-01-29%20at%204.16.20%20PM.png?raw=true" /></p>
+<img alt="Image" src="../../_images/Animals-groups.jpg" /></p>
+<p><img alt="Image" src="projects/ccber/Screen%20Shot%202021-01-29%20at%204.16.20%20PM.png" /></p>
 <p>Then, we discussed our results from using rglobi, the GloBI Web API, and Cypher. Each querying method has its own pros and cons. For example, rglobi was easy to use, but it didn’t seem to have complete information in all of its columns. Cypher had a big learning curve, so we chose to not use that method. In the end, we decided it was better to use the raw csv file, which was 15 GB, for completeness.</p>
 <p>The goals after this meeting were to take some time to explore the raw dataset, since it was huge, check for reflexiveness in the data, and begin thinking about how we want to visualize these pollination networks. Additionally, we needed to brainstorm how to work with large data files that need to be shared and updated periodically. Some of us chose to explore the dataset with R while others were more comfortable with Python.</p>
 </div>
 <div class="section" id="week-3">
-<h2>Week 3<a class="headerlink" href="#week-3" title="Permalink to this headline">¶</a></h2>
+<h3>Week 3<a class="headerlink" href="#week-3" title="Permalink to this headline">¶</a></h3>
 <p>We discussed the attributes and qualities of the raw data. Also, we explored different options for querying and subsetting the data in more detail. Our sponsors provided more insight on variations in the interactions data. Some of this variation includes: size, coloration, foraging behavior, and sociality of bees. There is significant diversity in the Apidae bee family. Classification and taxonomy can be used to filter some of this variation.</p>
-<p><img alt="" src="https://github.com/angelchen7/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/different_bees.png?raw=true" /></p>
-<p>Another topic for consideration was visualization. We learned of different methods to visualize network data. Some of our options included igraph &amp; bipartite for R packages; NetworkX, Plotly, Dash for Python packages. By visualizing this data, we would gain more insight on the network structure and attributes of the data.</p>
-<p><img alt="" src="https://github.com/angelchen7/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Rplot04.png?raw=true" /></p>
+<p><img alt="Image" src="../../_images/different_bees.png" /></p>
+<p>Another topic for consideration was visualization. We learned of different methods to visualize network data. Some of our options included <a class="reference external" href="https://igraph.org/r/">igraph</a> &amp; <a class="reference external" href="https://www.rdocumentation.org/packages/bipartite/versions/2.16">bipartite</a> for R packages; <a class="reference external" href="https://networkx.org/">NetworkX</a>, <a class="reference external" href="https://plotly.com/python/">Plotly</a>, <a class="reference external" href="https://dash.plotly.com/">Dash</a> for Python packages. By visualizing this data, we would gain more insight on the network structure and attributes of the data.</p>
+<div class="figure align-default" id="melittidae-network1">
+<img alt="../../_images/Rplot04.png" src="../../_images/Rplot04.png" />
+<p class="caption"><span class="caption-number">Fig. 8 </span><span class="caption-text">This is a very preliminary network graph for interactions between species in the Melittidae bee family and all plant species.</span><a class="headerlink" href="#melittidae-network1" title="Permalink to this image">¶</a></p>
+</div>
 </div>
 <div class="section" id="week-4">
-<h2>Week 4<a class="headerlink" href="#week-4" title="Permalink to this headline">¶</a></h2>
+<h3>Week 4<a class="headerlink" href="#week-4" title="Permalink to this headline">¶</a></h3>
 <p>This week we focused on the specific bee family melittidae to create interaction networks. Our python group had some difficulty with creating the network visualizations. We tried using NetworkX and Plotly but there was a pretty steep learning curve when it came to the syntax involved. One issue we had was that the specific plotly module we were using required numerical values so we would have to assign values to the different melittidae interactions in our data. We were able to get some networks plotted but they were in no way presentable or useful.</p>
 <p>In R, we spent time cleaning data in a way that would be useful in coding various visualization methods. In particular, building ways to filter data by various genus, species, and family levels took a good amount of time. To accomplish this, and also to use the information to identify the unique interactions between interesting bees and various types of plants, we utilized the dplyr and tidyr quite a bit. Finally, using these data, we were able to assign occurrence quantities to these interactions, inspiring the use of ggplot and its heat map feature to give us more useful results.</p>
 <p>In meeting, we discussed ideas for various filtering methods and their respective uses, and also discussed future possibilities for use of such data.</p>
-<p><img alt="" src="https://github.com/mitchellrapaport/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-01-30%20at%205.10.01%20PM.png?raw=true" /></p>
-<p><img alt="" src="https://github.com/mitchellrapaport/ucsb-ds-capstone-2021.github.io/blob/main/ucsb_ds_capstone_projects_2021/projects/ccber/Screen%20Shot%202021-01-27%20at%202.16.23%20PM.png?raw=true" /></p>
+<div class="figure align-default" id="melittidae-heatmap">
+<img alt="../../_images/melittidae_heatmap.png" src="../../_images/melittidae_heatmap.png" />
+<p class="caption"><span class="caption-number">Fig. 9 </span><span class="caption-text">A preliminary heatmap of the interactions between species in the Melittidae family and all plant species. Some fields in the species name column were blank so the genus was used instead. There seems to be the most interactions between Hesperapis carinata and Helianthus. The citation count is synonymous with interaction count.</span><a class="headerlink" href="#melittidae-heatmap" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-default" id="melittidae-network2">
+<img alt="../../_images/melittidae_network.png" src="../../_images/melittidae_network.png" />
+<p class="caption"><span class="caption-number">Fig. 10 </span><span class="caption-text">Another network graph for interactions between species in the Melittidae bee family and all plant species. It also shows that the strongest connection is between Hesperapis carinata and Helianthus.</span><a class="headerlink" href="#melittidae-network2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="conclusion-and-next-steps">
+<h2>Conclusion and Next Steps<a class="headerlink" href="#conclusion-and-next-steps" title="Permalink to this headline">¶</a></h2>
+<p>There are many ways to present the information in a network. Both heatmaps and network graphs have their own pros and cons. For example, the heatmap seems to present information in a neater way whereas the arrows in the network graph can lead someone’s eyes all over the page. However, it is easier to categorize the species into broader categories like genus by color-coding the nodes in network graphs. For our next steps, we plan to refine our visualizations even more and hone in on a more specific goal for our project.</p>
 </div>
 </div>
 

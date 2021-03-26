@@ -514,7 +514,7 @@
 <p>IoU - Intersection of predicted and ground truth mask/Union of the predicted and ground truth mask. Visual below for reference.</p>
 <div class="figure align-default" id="directive-fig">
 <a class="reference internal image-reference" href="../../_images/1_6B58Ohs9t7sRjYISbYZs-Q.png"><img alt="../../_images/1_6B58Ohs9t7sRjYISbYZs-Q.png" src="../../_images/1_6B58Ohs9t7sRjYISbYZs-Q.png" style="height: 150px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">IoU Visual</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 31 </span><span class="caption-text">IoU Visual</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">¶</a></p>
 </div>
 <p>We use IoU to set a threshold that is used to categorize a predicted label as a true or false positive. The standard IoU threshold is generally 0.5 so our metrics will show our mAP evaluted at a threshold of .5 (mAP&#64;0.5) and also a much higher threshold of mAP&#64;0.5:0.95, this threshold is set at 0.5 and increases at a step size of 0.05 up to 0.95.</p>
 </div>
@@ -524,7 +524,7 @@
 <p>Unfortunately we didn’t have as much success. Pictured below is our results with a Yolo-V3 model.</p>
 <div class="figure align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/108645101-84e4b780-7466-11eb-9c89-9e862626f3c1-1.png"><img alt="../../_images/108645101-84e4b780-7466-11eb-9c89-9e862626f3c1-1.png" src="../../_images/108645101-84e4b780-7466-11eb-9c89-9e862626f3c1-1.png" style="height: 150px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">Yolo-V3 metrics</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 32 </span><span class="caption-text">Yolo-V3 metrics</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <p>Here our model differs from Joe Hoellers because we attempted to classify dogs and our dataset only contained 14 images with this label so we assume we didn’t have a large enough sample to accurately predict them. If we remove the dog classifications from our score our mAP&#64;0.5 for all the classes would reach 0.745. Attempting to reproduce the results from Joe Hoeller was a lofty goal and considering the aim of our project is to analyze the effect of noise on a object detection model our main concern was to train a baseline model to test against later as opposed to acheiving the highest scores possible. Therefore we also decided to train the newest Yolo model, Yolo-V5, which we will use as our baseline for the time being.</p>
 <p>Below is the scores from our Yolo-V5 model. We achieved higher scores across the board compared to V3 model and feel comftorable enough with these metrics to use as our baseline for testing. Note that we removed the dog classifications from this model.</p>
@@ -533,11 +533,11 @@
 </ul>
 <div class="figure align-default" id="id2">
 <a class="reference internal image-reference" href="../../_images/Yolov5.png"><img alt="../../_images/Yolov5.png" src="../../_images/Yolov5.png" style="height: 150px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">Yolo-V5 Scores</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 33 </span><span class="caption-text">Yolo-V5 Scores</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id3">
 <a class="reference internal image-reference" href="../../_images/mAPcurve.png"><img alt="../../_images/mAPcurve.png" src="../../_images/mAPcurve.png" style="height: 150px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">mAP&#64;0.5 Curve for each epoch</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 34 </span><span class="caption-text">mAP&#64;0.5 Curve for each epoch</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="next-steps">
