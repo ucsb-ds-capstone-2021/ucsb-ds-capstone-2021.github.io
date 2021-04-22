@@ -20,6 +20,7 @@
       sections:
         - file: projects/appfolio/update1
         - file: projects/appfolio/update2
+        - file: projects/appfolio/update3
     - file: projects/calcofi1/description
       sections:
         - file: projects/calcofi1/update1
