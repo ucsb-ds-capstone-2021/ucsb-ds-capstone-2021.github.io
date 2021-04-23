@@ -21,14 +21,14 @@ In this diagram rectangles represent data, hexagons represent processes, and the
 
 Now that we've created this pipeline we're ready to test different types of noise on the whole dataset. Below are examples of different types of noise we plan to experiment with. 
 
-```{figure} Noise Gallery 1.png
+```{figure} Noise-Gallery 1.png
 ---
 height: 150px
 name: directive-fig
 ---
 Example Noise
 ```
-```{figure} Noise Gallery 2.png
+```{figure} Noise-Gallery 2.png
 ---
 height: 150px
 name: directive-fig
