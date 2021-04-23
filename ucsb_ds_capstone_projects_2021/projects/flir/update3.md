@@ -11,7 +11,8 @@ Our first step was to create a pipeline that we could use to add noise to each i
 
 ```{figure} Block-Diagram.png
 ---
-height: 150px
+height: 350px
+width: 550px
 name: directive-fig
 ---
 Pipeline Block Diagram
@@ -23,15 +24,16 @@ Now that we've created this pipeline we're ready to test different types of nois
 
 ```{figure} Noise-Gallery-1.png
 ---
-height: 250px
-width: 400px
+height: 350px
+width: 550px
 name: directive-fig
 ---
 Example Noise
 ```
 ```{figure} Noise-Gallery-2.png
 ---
-height: 150px
+height: 350px
+width: 550px
 name: directive-fig
 ---
 Example Noise
