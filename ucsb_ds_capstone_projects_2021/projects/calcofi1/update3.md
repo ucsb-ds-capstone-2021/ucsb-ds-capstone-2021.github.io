@@ -16,8 +16,8 @@ We are exploring examples of what we could do utilizing Dash. Here is a Dash app
 
 The pros for using this outline is that it has a very easy to follow structure, the fformat looks very neat, and that there is a source code for reference.
 
-The Green Box would have a different outline similar to  
-### Overview - Background Data - Data and Importance - Prediction and Interpretation
+The Green Box would have a different outline similar to:
+#### Overview - Background Data - Data and Importance - Prediction and Interpretation
 
 #### Overview 
 - This is where the blue circle in the image is referencing to. A general background on CALCOLFI and their mission, as well as our goal involved. We would generate a story about how CALCOLFI was founded primarily with the focus on sardine, and we can use this thematic throughout by focusing on data and manipulations related to sardine.
