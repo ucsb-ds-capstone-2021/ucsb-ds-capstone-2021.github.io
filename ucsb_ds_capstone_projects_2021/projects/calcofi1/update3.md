@@ -11,5 +11,3 @@ In the beginning, we were using these two datasets, we intend to find any relati
 While our dataset contains information for various fish species, we have decided to hone into Sardine to keep our research concise and focused. CALCOFI was founded due to investigate the decline of sardine. Thus, we wanted to update our goal and in the end, create a story with our data exploring the sardine population. To aid us in this, we decided to use Plotly Dash, a tool used where we can create a website with all our important findings and interpretations. We thought of a structure where our page would endlessly scroll down so the user can decide the pace of their reading, alongside making some of our plots interactive for the user.
 
 <img src=https://raw.githubusercontent.com/4MangoTrees/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/unnamed.png style="width:300px;alt=drawing">
-
-ucsb_ds_capstone_projects_2021/projects/calcofi1/unnamed.png
