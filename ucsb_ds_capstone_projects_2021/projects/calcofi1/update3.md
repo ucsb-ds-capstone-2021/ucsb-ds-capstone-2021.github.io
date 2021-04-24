@@ -19,20 +19,20 @@ The pros for using this outline is that it has a very easy to follow structure, 
 The [Green Box] would have a different outline similar to  
 [ Overview - Background Data - Data and Importance - Prediction and Interpretation ] 
 
-### Overview 
+#### Overview 
 - This is where the blue circle in the image is referencing to. A general background on CALCOLFI and their mission, as well as our goal involved. We would generate a story about how CALCOLFI was founded primarily with the focus on sardine, and we can use this thematic throughout by focusing on data and manipulations related to sardine.
 
-### Background Data 
+#### Background Data 
 - Important aspect here would be spatial data analysis, good to visualize the region the audience should be focusing on.
 - We would also include the impact that region can have on our analysis, including the region’s environmental factors (weather el nino la nina, ocean conditions, etc) and any related analysis.
 - We could also include some basic exploratory analysis like sardine catch and larvae over time, integrated with an interactive toolkit where the user can adjust the year at will.
 
-### Data and Importance 
+#### Data and Importance 
 - These will be the meat of all our analysis beyond exploratory stuff where we had to do some data manipulation of some sort like lagged analysis or cross correlation
 - In addition, each visualization could have a small section explaining what the data means, what insight we can take away from it
 - We thought of a structure where our page would endlessly scroll down so the user can decide the pace of their reading, alongside making some of our plots interactive for the user.
 
-### Prediction and Interpretation
+#### Prediction and Interpretation
 - These will be if we have any code or program that can predict anything and conclude the importance of our research
 
 
