@@ -26,12 +26,12 @@ Background Data
 - We would also include the impact that region can have on our analysis, including the region’s environmental factors (weather el nino la nina, ocean conditions, etc) and any related analysis.
 - We could also include some basic exploratory analysis like sardine catch and larvae over time, integrated with an interactive toolkit where the user can adjust the year at will.
 
-- Data and Importance 
+Data and Importance 
 - These will be the meat of all our analysis beyond exploratory stuff where we had to do some data manipulation of some sort like lagged analysis or cross correlation
 - In addition, each visualization could have a small section explaining what the data means, what insight we can take away from it
 - We thought of a structure where our page would endlessly scroll down so the user can decide the pace of their reading, alongside making some of our plots interactive for the user.
 
--Prediction and Interpretation
+Prediction and Interpretation
 - These will be if we have any code or program that can predict anything and conclude the importance of our research
 
 
