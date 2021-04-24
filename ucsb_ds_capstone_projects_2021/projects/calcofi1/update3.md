@@ -17,6 +17,7 @@ We are exploring examples of what we could do utilizing Dash. Here is a Dash app
 The pros for using this outline is that it has a very easy to follow structure, the fformat looks very neat, and that there is a source code for reference.
 
 The Green Box would have a different outline similar to:
+
 #### Overview - Background Data - Data and Importance - Prediction and Interpretation
 
 #### Overview 
