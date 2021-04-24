@@ -12,6 +12,7 @@ While our dataset contains information for various fish species, we have decided
 
 ## Dash Ideas
 We are exploring examples of what we could do utilizing Dash. Here is a Dash app we found which structure could work for our mission.
+
 <img src=https://raw.githubusercontent.com/4MangoTrees/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/dashexample.png style="width:350px;alt=drawing">
 
 The pros for using this outline is that it has a very easy to follow structure, the fformat looks very neat, and that there is a source code for reference.
