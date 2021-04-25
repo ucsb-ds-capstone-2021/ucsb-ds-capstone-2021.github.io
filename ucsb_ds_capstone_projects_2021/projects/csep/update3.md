@@ -22,6 +22,8 @@ The CSEP team felt it is beneficial to share the projects results with students.
 .. figure:: site.png
     :scale: 100% 
 ```
+The goal is to have all of our charts and models rendered on the website. In addition, we aim to make the models and charts interactive: providing an immersive experience for site visitors.  
+
 
 ## Software Used
 * Python
