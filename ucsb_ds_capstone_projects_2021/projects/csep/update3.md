@@ -16,8 +16,8 @@ The data comes from a mix of sources: online - LinkedIn, personal websites, and 
 
 The organization providing the data does not have an overall goal for the outcome of the data: the CSEP group is free to explore any possible avenue for the data within reason.  
 
-
-
+## CSEP Website  
+The CSEP team felt it is beneficial to share the projects results with students. In order to do so, we are creating a website to display our results. The website is written using a web framework called Django. Django is a high-level python web framework that encourages reusability and scalability. Therefore, instead of having to rewrite html for every webpage, Django lets us use pages like building blocks and scale from there. 
 
 ## Software Used
 * Python
