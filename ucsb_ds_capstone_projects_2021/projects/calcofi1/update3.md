@@ -41,14 +41,13 @@ The Green Box would have a different outline similar to:
 - These will be if we have any code or program that can predict anything and conclude the importance of our research
 
 
-
-<img src=https://raw.githubusercontent.com/4MangoTrees/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/unnamed.png style="width:300px;alt=drawing">
-
 ### Building the App
  - In addition to planning, we have just begun to actually build our website using Dash. We are working to convert our code from a matplotlib oriented notebook to a plotly oriented .py file.
 
 <img src=https://raw.githubusercontent.com/4MangoTrees/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/update3_leron_code.png style="width:300px;alt=drawing">
 
+
 <img src=https://raw.githubusercontent.com/4MangoTrees/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/update3_leron_sample-site.png style="width:300px;alt=drawing">
+
 
 - We were able to get the website to display properly after some wrangling, and have the first graph show. For our next steps, we will continue to add our data to the website, as well as investigate if it would be easier to use jupyter dash, which could allow us to run a website from a jupyter notebook rather than converting it to a python file.
