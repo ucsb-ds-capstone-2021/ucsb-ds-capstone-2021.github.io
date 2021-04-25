@@ -1,4 +1,4 @@
-# Update 2
+# Update 3
 ## Center for Science and Engineering Partnerships (CSEP) Project
 ```{eval-rst}
 .. figure:: csepLogo.png
@@ -18,6 +18,10 @@ The organization providing the data does not have an overall goal for the outcom
 
 ## CSEP Website  
 The CSEP team felt it is beneficial to share the projects results with students. In order to do so, we are creating a website to display our results. The website is written using a web framework called Django. Django is a high-level python web framework that encourages reusability and scalability. Therefore, instead of having to rewrite html for every webpage, Django lets us use pages like building blocks and scale from there. 
+```{eval-rst}
+.. figure:: site.png
+    :scale: 100% 
+```
 
 ## Software Used
 * Python
