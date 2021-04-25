@@ -11,14 +11,14 @@ In the beginning, we were using these two datasets, we intend to find any relati
 - Bottle & Cast - 2 datasets that work hand in hand with one another where it contain records  of the environmental conditions where the fish and larvae occupy. Cast contains information about the cruise being sent out to collect the water samples, where Bottle contains information regarding the water quality including temperature and salinity. 
 
 ## Goal Update
-While our dataset contains information for various fish species, we have decided to hone into Sardine to keep our research concise and focused. CALCOFI was founded due to investigate the decline of sardine. Thus, we wanted to update our goal and in the end, create a story with our data exploring the sardine population. To aid us in this, we decided to use Plotly Dash, a tool used where we can create a website with all our important findings and interpretations. 
+While our dataset contains information for various fish species, we have decided to hone into sardines to keep our research concise and focused. CALCOFI was founded due to investigate the decline of sardine populations during the 1950s. Thus, we wanted to update our goal and in the end, create a story with our data exploring the sardine population and the various environmental, human, and natural factors that may affect it. To aid us in this, we decided to use Plotly Dash, a tool used where we can create a website with all our important findings and interpretations using a Python-only tech stack. 
 
 ## Dash Ideas
-We are exploring examples of what we could do utilizing Dash. Here is a Dash app we found which structure could work for our mission.
+We are exploring examples of what we could do utilizing Dash. Here is a Dash app we found that has a similar structure to one that could work for our mission.
 
 <img src=https://raw.githubusercontent.com/4MangoTrees/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/dashexample.png style="width:350px;alt=drawing">
 
-The pros for using this outline is that it has a very easy to follow structure, the fformat looks very neat, and that there is a source code for reference.
+The pros for using this outline is that it has a very easy to follow structure, the format looks very neat, and that there is a source code for reference.
 
 The Green Box would have a different outline similar to:
 
@@ -43,3 +43,12 @@ The Green Box would have a different outline similar to:
 
 
 <img src=https://raw.githubusercontent.com/4MangoTrees/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/unnamed.png style="width:300px;alt=drawing">
+
+### Building the App
+ - In addition to planning, we have just begun to actually build our website using Dash. We are working to convert our code from a matplotlib oriented notebook to a plotly oriented .py file.
+
+<img src=https://raw.githubusercontent.com/4MangoTrees/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/update3_leron_code.png style="width:300px;alt=drawing">
+
+<img src=https://raw.githubusercontent.com/4MangoTrees/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/update3_leron_sample-site.png style="width:300px;alt=drawing">
+
+- We were able to get the website to display properly after some wrangling, and have the first graph show. For our next steps, we will continue to add our data to the website, as well as investigate if it would be easier to use jupyter dash, which could allow us to run a website from a jupyter notebook rather than converting it to a python file.
