@@ -30,8 +30,11 @@ Until recently, we were unable to include the bounding boxes into our model, res
 ![LayoutLM_without_bounding_boxes](LLM_without_bb.PNG)
 
 Precision: 0.88
+
 Recall: 0.90
+
 Accuracy: 0.995
+
 F1: 0.89
 
 After the inclusion of bounding boxes (which provide the relative positions of the words) into our model, it showed an overall improvement over the board:
@@ -39,8 +42,11 @@ After the inclusion of bounding boxes (which provide the relative positions of t
 ![LayoutLM_with_bounding_boxes](LLM_with_bb.PNG)
 
 Precision: 0.89
+
 Recall: 0.94
+
 Accuracy: 0.996
+
 F1: 0.91
 
 
