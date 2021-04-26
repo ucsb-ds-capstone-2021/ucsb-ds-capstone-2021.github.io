@@ -84,13 +84,13 @@ Using the files, we looked at which individuals were carriers of genetic Alzheim
 
 This set of visualization is aiming to answer the question that "Do we find all the expected IBD mutation carrying segment"? The results are presented in a heatmap/matrix format. Shown on both axises are the mutation-carrying individuals of the specific variant; for each pair of individuals, **black** represents that we do find the expected IBD segment whereas **white** represents that we do not find the expected IBD segment.
 
-**I416T**
+### I416T
 
 For all the pairs of individuals that we expect to see an IBD relationship, we do observe that in the Hap-IBD output. Per the heatmap, all pairwise relationship are black (meaning have the IBD relationship). In addition, becasue only one family has this mutation, we do not worry about any relationship across families.
 
 ![](update3_figs/I416T_Hap-IBD_Heatmap.png)
 
-**E280A**
+### E280A
 
 Considering how there are multiple families who carry this mutation, it is natural that not all pairs of individuals have an IBD relationship. To see if there was a pattern in terms of each individual family, the individuals were sorted based on family ID. Each red square represents a family. It appears that even within each family, not all individuals have an IBD relationship. The reasoning behind why this is the case will need to be investigated further.
 ![](update3_figs/E280A_grouped.png)
