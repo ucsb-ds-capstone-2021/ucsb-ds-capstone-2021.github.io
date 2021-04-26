@@ -1,5 +1,14 @@
 # Update 3
 
+<iframe src="n-nunes.github.io/ucsb-ds-capstone-2021.github.ioprojects/flir/uniform.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="500"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
 #### First Quarter Recap
 
 In the FLIR group we've been working on a real time object detection model with the primary goal of observing the effects of added noise and adversarial attacks on the models accuracy. Much of our first quarter was spent researching the subject matter, getting familiar with the neccesary tools needed to complete the project, and setting up an environment to work under. By the end of the quarter we had a Yolo v5 model (Model we used for reference(https://github.com/ultralytics/yolov5))
