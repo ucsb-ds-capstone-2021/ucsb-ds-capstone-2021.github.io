@@ -1,6 +1,6 @@
 # Update 3
 
-<iframe src="n-nunes.github.io/ucsb-ds-capstone-2021.github.io/projects/flir/uniform.html"
+<iframe src="uniform.html"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
     height="500"
