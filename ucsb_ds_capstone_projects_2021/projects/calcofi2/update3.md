@@ -76,8 +76,8 @@ This challenge arises because right now, our stations are aligned in a slanted w
 
 ```{figure} images/2dhist.png
 ---
-height: 300px
-width: 300px
+height: 400px
+width: 400px
 ---
 An example of A 2D histogram from MathWorks.com. This is not our 2D histogram, but with this we hope to illustrate the purpose of the 2D histogram. We seen by the image, the 2D histogram aggregates the data, which would be the samples taken in our case for a particular water characteristic at a time step, in a small area and does this to return a square/grid matrix of samples.
 ```
