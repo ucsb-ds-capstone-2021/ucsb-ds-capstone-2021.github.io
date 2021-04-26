@@ -1,2 +1,0 @@
-# nri
-Project description

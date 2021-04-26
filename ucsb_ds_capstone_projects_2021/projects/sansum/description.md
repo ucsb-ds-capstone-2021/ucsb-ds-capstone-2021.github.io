@@ -1,2 +1,0 @@
-# sansum
-Project description

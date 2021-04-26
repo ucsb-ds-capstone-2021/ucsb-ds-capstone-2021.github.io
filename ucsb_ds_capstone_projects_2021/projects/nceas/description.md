@@ -1,2 +1,0 @@
-# nceas
-Project description

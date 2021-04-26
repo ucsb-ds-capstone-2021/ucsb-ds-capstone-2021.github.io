@@ -1,2 +1,0 @@
-# appfolio
-Project description
