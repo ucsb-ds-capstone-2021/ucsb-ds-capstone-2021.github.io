@@ -108,15 +108,9 @@ variables = ["PSS-4 Score", "ACE Score", "PEDQ Score", "PHQ-9 Score", "FACIT Sco
 "BASH Score", "WC (in)", "Height (in)", "Weight (lbs)", "Pulse", "Heart Failure", "SEX/GENDER", "AGE"]
 ```
 
-```python tags=["remove-input"]
-import pickle
-with open("../data/processed/ols.pickle","rb") as read_file:
-     results = pickle.load(read_file)
-```
-
-```python tags=["remove-input"]
-results
-```
+<!-- #region tags=["remove-input"] -->
+![](./visuals/linreg.png)
+<!-- #endregion -->
 
 Here we can see that the model is not significant, as shown by the F-statistic and the negative adjusted R-squared. However, we can see that the pulse variable (x16) at least appears to have a stronger affect on hemoglobin a1c.
 
