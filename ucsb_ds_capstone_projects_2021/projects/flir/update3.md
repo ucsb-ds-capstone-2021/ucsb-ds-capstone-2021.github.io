@@ -92,8 +92,8 @@ To vizualize what different L2 norm values look like here are a few examples usi
 
 ```{figure} gaussNorms.png
 ---
-height: 350px
-width: 625px
+height: 325px
+width: 700px
 name: directive-fig
 ---
 Example Noise
