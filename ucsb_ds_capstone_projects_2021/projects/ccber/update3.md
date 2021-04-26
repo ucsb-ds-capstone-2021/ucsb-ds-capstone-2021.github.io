@@ -19,8 +19,6 @@ Some difficulties working with the Fowler data include the fact that we are not 
 
 ### Compare specialists defined by GloBI and Fowler
 
-### Using Fowler specialists as training data for GloBI
-
 As mentioned in our paper abstract, one of our main goals is to figure out how we can utilize large data sources to make discoveries about bee specialization. In order to do this, we wanted to create some guidelines for what it actually means to be a specialist or a generalist. To do so, we used the Fowler citations on specialist bees, and compared it to the degree of specialization as cited by GLOBI.
 
 ```{figure} Screen Shot 2021-04-25 at 5.28.40 PM.png
@@ -62,6 +60,7 @@ Clusters of bee genus generalists and specialists based on our transformed funct
 
 While our data transformation is less practical to understanding how degree of specialization affects specialist labels, it does allow us to further separate the clusters. We hope to make more transformations like these to best understand how labels of generalists or specialists are assigned, and whether it is a consistent qualifier. 
 
+### Using Fowler specialists as training data for GloBI
 
 
 
