@@ -34,7 +34,6 @@ Seeing that we had a very wide dataset (large number of columns), we created a l
 
 ```{figure} images/wide_data.png
 ---
-height: 300px
 name: Wide Data
 ---
 Wide Dataset: This is the format of the data after water, fish, and pH were combined into one dataset and the min, max and mean pH values are calculated.
@@ -42,7 +41,6 @@ Wide Dataset: This is the format of the data after water, fish, and pH were comb
 
 ```{figure} images/long_data.png
 ---
-height: 300px
 name: Long Data
 ---
 Long Dataset: This is the format of the "long" dataset with the pH and abundances turned into columns. 
