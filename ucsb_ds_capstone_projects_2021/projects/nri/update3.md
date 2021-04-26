@@ -40,3 +40,41 @@ Here are the final heatmaps (done at the end of last quarter) which represent th
     *  I162S, Q223K, I427V
 * Secondly, some of the mutations have been known for a while, but were specific to certain geographic regions. For instance, the H163R mutations occurs predominantly in Japan and is not frequently observed in Columbia, where the overall datasets are pertinent to
 * With regards to the heatmaps of the smaller datasets, the common trend we see is that King consistently underestimates whereas Plink consistently overestimates here, a trend which is especially pronounced by the orangish color in the lower triangles and green-bluish color in the upper triangles
+
+
+## Summary
+
+At the end of Task 1, as discussed in the above section, we have analyzed the family structures of all PSEN1 variants and calculated the coefficient of relatedness for every pair of individuals using the pedigree information given. With that, for each PSEN1 variant, we now have an idea about how each mutation-carrying individual is related to each other (ex. parent-offspring, siblings, etc.) from the **pedigree perspective**. Moving on, we are going to analyze their relationship from the **genome level**, by comparing their genome sequences, in order to finish up our Goal #1 (Calculate how many generations ago was the common ancestor for each variant).
+
+### Task 2 Purpose
+The main purpose of task 2 is to see how each mutation-carrying individual is related to others on the genome level quantitatively. As presented in Update 1, **Identical By Descent (IBD)** describes that two or more individuals share similar nucleotide sequences and inherit that shared segment from a common ancestor; thus, IBD length is correlated with historical relationship. So in task2, we are going to calculate the length of the shared DNA segment (IBD length) of each pair of individual, and analyze the historical relationship based on that.
+
+
+## Software
+
+### VCFtools
+
+VCFtools is a suite of functions for use on genetic variation data in the form of VCF and BCF files. The tools will be used to process genetic data, run calculations, and is able to convert the data into other useful file formats. A manual of the tools can be found on this [website](https://vcftools.github.io/man_latest.html).
+
+### Hap-IBD
+
+The Hap-IBD program detects IBD segments in phased genotype data. The Hap-IBD program can analyze data sets with hundreds of thousands of samples. You can read more about this method from this [paper](https://doi.org/10.1016/j.ajhg.2020.02.010).
+
+
+## Data
+### Phased VCF Files
+* Contains phased genetic data including chromosome, haplotypes of the individuals
+
+### Hap-IBD Files
+* Contains genetic data including chromosome and IBD information
+* To be used in the Hap-IBD program
+
+
+## Data Processing
+
+The tools we made use of include vcftools, as well as plink, king, and kinship2 from the earlier updates. We obtained an excel file which contains pairs of individuals of interest, along with their corresponding haplotypes, IBD lengths (in terms of unit known as centimorgans), and start and end points of the commonly shared segments within nucleotide sequences. We were also with a text file containing the variants associated with certain families.
+
+
+## Data Analysis
+
+Using the files, we looked at which individuals were carriers of genetic Alzheimer's. To do this, we looked at 1) if they were labeled as having the same haplotype and 2) if the segment overlapped with the region corresponding to the PSEN1 mutation (73603143 to 73690399). We also had to re-do some of our analysis after meeting with our PI after we found that some of the carriers did not match with what was expected, which we determine to be the result of looking at other non-significant individuals.
