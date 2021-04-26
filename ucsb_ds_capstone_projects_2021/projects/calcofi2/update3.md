@@ -72,7 +72,14 @@ The visualization above will give us a better understanding of the relationship 
 
 We are currently working on the process of using Kringing on some of our data, which is a method of interpolation. For example, we have the values of water characteritics, say pH, at discrete stations in the water, and we would like to infer what the pH should be in between those stations as well. To do this, we intend to use a process called cringing to do this for all of our water characteritics. We are currently working on solving the challenge of turning our data from our stations that we would like to perform Kringing on and turn it onto square shaped data for the Kringing algorithm. 
 
-This challenge arises because right now, our stations are aligned in a slanted way since they are off of California's coast, and at every time step that we want to do Kringing on, we do now have the same number of samples, and the number of samples differ for each water characteristic as well. This makes turning the data into a square matrix difficult, so we are looking at two different methods right now to achieve this: using 2-D histograms as well as Voronoi Tesselations (two methods that help in evening out data in a matrix form acceptable for Kringing). We hope to use this method to format our data correctly to succesfuly apply the Kringing algorithm to our data,
+This challenge arises because right now, our stations are aligned in a slanted way since they are off of California's coast, and at every time step that we want to do Kringing on, we do now have the same number of samples, and the number of samples differ for each water characteristic as well. This makes turning the data into a square matrix difficult, so we are looking at two different methods right now to achieve this: using 2-D histograms as well as Voronoi Tesselations (two methods that help in evening out data in a matrix form acceptable for Kringing). We hope to use this method to format our data correctly to succesfuly apply the Kringing algorithm to our data.
+
+```{figure} images/2dhist.png
+---
+height: 600px
+---
+An example of A 2D histogram from MathWorks.com. This is not our 2D histogram, but with this we hope to illustrate tje purpose of the 2D histogram. We seen by the image, the 2D histogram aggregates the data, which would be the samples taken in our case for a particular water characteristic at a time step, in a small area and does this to return a square/grid matrix of samples.
+```
 
 
 
