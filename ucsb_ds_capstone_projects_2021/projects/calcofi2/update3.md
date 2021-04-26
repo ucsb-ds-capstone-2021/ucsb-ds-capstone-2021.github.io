@@ -45,7 +45,7 @@ Wide Dataset: This is the format of the data after water, fish, and pH were comb
 height: 300px
 name: Long Data
 ---
-Long Dataset: This is the format of the "long" dataset with the pH and adundances turned into columns. 
+Long Dataset: This is the format of the "long" dataset with the pH and abundances turned into columns. 
 ```
 
 
