@@ -61,7 +61,7 @@ Heat map: This is the heatmap of the correlation matrix we created that founded 
 From here I was able to use the hierarchical cluster method to find a cluster network. With the clustering founded I was able to visualize it with the sides repesenting the dendogram of the clustering along with the heat map of the correlation network founded like the image above explained.The image below is the clustering network founded.
 ```{figure} images/first_realcluster.png
 ---
-height: 600px
+height: 200px
 name: Cluster network  
 ---
 Cluster network: This is the clusters we founded using hierachal clustering and also includes the heat map to shows the pairwise correlation between each species relative abundance and its pH value. 
