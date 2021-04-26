@@ -64,7 +64,7 @@ From here I was able to use the hierarchical cluster method to find a cluster ne
 ```{figure} images/first_realcluster.png
 ---
 height: 300px
-name: Heat map of correlation matrix 
+name: CLuster netwrok  
 ---
 Cluster network: This is the clusters we founded using hierachal clustering and also includes the heat map to shows the pairwise correlation between each species relative abundance and its pH value. 
 ```
