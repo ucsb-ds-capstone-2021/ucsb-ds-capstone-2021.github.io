@@ -51,10 +51,24 @@ Long Dataset: This is the format of the "long" dataset with the pH and abundance
 
 ## Cluster Network
 
+Now that we calculated the pH balances and the relative fish abundance we want to look at the pairwise correlation between each fish species relative abundance and their pH values associated with them. We were able to make a correlation matrix that uses the method of perasons r to find pairwise correlation and used a heat map to visualize the correlation matrix created.The side bar color ranges the pearsons r coefficient with the color being close to 1 range is strong positive and and -1 is a strong negetive relationship and 0 signifying no correlation. 
 
-
-
-
+```{figure} images/first_clusternetwrok.png
+---
+height: 300px
+name: Heat map of correlation matrix 
+---
+Heat map: This is the heatmap of the correlation matrix we created that founded pairwise correlation using pearsons r method. 
+```
+From here I was able to use the hierarchical cluster method to find a cluster network. With the clustering founded I was able to visualize it with the sides repesenting the dendogram of the clustering along with the heat map of the correlation network founded like the image above explained.The image below is the clustering network founded.
+```{figure} images/first_realcluster.png
+---
+height: 300px
+name: Heat map of correlation matrix 
+---
+Cluster network: This is the clusters we founded using hierachal clustering and also includes the heat map to shows the pairwise correlation between each species relative abundance and its pH value. 
+```
+The visualization above will give us a better understanding of the relationship between each fish species relative abundance and their pH values. This anaylsis is still ongoing and will explain significiance of the visualization in greater detail in the next progress report.
 
 ## Kringing 
 
