@@ -76,6 +76,15 @@ Going further we needed to find a way to compare different types of noise. Consi
     scrolling="no"
     seamless="seamless"
     frameborder="0">
+</iframe>  
+
+<iframe src="speckle.html"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="700"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
 </iframe>
 
 
