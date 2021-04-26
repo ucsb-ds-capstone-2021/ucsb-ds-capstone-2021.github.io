@@ -96,7 +96,7 @@ height: 325px
 width: 700px
 name: directive-fig
 ---
-Example Noise
+L2 Example
 ```
 #### Next steps
 
