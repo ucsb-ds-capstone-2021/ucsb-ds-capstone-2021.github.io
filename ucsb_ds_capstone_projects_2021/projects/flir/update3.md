@@ -26,7 +26,7 @@ Now that we've created this pipeline we're ready to test different types of nois
 ```{figure} Noise-Gallery-1.png
 ---
 height: 350px
-width: 550px
+width: 600px
 name: directive-fig
 ---
 Example Noise
@@ -34,7 +34,7 @@ Example Noise
 ```{figure} Noise-Gallery-2.png
 ---
 height: 350px
-width: 550px
+width: 600px
 name: directive-fig
 ---
 Example Noise
@@ -88,6 +88,16 @@ Going further we needed to find a way to compare different types of noise. Consi
 </iframe>
 
 
+To vizualize what different L2 norm values look like here are a few examples using one of the example images above with varying levels of added noise and their corresponding L2 value. 
+
+```{figure} gaussNorms.png
+---
+height: 350px
+width: 625px
+name: directive-fig
+---
+Example Noise
+```
 #### Next steps
 
 Now that we've reached a major milestone of generating noise that degrades our model performance we're able to analyze the effect different levels of noise will have. We plan to continue experimenting with more distributions of noise as we aim to mimick noise that would occur in a real life scenarios in thermal imaging. Beyond that we still hope to look for solutions to make our model more robust against these attacks and plan to continue training on augmented datasets.
