@@ -17,7 +17,7 @@ One of the models we explored was a logistic regression model. We created 3 diff
 ### Multiple Change-point Detection
 We also took an unsupervised approach to COVID-19 detection. In particular, we used the multiple change-point detection method to find points in the heart rate time series data with abrupt and significant changes. We were interested in whether or not the MCP algorithm would pick up on abnormally low or high heart rates near symptom onset or diagnosis.
 
-![](ucsb_ds_capstone_projects_2021/projects/evidation/s_update_1/image1.png)
+![](s_update_1/image1.png)
 
 Using the envcpt function on Rstudio, we tested many different methods of multiple change point detection on one of the participant’s, AFPB8J2,  heart rate pre COVID, during COVID, and post COVID. 
 
