@@ -89,7 +89,7 @@ An example of A 2D histogram from MathWorks.com. This is not our 2D histogram, b
 
 ## Out Next Future Goals
 
-As our next goals, we hope to complete our Kringing process as well as keep drawing stronger correlations between how the fish species behave between each other (which are more abundant at the same time, and are there species who are abundant at opposite times of each other), as well as between how pH and dictate which fish species will be abundant and which will not be at a time and location in the water.
+As our next goals, we hope to complete our Kringing process as well as keep drawing stronger correlations between how the fish species behave between each other (which are more abundant at the same time, and are there species who are abundant at opposite times of each other), as well as between how pH and dictate which fish species will be abundant and which will not be at a time and location in the water. In order to work towards achieving this, we have ample data analysis, and different insights about various parts of our data currently. We hope to keep working on putting these together as well as draw further insight from what we have now, in order to achieve our previously stated goal.
 
 
 
