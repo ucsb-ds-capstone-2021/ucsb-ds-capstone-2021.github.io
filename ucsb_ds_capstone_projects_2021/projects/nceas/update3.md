@@ -1,5 +1,5 @@
 ## Update 3
-April 23, 2021
+April 25, 2021
 
 ### Long Term Ecological Research (LTER) Datasets: R package
 **Project Sponsor: National Center for Ecological Analysis and Synthesis (NCEAS)** \
@@ -19,7 +19,7 @@ The [LTER network](https://lternet.edu/) is a set of 28 National Science Foundat
 
 #### Progress
 - Collaborated on the existing R package [`lterdatasets`](https://github.com/ucsb-ds-capstone-2021/lterdatasets) 
-- Began adding our selected vignette and related files (documentation, code for processing raw data) to this package via pull requests on GitHub
+- Began adding our selected vignette with related files (documentation, code for processing raw data) to this package via pull requests on GitHub
 - Enabled GitHub Actions, which runs a CI/CD workflow to make sure our pull requests don't introduce any breaking changes and are compatible with the existing package infrastructure. In the future, GitHub Actions will automatically deploy changes made to our website
 - Reviewed each other's pull requests and merged them after confirming that there are no errors and that the GitHub Actions workflow passed successfully
 - Opened issues to create discussions with our teammates regarding prospective datasets that could be incorporated into the package
@@ -34,4 +34,3 @@ The [LTER network](https://lternet.edu/) is a set of 28 National Science Foundat
 - Brainstormed Ideas: Can create a separate page for each dataset analyzed in the package, Offer interactivity within modifying visualizations, sample code terminal, etc., Customize dataset pages with their own themes and colors based on the dataset itself
 - Build website using [pkgdown](https://pkgdown.r-lib.org/) and GitHub Actions
 - Design a hex sticker for our package. Examples of other stickers can be found [here](https://github.com/rstudio/hex-stickers)
-
