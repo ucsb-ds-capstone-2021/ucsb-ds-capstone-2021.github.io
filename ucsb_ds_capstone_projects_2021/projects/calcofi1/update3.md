@@ -18,6 +18,8 @@ We are exploring examples of what we could do utilizing Dash. Here is a Dash app
 
 <img src=https://raw.githubusercontent.com/4MangoTrees/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/dashexample.png style="width:500px;alt=drawing">
 
+![Image](dashexample.png)
+
 The pros for using this outline is that it has a very easy to follow structure, the format looks very neat, and that there is a source code for reference.
 
 The Green Box would have a different outline similar to:
