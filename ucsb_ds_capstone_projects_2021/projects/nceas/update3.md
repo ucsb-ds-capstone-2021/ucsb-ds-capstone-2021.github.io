@@ -31,6 +31,10 @@ The [LTER network](https://lternet.edu/) is a set of 28 National Science Foundat
 - Continue to explore datasets and create vignettes to teach data science concepts and techniques
 - Refine vignettes using feedback from teammates in pull requests
 - Learn how to customize and build website for our package from Dr. Horst
+    -Brainstormed Ideas:
+      -Can create a separate page for each dataset analyzed in the package
+      -Offer interactivity within modifying visualizations, sample code terminal, etc.
+      -Customize dataset pages with their own themes and colors based on the dataset itself
 - Build website using [pkgdown](https://pkgdown.r-lib.org/) and GitHub Actions
 - Design a hex sticker for our package. Examples of other stickers can be found [here](https://github.com/rstudio/hex-stickers)
 
