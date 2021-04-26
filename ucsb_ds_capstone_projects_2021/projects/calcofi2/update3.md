@@ -56,14 +56,18 @@ Long Dataset: This is the format of the "long" dataset with the pH and abundance
 
 
 
-## Kriging 
+## Kringing 
+
+We are currently worling on the process of using Kringing on some of our data, which is a method of interpolation. For example, we have the values of water characteritics, say pH, at discrete stations in the water, and we would like to infer what the pH should be in between those stations as well. To do this, we intend to use a process called cringing to do this for all of our water characteritics. We are currently working on solving the challenge of turning our data from our stations that we would like to perform Kringing on and turn it onto square shaped data for the Kringing algorithm. 
 
 
 
 
 
 
-## Next phrase
+## Out Next Future Goals
+
+As our next goals, we hope to complete our Kringing process as well as keep drawing stronger correlations between how the fish species behave between each other (which are more abundant at the same time, and are there species who are abundant at opposite times of each other), as well as between how pH and dictate which fish species will be abundant and which will not be at a time and location in the water.
 
 
 
