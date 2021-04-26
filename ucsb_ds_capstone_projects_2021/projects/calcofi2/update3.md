@@ -79,7 +79,7 @@ We are currently worling on the process of using Kringing on some of our data, w
 
 ## Out Next Future Goals
 
-As our next goals, we hope to complete our Kringing process as well as keep drawing stronger correlations between how the fish species behave between each other (which are more abundant at the same time, and are there species who are abundant at opposite times of each other), as well as between how pH and dictate which fish species will be abundant and which will not be at a time and location in the water. 
+As our next goals, we hope to complete our Kringing process as well as keep drawing stronger correlations between how the fish species behave between each other (which are more abundant at the same time, and are there species who are abundant at opposite times of each other), as well as between how pH and dictate which fish species will be abundant and which will not be at a time and location in the water. We will try to pin point times where there are pH fluctuations and exlore possible abundance changes.
 
 ```{figure} images/pHByYear.png
 ---
