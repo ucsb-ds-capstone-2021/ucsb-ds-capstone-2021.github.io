@@ -16,8 +16,6 @@ While our dataset contains information for various fish species, we have decided
 ## Dash Ideas
 We are exploring examples of what we could do utilizing Dash. Here is a Dash app we found that has a similar structure to one that could work for our mission.
 
-<img src=https://raw.githubusercontent.com/4MangoTrees/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/dashexample.png style="width:500px;alt=drawing">
-
 ![Image](dashexample.png)
 
 The pros for using this outline is that it has a very easy to follow structure, the format looks very neat, and that there is a source code for reference.
@@ -46,10 +44,8 @@ The Green Box would have a different outline similar to:
 ### Building the App
  - In addition to planning, we have just begun to actually build our website using Dash. We are working to convert our code from a matplotlib oriented notebook to a plotly oriented .py file.
 
-<img src=https://raw.githubusercontent.com/4MangoTrees/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/update3_leron_code.png style="width:800px;alt=drawing">
+![Image](update3_leron_code.png)
 
-
-<img src=https://raw.githubusercontent.com/4MangoTrees/ucsb-ds-capstone-2021.github.io/main/ucsb_ds_capstone_projects_2021/projects/calcofi1/update3_leron_sample-site.png style="width:800px;alt=drawing">
-
+![Image](update3_leron_sample-site.png)
 
 - We were able to get the website to display properly after some wrangling, and have the first graph show. For our next steps, we will continue to add our data to the website, as well as investigate if it would be easier to use jupyter dash, which could allow us to run a website from a jupyter notebook rather than converting it to a python file.
