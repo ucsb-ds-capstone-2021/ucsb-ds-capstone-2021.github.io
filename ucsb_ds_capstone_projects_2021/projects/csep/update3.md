@@ -81,11 +81,11 @@ The goal is to have all of our charts and models rendered on the website. In add
       section for information about linear regression).
 
 ## Graduate School
-     The graduate school logistic regression model aim is to be able to enter your major or your field of study for gradaute school and all of the predictor categories that will be fed in to the logistic regression model. So, you will tally off if you were involved in greek life, the honors program, studying abroad, sports, and your gender. The model will give you the likelihood you are to get in a top 5/10/25 school for your field based on the CSEP gradaute data. This is connected to the top gradaute schools list based on your field from usnews on the most available year available. 
+The graduate school logistic regression model aim is to be able to enter your major or your field of study for gradaute school and all of the predictor categories that will be fed in to the logistic regression model. So, you will tally off if you were involved in greek life, the honors program, studying abroad, sports, and your gender. The model will give you the likelihood you are to get in a top 5/10/25 school for your field based on the CSEP gradaute data. This is connected to the top gradaute schools list based on your field from usnews on the most available year available. 
 
-     Currently what has been done is the significance of each of the predictor variables for each major. As of now, we have sampled a few majors to test out the likelihood of the logistic regression model and see how effected the predictors are at determining the likelihood of the model through their p value. 
+Currently what has been done is the significance of each of the predictor variables for each major. As of now, we have sampled a few majors to test out the likelihood of the logistic regression model and see how effected the predictors are at determining the likelihood of the model through their p value. 
 
-     We've also been able to look at our results a confusion matrix and ROC curves that will be described more below on their statistical definition.
+We've also been able to look at our results a confusion matrix and ROC curves that will be described more below on their statistical definition.
 
 # Methods 
 * Logistic Regression - this model is used when the outcome that you are predicting is categorical.
