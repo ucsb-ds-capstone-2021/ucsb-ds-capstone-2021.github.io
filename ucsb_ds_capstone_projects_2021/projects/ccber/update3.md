@@ -65,5 +65,5 @@ Our reference data from Jarrod Fowler on pollen specialist bees of the Western, 
 With these considerations of the various attributes of the GloBI data, we aim to create a model or metric that could potentially return results similar to that of the Fowler collection. In order to align the Fowler and GloBI data, we need a count of the number of plant families visited by a bee species and the overall citation count of the bee in the GloBI dataset. We can weigh these variables and translate this into a mathematical formula. Then, we can proceed with training this model on the Fowler data. 
 
 ### Conclusion and Next Steps
-
+The introduction of the Fowler specialist dataset has allowed us to more easily pinpoint specialists within the Globi dataset. We aim to create a model or function that measures the degree of specialization that a Fowler specialist shows within the Globi dataset. In order to do this we must take into account the number of citations as well as the number of plant families visited that a specific bee species amounts to. By creating weights for these variables we will be able to come up with accurate degrees of specialization for different bees as the Globi data is continuously updated. Analyzing these changes in degrees of specialization over time will give scientists a bigger picture of what bees may need human interaction in the future.
 
