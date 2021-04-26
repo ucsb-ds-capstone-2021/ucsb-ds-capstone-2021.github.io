@@ -21,12 +21,12 @@ Some difficulties working with the Fowler data include the fact that we are not 
 
 As mentioned in our paper abstract, one of our main goals is to figure out how we can utilize large data sources to make discoveries about bee specialization. In order to do this, we wanted to create some guidelines for what it actually means to be a specialist or a generalist. To do so, we used the Fowler citations on specialist bees, and compared it to the degree of specialization as cited by GLOBI.
 
-```{figure} Screen Shot 2021-04-25 at 5.28.40 PM.png
+```{figure} degree_specialization.png
 ```
 
 Below is a plot of the GLOBI interaction degree and number of total bee citations. We were able to use color to cluster bee genuses that are qualified as specialists.
 
-```{figure} Screen Shot 2021-04-25 at 5.29.04 PM.png
+```{figure} bee_interaction_diversity.png
 ---
 name: Degree of Specialization, Citation Count on Specialization Class
 ---
@@ -39,7 +39,7 @@ Some major issues still are evident from the plot, though. Clearly, there are ge
 
 The second major issue that arises is that there remain specialist bees (in blue) that have very high degrees of specialization. We found that this issue likely stems from the GLOBI set. Since GLOBI allows citations from people nationally, there are likely many misclassifications and, as a result, the most valuable citations are those that are repeated multiple times by various sources. Since we consider our degree to include any unique plant family interacted with, bee-plant interactions that have only been cited once or twice majorly increase our degree of specialization. If we only allow plant interactions that are cited more than five times to contribute to our degree, we can eliminate some of these specialist bees with high specialization degrees.
 
-```{figure} Screen Shot 2021-04-25 at 5.29.15 PM.png
+```{figure} bee_interaction_diversity2.png
 ---
 name: Degree of Specialization cut at interactions with a minimum of 5 citations, Citation Count on Specialization Class
 ---
@@ -48,10 +48,10 @@ Clusters of bee genus generalists and specialists based on GLOBI degree of speci
 
 Still, though, there remain many seemingly misclassified specialists and generalists. Since discovering this, we have been trying to find ways to separate the data to minimize these inconsistencies. One such way was to create a function of the degree specialization to transform the data in such a way that would further separate specialist and generalist groups. By summing the square of the percentage of citations an interaction accounts for, we are able to better separate the clusters. 
 
-```{figure} Screen Shot 2021-04-25 at 5.39.47 PM.png
+```{figure} formula.png
 ```
 
-```{figure} Screen Shot 2021-04-25 at 5.29.53 PM.png
+```{figure} function_of_degree.png
 ---
 name: Tranformed funcition of Degree of specialization, Citation Count on Specialization Class
 ---
