@@ -34,7 +34,8 @@ The goal is to have all of our charts and models rendered on the website. In add
 
    Of the models we have we wanted to share some of our findings here:
 
-   * Current Employment
+   * Current Employment:
+       
        We made a logistical regression model to predict the outcome of current employment of our alumni. (For information about
        Linear Regression please reference our Methods section)
        In this model, the predictors were activities and traits that an individual had during their time at UCSB. More 
@@ -42,13 +43,22 @@ The goal is to have all of our charts and models rendered on the website. In add
        whether or not their major was stem and whether or no they were part of the honors program. With all of these predictors, 
        this is a summary of our findings. 
        
-       Coefficient Picture
-       Confusion matrix
+       Coefficients: These are the coefficients found from this model. (Please reference Methods section)
+       ```{eval-rst}
+       .. figure:: coeffs.png
+            :scale: 100% 
+       ```
+       
+       ```{eval-rst}
+       .. figure:: ConfusionMat.png
+            :scale: 100% 
+       ```
        
        We built this model as we wanted to give our students insight on what activities during their time here on campus would
        prove to be most impactful on current job employment based on the data we have on our alumnis.
        
-   * Years till level of management
+   * Years till level of management: 
+      
       In our dataset, we had descriptive data on our alumni's job. We had data on what level of management the alumni was     
       currently occupying. These levels of management were categorized into 3 levels - upper, midde, and lower. We gave these
       variables an inverse relationship while encoding them. We gave 1 to the upper, 2 to the middle and 3 to the lower level of
