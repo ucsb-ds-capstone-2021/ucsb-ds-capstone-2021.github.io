@@ -20,3 +20,8 @@ Some difficulties working with the Fowler data include the fact that we are not 
 ### Compare specialists defined by GloBI and Fowler
 
 ### Using Fowler specialists as training data for GloBI
+Our reference data from Jarrod Fowler on pollen specialist bees of the Western, Eastern, and Central United States serves as a validation-like dataset to develop a better understanding of how to define a specialist on our GloBI data. We have been working to assess the relationship between a bee’s status in the Fowler data (Rare, Uncommon-Rare, Uncommon, Common-Uncommon, Common) and its classification as a specialist. In addition, we are exploring the significance of measuring if a bee species is a specialist across all 3 US regions (West, East, Central). We call these bees “true specialists.” More recently, we have been examining the geographic locations of the specialist bees by using [GBIF](https://www.gbif.org/developer/summary) so that we can interpret the geographical constraints of certain specialists that are limited to specific regions. 
+With these considerations of the various attributes of the GloBI data, we aim to create a model or metric that could potentially return results similar to that of the Fowler collection. In order to align the Fowler and GloBI data, we need a count of the number of plant families visited by a bee species and the overall citation count of the bee in the GloBI dataset. We can weigh these variables and translate this into a mathematical formula. Then, we can proceed with training this model on the Fowler data. 
+
+### Conclusion and Next Steps
+
