@@ -35,59 +35,39 @@ fill in genetic information for the dataset.
 
 ## Background
 
-Listed below are the terminology and biology concepts that are fundamental to our project.
+Listed below are some definitions and biology concepts that are fundamental to our project. We will be referring to them throughout our updates.
 
-**Inheritance of Genetic Variation**
-* Identical by state (IBS)
-  * Two or more than two individuals share similar nucleotide sequences
-* Identical by descent (IBD)
-  * In addition to IBS, if they inherit the similar nucleotide sequences from a common ancestor
-  * IBD length is correlated with historical relationship
+**Alzheimer's Disease**
+  * A progressive disease that destroys memory and other important mental functions
+  * Common symptoms: dementia, memory loss, confusion, more severely, hallucinations, anxiety, etc.
 
-**Haplotype**
-* Combination of alleles at different markers along the same chromosome that are inherited together
-* Haplotype decay over time because of recombination
-
-**Linkage Equilibrium (LE) vs. Linkage Disequilibrium (LD)**
-* Linkage Equilibrium (LE) - Independent assortment, Recombination occurs
-* Linkage Disequilibrium (LD) - Coinheritance, Non-randomly inherited
-* Measures
-  * (LE) 0 <-- D' (Recombination) --> 1 (LD)
-  * (LE) 0 <-- r^2 (Correlation) --> 1 (LD)
-
-**Illumina NGS Workflow**
-* Library presentation
-* Cluster generation
-* Sequencing
-* Data analysis
-
-**Data Generation Process**
-* DNA
-* FASTQ - Contains all the information (the reads from all DNA fragments)
-* SAM (Sequence Alignment Mapping) - Align the results to the reference genome
-* VCF (Variant Call Format) - Get rid of all the identical parts and keep the variants info only
-
-**Global IBD**
+**Overview of Genetics**
+* Nucleotide Sequence
+  * 4 types of DNA nucleotides: ATCG
+  * Together, with various combination and permutation, they form the DNA sequence
+* Gene
+  * A sequence of nucleotides in DNA
+* Allele
+  * One of two or more versions of a gene.
+* Mutation
+  * A change in the DNA sequence
+  * For example:
+    * Original sequence: TAACT
+    * Mutated sequence: TAACC (Note that the last T is changed to a C)
+* Single Nucleotide Polymorphism (SNP)
+  * The most common type of genetic variation among people
+  * Each SNP represents a substitution of a single nucleotide at a specific position in the gene, which is somehow similar to a mutation. In our project, we will be referring each of these different substitutions as different variants.
+* Common Ancestor
+  * The most recent individual from which all the individuals of the group are descended
 * Coefficient of Relatedness
-  * For a pair of individuals separated by m meiosis, the average portion of the genome shared identical by descent (IBD) owing to that shared ancestry is 2^(-m)
-* Portion IBD
-  * Parent-Offspring (OP): 1st degree, 50%
-  * Full siblings: 1st degree, 50%
-  * Half siblings (ex. Relationship between 2 children with same mother but different father): 2nd degree, 25%
-  * Avuncular (ex. Relationship between a uncle and his sister's children): 2nd degree, 25%
-  * Cousins: 3rd degree, 12.5%
-
-**Local IBD**
-* IBD0: shared 0 allele
-* IBD1: shared 1 allele
-* IBD2: shared 2 alleles
-* The length of the shared IBD segments is approximately exponentially distributed with a mean of 100 m^(-1) cM
-
-**Trio Phasing (Haplotype)**
-* Problem - We do not have genomes from both parents of every individual of interest
-* Solutions
-  - Option 1: Add more relatives into the phasing algorithm
-  - Option 2: Use known haplotypes from human populations and change your approach to a supervised method
+  * Percentage of genes between a pair of individuals that are the same
+* Inheritance of Genetic Variation
+  * Identical by state (IBS)
+    * Two or more than two individuals share similar nucleotide sequences
+  * Identical by descent (IBD)
+    * In addition to IBS, if they inherit the similar nucleotide sequences from a common ancestor
+    * IBD length is correlated with historical relationship
+ 
 
 ## Data Files
 
