@@ -94,3 +94,10 @@ For all the pairs of individuals that we expect to see an IBD relationship, we d
 
 Considering how there are multiple families who carry this mutation, it is natural that not all pairs of individuals have an IBD relationship. To see if there was a pattern in terms of each individual family, the individuals were sorted based on family ID. Each red square represents a family. It appears that even within each family, not all individuals have an IBD relationship. The reasoning behind why this is the case will need to be investigated further.
 ![](update3_figs/E280A_grouped.png)
+
+
+## Future Plan
+
+**Second Phase of Task 2**
+- Compare the IBD length we obtained in Task 2 to the coefficient of relatedness we obtained in Task 1
+- Thus, verify and analyze whether the IBD segments are as long as we expect
