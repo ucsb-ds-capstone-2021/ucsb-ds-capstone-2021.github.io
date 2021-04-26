@@ -1,0 +1,27 @@
+# Update 3
+
+## Overview
+Our goals remain the same from last quarter. We wish to identify which bee families/genera/species are generalists or specialists. We are also working on submitting an abstract to sign up to attend the annual Ecological Society of America meeting.
+
+## ESA Annual Meeting
+Our research team aim to attend the 2021 annual meeting of [the Ecological Society of America](https://www.esa.org/longbeach/). At the meeting, we will be presenting our work with a poster.  \
+![alt text](https://www.esa.org/wp-content/uploads/2019/04/ecological-society-of-america_icon.png)\
+We have worked on an abstract to introduce the methods and goals of this project. The following is our tentative abstract:\
+With the field of big data influencing a wide range of sectors such as government, healthcare, IoT, and more, big data is rapidly growing, and its capability is vast. Recently, large biological interaction datasets have become increasingly prevalent due to greater data collection and storage. Since pollination is an essential process for ecosystem health and food production, we find value in measuring biodiversity in pollinator bees at the family, genus, and species taxonomic levels. Through our analysis, we can develop an interpretation of the specialist versus the generalist. However, we come to find that there exist several sources of bias within the data. By recognizing that the specialist versus generalist definition is not clearly defined, we can work with programming software (Python & R) to clean, visualize, and statistically test our data in order to cultivate a more complex understanding of our motivation. Ultimately, we will construct a machine learning model to differentiate between a specialist and a generalist. Our work and results underscore the gravity of biodiversity measurement on a global scale and will contribute to downstream research within adjacent areas of study. 
+
+## Progress
+
+### [Reference Data](https://jarrodfowler.com/specialist_bees.html)
+Last quarter we have attemped to create our own criteria for generalist/specialist identification in [GloBI](https://www.globalbioticinteractions.org/data) data. Starting this quarter, we have been working on comparing GloBI data with a set of reference data provided by Jarrod Fowler. The reference data consists of three tables, each containing a list of specialist bees in one geological region in America ([East](https://jarrodfowler.com/specialist_bees.html), [Central](https://jarrodfowler.com/bees_pollen.html), and [West](https://jarrodfowler.com/pollen_specialist.html)). In addition, the Fowler dataset includes information about the rarity of each bee species.
+
+### Difficulties
+Some difficulties working with the Fowler data include the fact that we are not quite sure what were Fowler's standards for deciding on which bee species were specialists. By comparing his specialist bees with GloBI interaction data, we hope to see some consistency in how specialists were defined. Additionally, since the Fowler data was split between the three regions of the US, some bees were considered as specialists in the East, but not in the West, etc. This complicates the situation since we might need to take into account spatial data during our comparisons, but the GloBI dataset is missing latitude/longitude information for roughly 30% of the bee interactions. Also, we realized that if we do not divide the GloBI data into West, East, and Central like the Fowler data, then there might be inconsistencies and conflicting data since GloBI is global while the Fowler data is just for the US. One more difficulty is that Fowler's data entry is not consistent. For example, in the column for plant information, not every plant has its family, tribe, or genera all listed. Some pieces may be missing. This makes it difficult to extract plant information from Fowler and compare it to GloBI.
+
+### Compare specialists defined by GloBI and Fowler
+
+### Using Fowler specialists as training data for GloBI
+Our reference data from Jarrod Fowler on pollen specialist bees of the Western, Eastern, and Central United States serves as a validation-like dataset to develop a better understanding of how to define a specialist on our GloBI data. We have been working to assess the relationship between a bee’s status in the Fowler data (Rare, Uncommon-Rare, Uncommon, Common-Uncommon, Common) and its classification as a specialist. In addition, we are exploring the significance of measuring if a bee species is a specialist across all 3 US regions (West, East, Central). We call these bees “true specialists.” More recently, we have been examining the geographic locations of the specialist bees by using [GBIF](https://www.gbif.org/developer/summary) so that we can interpret the geographical constraints of certain specialists that are limited to specific regions. 
+With these considerations of the various attributes of the GloBI data, we aim to create a model or metric that could potentially return results similar to that of the Fowler collection. In order to align the Fowler and GloBI data, we need a count of the number of plant families visited by a bee species and the overall citation count of the bee in the GloBI dataset. We can weigh these variables and translate this into a mathematical formula. Then, we can proceed with training this model on the Fowler data. 
+
+### Conclusion and Next Steps
+
