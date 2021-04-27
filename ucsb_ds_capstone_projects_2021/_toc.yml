@@ -64,6 +64,7 @@
       sections:
         - file: projects/nri/update1
         - file: projects/nri/update2
+        - file: projects/nri/update3
     - file: projects/sansum/description
       sections:
         - file: projects/sansum/update1
