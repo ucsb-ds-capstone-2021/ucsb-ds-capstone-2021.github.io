@@ -61,7 +61,7 @@ The goal is to have all of our charts and models rendered on the website. In add
        ```
        
        ```{eval-rst}
-       .. figure:: ConfusionMat.png
+       .. figure:: prob.png
             :scale: 100% 
        ```
        
