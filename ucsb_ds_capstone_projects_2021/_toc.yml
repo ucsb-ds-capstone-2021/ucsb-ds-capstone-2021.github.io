@@ -48,6 +48,7 @@
       sections:
         - file: projects/flir/update1
         - file: projects/flir/update2
+        - file: projects/flir/update3
     - file: projects/invoca/description
       sections:
         - file: projects/invoca/update1
