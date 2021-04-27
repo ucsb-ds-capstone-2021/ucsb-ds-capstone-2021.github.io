@@ -107,6 +107,14 @@ We've also been able to look at our results a confusion matrix and ROC curves th
      In the case of the second model, the out come was continuous as the number of years till the level of management can't be 
      categorized. It can take on many different values. 
 
+## Post Graduation Earnings 
+
+     ```{eval-rst}
+     .. figure:: Salary_of_First_Full_Time_Job_-_Engineering.svg
+            :scale: 100% 
+            
+     ```
+
 ## Software Used
 * Python
 * SCRE
