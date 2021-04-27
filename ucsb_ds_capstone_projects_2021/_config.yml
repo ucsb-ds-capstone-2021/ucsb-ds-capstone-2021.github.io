@@ -1,0 +1,21 @@
+#######################################################################################
+# A default configuration that will be loaded for all jupyter books
+# See the documentation for help and more options: 
+# https://jupyterbook.org/customize/config.html
+
+#######################################################################################
+# Book settings
+title                       : Data Science Capstone 2021  # The title of the book. Will be placed in the left navbar.
+author                      : UCSB DS Capstone Class  # The author of the book
+copyright                   : "2021"  # Copyright year to be placed in the footer
+logo                        : logo.png  # A path to the book logo
+
+repository:
+  url: https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io
+  path_to_book: ucsb_ds_capstone_projects_2021
+  branch: main
+html:
+  use_repository_button: true
+  use_edit_page_button: true
+  use_issues_button: true
+  google_analytics_id: "UA-186739861-1"
