@@ -109,8 +109,10 @@ We've also been able to look at our results a confusion matrix and ROC curves th
 
 ## Post Graduation Earnings 
 
+
+
 ![Alt text](./eng_first.svg)
-<img src="./eng_first.svg">
+
 
 ## Software Used
 * Python
