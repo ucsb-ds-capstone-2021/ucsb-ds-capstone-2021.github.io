@@ -57,12 +57,12 @@ The goal is to have all of our charts and models rendered on the website. In add
        Coefficients: These are the coefficients found from this model. (Please reference Methods section)
        ```{eval-rst}
        .. figure:: coeffs.png
-            :scale: 100% 
+            :scale: 70% 
        ```
        
        ```{eval-rst}
-       .. figure:: ConfusionMat.png
-            :scale: 100% 
+       .. figure:: prob.png
+            :scale: 70% 
        ```
        
        We built this model as we wanted to give our students insight on what activities during their time here on campus would
