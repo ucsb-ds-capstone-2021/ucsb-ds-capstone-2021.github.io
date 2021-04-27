@@ -48,6 +48,7 @@
       sections:
         - file: projects/evidation/update1
         - file: projects/evidation/update2
+        - file: projects/evidation/update3
     - file: projects/flir/description
       sections:
         - file: projects/flir/update1
