@@ -24,6 +24,7 @@
       sections:
         - file: projects/calcofi1/update1
         - file: projects/calcofi1/update2
+        - file: projects/calcofi1/update3
     - file: projects/calcofi2/description
       sections:
         - file: projects/calcofi2/update1
