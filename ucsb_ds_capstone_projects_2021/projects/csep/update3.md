@@ -109,11 +109,8 @@ We've also been able to look at our results a confusion matrix and ROC curves th
 
 ## Post Graduation Earnings 
 
-     ```{eval-rst}
-     .. figure:: Salary_of_First_Full_Time_Job_-_Engineering.svg
-            :scale: 100% 
-            
-     ```
+![Alt text](./eng_first.svg)
+<img src="./eng_first.svg">
 
 ## Software Used
 * Python
