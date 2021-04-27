@@ -87,7 +87,7 @@ Currently what has been done is the significance of each of the predictor variab
 
 We've also been able to look at our results a confusion matrix and ROC curves that will be described more below on their statistical definition.
 
-# Methods 
+## Methods 
 * Logistic Regression - this model is used when the outcome that you are predicting is categorical.
      In the case of the first model, the outcome was categorical as job employment is binary. Either you are currently employed 
      or you are not employed. 
@@ -108,9 +108,16 @@ We've also been able to look at our results a confusion matrix and ROC curves th
      categorized. It can take on many different values. 
 
 ## Post Graduation Earnings 
+One of the most valuble parts of this dataset is that it not only contians insitutional data but also data on what UCSB students did after college. In order to collect data on where UCSB students worked a student team at CSEP was tasked with finding UCSB alumni online. All of the data that was collected was entered by hand and sourced largely from LinkedIn. However, its worth noting that some of the data came from obscure souces such as wedding registries and personal websites. 
+
+Attending a univiversity such as UCSB is an investment in yourself and your future earnings thus its important to know how that investment is likely to pay off. For this reason our team decided to find ways to estimate the earnings of UCSB students based on the specifc careers that they went into. By correlateting income data from the [Bureau of Labor Statistics](https://www.bls.gov/oes/current/oes_nat.htm#11-0000) with the job titles of alumni we where able to estimate alumni salaries.
+
+Each of the majors seen in the graphs below had over fifty data point and most had over two hundred.
 
 ### Engineering 
 ![Alt text](./eng_first.svg)
+
+As is evident by the graphs, engineering students make an extreemly predictable salary out of college. In reality there is likely a broader distribution than the one shown above. This is becuase using national averages from BLS gives us a set salary for "entry level software engineer." However, all software engineers are not made eqaul and its likely that a significant portion earn over 90,000 after graduation. 
 
 ### Mathematical, Life, and Physical Sciences 
 ![Alt text](./math_and_physical.svg)
@@ -120,6 +127,10 @@ We've also been able to look at our results a confusion matrix and ROC curves th
 
 ### Humanities and Fine Arts 
 ![Alt text](./human_sal.svg)
+
+ 
+### Things to keep in mind
+Currently we are using BLS data that is based on national averages for various career areas. Unfortuntely, this does not give us the most fine grained estimate of income. 
 
 
 ## Software Used
