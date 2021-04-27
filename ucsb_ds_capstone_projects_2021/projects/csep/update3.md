@@ -109,9 +109,17 @@ We've also been able to look at our results a confusion matrix and ROC curves th
 
 ## Post Graduation Earnings 
 
-
-
+### Engineering 
 ![Alt text](./eng_first.svg)
+
+### Mathematical, Life, and Physical Sciences 
+![Alt text](./math_and_physical.svg)
+
+### Social Sciences 
+![Alt text](./social_salary.svg)
+
+### Humanities and Fine Arts 
+![Alt text](./human_sal.svg)
 
 
 ## Software Used
