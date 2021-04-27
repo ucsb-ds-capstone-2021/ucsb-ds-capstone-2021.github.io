@@ -193,6 +193,11 @@
      Update 2
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../calcofi1/update3.html">
+     CALCOLFI Project Update 3
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -571,7 +576,7 @@
 <h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
 <p>In the FLIR team we’re working on real time object detection models with a primary use for autonomous driving cars. Much of the current technology is centered around RGB cameras as seen in figure one.</p>
 <div class="figure align-default" id="directive-fig">
-<a class="reference internal image-reference" href="../../_images/1*QOGcvHbrDZiCqTG6THIQ_w.png"><img alt="../../_images/1*QOGcvHbrDZiCqTG6THIQ_w.png" src="../../_images/1*QOGcvHbrDZiCqTG6THIQ_w.png" style="height: 150px;" /></a>
+<a class="reference internal image-reference" href="projects/flir/1*QOGcvHbrDZiCqTG6THIQ_w.png"><img alt="projects/flir/1*QOGcvHbrDZiCqTG6THIQ_w.png" src="projects/flir/1*QOGcvHbrDZiCqTG6THIQ_w.png" style="height: 150px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 31 </span><span class="caption-text">RGB image</span><a class="headerlink" href="#directive-fig" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id1">
@@ -584,11 +589,11 @@
 <h2>Objective<a class="headerlink" href="#objective" title="Permalink to this headline">¶</a></h2>
 <p>Our team is primarily concerned with analyzing the robustness of a thermal object detector for ADAS (Advanced Driver Assistance Systems) subject to the effect of added noise. Understanding the effect of noise is incredibly important to field of computer vision as it’s been observed that small amounts of noise can result in severe misclassifications.</p>
 <div class="figure align-default" id="id2">
-<a class="reference internal image-reference" href="../../_images/1*PmCgcjO3sr3CPPaCpy5Fgw.png"><img alt="../../_images/1*PmCgcjO3sr3CPPaCpy5Fgw.png" src="../../_images/1*PmCgcjO3sr3CPPaCpy5Fgw.png" style="height: 150px;" /></a>
+<a class="reference internal image-reference" href="projects/flir/1*PmCgcjO3sr3CPPaCpy5Fgw.png"><img alt="projects/flir/1*PmCgcjO3sr3CPPaCpy5Fgw.png" src="projects/flir/1*PmCgcjO3sr3CPPaCpy5Fgw.png" style="height: 150px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 33 </span><span class="caption-text">Adversarial attack on image of panda</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-default" id="id3">
-<a class="reference internal image-reference" href="../../_images/1*n18mfvFgeZTLVxx07iBNkA.png"><img alt="../../_images/1*n18mfvFgeZTLVxx07iBNkA.png" src="../../_images/1*n18mfvFgeZTLVxx07iBNkA.png" style="height: 150px;" /></a>
+<a class="reference internal image-reference" href="projects/flir/1*n18mfvFgeZTLVxx07iBNkA.png"><img alt="projects/flir/1*n18mfvFgeZTLVxx07iBNkA.png" src="projects/flir/1*n18mfvFgeZTLVxx07iBNkA.png" style="height: 150px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 34 </span><span class="caption-text">Adversarial attack on stop sign</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 <p>Figure 3 shows the effect a small amount of noise will have on the classification of a panda (Source: <a class="reference external" href="https://arxiv.org/abs/1412.6572">https://arxiv.org/abs/1412.6572</a>). Figure 4 shows a stop sign on the right with minimal alterations that led to a model classifying it as a speed limit sign (Source: <a class="reference external" href="https://arxiv.org/pdf/1707.08945.pdf">https://arxiv.org/pdf/1707.08945.pdf</a>). These are known as adversarial attacks, adding inputs to a model to intentionally cause misclassifications. Adversarial attacks and the effects of random noise are incredibly important to study as we hope to make our object detection models as robust as possible.</p>
