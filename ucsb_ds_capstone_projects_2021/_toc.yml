@@ -40,6 +40,7 @@
       sections:
         - file: projects/csep/update1
         - file: projects/csep/update2
+        - file: projects/csep/update3
     - file: projects/evidation/description
       sections:
         - file: projects/evidation/update1
