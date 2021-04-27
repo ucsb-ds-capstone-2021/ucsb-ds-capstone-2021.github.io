@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teams and Contacts &#8212; Data Science Capstone 2021</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -44,7 +41,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -56,14 +53,14 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Software and Tools" href="software-tools.html" />
     <link rel="prev" title="Deliverables" href="syllabus_deliverables.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -72,37 +69,42 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  <img src="../_static/logo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Data Science Capstone 2021</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Data Science Capstone 2021</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../welcome.html">
    Welcome to Data Science Capstone
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Class Logistics
  </span>
 </p>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="syllabus.html">
    Course Syllabus
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="syllabus_readings.html">
      Readings
@@ -119,40 +121,46 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Teams and Contacts
   </a>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="software-tools.html">
    Software and Tools
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="software-tools_create-update-pages.html">
      Create Project Update Pages
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Projects
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/appfolio/description.html">
    appfolio
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/appfolio/update1.html">
      Update 1 - Project Updates
@@ -164,14 +172,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/calcofi1/description.html">
    calcofi1
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/calcofi1/update1.html">
      Update 1
@@ -183,14 +194,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/calcofi2/description.html">
    calcofi2
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/calcofi2/update1.html">
      Update 1
@@ -202,14 +216,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/carpedata/description.html">
    carpedata
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/carpedata/update1.html">
      Update1
@@ -221,14 +238,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/ccber/description.html">
    ccber
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/ccber/update1.html">
      Update 1
@@ -240,14 +260,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/csep/description.html">
    CSEP
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/csep/update1.html">
      Update 1
@@ -259,14 +282,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/evidation/description.html">
    evidation
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/evidation/update1.html">
      Evidation Health Project Update 1
@@ -278,14 +304,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/flir/description.html">
    flir
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/flir/update1.html">
      Update 1
@@ -296,15 +325,23 @@
      Update 2
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/flir/update3.html">
+     Update 3
+    </a>
+   </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/invoca/description.html">
    invoca
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/invoca/update1.html">
      Update 1
@@ -316,14 +353,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/nceas/description.html">
    nceas
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/nceas/update1.html">
      Update 1
@@ -335,14 +375,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/nri/description.html">
    nri
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/nri/update1.html">
      NRI - Update 1
@@ -354,14 +397,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../projects/sansum/description.html">
    sansum
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../projects/sansum/update1.html">
      Update 1
@@ -373,11 +419,10 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -445,12 +490,12 @@
     </div>
 </div>
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -459,12 +504,11 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#directory">
    Directory
@@ -477,8 +521,7 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
         </div>
     </div>
 </div>
@@ -492,8 +535,8 @@
 <div class="section" id="directory">
 <h2>Directory<a class="headerlink" href="#directory" title="Permalink to this headline">¶</a></h2>
 <div class="tabbed-set docutils">
-<input checked="checked" id="0f2eb4dc-8d8e-4300-9fdc-2528b4e87dc8" name="98820116-aa5c-4d0a-8cc8-50b9e1b4b25b" type="radio">
-</input><label class="tabbed-label" for="0f2eb4dc-8d8e-4300-9fdc-2528b4e87dc8">
+<input checked="checked" id="7e84711d-15b5-4195-99f9-9e52417ea6af" name="0a2d599e-9b63-47be-93f2-58709d31f88a" type="radio">
+</input><label class="tabbed-label" for="7e84711d-15b5-4195-99f9-9e52417ea6af">
 AppFolio</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -538,8 +581,8 @@ AppFolio</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="96acd940-68c6-498b-a54c-2ea5c1b11eb4" name="98820116-aa5c-4d0a-8cc8-50b9e1b4b25b" type="radio">
-</input><label class="tabbed-label" for="96acd940-68c6-498b-a54c-2ea5c1b11eb4">
+<input id="26783bbe-96e5-4e0f-86f0-92c1ecd8de2f" name="0a2d599e-9b63-47be-93f2-58709d31f88a" type="radio">
+</input><label class="tabbed-label" for="26783bbe-96e5-4e0f-86f0-92c1ecd8de2f">
 CalCOFI1</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -584,8 +627,8 @@ CalCOFI1</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="cc7ec9f3-6769-4697-bcca-a742de681563" name="98820116-aa5c-4d0a-8cc8-50b9e1b4b25b" type="radio">
-</input><label class="tabbed-label" for="cc7ec9f3-6769-4697-bcca-a742de681563">
+<input id="6f912e10-0033-415a-821e-4611e11acba6" name="0a2d599e-9b63-47be-93f2-58709d31f88a" type="radio">
+</input><label class="tabbed-label" for="6f912e10-0033-415a-821e-4611e11acba6">
 CalCOFI2</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -622,8 +665,8 @@ CalCOFI2</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="ba762dcc-b307-481e-b035-768d2cd71ab2" name="98820116-aa5c-4d0a-8cc8-50b9e1b4b25b" type="radio">
-</input><label class="tabbed-label" for="ba762dcc-b307-481e-b035-768d2cd71ab2">
+<input id="0773d955-c118-4b69-bb71-e26c7c9be679" name="0a2d599e-9b63-47be-93f2-58709d31f88a" type="radio">
+</input><label class="tabbed-label" for="0773d955-c118-4b69-bb71-e26c7c9be679">
 Carpe Data</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -664,8 +707,8 @@ Carpe Data</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="d1b8d879-ff99-4f94-af7e-274900651a3e" name="98820116-aa5c-4d0a-8cc8-50b9e1b4b25b" type="radio">
-</input><label class="tabbed-label" for="d1b8d879-ff99-4f94-af7e-274900651a3e">
+<input id="e40ea94d-5067-4f80-b076-545e77a49127" name="0a2d599e-9b63-47be-93f2-58709d31f88a" type="radio">
+</input><label class="tabbed-label" for="e40ea94d-5067-4f80-b076-545e77a49127">
 CCBER</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -714,8 +757,8 @@ CCBER</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="6b3ce6cb-2005-47f7-8e97-e771c2faa117" name="98820116-aa5c-4d0a-8cc8-50b9e1b4b25b" type="radio">
-</input><label class="tabbed-label" for="6b3ce6cb-2005-47f7-8e97-e771c2faa117">
+<input id="0611214f-b0ba-40df-89c7-e1f2aa537346" name="0a2d599e-9b63-47be-93f2-58709d31f88a" type="radio">
+</input><label class="tabbed-label" for="0611214f-b0ba-40df-89c7-e1f2aa537346">
 CSEP</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -756,8 +799,8 @@ CSEP</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="a46b051f-2ffc-44d7-b9c3-d9b2cd7bf0de" name="98820116-aa5c-4d0a-8cc8-50b9e1b4b25b" type="radio">
-</input><label class="tabbed-label" for="a46b051f-2ffc-44d7-b9c3-d9b2cd7bf0de">
+<input id="82349c44-ce72-4568-8703-1b0e56f56c30" name="0a2d599e-9b63-47be-93f2-58709d31f88a" type="radio">
+</input><label class="tabbed-label" for="82349c44-ce72-4568-8703-1b0e56f56c30">
 Evidation</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -798,8 +841,8 @@ Evidation</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="d5d5e61c-e570-4840-b894-2e01764a10aa" name="98820116-aa5c-4d0a-8cc8-50b9e1b4b25b" type="radio">
-</input><label class="tabbed-label" for="d5d5e61c-e570-4840-b894-2e01764a10aa">
+<input id="141968b2-2a69-40ef-a327-7fa8112b640e" name="0a2d599e-9b63-47be-93f2-58709d31f88a" type="radio">
+</input><label class="tabbed-label" for="141968b2-2a69-40ef-a327-7fa8112b640e">
 FLIR</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -840,8 +883,8 @@ FLIR</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="b19ce109-0fe8-4e13-a1b8-e718fc884427" name="98820116-aa5c-4d0a-8cc8-50b9e1b4b25b" type="radio">
-</input><label class="tabbed-label" for="b19ce109-0fe8-4e13-a1b8-e718fc884427">
+<input id="675df3bb-58a0-4d12-beed-d8c9b5313b2c" name="0a2d599e-9b63-47be-93f2-58709d31f88a" type="radio">
+</input><label class="tabbed-label" for="675df3bb-58a0-4d12-beed-d8c9b5313b2c">
 Invoca</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -886,8 +929,8 @@ Invoca</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="54b96ea3-05c0-484b-84c3-1a980ea98e03" name="98820116-aa5c-4d0a-8cc8-50b9e1b4b25b" type="radio">
-</input><label class="tabbed-label" for="54b96ea3-05c0-484b-84c3-1a980ea98e03">
+<input id="48053afb-f63b-4341-ba91-cc17758286cc" name="0a2d599e-9b63-47be-93f2-58709d31f88a" type="radio">
+</input><label class="tabbed-label" for="48053afb-f63b-4341-ba91-cc17758286cc">
 NCEAS</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -936,8 +979,8 @@ NCEAS</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="fca13557-37fd-4382-894d-387e20939336" name="98820116-aa5c-4d0a-8cc8-50b9e1b4b25b" type="radio">
-</input><label class="tabbed-label" for="fca13557-37fd-4382-894d-387e20939336">
+<input id="aab0af00-e405-4075-b972-857f2d458e72" name="0a2d599e-9b63-47be-93f2-58709d31f88a" type="radio">
+</input><label class="tabbed-label" for="aab0af00-e405-4075-b972-857f2d458e72">
 NRI</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -986,8 +1029,8 @@ NRI</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="fef0a5e7-164b-41f2-beec-b2fc9fdfccb6" name="98820116-aa5c-4d0a-8cc8-50b9e1b4b25b" type="radio">
-</input><label class="tabbed-label" for="fef0a5e7-164b-41f2-beec-b2fc9fdfccb6">
+<input id="95bc7e4d-fddd-4d07-b94c-7380d43300e5" name="0a2d599e-9b63-47be-93f2-58709d31f88a" type="radio">
+</input><label class="tabbed-label" for="95bc7e4d-fddd-4d07-b94c-7380d43300e5">
 Sansum</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -1136,21 +1179,19 @@ Sansum</label><div class="tabbed-content docutils">
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-186739861-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
 
-
-    
-    <!-- Google Analytics -->
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-186739861-1', 'auto');
-      ga('set', 'anonymizeIp', true);
-      ga('send', 'pageview');
-    </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
-    <!-- End Google Analytics -->
-    
   </body>
 </html>
