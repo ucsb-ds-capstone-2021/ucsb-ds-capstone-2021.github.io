@@ -1,4 +1,4 @@
-# Progres Update, April 25
+# Progress Update, April 25
 
 ## Data
 
