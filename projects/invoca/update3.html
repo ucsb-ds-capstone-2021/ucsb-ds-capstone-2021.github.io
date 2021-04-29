@@ -573,6 +573,11 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assistant-details">
+     Assistant details
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#model-details">
      Model details
     </a>
@@ -602,11 +607,21 @@ Our idea was to run predictions on the content of a customer service interaction
 <h2>Update<a class="headerlink" href="#update" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="overview">
 <h3>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h3>
-<p>We have continued to make extensive progress toward creating a fully functioning product for Invoca’s employees to use and test. These past couple of weeks we have used several popular frameworks such as: React, Flask, MongoDB, Docker, <a class="reference external" href="http://Socket.io">Socket.io</a>, and Node.js to combine the different parts of our project.</p>
+<p>We have continued to make extensive progress toward creating a fully functioning product for Invoca’s employees to use and test. These past couple of weeks we have used several popular frameworks such as: React, Flask, MongoDB, Docker, <a class="reference external" href="http://Socket.io">Socket.io</a>, and Node.js to combine the different parts of our project. The following is a diagram of what those parts are and how they relate to each other:
+<img alt="" src="../../_images/project_diagram.png" /></p>
 <p>First off,our team has a very diverse background and to make it easier for all team members to work in the same environment without having to deal with the issues of working on different systems each with their own unique system specifications we decided to employ docker. The reason for using docker is it creates a self-contained development environment that adapts to any users system specifications. The isolation and the portability allows our team members to quickly start working on our app and share the containers using docker hub. Additionally, this would greatly speed up development and allow for more detailed testing and debugging.</p>
 <p>Using NodeJS and <a class="reference external" href="http://Socket.io">Socket.io</a> web socket library on the back end I was able to create a real time chat application that Inovca’s employees can directly interact with.  The idea is that the customer support agent and customer will both be using this application to communicate doubts and concerns in real time. After the conversation has terminated this chat log will be forwarded to our predictive models. For these chat logs to be transferred they have to be stored in a safe and secure database.The database we will be utilizing is MongoDB which is an extremely fast NoSQL database meaning it uses JSON-like documents. The chat log from this database will be fed into our prediction loop where we take the raw text as input and output our predictions.</p>
 <p>To deploy our machine learning models we will be utilizing Flask which is a micro web framework written in python that will be used to connect to our database using MongoEngine. Flask will play the critical role of interacting with both the frontend network to relay the predictions of our machine learning models to React and the backend to route the conversations from the database into our models.</p>
-<p>The next couple of weeks our team will work largely on testing to make sure data is being properly transferred between the different pipelines. We also wish to have an initial version to demo and test by Invoca’s employees, so we can see how accurate our predictive model is.</p>
+</div>
+<div class="section" id="assistant-details">
+<h3>Assistant details<a class="headerlink" href="#assistant-details" title="Permalink to this headline">¶</a></h3>
+<p>The Assistant is essentially website that contains helpful descriptions and links of the topic the customer is inquiring about. When the models decipher which topic the customer is currently speaking with the agent about, the Assistant will drop the link to the respective website in the chat. In the case where the agent or the models are unsure which topic the customer is talking about, the Assistant will send the link to the website homepage, where the customer can navigate to the appropriate topic themselves or read more about our team.
+The website homepage is pictured below:
+![](Website Homepage.png)
+![](Website Categories.png)
+Here is what a specific webpage looks like:
+![](Movie Page.png)
+The next couple of weeks our team will work largely on testing to make sure data is being properly transferred between the different pipelines. We also wish to have an initial version to demo and test by Invoca’s employees, so we can see how accurate our predictive model is.</p>
 </div>
 <div class="section" id="model-details">
 <h3>Model details<a class="headerlink" href="#model-details" title="Permalink to this headline">¶</a></h3>
