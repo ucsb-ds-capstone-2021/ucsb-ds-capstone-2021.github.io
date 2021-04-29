@@ -11,7 +11,8 @@ Our idea was to run predictions on the content of a customer service interaction
 
 ### Overview
 
-We have continued to make extensive progress toward creating a fully functioning product for Invoca’s employees to use and test. These past couple of weeks we have used several popular frameworks such as: React, Flask, MongoDB, Docker, Socket.io, and Node.js to combine the different parts of our project. 
+We have continued to make extensive progress toward creating a fully functioning product for Invoca’s employees to use and test. These past couple of weeks we have used several popular frameworks such as: React, Flask, MongoDB, Docker, Socket.io, and Node.js to combine the different parts of our project. The following is a diagram of what those parts are and how they relate to each other:
+![](project_diagram.png)
 
 First off,our team has a very diverse background and to make it easier for all team members to work in the same environment without having to deal with the issues of working on different systems each with their own unique system specifications we decided to employ docker. The reason for using docker is it creates a self-contained development environment that adapts to any users system specifications. The isolation and the portability allows our team members to quickly start working on our app and share the containers using docker hub. Additionally, this would greatly speed up development and allow for more detailed testing and debugging. 
 
@@ -19,6 +20,13 @@ Using NodeJS and Socket.io web socket library on the back end I was able to crea
 
 To deploy our machine learning models we will be utilizing Flask which is a micro web framework written in python that will be used to connect to our database using MongoEngine. Flask will play the critical role of interacting with both the frontend network to relay the predictions of our machine learning models to React and the backend to route the conversations from the database into our models.
 
+### Assistant details
+The Assistant is essentially website that contains helpful descriptions and links of the topic the customer is inquiring about. When the models decipher which topic the customer is currently speaking with the agent about, the Assistant will drop the link to the respective website in the chat. In the case where the agent or the models are unsure which topic the customer is talking about, the Assistant will send the link to the website homepage, where the customer can navigate to the appropriate topic themselves or read more about our team.
+The website homepage is pictured below:
+![](Website Homepage.png)
+![](Website Categories.png)
+Here is what a specific webpage looks like:
+![](Movie Page.png)
 The next couple of weeks our team will work largely on testing to make sure data is being properly transferred between the different pipelines. We also wish to have an initial version to demo and test by Invoca’s employees, so we can see how accurate our predictive model is. 
 
 ### Model details
