@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Update 2 &#8212; Data Science Capstone 2021</title>
     
-  <link href="../../_static/css/theme.css" rel="stylesheet" />
-  <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -31,19 +31,19 @@
     <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -54,8 +54,21 @@
     <link rel="next" title="Update 3" href="update3.html" />
     <link rel="prev" title="Update 1" href="update1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-186739861-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -71,6 +84,10 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
       <img src="../../_static/logo.png" class="logo" alt="logo">
       
       
@@ -80,7 +97,7 @@
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -89,7 +106,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Class Logistics
  </span>
@@ -145,7 +162,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Projects
  </span>
@@ -557,7 +574,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#progress">
@@ -590,7 +607,7 @@
         
               <div>
                 
-  <div class="section" id="update-2">
+  <div class="tex2jax_ignore mathjax_ignore section" id="update-2">
 <h1>Update 2<a class="headerlink" href="#update-2" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="progress">
 <h2>Progress<a class="headerlink" href="#progress" title="Permalink to this headline">¶</a></h2>
@@ -613,13 +630,13 @@
 </div>
 <div class="section" id="training">
 <h2>Training<a class="headerlink" href="#training" title="Permalink to this headline">¶</a></h2>
-<p>First we trained a Yolo-V3 model with the attempt to reproduce the results from Joe Hoeller in this medium article. <a class="reference external" href="https://medium.com/&#64;joehoeller/object-detection-on-thermal-images-f9526237686a">https://medium.com/&#64;joehoeller/object-detection-on-thermal-images-f9526237686a</a>. He used the same FLIR dataset that we have and was able to achieve production grade results with a mAP&#64;.5 of .961 and a recall of .922.</p>
-<p>Unfortunately we didn’t have as much success. Pictured below is our results with a Yolo-V3 model.</p>
+<p>First we trained a Yolo-V3 model with the attempt to reproduce the results from <a class="reference external" href="https://medium.com/&#64;joehoeller/object-detection-on-thermal-images-f9526237686a">this medium article</a>. The author used the same FLIR dataset that we have and was able to achieve production grade results with a mAP&#64;.5 of .961 and a recall of .922.</p>
+<p>Unfortunately we didn’t have as much success with our modified training procedure. Pictured below is our results with a Yolo-V3 model.</p>
 <div class="figure align-default" id="id1">
 <a class="reference internal image-reference" href="../../_images/108645101-84e4b780-7466-11eb-9c89-9e862626f3c1-1.png"><img alt="../../_images/108645101-84e4b780-7466-11eb-9c89-9e862626f3c1-1.png" src="../../_images/108645101-84e4b780-7466-11eb-9c89-9e862626f3c1-1.png" style="height: 150px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 40 </span><span class="caption-text">Yolo-V3 metrics</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
-<p>Here our model differs from Joe Hoellers because we attempted to classify dogs and our dataset only contained 14 images with this label so we assume we didn’t have a large enough sample to accurately predict them. If we remove the dog classifications from our score our mAP&#64;0.5 for all the classes would reach 0.745. Attempting to reproduce the results from Joe Hoeller was a lofty goal and considering the aim of our project is to analyze the effect of noise on a object detection model our main concern was to train a baseline model to test against later as opposed to acheiving the highest scores possible. Therefore we also decided to train the newest Yolo model, Yolo-V5, which we will use as our baseline for the time being.</p>
+<p>Here our model differs from the author’s because we attempted to classify dogs and our dataset only contained 14 images with this label so we assume we didn’t have a large enough sample to accurately predict them. If we remove the dog classifications from our score our mAP&#64;0.5 for all the classes would reach 0.745. Attempting to reproduce the results from the article was a lofty goal and considering the aim of our project is to analyze the effect of noise on a object detection model our main concern was to train a baseline model to test against later as opposed to acheiving the highest scores possible. Therefore we also decided to train the newest Yolo model, Yolo-V5, which we will use as our baseline for the time being.</p>
 <p>Below is the scores from our Yolo-V5 model. We achieved higher scores across the board compared to V3 model and feel comftorable enough with these metrics to use as our baseline for testing. Note that we removed the dog classifications from this model.</p>
 <ul class="simple">
 <li><p>Model we used for reference(<a class="reference external" href="https://github.com/ultralytics/yolov5">https://github.com/ultralytics/yolov5</a>)</p></li>
@@ -669,16 +686,27 @@
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="update1.html" title="previous page">Update 1</a>
-    <a class='right-next' id="next-link" href="update3.html" title="next page">Update 3</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="update1.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Update 1</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="update3.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Update 3</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -694,18 +722,7 @@
       </div>
     </div>
   
-  <script src="../../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-186739861-1', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

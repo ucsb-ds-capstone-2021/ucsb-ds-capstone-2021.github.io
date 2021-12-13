@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teams and Contacts &#8212; Data Science Capstone 2021</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,19 +31,19 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
@@ -54,8 +54,21 @@
     <link rel="next" title="Software and Tools" href="software-tools.html" />
     <link rel="prev" title="Deliverables" href="syllabus_deliverables.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
     
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-186739861-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -71,6 +84,10 @@
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
       <img src="../_static/logo.png" class="logo" alt="logo">
       
       
@@ -80,7 +97,7 @@
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -89,7 +106,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Class Logistics
  </span>
@@ -145,7 +162,7 @@
   </ul>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Projects
  </span>
@@ -557,7 +574,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#directory">
@@ -580,13 +597,13 @@
         
               <div>
                 
-  <div class="section" id="teams-and-contacts">
+  <div class="tex2jax_ignore mathjax_ignore section" id="teams-and-contacts">
 <h1>Teams and Contacts<a class="headerlink" href="#teams-and-contacts" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="directory">
 <h2>Directory<a class="headerlink" href="#directory" title="Permalink to this headline">¶</a></h2>
 <div class="tabbed-set docutils">
-<input checked="checked" id="0504ea94-d639-426e-998d-cfdf8690a9c1" name="c26771af-5bd5-4bb1-b6ae-842b47fd730f" type="radio">
-</input><label class="tabbed-label" for="0504ea94-d639-426e-998d-cfdf8690a9c1">
+<input checked="checked" id="3cfc8f3d-e977-4651-8e21-9d8259a763eb" name="2c1ed270-8ff7-4145-b688-00751226788d" type="radio">
+</input><label class="tabbed-label" for="3cfc8f3d-e977-4651-8e21-9d8259a763eb">
 AppFolio</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -631,8 +648,8 @@ AppFolio</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="a46adcb3-6447-4b53-9027-99e54490f35d" name="c26771af-5bd5-4bb1-b6ae-842b47fd730f" type="radio">
-</input><label class="tabbed-label" for="a46adcb3-6447-4b53-9027-99e54490f35d">
+<input id="57f20627-4b29-41cd-9b60-894960add2ac" name="2c1ed270-8ff7-4145-b688-00751226788d" type="radio">
+</input><label class="tabbed-label" for="57f20627-4b29-41cd-9b60-894960add2ac">
 CalCOFI1</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -677,8 +694,8 @@ CalCOFI1</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="a7d1cb51-5c9e-4f60-bdf1-68b3de76a873" name="c26771af-5bd5-4bb1-b6ae-842b47fd730f" type="radio">
-</input><label class="tabbed-label" for="a7d1cb51-5c9e-4f60-bdf1-68b3de76a873">
+<input id="fe855655-55ec-4d0c-8a0a-37a39264c5cf" name="2c1ed270-8ff7-4145-b688-00751226788d" type="radio">
+</input><label class="tabbed-label" for="fe855655-55ec-4d0c-8a0a-37a39264c5cf">
 CalCOFI2</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -715,8 +732,8 @@ CalCOFI2</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="38fe179e-cb04-4958-9cc4-ffff28438e52" name="c26771af-5bd5-4bb1-b6ae-842b47fd730f" type="radio">
-</input><label class="tabbed-label" for="38fe179e-cb04-4958-9cc4-ffff28438e52">
+<input id="2759e063-d2b6-435d-8b57-38e538a6cd67" name="2c1ed270-8ff7-4145-b688-00751226788d" type="radio">
+</input><label class="tabbed-label" for="2759e063-d2b6-435d-8b57-38e538a6cd67">
 Carpe Data</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -757,8 +774,8 @@ Carpe Data</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="477b49c5-27c2-402f-8133-43362ac7f1b7" name="c26771af-5bd5-4bb1-b6ae-842b47fd730f" type="radio">
-</input><label class="tabbed-label" for="477b49c5-27c2-402f-8133-43362ac7f1b7">
+<input id="da3f506b-7246-4b5a-8a0c-ae66304d2051" name="2c1ed270-8ff7-4145-b688-00751226788d" type="radio">
+</input><label class="tabbed-label" for="da3f506b-7246-4b5a-8a0c-ae66304d2051">
 CCBER</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -807,8 +824,8 @@ CCBER</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="4351df61-dc05-4268-a180-ec251dcc1499" name="c26771af-5bd5-4bb1-b6ae-842b47fd730f" type="radio">
-</input><label class="tabbed-label" for="4351df61-dc05-4268-a180-ec251dcc1499">
+<input id="8e5bce9b-e483-48a2-8f41-d702ffc57116" name="2c1ed270-8ff7-4145-b688-00751226788d" type="radio">
+</input><label class="tabbed-label" for="8e5bce9b-e483-48a2-8f41-d702ffc57116">
 CSEP</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -849,8 +866,8 @@ CSEP</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="72ce1e22-a7e3-4649-9d40-9fc02eddd40d" name="c26771af-5bd5-4bb1-b6ae-842b47fd730f" type="radio">
-</input><label class="tabbed-label" for="72ce1e22-a7e3-4649-9d40-9fc02eddd40d">
+<input id="f370c35c-48ba-4032-8f84-43f71f0cb5bd" name="2c1ed270-8ff7-4145-b688-00751226788d" type="radio">
+</input><label class="tabbed-label" for="f370c35c-48ba-4032-8f84-43f71f0cb5bd">
 Evidation</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -891,8 +908,8 @@ Evidation</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="87bfb321-0a22-4926-b723-6dcd5013f685" name="c26771af-5bd5-4bb1-b6ae-842b47fd730f" type="radio">
-</input><label class="tabbed-label" for="87bfb321-0a22-4926-b723-6dcd5013f685">
+<input id="ac87984e-2356-4adf-8658-252bf50e25c0" name="2c1ed270-8ff7-4145-b688-00751226788d" type="radio">
+</input><label class="tabbed-label" for="ac87984e-2356-4adf-8658-252bf50e25c0">
 FLIR</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -933,8 +950,8 @@ FLIR</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="e46ae360-713e-4e54-a3c3-89b31fee0ad4" name="c26771af-5bd5-4bb1-b6ae-842b47fd730f" type="radio">
-</input><label class="tabbed-label" for="e46ae360-713e-4e54-a3c3-89b31fee0ad4">
+<input id="cafc0cb6-d95e-4087-b9b4-01e821bf5f8b" name="2c1ed270-8ff7-4145-b688-00751226788d" type="radio">
+</input><label class="tabbed-label" for="cafc0cb6-d95e-4087-b9b4-01e821bf5f8b">
 Invoca</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -979,8 +996,8 @@ Invoca</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="494799ef-3ecf-4f34-b6f0-a7aa99ed8feb" name="c26771af-5bd5-4bb1-b6ae-842b47fd730f" type="radio">
-</input><label class="tabbed-label" for="494799ef-3ecf-4f34-b6f0-a7aa99ed8feb">
+<input id="61c53288-84b5-47ed-ba02-be7825c1edfb" name="2c1ed270-8ff7-4145-b688-00751226788d" type="radio">
+</input><label class="tabbed-label" for="61c53288-84b5-47ed-ba02-be7825c1edfb">
 NCEAS</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -1029,8 +1046,8 @@ NCEAS</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="9277a0f8-2e3a-441e-9a05-314feef4c1bb" name="c26771af-5bd5-4bb1-b6ae-842b47fd730f" type="radio">
-</input><label class="tabbed-label" for="9277a0f8-2e3a-441e-9a05-314feef4c1bb">
+<input id="e3109f4e-3a78-46e1-9de3-60c6a42dea8f" name="2c1ed270-8ff7-4145-b688-00751226788d" type="radio">
+</input><label class="tabbed-label" for="e3109f4e-3a78-46e1-9de3-60c6a42dea8f">
 NRI</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -1079,8 +1096,8 @@ NRI</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="ab3e54a8-8b51-48a4-884d-519f8cbea4ca" name="c26771af-5bd5-4bb1-b6ae-842b47fd730f" type="radio">
-</input><label class="tabbed-label" for="ab3e54a8-8b51-48a4-884d-519f8cbea4ca">
+<input id="8da8670f-dd4c-446d-ac38-4492a18ec56f" name="2c1ed270-8ff7-4145-b688-00751226788d" type="radio">
+</input><label class="tabbed-label" for="8da8670f-dd4c-446d-ac38-4492a18ec56f">
 Sansum</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -1205,16 +1222,27 @@ Sansum</label><div class="tabbed-content docutils">
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="syllabus_deliverables.html" title="previous page">Deliverables</a>
-    <a class='right-next' id="next-link" href="software-tools.html" title="next page">Software and Tools</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="syllabus_deliverables.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Deliverables</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="software-tools.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Software and Tools</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -1230,18 +1258,7 @@ Sansum</label><div class="tabbed-content docutils">
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
-
-  
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-186739861-1', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
   </body>
 </html>

@@ -29,9 +29,9 @@ IoU Visual
 We use IoU to set a threshold that is used to categorize a predicted label as a true or false positive. The standard IoU threshold is generally 0.5 so our metrics will show our mAP evaluted at a threshold of .5 (mAP@0.5) and also a much higher threshold of mAP@0.5:0.95, this threshold is set at 0.5 and increases at a step size of 0.05 up to 0.95. 
 
 #### Training
-First we trained a Yolo-V3 model with the attempt to reproduce the results from Joe Hoeller in this medium article. https://medium.com/@joehoeller/object-detection-on-thermal-images-f9526237686a. He used the same FLIR dataset that we have and was able to achieve production grade results with a mAP@.5 of .961 and a recall of .922.
+First we trained a Yolo-V3 model with the attempt to reproduce the results from [this medium article](https://medium.com/@joehoeller/object-detection-on-thermal-images-f9526237686a). The author used the same FLIR dataset that we have and was able to achieve production grade results with a mAP@.5 of .961 and a recall of .922.
 
-Unfortunately we didn't have as much success. Pictured below is our results with a Yolo-V3 model.
+Unfortunately we didn't have as much success with our modified training procedure. Pictured below is our results with a Yolo-V3 model.
 
 
 ```{figure} 108645101-84e4b780-7466-11eb-9c89-9e862626f3c1-1.png
@@ -41,7 +41,7 @@ name: directive-fig
 ---
 Yolo-V3 metrics 
 ```
-Here our model differs from Joe Hoellers because we attempted to classify dogs and our dataset only contained 14 images with this label so we assume we didn't have a large enough sample to accurately predict them. If we remove the dog classifications from our score our mAP@0.5 for all the classes would reach 0.745. Attempting to reproduce the results from Joe Hoeller was a lofty goal and considering the aim of our project is to analyze the effect of noise on a object detection model our main concern was to train a baseline model to test against later as opposed to acheiving the highest scores possible. Therefore we also decided to train the newest Yolo model, Yolo-V5, which we will use as our baseline for the time being. 
+Here our model differs from the author's because we attempted to classify dogs and our dataset only contained 14 images with this label so we assume we didn't have a large enough sample to accurately predict them. If we remove the dog classifications from our score our mAP@0.5 for all the classes would reach 0.745. Attempting to reproduce the results from the article was a lofty goal and considering the aim of our project is to analyze the effect of noise on a object detection model our main concern was to train a baseline model to test against later as opposed to acheiving the highest scores possible. Therefore we also decided to train the newest Yolo model, Yolo-V5, which we will use as our baseline for the time being. 
 
 Below is the scores from our Yolo-V5 model. We achieved higher scores across the board compared to V3 model and feel comftorable enough with these metrics to use as our baseline for testing. Note that we removed the dog classifications from this model.
 - Model we used for reference(https://github.com/ultralytics/yolov5)
